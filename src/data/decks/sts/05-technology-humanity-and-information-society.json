@@ -1,0 +1,433 @@
+{
+  "id": "sts-s5-humanity-information-society",
+  "course": "Science, Technology, and Society",
+  "sectionOrder": 5,
+  "sectionLabel": "Section 5",
+  "title": "Technology, Human Rights, Existential Risks & the Information Society",
+  "subject": "Science, Technology, and Society",
+  "description": "Universal Declaration of Human Rights (UDHR Articles 1–7), Humans vs. Robots & AI, Nicholas Carr, Bill Joy's GNR existential risks, language, mathematics as nature's language, printing press, World Wide Web, and social media risks.",
+  "sourceFile": "STS-WK1-MTWThF A book reference in STS.pdf, STS MIDTERM REVIEWER.docx",
+  "createdAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "sts-s5-01",
+      "type": "multiple-choice",
+      "topic": "UDHR Foundations",
+      "question": "When was the Universal Declaration of Human Rights (UDHR) proclaimed by the UN General Assembly, and how many articles does it contain?",
+      "options": [
+        "December 10, 1948; 30 articles",
+        "July 4, 1776; 10 articles",
+        "August 15, 2000; 12 articles",
+        "June 12, 1898; 50 articles"
+      ],
+      "answer": "December 10, 1948; 30 articles",
+      "explanation": "Crafted after World War II, the UDHR's 30 articles establish inherent human dignity as the foundation of freedom, justice, and peace."
+    },
+    {
+      "id": "sts-s5-02",
+      "type": "multiple-choice",
+      "topic": "UDHR Articles 1–7",
+      "question": "Which UDHR Article declares that 'All human beings are born free and equal in dignity and rights' and should act in a spirit of brotherhood?",
+      "options": [
+        "Article 1",
+        "Article 4",
+        "Article 6",
+        "Article 7"
+      ],
+      "answer": "Article 1",
+      "explanation": "Articles 1–7 form the 'milestone document': Art 1 (dignity/equality), Art 2 (non-discrimination), Art 3 (life/liberty/security), Art 4 (no slavery), Art 5 (no torture), Art 6 (person before the law), Art 7 (equal protection)."
+    },
+    {
+      "id": "sts-s5-03",
+      "type": "multiple-choice",
+      "topic": "UDHR & Justice",
+      "question": "According to Chapter 7, what does the good life as a life of justice demand beyond merely identical treatment?",
+      "options": [
+        "Special privileges solely for wealthy tech investors",
+        "Preferential treatment and protection for those who have less or are disadvantaged",
+        "Eliminating human rights laws for online users",
+        "Replacing legal personhood with algorithms"
+      ],
+      "answer": "Preferential treatment and protection for those who have less or are disadvantaged",
+      "explanation": "Human dignity has absolute moral worth and requires uplifting the vulnerable amid rapid technological change."
+    },
+    {
+      "id": "sts-s5-04",
+      "type": "multiple-choice",
+      "topic": "Humans vs. Robots & AI",
+      "question": "In the Philippines, which major economic sector faces severe job displacement from AI-driven business analytics—with an estimated 1 million Filipino workers potentially affected (Santos, 2017)?",
+      "options": [
+        "Business Process Outsourcing (BPO) industry",
+        "Traditional abaca weaving",
+        "Cordillera rice farming",
+        "Deep-sea pearl diving"
+      ],
+      "answer": "Business Process Outsourcing (BPO) industry",
+      "explanation": "While technology enabled the BPO boom, AI and automated analytics also threaten to displace up to a million BPO workers."
+    },
+    {
+      "id": "sts-s5-05",
+      "type": "multiple-choice",
+      "topic": "Humans vs. Robots & AI",
+      "question": "What international efforts mentioned in Chapter 7 address the ethical boundaries between humans and robots?",
+      "options": [
+        "South Korean experts crafting ethical guidelines to prevent human-robot exploitation, and European roboticists lobbying for legislation",
+        "Banning all calculators worldwide",
+        "Replacing judges with humanoid robots in 1948",
+        "Granting robots voting rights in the UN"
+      ],
+      "answer": "South Korean experts crafting ethical guidelines to prevent human-robot exploitation, and European roboticists lobbying for legislation",
+      "explanation": "Countries like South Korea and European nations have initiated ethical frameworks as AI and robotics advance."
+    },
+    {
+      "id": "sts-s5-06",
+      "type": "multiple-choice",
+      "topic": "Cognitive Flattening",
+      "question": "In his 2008 essay 'Is Google Making Us Stupid?', what warning did Nicholas Carr issue about over-relying on search engines and bite-sized digital info?",
+      "options": [
+        "Search engines physically overheat human brains",
+        "As we depend on computers to mediate understanding, our own intelligence flattens into artificial intelligence—weakening deep reading and reflection",
+        "Google only works in Latin",
+        "Machines will stop functioning without paper books"
+      ],
+      "answer": "As we depend on computers to mediate understanding, our own intelligence flattens into artificial intelligence—weakening deep reading and reflection",
+      "explanation": "As machines become more human-like, humans risk acting like mindless automatons swiping for instant answers."
+    },
+    {
+      "id": "sts-s5-07",
+      "type": "multiple-choice",
+      "topic": "Bill Joy: Why the Future Does Not Need Us",
+      "question": "Who wrote the controversial 2000 essay 'Why the Future Does Not Need Us,' and what does the acronym GNR stand for?",
+      "options": [
+        "Bill Joy (chief scientist & co-founder/CEO at Sun Microsystems); Genetics, Nanotechnology, and Robotics",
+        "Jason Hickel; Global Natural Resources",
+        "Tim Berners-Lee; Generalized Network Routing",
+        "Freeman Dyson; Geothermal Nuclear Reactors"
+      ],
+      "answer": "Bill Joy (chief scientist & co-founder/CEO at Sun Microsystems); Genetics, Nanotechnology, and Robotics",
+      "explanation": "Bill Joy warned that 21st-century GNR technologies threaten humanity's survival if accepted uncritically."
+    },
+    {
+      "id": "sts-s5-08",
+      "type": "multiple-choice",
+      "topic": "Bill Joy: The GNR Threat",
+      "question": "Why does Bill Joy argue that GNR technologies pose a fundamentally different and more dangerous threat than 20th-century nuclear weapons?",
+      "options": [
+        "Because GNR tools cannot be turned off with electricity",
+        "Because robots, engineered organisms, and nanobots can self-replicate—one unit can multiply out of control—and are accessible to small groups without massive state facilities",
+        "Because nuclear weapons were harmless",
+        "Because GNR requires building facilities larger than cities"
+      ],
+      "answer": "Because robots, engineered organisms, and nanobots can self-replicate—one unit can multiply out of control—and are accessible to small groups without massive state facilities",
+      "explanation": "A bomb explodes once, whereas self-replicating GNR systems can multiply exponentially and are far easier for individuals or extremists to abuse."
+    },
+    {
+      "id": "sts-s5-09",
+      "type": "multiple-choice",
+      "topic": "Technical Arrogance",
+      "question": "In the documentary 'The Day After Trinity' (1981), what did physicist Freeman Dyson warn overcomes scientists when they feel 'the glitter of nuclear weapons' in their hands?",
+      "options": [
+        "Technical arrogance—an illusion of illimitable power when people see what they can do with their minds",
+        "Complete boredom with laboratory work",
+        "A desire to return to medieval farming",
+        "Fear of basic mathematics"
+      ],
+      "answer": "Technical arrogance—an illusion of illimitable power when people see what they can do with their minds",
+      "explanation": "Paired with J. Robert Oppenheimer's atomic bomb legacy (Hiroshima & Nagasaki, 1945), Dyson warns we must rein in vanity and technical arrogance."
+    },
+    {
+      "id": "sts-s5-10",
+      "type": "multiple-choice",
+      "topic": "Information Society: Words",
+      "question": "Why are words described in Chapter 8 as being 'informed'?",
+      "options": [
+        "Because they are printed exclusively on newspapers",
+        "Because they carry 'information'—meaning given by a speaker and intended for a listener, functioning across space and time without losing meaning when multiplied",
+        "Because words only exist inside computer hard drives",
+        "Because sounds have no structure"
+      ],
+      "answer": "Because they carry 'information'—meaning given by a speaker and intended for a listener, functioning across space and time without losing meaning when multiplied",
+      "explanation": "Words are 'informed' because they carry meaning/information intended by a speaker for a listener."
+    },
+    {
+      "id": "sts-s5-11",
+      "type": "multiple-choice",
+      "topic": "Information & Language",
+      "question": "Why can the same spoken or written message be shared with ten, a hundred, or a thousand people without losing its original meaning?",
+      "options": [
+        "Because meaning is not diminished by multiplication—language transmits ideas reliably across space and time",
+        "Because sound waves bounce forever without fading",
+        "Because only one person is allowed to listen at a time",
+        "Because words are made of solid gold"
+      ],
+      "answer": "Because meaning is not diminished by multiplication—language transmits ideas reliably across space and time",
+      "explanation": "Ancient Greeks marveled at how an idea can simultaneously live in both speaker's and listener's minds via language."
+    },
+    {
+      "id": "sts-s5-12",
+      "type": "multiple-choice",
+      "topic": "Philosophy & Nature",
+      "question": "What does the Greek phrase 'meta phusis' literally mean, and what is Plato's principle of 'One and the Many'?",
+      "options": [
+        "meta phusis: 'after nature'; 'One and the Many': diverse natural beings share an underlying unifying intrinsic nature (illustrated in biology by genus and species)",
+        "meta phusis: 'above cities'; 'One and the Many': monopoly economics",
+        "meta phusis: 'before dawn'; 'One and the Many': heliocentric orbits",
+        "meta phusis: 'within stone'; 'One and the Many': rock gardening"
+      ],
+      "answer": "meta phusis: 'after nature'; 'One and the Many': diverse natural beings share an underlying unifying intrinsic nature (illustrated in biology by genus and species)",
+      "explanation": "Early philosophers sought a unifying factor behind diverse natural phenomena, leading to classification systems like genus and species."
+    },
+    {
+      "id": "sts-s5-13",
+      "type": "multiple-choice",
+      "topic": "Mathematics as Nature's Language",
+      "question": "According to Chapter 8 (citing Isaac Newton and Eugene Wigner, 1960), what is the 'language of nature' that enables humans to understand natural laws and build modern technology?",
+      "options": [
+        "Cuneiform",
+        "Mathematics",
+        "Hieroglyphics",
+        "Rhetoric"
+      ],
+      "answer": "Mathematics",
+      "explanation": "Nature behaves according to mathematical laws—Newton's great contribution—and human minds can comprehend that mathematical language."
+    },
+    {
+      "id": "sts-s5-14",
+      "type": "multiple-choice",
+      "topic": "Early Technological World",
+      "question": "Which 1st-century thinker is credited in Chapter 8 with inventing a primitive steam engine long before the Industrial Revolution?",
+      "options": [
+        "Hero of Alexandria",
+        "Claudius Ptolemy",
+        "Sigmund Freud",
+        "Johann Gutenberg"
+      ],
+      "answer": "Hero of Alexandria",
+      "explanation": "Chapter 8 notes Hero of Alexandria built a primitive steam device after conceptually grasping the forces of nature."
+    },
+    {
+      "id": "sts-s5-15",
+      "type": "multiple-choice",
+      "topic": "The Printing Press",
+      "question": "How did the 15th-century printing press transform Western culture and scientific progress?",
+      "options": [
+        "It kept books locked inside royal tombs",
+        "It replaced slow hand-copying, allowed scholars across space and time to share works, and anchored scientific studies in widely accessible books",
+        "It eliminated the need for language",
+        "It immediately created wireless television"
+      ],
+      "answer": "It replaced slow hand-copying, allowed scholars across space and time to share works, and anchored scientific studies in widely accessible books",
+      "explanation": "Printing fulfilled the Greek ideal of sharing knowledge broadly, accelerating discoveries in electricity, radio, and television."
+    },
+    {
+      "id": "sts-s5-16",
+      "type": "multiple-choice",
+      "topic": "Digital Shift",
+      "question": "In the modern Information Age (citing Alvin Toffler, 1984), how has the transmission of ideas changed from classical rhetoric?",
+      "options": [
+        "Meaning is conveyed electronically via the digital signal or digit rather than strictly spoken rhetoric",
+        "Ideas are carved only on mud tablets",
+        "Books are no longer digitized",
+        "Radio waves replaced all mathematics"
+      ],
+      "answer": "Meaning is conveyed electronically via the digital signal or digit rather than strictly spoken rhetoric",
+      "explanation": "The digital world is a direct offspring of scientific advances in electricity, magnetism, and computing."
+    },
+    {
+      "id": "sts-s5-17",
+      "type": "multiple-choice",
+      "topic": "The World Wide Web",
+      "question": "Who invented the World Wide Web (alongside Robert Cailliau), at which research organization, and for what immediate scientific need?",
+      "options": [
+        "Sir Tim Berners-Lee at CERN (European Organization for Nuclear Research) to process and share massive scientific data from CERN's atom smasher",
+        "Bill Joy at Sun Microsystems to sell smartphones",
+        "Alan Turing in London to forecast hurricanes",
+        "Samuel Kier in Pennsylvania to refine kerosene"
+      ],
+      "answer": "Sir Tim Berners-Lee at CERN (European Organization for Nuclear Research) to process and share massive scientific data from CERN's atom smasher",
+      "explanation": "Berners-Lee used a NeXT computer at CERN as the very first Web server to handle the ocean of particle-accelerator data."
+    },
+    {
+      "id": "sts-s5-18",
+      "type": "multiple-choice",
+      "topic": "Information Age Risks",
+      "question": "What are the major social and ethical risks of today's ease of information sharing on social media?",
+      "options": [
+        "Total lack of internet speed",
+        "Disinformation (half-truths/lies), echo chambers reinforcing biases, political manipulation/harassment, and vulnerability to identity theft and online scams",
+        "Inability to print paper newspapers",
+        "Excessive meditative thinking"
+      ],
+      "answer": "Disinformation (half-truths/lies), echo chambers reinforcing biases, political manipulation/harassment, and vulnerability to identity theft and online scams",
+      "explanation": "Echo chambers limit exposure to clashing ideas, while easy access to personal data requires constant digital vigilance."
+    },
+    {
+      "id": "sts-s5-19",
+      "type": "multiple-choice",
+      "topic": "Latin Root of Science",
+      "question": "From which Latin verb does the word 'science' originate, and what does it mean?",
+      "options": [
+        "scire — 'to know'",
+        "tekhnē — 'to carve'",
+        "klima — 'to slope'",
+        "gestell — 'to frame'"
+      ],
+      "answer": "scire — 'to know'",
+      "explanation": "Science derives from the Latin scire ('to know'), reflecting the ancient quest to systematically understand nature."
+    },
+    {
+      "id": "sts-s5-20",
+      "type": "multiple-choice",
+      "topic": "Cryptography Activity",
+      "question": "In Chapter 8's activity, what is a 'Caesar cipher' (simple substitution cipher)?",
+      "options": [
+        "A method of encrypting plaintext by shifting or rotating each alphabet letter systematically (e.g., 'I know you' -> 'J lopx zpv' with a left shift of 1)",
+        "A Roman stone newspaper engraved in the Forum",
+        "A genetic codon table of 64 nucleotides",
+        "A type of steam engine valve"
+      ],
+      "answer": "A method of encrypting plaintext by shifting or rotating each alphabet letter systematically (e.g., 'I know you' -> 'J lopx zpv' with a left shift of 1)",
+      "explanation": "Julius Caesar used letter-shift substitution ciphers for private military and political correspondence."
+    },
+    {
+      "id": "sts-s5-21",
+      "type": "multiple-choice",
+      "topic": "UDHR Article Matching",
+      "question": "Which UDHR protections are guaranteed under Articles 3, 4, and 5 respectively?",
+      "options": [
+        "Art 3: Life, liberty, and security; Art 4: Freedom from slavery/servitude; Art 5: Freedom from torture or cruel/degrading treatment",
+        "Art 3: Free internet; Art 4: Patent ownership; Art 5: Free air travel",
+        "Art 3: Taxation; Art 4: Military service; Art 5: Voting age",
+        "Art 3: Copyright; Art 4: Land ownership; Art 5: Banking privacy"
+      ],
+      "answer": "Art 3: Life, liberty, and security; Art 4: Freedom from slavery/servitude; Art 5: Freedom from torture or cruel/degrading treatment",
+      "explanation": "The first seven UDHR articles safeguard fundamental dignity, liberty, anti-slavery, anti-torture, and legal equality."
+    },
+    {
+      "id": "sts-s5-22",
+      "type": "multiple-choice",
+      "topic": "AI Ethical Questions",
+      "question": "As AI and humanoid robots become more human-like, what dual ethical dilemma does Chapter 7 highlight?",
+      "options": [
+        "Only battery recycling costs",
+        "How to protect human dignity/jobs from replacement and machine errors, AND whether future sentient-like AI would itself require ethical treatment",
+        "Whether robots prefer oil or acrylic paint",
+        "Whether Google should replace universities"
+      ],
+      "answer": "How to protect human dignity/jobs from replacement and machine errors, AND whether future sentient-like AI would itself require ethical treatment",
+      "explanation": "As machines gain human-like decision-making, society must safeguard both human workers and ethical accountability."
+    },
+    {
+      "id": "sts-s5-23",
+      "type": "multiple-choice",
+      "topic": "Eidos & Preservation",
+      "question": "During Western periods of warfare and instability before the 15th century, how were ancient words and ideas preserved prior to the printing press?",
+      "options": [
+        "Through manual hand-copying by scribes",
+        "Through cloud backups at CERN",
+        "Through radio broadcasts",
+        "Through photographic film"
+      ],
+      "answer": "Through manual hand-copying by scribes",
+      "explanation": "Manual hand-copying preserved scholarly texts until Gutenberg's printing press enabled global communities of thinkers."
+    },
+    {
+      "id": "sts-s5-24",
+      "type": "multiple-choice",
+      "topic": "Promise vs. Peril of GNR",
+      "question": "Why do scientists continue pursuing Genetics, Nanotechnology, and Robotics despite Bill Joy's warnings?",
+      "options": [
+        "Because GNR promises disease cures, nanomedicine, extended lifespans, and improved quality of life—where small sensible advances accumulate into immense power",
+        "Because GNR has no medical applications",
+        "Because Joy proved GNR is impossible",
+        "Because nuclear weapons were outlawed in 1945"
+      ],
+      "answer": "Because GNR promises disease cures, nanomedicine, extended lifespans, and improved quality of life—where small sensible advances accumulate into immense power",
+      "explanation": "Each incremental step appears beneficial, making it crucial to exercise circumspection and ethical questioning."
+    },
+    {
+      "id": "sts-s5-25",
+      "type": "multiple-choice",
+      "topic": "Information vs. Noise",
+      "question": "What critical question opens Chapter 8 ('Information Society') regarding television, smartphones, and the internet?",
+      "options": [
+        "How fast can 5G download movies?",
+        "Do modern devices provide genuine information, knowledge, and truth—or merely overwhelming noise?",
+        "Which smartphone brand has the brightest screen?",
+        "Why did Gutenberg invent the television?"
+      ],
+      "answer": "Do modern devices provide genuine information, knowledge, and truth—or merely overwhelming noise?",
+      "explanation": "Distinguishing truthful, meaningful knowledge from noise and disinformation is the defining challenge of the Information Age."
+    },
+    {
+      "id": "sts-s5-26",
+      "type": "multiple-choice",
+      "topic": "Historical Link: Radio & TV",
+      "question": "According to Chapter 8, which scientific discoveries directly made the invention of radio and television possible?",
+      "options": [
+        "Discoveries about electricity, magnetism, and electromagnetic waves shared through scholarly publications",
+        "Sumerian cuneiform tablets",
+        "Mayan floating gardens",
+        "Egyptian papyrus ink"
+      ],
+      "answer": "Discoveries about electricity, magnetism, and electromagnetic waves shared through scholarly publications",
+      "explanation": "Scientific knowledge printed and shared across communities fed directly into technological breakthroughs like radio and TV."
+    },
+    {
+      "id": "sts-s5-27",
+      "type": "multiple-choice",
+      "topic": "Greek Wonder at Language",
+      "question": "Why did the ability to name and classify natural objects mark humanity's 'first step toward knowledge'?",
+      "options": [
+        "Because naming and classifying allowed humans to describe, differentiate, and explain things (e.g., how a tree differs from a flower or rock)",
+        "Because names generated electricity",
+        "Because it eliminated the need for observation",
+        "Because it was required by the Roman Senate"
+      ],
+      "answer": "Because naming and classifying allowed humans to describe, differentiate, and explain things (e.g., how a tree differs from a flower or rock)",
+      "explanation": "Language provides the conceptual framework for scientific observation, classification, and shared inquiry."
+    },
+    {
+      "id": "sts-s5-28",
+      "type": "multiple-choice",
+      "topic": "Nietzsche Quote in Ch. 7",
+      "question": "At the close of 'Why the Future Does Not Need Us,' what does Friedrich Nietzsche's line 'The wasteland grows; woe unto him who harbors the wasteland within' warn against?",
+      "options": [
+        "Desert farming techniques",
+        "Allowing human arrogance, vanity, and unrestrained technological power to corrupt our inner humanity and destroy the world",
+        "Planting trees in urban parks",
+        "Studying environmental science"
+      ],
+      "answer": "Allowing human arrogance, vanity, and unrestrained technological power to corrupt our inner humanity and destroy the world",
+      "explanation": "Ethical restraint and inner moral grounding must match our growing scientific power."
+    },
+    {
+      "id": "sts-s5-29",
+      "type": "multiple-choice",
+      "topic": "UDHR Articles 6 & 7",
+      "question": "What rights are protected by Articles 6 and 7 of the Universal Declaration of Human Rights?",
+      "options": [
+        "Art 6: Recognition everywhere as a person before the law; Art 7: Equality before the law and equal protection against discrimination",
+        "Art 6: Right to free smartphones; Art 7: Right to own patents",
+        "Art 6: Right to free travel; Art 7: Right to tax exemption",
+        "Art 6: Right to silence; Art 7: Right to privacy only for corporations"
+      ],
+      "answer": "Art 6: Recognition everywhere as a person before the law; Art 7: Equality before the law and equal protection against discrimination",
+      "explanation": "Articles 6 and 7 ensure universal legal standing and non-discriminatory protection under the law."
+    },
+    {
+      "id": "sts-s5-30",
+      "type": "multiple-choice",
+      "topic": "Responsible Tech Use",
+      "question": "What core civic duty does Chapter 8 emphasize for citizens navigating modern information technologies?",
+      "options": [
+        "Disconnect permanently from all electricity",
+        "Remain vigilant against scams/identity theft, verify truth against disinformation, and use technology responsibly without harming others or ourselves",
+        "Share every unverified rumor immediately",
+        "Ignore privacy settings completely"
+      ],
+      "answer": "Remain vigilant against scams/identity theft, verify truth against disinformation, and use technology responsibly without harming others or ourselves",
+      "explanation": "From ancient sails to the World Wide Web, technology requires ethical responsibility alongside curiosity."
+    }
+  ]
+}

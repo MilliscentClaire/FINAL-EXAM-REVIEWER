@@ -1,0 +1,433 @@
+{
+  "id": "sts-s2-intellectual-revolutions",
+  "course": "Science, Technology, and Society",
+  "sectionOrder": 2,
+  "sectionLabel": "Section 2",
+  "title": "The Scientific & Intellectual Revolutions",
+  "subject": "Science, Technology, and Society",
+  "description": "Four dimensions of science, the Engine of Discovery, Cradles of Early Science (Mesoamerica, Asia, Middle East, Africa), and the Copernican, Darwinian, and Freudian paradigm shifts.",
+  "sourceFile": "The Scientific Revolution (1).pdf, STS-WK1-MTWThF A book reference in STS.pdf, STS MIDTERM REVIEWER.docx",
+  "createdAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "sts-s2-01",
+      "type": "multiple-choice",
+      "topic": "Definitions of Science",
+      "question": "Which dimension defines science as 'a subject, discipline, field of study, or body of knowledge dealing with learning about the natural and physical world'?",
+      "options": [
+        "Science as an Idea",
+        "Science as an Intellectual Activity",
+        "Science as a Body of Knowledge",
+        "Science as a Personal and Social Activity"
+      ],
+      "answer": "Science as a Body of Knowledge",
+      "explanation": "The four dimensions are Idea (theories/explanations), Intellectual Activity (observation/experimentation), Body of Knowledge (academic discipline), and Personal/Social Activity."
+    },
+    {
+      "id": "sts-s2-02",
+      "type": "multiple-choice",
+      "topic": "Scientific Revolution Context",
+      "question": "When and where did the European Scientific Revolution occur, and what personal traits drove its scientists according to the slides and midterm reviewer?",
+      "options": [
+        "16th to 18th century in Europe; driven by creativity, curiosity, critical thinking, and deep passion to discover—not clamor for publicity",
+        "5th century BCE in Egypt; driven solely by royal military decrees",
+        "20th century in Antarctica; driven by social media fame",
+        "12th century in Rome; driven by avoidance of observation"
+      ],
+      "answer": "16th to 18th century in Europe; driven by creativity, curiosity, critical thinking, and deep passion to discover—not clamor for publicity",
+      "explanation": "Creativity, curiosity, and critical thinking drove scientists to generate science ideas, discoveries, and technology, often facing persecution."
+    },
+    {
+      "id": "sts-s2-03",
+      "type": "multiple-choice",
+      "topic": "Cradles of Early Science",
+      "question": "During the Golden Age of Islam in the Middle East, which scholar is paired with Optics, Algorithms/Algebra, Chemistry, and Clinical Pharmacology respectively?",
+      "options": [
+        "Ibn al-Haytham (Optics), al-Khwarizmi (Algorithms/Algebra), Jabir ibn Hayyan (Chemistry), Ibn Sina (Clinical pharmacology)",
+        "Ptolemy (Optics), Copernicus (Algebra), Darwin (Chemistry), Freud (Pharmacology)",
+        "Aryabhata (Optics), Galileo (Algebra), Pasteur (Chemistry), Kier (Pharmacology)",
+        "Plato (Optics), Aristotle (Algebra), Newton (Chemistry), Gutenberg (Pharmacology)"
+      ],
+      "answer": "Ibn al-Haytham (Optics), al-Khwarizmi (Algorithms/Algebra), Jabir ibn Hayyan (Chemistry), Ibn Sina (Clinical pharmacology)",
+      "explanation": "The Middle East placed strong value on empirical science experiments through pioneers like Ibn al-Haytham, al-Khwarizmi, Jabir ibn Hayyan, and Ibn Sina."
+    },
+    {
+      "id": "sts-s2-04",
+      "type": "multiple-choice",
+      "topic": "Cradles of Early Science",
+      "question": "Which early Asian achievements are highlighted in 'Cradles of Early Science'?",
+      "options": [
+        "India: Ayurveda, early spherical Earth theories, Aryabhata's trigonometry, Mohenjo-daro ruler; China: acupuncture, compass, papermaking, gunpowder, printing, first seismological detector",
+        "India: Gutenberg press and clepsydra; China: Roman numerals and pyramids",
+        "India: Darwinian evolution; China: psychoanalytic dream analysis",
+        "India: chinampas; China: quipu knotted cords"
+      ],
+      "answer": "India: Ayurveda, early spherical Earth theories, Aryabhata's trigonometry, Mohenjo-daro ruler; China: acupuncture, compass, papermaking, gunpowder, printing, first seismological detector",
+      "explanation": "Both India and China made foundational scientific and technological contributions long before modern European science."
+    },
+    {
+      "id": "sts-s2-05",
+      "type": "multiple-choice",
+      "topic": "Copernican Revolution",
+      "question": "Whose cosmological model dominated Western thought for roughly 1,500 years prior to Copernicus, placing an immobile Earth at the center of the universe?",
+      "options": [
+        "Johannes Kepler",
+        "Claudius Ptolemy (Geocentric Model)",
+        "Isaac Newton",
+        "Galileo Galilei"
+      ],
+      "answer": "Claudius Ptolemy (Geocentric Model)",
+      "explanation": "Ptolemy's geocentric model held that the sun, moon, and planets revolved around a stationary Earth and was endorsed by Church doctrine."
+    },
+    {
+      "id": "sts-s2-06",
+      "type": "multiple-choice",
+      "topic": "Copernican Revolution",
+      "question": "What was Nicolaus Copernicus's primary method in formulating heliocentrism, and what 1543 publication officially sparked the Scientific Revolution?",
+      "options": [
+        "Deep-space radio telescopes; 'On the Origin of Species'",
+        "A profound 'thought experiment' (rather than extensive physical testing); 'De revolutionibus orbium coelestium' (1543)",
+        "Sea voyages to the Galapagos; 'Commentariolus'",
+        "Free association interviews; 'The Descent of Man'"
+      ],
+      "answer": "A profound 'thought experiment' (rather than extensive physical testing); 'De revolutionibus orbium coelestium' (1543)",
+      "explanation": "Copernicus drafted his ideas in Commentariolus (1508–1514) and published De revolutionibus orbium coelestium in 1543."
+    },
+    {
+      "id": "sts-s2-07",
+      "type": "multiple-choice",
+      "topic": "Copernican Revolution",
+      "question": "In Copernicus's early manuscript 'Commentariolus,' what triple motion of the Earth did he propose?",
+      "options": [
+        "Melting, freezing, and boiling",
+        "Daily rotation on its axis, annual revolution around the Sun, and axial precession",
+        "Tectonic drift, ocean tides, and volcanic eruption",
+        "Linear gravity, elliptical warping, and solar eclipse"
+      ],
+      "answer": "Daily rotation on its axis, annual revolution around the Sun, and axial precession",
+      "explanation": "Copernicus posited Earth's daily axial rotation, yearly solar orbit, and gradual axial precession."
+    },
+    {
+      "id": "sts-s2-08",
+      "type": "multiple-choice",
+      "topic": "Copernican Revolution",
+      "question": "How did Copernicus's heliocentric model explain the apparent backward (retrograde) motion of outer planets?",
+      "options": [
+        "Planets randomly reverse direction whenever comets pass",
+        "It is an optical illusion caused by Earth overtaking slower outer planets in its faster orbit around the Sun",
+        "The Sun orbits the Moon every thirty days",
+        "The Catholic Church decreed the stars were static"
+      ],
+      "answer": "It is an optical illusion caused by Earth overtaking slower outer planets in its faster orbit around the Sun",
+      "explanation": "Heliocentrism eliminated Ptolemy's cumbersome equants by explaining retrograde motion naturally via relative orbital speeds."
+    },
+    {
+      "id": "sts-s2-09",
+      "type": "multiple-choice",
+      "topic": "Copernican Revolution",
+      "question": "Which geometric flaw did Copernicus retain in his heliocentric model that was later corrected by Johannes Kepler?",
+      "options": [
+        "He placed the Moon at the center of the galaxy",
+        "He retained circular orbits and epicycles instead of elliptical orbits",
+        "He claimed Earth had no gravity",
+        "He omitted Mercury and Venus"
+      ],
+      "answer": "He retained circular orbits and epicycles instead of elliptical orbits",
+      "explanation": "Kepler later demonstrated that planetary orbits are ellipses rather than perfect circles."
+    },
+    {
+      "id": "sts-s2-10",
+      "type": "multiple-choice",
+      "topic": "Copernican Revolution",
+      "question": "Why did the Catholic Church initially reject and ban Copernicus's heliocentric model in the 16th century?",
+      "options": [
+        "Because his math was written in Chinese characters",
+        "It was judged heretical for contradicting prevailing religious beliefs that Earth was created first at the center of the universe",
+        "Because Copernicus refused to use Latin",
+        "Because astronomers proved the Sun orbited Jupiter"
+      ],
+      "answer": "It was judged heretical for contradicting prevailing religious beliefs that Earth was created first at the center of the universe",
+      "explanation": "Despite persecution and Church bans, astronomers gradually adopted heliocentrism because it resolved geocentric inconsistencies and launched modern astronomy."
+    },
+    {
+      "id": "sts-s2-11",
+      "type": "multiple-choice",
+      "topic": "Darwinian Revolution",
+      "question": "Before Charles Darwin's evolutionary theory, what was the dominant view regarding species and human origins?",
+      "options": [
+        "Species evolved continuously via random mutations",
+        "Biblical design: humans held a privileged special creation and species were static and unchanging over time",
+        "All organisms evolved from ocean algae within ten years",
+        "Humanity was shaped solely by unconscious dreams"
+      ],
+      "answer": "Biblical design: humans held a privileged special creation and species were static and unchanging over time",
+      "explanation": "Darwinism challenged static creationism and anthropocentrism with an evidence-based evolutionary framework."
+    },
+    {
+      "id": "sts-s2-12",
+      "type": "multiple-choice",
+      "topic": "Darwinian Revolution",
+      "question": "What five-year expedition heavily shaped Charles Darwin's observational evidence for natural selection?",
+      "options": [
+        "A desert trek across Mesopotamia",
+        "A survey voyage aboard the HMS Beagle, especially observations at the Galápagos Islands",
+        "A polar expedition to Antarctica using satellites",
+        "A submarine dive to the Mariana Trench"
+      ],
+      "answer": "A survey voyage aboard the HMS Beagle, especially observations at the Galápagos Islands",
+      "explanation": "Darwin's specimen collection and extraordinary observational skills aboard HMS Beagle underpinned his theory."
+    },
+    {
+      "id": "sts-s2-13",
+      "type": "multiple-choice",
+      "topic": "Darwinian Revolution",
+      "question": "In his 1859 landmark book 'On the Origin of Species,' what mechanism did Darwin propose to explain how populations adapt and evolve over generations?",
+      "options": [
+        "Natural selection ('descent with modification')",
+        "Heliocentric gravitation",
+        "Psychoanalytic repression",
+        "Spontaneous alchemy"
+      ],
+      "answer": "Natural selection ('descent with modification')",
+      "explanation": "Traits enhancing survival and reproduction in a given environment are passed on, gradually transforming populations."
+    },
+    {
+      "id": "sts-s2-14",
+      "type": "multiple-choice",
+      "topic": "Darwinian Revolution",
+      "question": "How did Darwin's 1871 book 'The Descent of Man' extend his evolutionary framework?",
+      "options": [
+        "It argued humans were immune to evolution",
+        "It applied evolution directly to human origins and introduced Sexual Selection (mate competition and choice) to explain traits like sexual dimorphism",
+        "It proposed that planets evolve through natural selection",
+        "It introduced the id, ego, and superego"
+      ],
+      "answer": "It applied evolution directly to human origins and introduced Sexual Selection (mate competition and choice) to explain traits like sexual dimorphism",
+      "explanation": "The Descent of Man placed humans within the animal kingdom, overturning anthropocentrism."
+    },
+    {
+      "id": "sts-s2-15",
+      "type": "multiple-choice",
+      "topic": "Darwinian Revolution",
+      "question": "Philosophically, what two long-held doctrines did the Darwinian Revolution replace with empirical, naturalistic science?",
+      "options": [
+        "Empiricism and heliocentrism",
+        "Teleology (fixed divine design governing nature) and anthropocentrism (humans as separate from the animal kingdom)",
+        "Mathematics and astronomy",
+        "Structuralism and functionalism"
+      ],
+      "answer": "Teleology (fixed divine design governing nature) and anthropocentrism (humans as separate from the animal kingdom)",
+      "explanation": "Evolution shifted biology from supernatural teleology and human exceptionalism to evidence-based observation."
+    },
+    {
+      "id": "sts-s2-16",
+      "type": "multiple-choice",
+      "topic": "History of Psychology",
+      "question": "Before Freud, who established the first psychology laboratory in 1879 (Structuralism via introspection) and who championed Functionalism?",
+      "options": [
+        "Wilhelm Wundt (Structuralism); William James (Functionalism)",
+        "Nicolaus Copernicus; Charles Darwin",
+        "Isaac Newton; Galileo Galilei",
+        "John Dewey; Immanuel Kant"
+      ],
+      "answer": "Wilhelm Wundt (Structuralism); William James (Functionalism)",
+      "explanation": "Psychology transitioned from philosophy toward science through Wundt's 1879 lab, James's Functionalism, and Freud's clinical psychoanalysis."
+    },
+    {
+      "id": "sts-s2-17",
+      "type": "multiple-choice",
+      "topic": "Freudian Revolution",
+      "question": "Prior to Sigmund Freud, how was psychology commonly classified, and what assumption did society hold about human rationality?",
+      "options": [
+        "Classified as nuclear physics; humans viewed as robots",
+        "Classified under philosophy/art rather than science; humans viewed as inherently rational while mental illness was largely misunderstood",
+        "Classified as astronomy; humans viewed as purely aquatic",
+        "Classified as agronomy; mental disorders did not exist"
+      ],
+      "answer": "Classified under philosophy/art rather than science; humans viewed as inherently rational while mental illness was largely misunderstood",
+      "explanation": "Freud disrupted the assumption of pure human rationality by demonstrating the powerful influence of the unconscious mind."
+    },
+    {
+      "id": "sts-s2-18",
+      "type": "multiple-choice",
+      "topic": "Freudian Revolution",
+      "question": "In Sigmund Freud's psychoanalytic model of personality, what are the roles of the Id, Ego, and Superego?",
+      "options": [
+        "Id: moral conscience; Ego: animal instincts; Superego: logical compromise",
+        "Id: instinctual pleasure-driven drives; Ego: realistic mediating agent; Superego: moral conscience",
+        "Id: conscious math skills; Ego: sleeping dreams; Superego: muscle reflexes",
+        "Id: social media habits; Ego: short-term memory; Superego: genetics"
+      ],
+      "answer": "Id: instinctual pleasure-driven drives; Ego: realistic mediating agent; Superego: moral conscience",
+      "explanation": "Freud argued that human personality emerges from the ongoing tension among the instinctual id, realistic ego, and moral superego."
+    },
+    {
+      "id": "sts-s2-19",
+      "type": "multiple-choice",
+      "topic": "Freudian Revolution",
+      "question": "Which three clinical techniques did Freud use to uncover hidden thoughts and desires inside the unconscious mind?",
+      "options": [
+        "Telescopes, microscopes, and water clocks",
+        "Free association, dream analysis, and analyzing slips of the tongue ('Freudian slips')",
+        "Natural selection, gene splicing, and carbon dating",
+        "Enframing, poiesis, and calculative thinking"
+      ],
+      "answer": "Free association, dream analysis, and analyzing slips of the tongue ('Freudian slips')",
+      "explanation": "Freud used free association, dream interpretation, and verbal slips to probe unconscious conflicts rooted in early childhood."
+    },
+    {
+      "id": "sts-s2-20",
+      "type": "multiple-choice",
+      "topic": "Freudian Revolution",
+      "question": "Why did 'science hardliners' initially dismiss Freud's psychoanalysis, and what ultimately earned psychology recognition as a science?",
+      "options": [
+        "Because it lacked experimental/empirical data and felt unorthodox (focusing on sexuality); Freud refined it into an effective clinical method for treating mental disorders",
+        "Because Freud refused to publish in German or English",
+        "Because psychoanalysis relied exclusively on chemical blood tests",
+        "Because Freud claimed the Earth was flat"
+      ],
+      "answer": "Because it lacked experimental/empirical data and felt unorthodox (focusing on sexuality); Freud refined it into an effective clinical method for treating mental disorders",
+      "explanation": "Despite intense academic controversy, Freud's clinical framework helped establish psychology as a recognized scientific discipline."
+    },
+    {
+      "id": "sts-s2-21",
+      "type": "multiple-choice",
+      "topic": "Synthesis of Paradigm Shifts",
+      "question": "According to the 'Synthesis: The Anatomy of a Paradigm Shift' chart, what was the source of controversy for Copernicus, Darwin, and Freud respectively?",
+      "options": [
+        "Copernicus: heresy against the Catholic Church; Darwin: challenged religious/unscientific ideas of human origin; Freud: unorthodox focus on human sexuality and inner nature",
+        "All three were criticized solely for poor spelling",
+        "Copernicus: high printing costs; Darwin: ocean piracy; Freud: lack of hospital beds",
+        "Copernicus: alchemy; Darwin: meteorology; Freud: astrophysics"
+      ],
+      "answer": "Copernicus: heresy against the Catholic Church; Darwin: challenged religious/unscientific ideas of human origin; Freud: unorthodox focus on human sexuality and inner nature",
+      "explanation": "Each thinker overturned deeply entrenched cultural dogma and provoked initial resistance before transforming science."
+    },
+    {
+      "id": "sts-s2-22",
+      "type": "multiple-choice",
+      "topic": "Paradigm Shifts",
+      "question": "What common lesson do the Copernican, Darwinian, and Freudian revolutions reveal about how science relates to society?",
+      "options": [
+        "Scientific revolutions operate completely isolated from public beliefs",
+        "Scientific breakthroughs challenge dominant dogma, reshape human self-understanding, and transform society's worldview",
+        "Society immediately accepts every revolutionary scientific idea without debate",
+        "Only ancient Greek theories can ever be valid"
+      ],
+      "answer": "Scientific breakthroughs challenge dominant dogma, reshape human self-understanding, and transform society's worldview",
+      "explanation": "Intellectual revolutions demonstrate the deep two-way interaction between scientific inquiry and societal beliefs."
+    },
+    {
+      "id": "sts-s2-23",
+      "type": "multiple-choice",
+      "topic": "Copernican Revolution",
+      "question": "What famous motto did Nicolaus Copernicus declare regarding the technical rigor of his astronomical work?",
+      "options": [
+        "'Earth is the immovable throne of creation.'",
+        "'Mathematics is written for mathematicians.'",
+        "'The unconscious never sleeps.'",
+        "'Only the fittest survive.'"
+      ],
+      "answer": "'Mathematics is written for mathematicians.'",
+      "explanation": "Copernicus underscored the mathematical foundation of his heliocentric astronomy with this statement."
+    },
+    {
+      "id": "sts-s2-24",
+      "type": "multiple-choice",
+      "topic": "Darwinian Revolution",
+      "question": "Eventually, how did many people reconcile Charles Darwin's theory of evolution with religious faith?",
+      "options": [
+        "By banning biology from all schools",
+        "By recognizing that evolution was not inherently against Church teachings and that science and faith can coexist",
+        "By replacing natural selection with geocentrism",
+        "By declaring all species ceased changing in 1859"
+      ],
+      "answer": "By recognizing that evolution was not inherently against Church teachings and that science and faith can coexist",
+      "explanation": "The textbook notes that after intense debate, people came to see that evolution and religious faith need not be mutually exclusive."
+    },
+    {
+      "id": "sts-s2-25",
+      "type": "multiple-choice",
+      "topic": "Information Revolution",
+      "question": "How did the Midterm Reviewer trace the three major phases of the Information Revolution?",
+      "options": [
+        "1. Language & Mathematics (meta phusis & Newton) -> 2. Gutenberg's 15th-century printing press -> 3. Tim Berners-Lee's World Wide Web at CERN",
+        "1. Gunpowder -> 2. Kerosene -> 3. Amphibious tricycles",
+        "1. Hieroglyphics -> 2. Coal mining -> 3. Gene therapy",
+        "1. Telegraph -> 2. Papyrus -> 3. Water clock"
+      ],
+      "answer": "1. Language & Mathematics (meta phusis & Newton) -> 2. Gutenberg's 15th-century printing press -> 3. Tim Berners-Lee's World Wide Web at CERN",
+      "explanation": "Information evolved from spoken/written language and mathematical laws to printed mass media and global digital networks."
+    },
+    {
+      "id": "sts-s2-26",
+      "type": "multiple-choice",
+      "topic": "Cradles of Early Science",
+      "question": "In ancient Egypt (Africa), beyond pyramids, which scientific fields were notably practiced according to the Scientific Revolution slides?",
+      "options": [
+        "Geometry for Nile land boundaries, advanced alchemy, human anatomy, and solar/lunar calendars",
+        "Quantum computing and stem cell therapy",
+        "Locomotive railways and telegraph cables",
+        "Oil refining and nuclear fission"
+      ],
+      "answer": "Geometry for Nile land boundaries, advanced alchemy, human anatomy, and solar/lunar calendars",
+      "explanation": "Egyptians applied practical geometry along the Nile alongside astronomy, anatomy, and early chemistry/alchemy."
+    },
+    {
+      "id": "sts-s2-27",
+      "type": "multiple-choice",
+      "topic": "Cradles of Early Science",
+      "question": "In the 'Scientific Revolution' slides, why did the Golden Age of Islam accelerate scientific progress?",
+      "options": [
+        "Scholars placed greater value on empirical science experiments rather than relying solely on abstract thought",
+        "Islamic scholars forbade translating Greek or Indian manuscripts",
+        "They banned all mathematical treatises",
+        "They relied exclusively on oral poetry"
+      ],
+      "answer": "Scholars placed greater value on empirical science experiments rather than relying solely on abstract thought",
+      "explanation": "Empirical experimentation in optics, chemistry, medicine, and mathematics flourished during the Islamic Golden Age."
+    },
+    {
+      "id": "sts-s2-28",
+      "type": "multiple-choice",
+      "topic": "Engine of Discovery",
+      "question": "According to 'The Engine of Discovery' diagram in the Scientific Revolution slides, what three outputs emerge from scientists combining Creativity, Curiosity, and Critical Thinking?",
+      "options": [
+        "Science Ideas, Science Discoveries, and Technology",
+        "Fame, Political Office, and Military Conquest",
+        "Dogma, Superstition, and Secrecy",
+        "Patents, Advertising, and Censorship"
+      ],
+      "answer": "Science Ideas, Science Discoveries, and Technology",
+      "explanation": "Scientists' curiosity, creativity, and critical thinking produce scientific ideas, discoveries, and technological innovations."
+    },
+    {
+      "id": "sts-s2-29",
+      "type": "multiple-choice",
+      "topic": "Freudian Revolution",
+      "question": "According to Freud, what powerfully shapes adult personality, neuroses, and unconscious conflicts?",
+      "options": [
+        "Adult tax brackets",
+        "Early childhood experiences and unconscious drives",
+        "Planetary positions at birth",
+        "Daily caloric intake alone"
+      ],
+      "answer": "Early childhood experiences and unconscious drives",
+      "explanation": "Freud's developmental premise holds that early childhood experiences profoundly shape adult personality and neuroses."
+    },
+    {
+      "id": "sts-s2-30",
+      "type": "multiple-choice",
+      "topic": "Historical Continuity",
+      "question": "How do historical scientific revolutions directly connect to contemporary institutions according to the STS Midterm Reviewer?",
+      "options": [
+        "They have zero relevance to modern society",
+        "Cuneiform/papyrus evolved into web servers; irrigation/pasteurization formed modern sanitation/public health; ancient tools laid groundwork for automated supply chains",
+        "Modern computers are built out of Sumerian mud bricks",
+        "Only 21st-century inventions count as real technology"
+      ],
+      "answer": "Cuneiform/papyrus evolved into web servers; irrigation/pasteurization formed modern sanitation/public health; ancient tools laid groundwork for automated supply chains",
+      "explanation": "Modern technology and public institutions represent cumulative developments rooted in historical antecedents."
+    }
+  ]
+}

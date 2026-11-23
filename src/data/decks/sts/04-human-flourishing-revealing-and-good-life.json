@@ -1,0 +1,489 @@
+{
+  "id": "sts-s4-flourishing-heidegger-good-life",
+  "course": "Science, Technology, and Society",
+  "sectionOrder": 4,
+  "sectionLabel": "Section 4",
+  "title": "Human Flourishing, Heidegger's Revealing, Hickel & Aristotle's Good Life",
+  "subject": "Science, Technology, and Society",
+  "description": "Martin Heidegger's 'The Question Concerning Technology' (poiesis, aletheia, enframing, standing-reserve, art), Jason Hickel's de-development paradigm, and Aristotle's Nicomachean Ethics (eudaimonia & virtue).",
+  "sourceFile": "STS-WK1-MTWThF A book reference in STS.pdf, STS MIDTERM REVIEWER.docx",
+  "createdAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "sts-s4-01",
+      "type": "multiple-choice",
+      "topic": "Heidegger: Definitions",
+      "question": "What are the two common definitions of technology that Martin Heidegger calls 'instrumental' and 'anthropological'?",
+      "options": [
+        "Technology as a divine miracle and as an artistic hobby",
+        "Technology as a means to an end (instrumental) and as a human activity (anthropological)",
+        "Technology as pure mathematics and as biological evolution",
+        "Technology as profit and as entertainment"
+      ],
+      "answer": "Technology as a means to an end (instrumental) and as a human activity (anthropological)",
+      "explanation": "Heidegger notes both definitions are 'correct'—technology is an instrumentum and human activity—but do not yet reveal its deeper truth/essence."
+    },
+    {
+      "id": "sts-s4-02",
+      "type": "multiple-choice",
+      "topic": "Heidegger: Essence",
+      "question": "What does Martin Heidegger mean by his famous statement, 'The essence of technology is by no means anything technological'?",
+      "options": [
+        "Machines do not exist in physical reality",
+        "Technology's true essence lies not in gears, gadgets, or functions, but in how it serves as a mode of revealing truth and shaping our way of seeing reality",
+        "Only ancient wooden tools count as technology",
+        "Technology should be completely banned by governments"
+      ],
+      "answer": "Technology's true essence lies not in gears, gadgets, or functions, but in how it serves as a mode of revealing truth and shaping our way of seeing reality",
+      "explanation": "Regarding technology merely as 'neutral' tools makes us blind to its essence as a mode of revealing."
+    },
+    {
+      "id": "sts-s4-03",
+      "type": "multiple-choice",
+      "topic": "Heidegger: Greek Concepts",
+      "question": "Match Heidegger's three foundational Greek terms—aletheia, poiesis, and techne—to their meanings:",
+      "options": [
+        "aletheia: unhiddenness/truth/disclosure; poiesis: bringing-forth/producing (also poetry); techne: skill, art, or craft",
+        "aletheia: mining coal; poiesis: industrial factory; techne: banking system",
+        "aletheia: happiness; poiesis: citizenship; techne: political election",
+        "aletheia: planetary orbit; poiesis: natural selection; techne: psychoanalysis"
+      ],
+      "answer": "aletheia: unhiddenness/truth/disclosure; poiesis: bringing-forth/producing (also poetry); techne: skill, art, or craft",
+      "explanation": "In Heidegger's analysis, ancient techne belonged to poiesis—a harmonious bringing-forth that reveals truth (aletheia)."
+    },
+    {
+      "id": "sts-s4-04",
+      "type": "multiple-choice",
+      "topic": "Aristotle's Four Causes",
+      "question": "Using Heidegger's silver chalice example, which pairing correctly identifies Aristotle's four causes?",
+      "options": [
+        "Material: silver; Formal: chalice shape; Final: sacrificial rite (purpose); Efficient: silversmith (artisan)",
+        "Material: silversmith; Formal: silver; Final: table; Efficient: fire",
+        "Material: water; Formal: gold; Final: museum sale; Efficient: customer",
+        "Material: clay; Formal: square; Final: sacrifice; Efficient: sunlight"
+      ],
+      "answer": "Material: silver; Formal: chalice shape; Final: sacrificial rite (purpose); Efficient: silversmith (artisan)",
+      "explanation": "Heidegger traces causality back to the Greek 'aition' (being responsible or indebted to), revealing a poetic bringing-forth."
+    },
+    {
+      "id": "sts-s4-05",
+      "type": "multiple-choice",
+      "topic": "Heidegger: Aition",
+      "question": "How did the ancient Greek understanding of 'cause' (aition) differ from the modern mechanical notion of cause and effect?",
+      "options": [
+        "Aition meant random coincidence without responsibility",
+        "Aition meant indebtedness and being responsible for bringing something forth (e.g., Greeks revered the sun out of indebtedness, not merely as a mechanical energy source)",
+        "Aition meant forcing nature to obey factory schedules",
+        "Aition applied only to legal court trials"
+      ],
+      "answer": "Aition meant indebtedness and being responsible for bringing something forth (e.g., Greeks revered the sun out of indebtedness, not merely as a mechanical energy source)",
+      "explanation": "Tracing instrumentality back to fourfold aition uncovers the cooperative, poetic character of bringing-forth."
+    },
+    {
+      "id": "sts-s4-06",
+      "type": "multiple-choice",
+      "topic": "Poiesis vs. Challenging-Forth",
+      "question": "How does modern technology's mode of revealing differ from ancient techne/poiesis?",
+      "options": [
+        "Modern technology patiently waits for seasons without disturbing nature",
+        "Modern technology is an aggressive 'challenging-forth' (Herausfordern) that sets upon nature and forces it to yield energy and resources on demand",
+        "Modern technology never touches natural resources",
+        "Modern technology is identical to medieval poetry"
+      ],
+      "answer": "Modern technology is an aggressive 'challenging-forth' (Herausfordern) that sets upon nature and forces it to yield energy and resources on demand",
+      "explanation": "Contrast a wooden bridge built over the Rhine (working with the river) with a hydroelectric dam blocking and challenging the Rhine to yield power."
+    },
+    {
+      "id": "sts-s4-07",
+      "type": "multiple-choice",
+      "topic": "Heidegger: Enframing",
+      "question": "In Heidegger's philosophy, what is 'Enframing' (Gestell)?",
+      "options": [
+        "Hanging oil paintings inside wooden picture frames",
+        "The pervasive modern mindset that puts nature 'in a box' as a calculable, orderable, controllable system of resources",
+        "A photographic rule of nine equal squares",
+        "Refusing to own any smartphone or computer"
+      ],
+      "answer": "The pervasive modern mindset that puts nature 'in a box' as a calculable, orderable, controllable system of resources",
+      "explanation": "Enframing blocks poiesis by treating all of reality—and even people—solely as raw data or material to be controlled."
+    },
+    {
+      "id": "sts-s4-08",
+      "type": "multiple-choice",
+      "topic": "Heidegger: Standing-Reserve",
+      "question": "What does Heidegger call everything—including nature and humans—when Enframing reduces it to mere inventory waiting on call to be extracted, stockpiled, and consumed?",
+      "options": [
+        "Eudaimonia",
+        "Standing-reserve (Bestand)",
+        "Catharsis",
+        "Aletheia"
+      ],
+      "answer": "Standing-reserve (Bestand)",
+      "explanation": "Under Enframing, the Earth becomes a giant gas station and people become 'human resources'—mere standing-reserve."
+    },
+    {
+      "id": "sts-s4-09",
+      "type": "multiple-choice",
+      "topic": "Heidegger: Questioning",
+      "question": "Why did Heidegger write 'Questioning is the piety of thought,' and what did 'piety' mean to him here?",
+      "options": [
+        "Piety meant blind obedience to television commercials",
+        "Piety meant obedience and submission to what reflective thinking elicits, leading us to wonder at our true place in the universe",
+        "Piety meant performing religious rituals before turning on a computer",
+        "Piety meant memorizing engineering formulas without asking why"
+      ],
+      "answer": "Piety meant obedience and submission to what reflective thinking elicits, leading us to wonder at our true place in the universe",
+      "explanation": "Stepping back to question technology opens us to deeper truths beyond mere utility."
+    },
+    {
+      "id": "sts-s4-10",
+      "type": "multiple-choice",
+      "topic": "Calculative vs. Meditative Thinking",
+      "question": "How did Heidegger contrast 'calculative thinking' and 'meditative thinking'?",
+      "options": [
+        "Calculative thinking orders and controls nature into systems for utility; meditative thinking lets nature reveal itself without forcing it",
+        "Calculative thinking is only for poets; meditative thinking is only for accountants",
+        "Calculative thinking is evil and should be surgically removed; meditative thinking solves math equations",
+        "They are exact synonyms in German"
+      ],
+      "answer": "Calculative thinking orders and controls nature into systems for utility; meditative thinking lets nature reveal itself without forcing it",
+      "explanation": "Humans possess both faculties, yet fear of unpredictability pushes modern society toward calculative dominance."
+    },
+    {
+      "id": "sts-s4-11",
+      "type": "multiple-choice",
+      "topic": "Heidegger: The Danger",
+      "question": "What is the ultimate 'danger' of Enframing according to Heidegger, and why does merely refusing technology fail to free us?",
+      "options": [
+        "The danger is battery failure; refusing technology solves everything instantly",
+        "The danger is losing our essence and becoming standing-reserve ourselves; whether we blindly affirm or deny technology, or treat it as 'neutral,' we remain unfree and chained to it",
+        "The danger is too much poetry in schools",
+        "The danger is running out of silver chalices"
+      ],
+      "answer": "The danger is losing our essence and becoming standing-reserve ourselves; whether we blindly affirm or deny technology, or treat it as 'neutral,' we remain unfree and chained to it",
+      "explanation": "Heidegger warned we are delivered over to technology in the worst way when we regard it as something purely neutral."
+    },
+    {
+      "id": "sts-s4-12",
+      "type": "multiple-choice",
+      "topic": "Heidegger: Saving Power",
+      "question": "Quoting poet Friedrich Hölderlin ('But where danger is, grows the saving power also'), what does Heidegger propose as a 'way out of Enframing'?",
+      "options": [
+        "Building larger coal mines",
+        "Art (poiesis / techne), which awakens meditative thinking and reveals nature as poetic rather than mere standing-reserve",
+        "Replacing all humans with AI",
+        "Accelerating fossil fuel stockpiling"
+      ],
+      "answer": "Art (poiesis / techne), which awakens meditative thinking and reveals nature as poetic rather than mere standing-reserve",
+      "explanation": "Art restores a poetic dwelling upon the Earth ('...poetically man dwells upon this Earth') and balances calculative control."
+    },
+    {
+      "id": "sts-s4-13",
+      "type": "multiple-choice",
+      "topic": "Hickel: De-Development",
+      "question": "In Jason Hickel's article 'Forget developing poor countries, it's time to de-develop rich countries,' what is his central critique of the UN Sustainable Development Goals (SDGs)?",
+      "options": [
+        "Their goal of eradicating poverty is bad",
+        "Beneath the fanfare, their main strategy for ending poverty is still conventional economic growth—a 70-year strategy that hasn't worked and worsens ecological overshoot",
+        "They rely too heavily on Cuba and Costa Rica",
+        "They require rich nations to reduce advertising"
+      ],
+      "answer": "Beneath the fanfare, their main strategy for ending poverty is still conventional economic growth—a 70-year strategy that hasn't worked and worsens ecological overshoot",
+      "explanation": "Hickel notes that since 1980 the global economy grew 380%, yet people living under $5/day increased by over 1.1 billion."
+    },
+    {
+      "id": "sts-s4-14",
+      "type": "multiple-choice",
+      "topic": "Hickel: Biocapacity",
+      "question": "By how much is average global consumption currently overshooting Earth's annual biocapacity, and what is the sustainable per-person threshold?",
+      "options": [
+        "Overshooting by 5%; sustainable threshold is 10 global hectares",
+        "Overshooting by more than 50% each year; sustainable threshold is roughly 1.8 global hectares per person annually",
+        "Under-consuming by 50%; threshold is 0.1 hectares",
+        "Overshooting by 200%; threshold is 50 hectares"
+      ],
+      "answer": "Overshooting by more than 50% each year; sustainable threshold is roughly 1.8 global hectares per person annually",
+      "explanation": "Global hectares measure resource use and waste; US/Canada consume ~8 ha per person and Europe ~4.7 ha, far above 1.8 ha."
+    },
+    {
+      "id": "sts-s4-15",
+      "type": "multiple-choice",
+      "topic": "Hickel: Catching Down",
+      "question": "Which economist did Hickel cite who proposed getting rich countries to 'catch down' to appropriate levels of consumption instead of pushing poor countries to 'catch up'?",
+      "options": [
+        "Peter Edward",
+        "Immanuel Kant",
+        "Isaac Newton",
+        "Bill Joy"
+      ],
+      "answer": "Peter Edward",
+      "explanation": "Peter Edward argued we should look at societies achieving long, happy lives at sustainable consumption levels as exemplars of efficient living."
+    },
+    {
+      "id": "sts-s4-16",
+      "type": "multiple-choice",
+      "topic": "Hickel: Quality of Life",
+      "question": "Which country did Hickel highlight as achieving life expectancy comparable to the US (~79 years) and top literacy rates with a GDP per capita of only $6,000 and 1.9 global hectares?",
+      "options": [
+        "Canada",
+        "Cuba (alongside high-happiness Costa Rica at 1/4 US income)",
+        "Germany",
+        "Singapore"
+      ],
+      "answer": "Cuba (alongside high-happiness Costa Rica at 1/4 US income)",
+      "explanation": "Cuba and Costa Rica demonstrate high life expectancy, literacy, and happiness without excessive ecological footprints."
+    },
+    {
+      "id": "sts-s4-17",
+      "type": "multiple-choice",
+      "topic": "Hickel: Framing & Alternatives",
+      "question": "Why does Hickel say terms like 'de-growth' or 'de-development' face pushback, and what positive alternative framing/policies does he cite?",
+      "options": [
+        "They sound repulsive to ideas of human progress; instead he cites Latin America's indigenous 'buen vivir' (good living) and the Skidelskys' proposals (banning advertising, shorter work week, basic income)",
+        "Because nobody cares about climate change; he proposes tripling fossil fuel use",
+        "Because 70% of rich-country citizens want more consumption; he proposes abolishing weekends",
+        "Because GDP measures happiness perfectly"
+      ],
+      "answer": "They sound repulsive to ideas of human progress; instead he cites Latin America's indigenous 'buen vivir' (good living) and the Skidelskys' proposals (banning advertising, shorter work week, basic income)",
+      "explanation": "70% in middle/high-income nations already believe overconsumption puts society at risk; we must slow down voluntarily or climate change will force us."
+    },
+    {
+      "id": "sts-s4-18",
+      "type": "multiple-choice",
+      "topic": "Aristotle: Nicomachean Ethics",
+      "question": "According to Aristotle in 'Nicomachean Ethics,' what is 'the good'?",
+      "options": [
+        "Accumulating maximum luxury gadgets",
+        "That at which all human activities, arts, inquiries, and pursuits aim",
+        "Avoiding all community interaction",
+        "Maximizing short-term sensory pleasure regardless of harm"
+      ],
+      "answer": "That at which all human activities, arts, inquiries, and pursuits aim",
+      "explanation": "Aristotle opens Nicomachean Ethics by observing that every human action aims at some good."
+    },
+    {
+      "id": "sts-s4-19",
+      "type": "multiple-choice",
+      "topic": "Aristotle: Eudaimonia",
+      "question": "What are the Greek roots of 'eudaimonia,' and how is the concept defined in Chapter 6?",
+      "options": [
+        "eu ('good') + daimon ('spirit') — human flourishing marked by living well, doing well, happiness, and excellence",
+        "eu ('rich') + demos ('crowd') — winning political elections",
+        "ek ('out') + techne ('tool') — building industrial machines",
+        "auto ('self') + nomos ('law') — living alone in a bubble"
+      ],
+      "answer": "eu ('good') + daimon ('spirit') — human flourishing marked by living well, doing well, happiness, and excellence",
+      "explanation": "Eudaimonia is a flourishing life of meaningful endeavors that empower a person to become their best version."
+    },
+    {
+      "id": "sts-s4-20",
+      "type": "multiple-choice",
+      "topic": "Aristotle: Ultimate End",
+      "question": "Why does Aristotle identify happiness (eudaimonia) as the ultimate end of human action?",
+      "options": [
+        "Because we always choose happiness for its own sake and never merely as a means to something else",
+        "Because honor, wealth, and power require no effort",
+        "Because happiness only lasts for five minutes",
+        "Because virtue prevents happiness"
+      ],
+      "answer": "Because we always choose happiness for its own sake and never merely as a means to something else",
+      "explanation": "Things like wealth, honor, and pleasure are pursued for the sake of happiness, whereas happiness is chosen solely for itself."
+    },
+    {
+      "id": "sts-s4-21",
+      "type": "multiple-choice",
+      "topic": "Aristotle: Virtue & Pleasure",
+      "question": "How does Aristotle's view of happiness differ from Hedonism?",
+      "options": [
+        "Hedonism defines happiness as maximizing sensate pleasure and avoiding pain; Aristotle defines it as living a life of virtue and excellence",
+        "Hedonism values discipline; Aristotle values junk food",
+        "They are completely identical philosophies",
+        "Hedonism comes from Nicomachean Ethics"
+      ],
+      "answer": "Hedonism defines happiness as maximizing sensate pleasure and avoiding pain; Aristotle defines it as living a life of virtue and excellence",
+      "explanation": "Sensate convenience (like eating sugary processed food or neglecting the environment) undermines true flourishing."
+    },
+    {
+      "id": "sts-s4-22",
+      "type": "multiple-choice",
+      "topic": "Perspectives on Happiness",
+      "question": "In the Midterm Reviewer's comparison table of happiness perspectives, which perspective links happiness to a hormonal reward system (dopamine/oxytocin) promoting survival?",
+      "options": [
+        "Neurology",
+        "Hedonism",
+        "Eudaimonia",
+        "Behaviorism"
+      ],
+      "answer": "Neurology",
+      "explanation": "Psychology views emotional well-being; Behaviorism views positive-action emotions; Neurology views dopamine/oxytocin; Hedonism views pleasure; Eudaimonia views virtue/growth."
+    },
+    {
+      "id": "sts-s4-23",
+      "type": "multiple-choice",
+      "topic": "Aristotle: Two Kinds of Virtue",
+      "question": "What are Aristotle's two kinds of virtue, and how is each acquired?",
+      "options": [
+        "Intellectual virtue (owes birth and growth to teaching, requiring experience and time) and Moral virtue (comes about as a result of habit)",
+        "Physical virtue (born innate) and Financial virtue (inherited)",
+        "Technological virtue and Commercial virtue",
+        "Calculative virtue and Passive virtue"
+      ],
+      "answer": "Intellectual virtue (owes birth and growth to teaching, requiring experience and time) and Moral virtue (comes about as a result of habit)",
+      "explanation": "Excellence of character is NOT innate without practice—it is cultivated through constant, disciplined habit."
+    },
+    {
+      "id": "sts-s4-24",
+      "type": "multiple-choice",
+      "topic": "Aristotle: Community Flourishing",
+      "question": "True or False according to Chapter 6: 'The good life means I make sure I improve myself without needing to consider others.'",
+      "options": [
+        "True—Aristotle taught pure self-centered isolation.",
+        "False—the good life does not happen in a bubble; virtuous actions affect both the individual self and the greater community.",
+        "True—only one person can flourish at a time.",
+        "False—only animals can flourish."
+      ],
+      "answer": "False—the good life does not happen in a bubble; virtuous actions affect both the individual self and the greater community.",
+      "explanation": "Aristotelian flourishing requires shared well-being—others must flourish alongside us."
+    },
+    {
+      "id": "sts-s4-25",
+      "type": "multiple-choice",
+      "topic": "S&T and the Good Life",
+      "question": "How do science and technology relate to Aristotle's concept of the good life?",
+      "options": [
+        "Science and technology are inherently evil and never aid human flourishing",
+        "They are among the highest expressions of human faculties that help us thrive, provided we ground ourselves in virtue to avoid corruption",
+        "They automatically guarantee moral virtue without human discipline",
+        "They replace the need for ethical standards"
+      ],
+      "answer": "They are among the highest expressions of human faculties that help us thrive, provided we ground ourselves in virtue to avoid corruption",
+      "explanation": "Virtue guides how we use powerful scientific and technological capabilities responsibly."
+    },
+    {
+      "id": "sts-s4-26",
+      "type": "multiple-choice",
+      "topic": "Heidegger & Hickel Synthesis",
+      "question": "What parallel exists between Heidegger's 'Enframing' and Hickel's critique of growth-obsessed development?",
+      "options": [
+        "Both celebrate turning the entire planet into a limitless industrial warehouse",
+        "Both warn against reducing Earth and human flourishing to quantifiable extraction/consumption, urging a shift toward qualitative harmony and sufficiency",
+        "Both argue poor nations should triple their carbon footprint",
+        "Both reject art and community well-being"
+      ],
+      "answer": "Both warn against reducing Earth and human flourishing to quantifiable extraction/consumption, urging a shift toward qualitative harmony and sufficiency",
+      "explanation": "We have been 'enframed' by the notion of endless growth, forgetting qualitative well-being and planetary boundaries."
+    },
+    {
+      "id": "sts-s4-27",
+      "type": "multiple-choice",
+      "topic": "Heidegger: Watermill vs. Hydroplant",
+      "question": "Why does Heidegger compare a traditional watermill to a modern hydroelectric power plant on the Rhine River?",
+      "options": [
+        "To show the watermill moves in harmony with the river's natural rhythm, whereas the hydroplant dams and forces the river into standing-reserve",
+        "To prove watermills generate more megawatts than hydroplants",
+        "To argue rivers do not exist in Germany",
+        "To praise calculative stockpiling over poiesis"
+      ],
+      "answer": "To show the watermill moves in harmony with the river's natural rhythm, whereas the hydroplant dams and forces the river into standing-reserve",
+      "explanation": "The hydroelectric plant exemplifies modern challenging-forth—unlocking, transforming, storing, and distributing energy on demand."
+    },
+    {
+      "id": "sts-s4-28",
+      "type": "multiple-choice",
+      "topic": "Heidegger: Human Swallowed by Tech",
+      "question": "When is the human person 'swallowed by technology' according to Chapter 4?",
+      "options": [
+        "Whenever someone uses a pencil to write",
+        "When we stay constantly plugged online, lose authentic personal encounters, and refuse to surrender polluting conveniences that harm the Earth",
+        "Whenever we admire fine art in a museum",
+        "When we practice meditative thinking in nature"
+      ],
+      "answer": "When we stay constantly plugged online, lose authentic personal encounters, and refuse to surrender polluting conveniences that harm the Earth",
+      "explanation": "Recognizing human limits protects our essence from being consumed by technological conveniences."
+    },
+    {
+      "id": "sts-s4-29",
+      "type": "multiple-choice",
+      "topic": "Aristotle: Ancient Components",
+      "question": "In the Midterm Reviewer, which four ancient Greek components were linked to human flourishing?",
+      "options": [
+        "Phronesis (practical wisdom), Friendship, Wealth, and Power",
+        "Digital phones, Global travel, AI, and Fast food",
+        "Cuneiform, Papyrus, Gunpowder, and Steam",
+        "Enframing, Standing-reserve, Mining, and Coal"
+      ],
+      "answer": "Phronesis (practical wisdom), Friendship, Wealth, and Power",
+      "explanation": "Classical flourishing valued practical wisdom and friendship alongside sufficient external goods, whereas modern conceptions emphasize comfort and global networking."
+    },
+    {
+      "id": "sts-s4-30",
+      "type": "multiple-choice",
+      "topic": "Hickel: Global Perception",
+      "question": "What did recent consumer research cited by Hickel show about people in middle- and high-income countries?",
+      "options": [
+        "100% want to double their plastic waste",
+        "70% believe overconsumption is putting the planet and society at risk and that we should buy and own less without losing happiness",
+        "Only 2% have heard of climate change",
+        "Most believe Earth has infinite resources"
+      ],
+      "answer": "70% believe overconsumption is putting the planet and society at risk and that we should buy and own less without losing happiness",
+      "explanation": "Public intuition already senses that endless accumulation does not produce happiness."
+    },
+    {
+      "id": "sts-s4-31",
+      "type": "multiple-choice",
+      "topic": "Heidegger: Truth vs. Correctness",
+      "question": "How did Heidegger view the relationship between 'what is correct' and 'what is true'?",
+      "options": [
+        "They are complete opposites with no bridge",
+        "What is correct (e.g., instrumental utility) is not yet the full truth, but understanding what is correct can lead us toward discovering what is true",
+        "Only machines can determine truth",
+        "Truth is irrelevant to philosophy"
+      ],
+      "answer": "What is correct (e.g., instrumental utility) is not yet the full truth, but understanding what is correct can lead us toward discovering what is true",
+      "explanation": "Recognizing technology's instrumental correctness is a stepping stone to pondering its deeper essence as revealing."
+    },
+    {
+      "id": "sts-s4-32",
+      "type": "multiple-choice",
+      "topic": "Aristotle: Reading Exercise",
+      "question": "In Chapter 6's Reading Exercise, which statements are FALSE regarding Aristotle's Good Life?",
+      "options": [
+        "'One does not need to eat healthfully to live the good life' and 'Excellence of character is innate and does not have to be practiced'",
+        "'Eudaimonia means living and doing well' and 'Virtue is the constant practice of the good'",
+        "'Happiness is the ultimate end' and 'Aristotle wrote Nicomachean Ethics'",
+        "'Intellectual and moral are two kinds of virtue'"
+      ],
+      "answer": "'One does not need to eat healthfully to live the good life' and 'Excellence of character is innate and does not have to be practiced'",
+      "explanation": "Healthy living and disciplined habit are central to practicing virtue and attaining flourishing."
+    },
+    {
+      "id": "sts-s4-33",
+      "type": "multiple-choice",
+      "topic": "C.S. Lewis & Scientism Activity",
+      "question": "In Chapter 5's 'The Magician's Twin' reflection activity, what is 'scientism'?",
+      "options": [
+        "Using scientific data within ethical limits",
+        "Treating empirical science as the sole source of all truth and meaning, or elevating science to an unquestioned quasi-religious authority",
+        "Studying marine biology in college",
+        "Recycling household waste"
+      ],
+      "answer": "Treating empirical science as the sole source of all truth and meaning, or elevating science to an unquestioned quasi-religious authority",
+      "explanation": "C.S. Lewis warned that unchecked scientism—like magic—can seek power over nature and humanity without moral restraint."
+    },
+    {
+      "id": "sts-s4-34",
+      "type": "multiple-choice",
+      "topic": "Hickel: Urgent Warning",
+      "question": "According to Hickel, if rich nations do not slow down consumption voluntarily, what will force humanity to slow down?",
+      "options": [
+        "Lack of advertising agencies",
+        "Climate change, collapsing food systems, and ecological crisis",
+        "Too many libraries",
+        "Universal basic income"
+      ],
+      "answer": "Climate change, collapsing food systems, and ecological crisis",
+      "explanation": "Rethinking progress is both an ecological imperative and a human development necessity to prevent mass famine and collapse."
+    }
+  ]
+}

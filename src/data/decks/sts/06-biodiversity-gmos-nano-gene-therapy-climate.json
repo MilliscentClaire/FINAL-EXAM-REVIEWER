@@ -1,0 +1,503 @@
+{
+  "id": "sts-s6-special-topics-science",
+  "course": "Science, Technology, and Society",
+  "sectionOrder": 6,
+  "sectionLabel": "Section 6",
+  "title": "Biodiversity, GMOs, Nano World, Gene Therapy & Climate Change",
+  "subject": "Science, Technology, and Society",
+  "description": "Linnaeus's taxonomy & 2010 Biodiversity Year, Biotechnology/GMOs/Cartagena Protocol/Golden Rice, Nanoscale (10⁻⁹ m), Gene Therapy & Stem Cell cautions (Dr. Samuel Bernal), and Climate Change (Milankovitch parameters, Chaos Theory, Tyndall, Keeling Curve & tipping points).",
+  "sourceFile": "STS-WK1-MTWThF A book reference in STS.pdf, STS MIDTERM REVIEWER.docx",
+  "createdAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "sts-s6-01",
+      "type": "multiple-choice",
+      "topic": "Biodiversity & Taxonomy",
+      "question": "Who devised the hierarchical system of taxonomy still used today to classify and name living organisms, reflecting 'the One in the Many'?",
+      "options": [
+        "Charles Darwin",
+        "Carl Linnaeus (Swedish scientist)",
+        "Louis Pasteur",
+        "Milutin Milankovitch"
+      ],
+      "answer": "Carl Linnaeus (Swedish scientist)",
+      "explanation": "Linnaeus's taxonomy groups diverse species under shared genera, showing how living things are interrelated."
+    },
+    {
+      "id": "sts-s6-02",
+      "type": "multiple-choice",
+      "topic": "Biodiversity Statistics",
+      "question": "Roughly how many species have been identified so far on Earth, how many total are estimated, and what year did the UN declare the International Year of Biodiversity?",
+      "options": [
+        "~1.75 million identified (out of ~13 million estimated, ranging 3–100M); 2010",
+        "~100,000 identified; 1995",
+        "~50 million identified; 2020",
+        "~500 identified; 1948"
+      ],
+      "answer": "~1.75 million identified (out of ~13 million estimated, ranging 3–100M); 2010",
+      "explanation": "On December 20, 2006, the UN General Assembly declared 2010 the International Year of Biodiversity to raise awareness of species loss."
+    },
+    {
+      "id": "sts-s6-03",
+      "type": "multiple-choice",
+      "topic": "Biotechnology & GMOs",
+      "question": "How do 'biotechnology' and 'genetic engineering' differ according to the Biodiversity International module (Bragdon et al., 2005)?",
+      "options": [
+        "Biotechnology uses biological systems/organisms/derivatives to make or modify products; genetic engineering transfers genes/DNA between sources to create LMOs/GMOs",
+        "Biotechnology only builds computers; genetic engineering only studies rocks",
+        "They are banned under the UN Charter",
+        "Genetic engineering existed in ancient Sumeria"
+      ],
+      "answer": "Biotechnology uses biological systems/organisms/derivatives to make or modify products; genetic engineering transfers genes/DNA between sources to create LMOs/GMOs",
+      "explanation": "Recombinant DNA (gene splicing / transgenic technology) inserts selected trait genes from one species into an unrelated organism."
+    },
+    {
+      "id": "sts-s6-04",
+      "type": "multiple-choice",
+      "topic": "Genetic Modification Process",
+      "question": "During genetic modification (recombinant DNA technology), what is actually transferred from one organism into the host organism?",
+      "options": [
+        "The entire brain of the donor animal",
+        "Only specific isolated sections of a gene carrying the desired trait (not the whole DNA)",
+        "Whole organs transplanted surgically",
+        "Artificial plastic polymers"
+      ],
+      "answer": "Only specific isolated sections of a gene carrying the desired trait (not the whole DNA)",
+      "explanation": "A desired trait gene is identified, isolated, replicated, and inserted so the modified organism grows and replicates with that trait."
+    },
+    {
+      "id": "sts-s6-05",
+      "type": "multiple-choice",
+      "topic": "GMO Controversies",
+      "question": "According to Nicholson (2014) in Chapter 9, how can GMO corporate patents threaten 'farmer sovereignty' and food security?",
+      "options": [
+        "Companies holding GMO patents can sue farmers whose fields become contaminated by drifting pollen/seeds from neighboring farms",
+        "Patents force all crops to grow twice as slowly",
+        "Patents prevent sunlight from reaching farms",
+        "Farmers are paid too much money by biotech firms"
+      ],
+      "answer": "Companies holding GMO patents can sue farmers whose fields become contaminated by drifting pollen/seeds from neighboring farms",
+      "explanation": "Alongside ecological disruption and biodiversity loss, corporate seed monopolies and patent lawsuits raise major ethical concerns."
+    },
+    {
+      "id": "sts-s6-06",
+      "type": "multiple-choice",
+      "topic": "Cartagena Protocol",
+      "question": "What is the purpose of the Cartagena Protocol on Biosafety (signed by the Philippines)?",
+      "options": [
+        "To ban all agriculture in biodiversity hotspots",
+        "To take a precautionary approach ensuring safe handling, transport, and informed consent before importing LMOs/GMOs that might harm biodiversity or human health",
+        "To set global fossil-fuel emission quotas",
+        "To regulate stem cell beauty clinics in Manila"
+      ],
+      "answer": "To take a precautionary approach ensuring safe handling, transport, and informed consent before importing LMOs/GMOs that might harm biodiversity or human health",
+      "explanation": "Because the Philippines is a global biodiversity hotspot, the Cartagena Protocol provides vital biosafety data before LMO imports."
+    },
+    {
+      "id": "sts-s6-07",
+      "type": "multiple-choice",
+      "topic": "Golden Rice Debate",
+      "question": "What nutrient was Golden Rice genetically engineered to provide, and what did Glenn Stone's Washington University study (reported by Gerry Everding, 2016) conclude?",
+      "options": [
+        "Vitamin C; it cured malaria by 2005",
+        "Vitamin A (beta-carotene); Golden Rice was still not market-ready and environmental activists were not mainly responsible for its slow rollout",
+        "Protein; farmers grew rich overnight",
+        "Calcium; it replaced all vegetables in Asia"
+      ],
+      "answer": "Vitamin A (beta-carotene); Golden Rice was still not market-ready and environmental activists were not mainly responsible for its slow rollout",
+      "explanation": "Heralded in 2000 for Vitamin A deficiency, Golden Rice faced scientific/breeding hurdles and remained controversial over corporate GMO adoption."
+    },
+    {
+      "id": "sts-s6-08",
+      "type": "multiple-choice",
+      "topic": "The Nano World",
+      "question": "What mathematical scale does the prefix 'nano' represent, and roughly how wide is a single strand of DNA?",
+      "options": [
+        "One millionth (10⁻⁶); 100 nanometers",
+        "One billionth (10⁻⁹) of a meter; about 3 nanometers wide",
+        "One thousandth (10⁻³); 1 millimeter",
+        "One trillionth (10⁻¹²); 50 micrometers"
+      ],
+      "answer": "One billionth (10⁻⁹) of a meter; about 3 nanometers wide",
+      "explanation": "A nanometer is 10⁻⁹ meters—DNA is ~3 nm wide, an aspirin molecule is ~0.5 nm, and a small nanoparticle is ~5 nm."
+    },
+    {
+      "id": "sts-s6-09",
+      "type": "multiple-choice",
+      "topic": "Nanoscale Comparisons",
+      "question": "In Figure 3.10 (US EPA), how do human hair (50–70 µm), fine beach sand (90 µm), PM₁₀, and PM₂.₅ compare in size?",
+      "options": [
+        "PM₂.₅ (<2.5 µm) and PM₁₀ (<10 µm) are far smaller than human hair (50–70 µm) and beach sand (90 µm)",
+        "PM₂.₅ is larger than a grain of beach sand",
+        "Human hair is smaller than a single atom",
+        "Pollen grains are ten times larger than beach sand"
+      ],
+      "answer": "PM₂.₅ (<2.5 µm) and PM₁₀ (<10 µm) are far smaller than human hair (50–70 µm) and beach sand (90 µm)",
+      "explanation": "The text also notes a particle of beach sand is almost ten times larger than a pollen grain."
+    },
+    {
+      "id": "sts-s6-10",
+      "type": "multiple-choice",
+      "topic": "Nanotechnology Applications",
+      "question": "What is nanotechnology, and which current innovations are cited in Chapter 10?",
+      "options": [
+        "Manipulation of matter on an atomic or subatomic scale; innovations include microprocessors and strain-resistant fabrics",
+        "Giant hydroelectric dam engineering",
+        "Open-pit coal mining",
+        "Traditional handloom textile dyeing"
+      ],
+      "answer": "Manipulation of matter on an atomic or subatomic scale; innovations include microprocessors and strain-resistant fabrics",
+      "explanation": "Specialized microscopes unlocked the nano world, promising breakthroughs in health, environment, and security."
+    },
+    {
+      "id": "sts-s6-11",
+      "type": "multiple-choice",
+      "topic": "Gene Therapy",
+      "question": "In Chapter 11, how is gene therapy conceptually explained for countering a condition like cancer cell growth?",
+      "options": [
+        "Finding the harmful gene among the 46 chromosomal structures, removing the faulty section, and replacing it with a 'correct' gene part",
+        "Replacing all blood cells with plastic nanoparticles",
+        "Exposing the patient to ultraviolet X-rays daily",
+        "Removing all 46 chromosomes permanently"
+      ],
+      "answer": "Finding the harmful gene among the 46 chromosomal structures, removing the faulty section, and replacing it with a 'correct' gene part",
+      "explanation": "Gene therapy corrects genetic misinformation at the molecular level, though high expertise makes it financially costly."
+    },
+    {
+      "id": "sts-s6-12",
+      "type": "multiple-choice",
+      "topic": "Stem Cell Treatment in PH",
+      "question": "In Totel de Jesus's article ('What we should know about stem cell treatment in the PH'), what cautions did Dr. Samuel Bernal emphasize?",
+      "options": [
+        "Stem-cell therapy is NOT a 'cure-all' or anti-aging fountain of youth—it tries to help the body heal itself at the molecular level, and patients must beware fly-by-night clinics",
+        "Every beauty clinic in Manila is FDA-approved for anti-aging miracles",
+        "Stem cells replace the need for medical diagnosis",
+        "Stem cell therapy works instantly without scientific oversight"
+      ],
+      "answer": "Stem-cell therapy is NOT a 'cure-all' or anti-aging fountain of youth—it tries to help the body heal itself at the molecular level, and patients must beware fly-by-night clinics",
+      "explanation": "Dr. Samuel Bernal (doctor-lawyer in regenerative medicine & FDA/FTC regulation) urged strict scientific and legal caution."
+    },
+    {
+      "id": "sts-s6-13",
+      "type": "multiple-choice",
+      "topic": "Genetic Code Activity",
+      "question": "In Chapter 11's genetic code table, how many total three-nucleotide codons exist, how many encode the 20 amino acids, and what are the four DNA nucleotides?",
+      "options": [
+        "64 total codons; 61 encode the 20 amino acids (plus 3 STOP codons); Adenine (A), Guanine (G), Cytosine (C), Thymine (T)",
+        "20 total codons; 10 encode proteins; A, B, C, D",
+        "46 total codons; 40 encode fats; U, V, W, X",
+        "100 total codons; 64 encode sugars; A, G, C, Z"
+      ],
+      "answer": "64 total codons; 61 encode the 20 amino acids (plus 3 STOP codons); Adenine (A), Guanine (G), Cytosine (C), Thymine (T)",
+      "explanation": "Because 61 codons map to 20 amino acids, most amino acids are encoded by more than one codon (e.g., ATG = Met*, TAA/TAG/TGA = STOP)."
+    },
+    {
+      "id": "sts-s6-14",
+      "type": "multiple-choice",
+      "topic": "Climate vs. Weather",
+      "question": "How does Chapter 12 distinguish 'climate' from 'weather,' and what is the Greek origin of 'climate'?",
+      "options": [
+        "Weather changes constantly day-to-day, while climate refers to long-term prevailing atmospheric patterns; from Greek klinein ('to slope') -> klima",
+        "Climate lasts one hour; weather lasts a century",
+        "Both mean exactly the same thing in meteorology",
+        "Climate comes from Latin scire ('to know')"
+      ],
+      "answer": "Weather changes constantly day-to-day, while climate refers to long-term prevailing atmospheric patterns; from Greek klinein ('to slope') -> klima",
+      "explanation": "Ancient Greeks noticed noon sun angle sloped lower and air grew colder sailing northward, coining klima."
+    },
+    {
+      "id": "sts-s6-15",
+      "type": "multiple-choice",
+      "topic": "Earth's Orbital Elements",
+      "question": "In Earth's elliptical orbit around the Sun, what are 'aphelion' and 'perihelion'?",
+      "options": [
+        "Aphelion: point farthest from the Sun; Perihelion: point closest to the Sun",
+        "Aphelion: point closest to the Sun; Perihelion: point farthest from the Sun",
+        "Aphelion: North Pole tilt; Perihelion: equator line",
+        "Aphelion: longest day; Perihelion: shortest day"
+      ],
+      "answer": "Aphelion: point farthest from the Sun; Perihelion: point closest to the Sun",
+      "explanation": "Remember: 'P' for Perihelion = Proximity (closest); 'A' for Aphelion = Away (farthest)."
+    },
+    {
+      "id": "sts-s6-16",
+      "type": "multiple-choice",
+      "topic": "Equinox vs. Solstice",
+      "question": "What distinguishes an 'equinox' from a 'solstice'?",
+      "options": [
+        "Equinox: sun at noon is directly over the equator (2x/year, equal day & night); Solstice: sun sits above Tropic of Cancer or Capricorn (longest or shortest daylight)",
+        "Equinox occurs only in winter; solstice occurs every month",
+        "Equinox happens every 23,000 years; solstice happens once a century",
+        "Both occur when the Moon blocks the Sun"
+      ],
+      "answer": "Equinox: sun at noon is directly over the equator (2x/year, equal day & night); Solstice: sun sits above Tropic of Cancer or Capricorn (longest or shortest daylight)",
+      "explanation": "Earth's axial tilt causes changing solar angles across equinoxes and solstices."
+    },
+    {
+      "id": "sts-s6-17",
+      "type": "multiple-choice",
+      "topic": "Precession of the Equinoxes",
+      "question": "What is 'precession,' and roughly how many years does one full cycle of the precession of the equinoxes take to return to its modern position?",
+      "options": [
+        "Gradual wobbling change in Earth's rotational axis orientation (like a spinning trumpo); ~23,000 years",
+        "Sudden reversal of ocean currents; 10 years",
+        "Daily spin of Earth; 24 hours",
+        "Monthly lunar phase; 29 days"
+      ],
+      "answer": "Gradual wobbling change in Earth's rotational axis orientation (like a spinning trumpo); ~23,000 years",
+      "explanation": "Figure 3.13 illustrates the 23,000-year precession cycle shifting which seasons align with perihelion and aphelion."
+    },
+    {
+      "id": "sts-s6-18",
+      "type": "multiple-choice",
+      "topic": "Milankovitch Parameters",
+      "question": "Who investigated in the 1930s whether long-term solar-orbital variations could trigger Ice Ages, and what three factors are now called the Milankovitch parameters?",
+      "options": [
+        "Slovak scientist Milutin Milankovitch; 1) change in Earth's orbital radius/eccentricity, 2) change in axial tilt, and 3) wobble (precession) in the spin axis",
+        "John Tyndall; coal, methane, and water vapor",
+        "Charles Keeling; latitude, altitude, and ocean depth",
+        "Carl Linnaeus; kingdom, phylum, and species"
+      ],
+      "answer": "Slovak scientist Milutin Milankovitch; 1) change in Earth's orbital radius/eccentricity, 2) change in axial tilt, and 3) wobble (precession) in the spin axis",
+      "explanation": "Milankovitch calculated these orbital variations over thousands of years, though he lacked computers to verify their full non-linear impact."
+    },
+    {
+      "id": "sts-s6-19",
+      "type": "multiple-choice",
+      "topic": "Chaos Theory & Climate",
+      "question": "Why did contemporaries initially reject Milankovitch's theory, and what later mathematical science (linked to Henri Poincaré and computers) validated its cumulative impact?",
+      "options": [
+        "Critics thought each effect was too tiny to matter; Chaos Theory showed non-linear cumulative changes over millennia can trigger massive climate shifts like Ice Ages",
+        "Critics proved Earth has no axial tilt; Algebra disproved it",
+        "Critics banned trigonometry; Quantum mechanics solved it",
+        "Milankovitch never wrote down any equations"
+      ],
+      "answer": "Critics thought each effect was too tiny to matter; Chaos Theory showed non-linear cumulative changes over millennia can trigger massive climate shifts like Ice Ages",
+      "explanation": "Computers confirmed Poincaré's insight that summing non-linear effects can produce far greater outcomes than simple linear addition."
+    },
+    {
+      "id": "sts-s6-20",
+      "type": "multiple-choice",
+      "topic": "Global Warming Trend",
+      "question": "According to Figure 3.16 in Chapter 12, when did atmospheric carbon dioxide (CO₂) concentration shift from fairly constant to a sharp, steep climb alongside rising global temperature?",
+      "options": [
+        "Around 1950 and sharply into the 21st century",
+        "During the 11th century (1000 CE)",
+        "During the 15th century",
+        "It dropped to zero after 1950"
+      ],
+      "answer": "Around 1950 and sharply into the 21st century",
+      "explanation": "While debate exists between purely natural vs. human-driven causes, the post-1950 spike in CO₂ and temperature threatens irreversible instability."
+    },
+    {
+      "id": "sts-s6-21",
+      "type": "multiple-choice",
+      "topic": "Greenhouse Effect",
+      "question": "How did 19th-century British engineer John Tyndall (1859) describe the natural greenhouse effect, and why is it essential for life on Earth?",
+      "options": [
+        "Like a dam deepening a river, atmospheric gases trap outgoing infrared heat—keeping Earth warm and livable instead of frozen like Mars or Antarctica",
+        "Like a giant refrigerator cooling the equator",
+        "It blocks all visible sunlight from reaching plants",
+        "It turns oceans into solid ice"
+      ],
+      "answer": "Like a dam deepening a river, atmospheric gases trap outgoing infrared heat—keeping Earth warm and livable instead of frozen like Mars or Antarctica",
+      "explanation": "Tyndall noted water vapor was then the most prevalent greenhouse gas, while worrying about future fossil-fuel CO₂ from industrialization."
+    },
+    {
+      "id": "sts-s6-22",
+      "type": "multiple-choice",
+      "topic": "The Keeling Curve",
+      "question": "Who began measuring atmospheric CO₂ continuously in 1958 atop Mauna Loa in Hawaii (far from factories), and what did the 'Keeling Curve' reveal?",
+      "options": [
+        "Charles David Keeling; CO₂ concentrations steadily climbed (reaching 410.52 ppm by May 2017) alongside rising temperatures",
+        "John Tyndall; CO₂ disappeared after WWII",
+        "Milutin Milankovitch; Hawaii had zero CO₂",
+        "Isaac Newton; CO₂ only changes during solstices"
+      ],
+      "answer": "Charles David Keeling; CO₂ concentrations steadily climbed (reaching 410.52 ppm by May 2017) alongside rising temperatures",
+      "explanation": "The Keeling Curve confirmed Tyndall's 1859 concern that post-WWII industrialization substantially raised global atmospheric CO₂."
+    },
+    {
+      "id": "sts-s6-23",
+      "type": "multiple-choice",
+      "topic": "Climate Tipping Points",
+      "question": "In chaos theory and climate modeling, what is a 'tipping point'?",
+      "options": [
+        "The exact date winter turns to spring",
+        "A threshold value of meteorological parameters beyond which irreversible changes replace the old climate state with an uncertain chaotic regime",
+        "The top of a mountain thermometer",
+        "A tax incentive for coal power plants"
+      ],
+      "answer": "A threshold value of meteorological parameters beyond which irreversible changes replace the old climate state with an uncertain chaotic regime",
+      "explanation": "Because climate is a chaotic system, accurate global data is vital for computer models predicting tipping points."
+    },
+    {
+      "id": "sts-s6-24",
+      "type": "multiple-choice",
+      "topic": "Climate & Economy Balance",
+      "question": "What central policy dilemma does Chapter 12 highlight regarding fossil fuels, industrialization, and climate change?",
+      "options": [
+        "Fossil fuels are currently a major electricity source for modernization/industrialization, yet burning them increases CO₂—requiring a balanced plan protecting both economy and environment",
+        "Countries must stop using all electricity immediately",
+        "CO₂ has zero connection to fossil fuels",
+        "Science is a rigid blueprint that never adapts"
+      ],
+      "answer": "Fossil fuels are currently a major electricity source for modernization/industrialization, yet burning them increases CO₂—requiring a balanced plan protecting both economy and environment",
+      "explanation": "Chapter 12 concludes that 'science is more like a cookbook than a blueprint'—open to experimentation, refinement, and wise judgment."
+    },
+    {
+      "id": "sts-s6-25",
+      "type": "multiple-choice",
+      "topic": "Ecological Energy Sharing",
+      "question": "In a biodiverse ecosystem where organisms must survive on limited resources (Chapter 9), how do multiple species coexist?",
+      "options": [
+        "They ignore each other completely",
+        "Available energy is shared and passed among species through diverse ecological relationships",
+        "Only one species is permitted per continent",
+        "Plants produce electricity for animals"
+      ],
+      "answer": "Available energy is shared and passed among species through diverse ecological relationships",
+      "explanation": "Biodiversity underpins essential ecological functions, food supplies, medicines, timber, and resilience."
+    },
+    {
+      "id": "sts-s6-26",
+      "type": "multiple-choice",
+      "topic": "Modern Biotech Goals",
+      "question": "Which of the following is a stated goal of modern biotechnology in food and agriculture (Bragdon et al., 2005)?",
+      "options": [
+        "Developing pest- and disease-resistant crops, combating drought/salinity, enhancing nutritional quality, and reducing production inputs",
+        "Eliminating all crop varieties down to one plant",
+        "Increasing soil toxicity deliberately",
+        "Replacing photosynthesis with diesel"
+      ],
+      "answer": "Developing pest- and disease-resistant crops, combating drought/salinity, enhancing nutritional quality, and reducing production inputs",
+      "explanation": "Modern biotechnology offers powerful molecular tools for agriculture, balanced against biosafety and equity concerns."
+    },
+    {
+      "id": "sts-s6-27",
+      "type": "multiple-choice",
+      "topic": "Biodiversity Loss",
+      "question": "Why is biodiversity loss considered a direct threat to human society and health?",
+      "options": [
+        "It threatens food supplies, sources of medicines, wood, energy, recreation, and essential ecological functions",
+        "It only affects museum ticket prices",
+        "It increases planetary biocapacity automatically",
+        "It stops Earth's axial precession"
+      ],
+      "answer": "It threatens food supplies, sources of medicines, wood, energy, recreation, and essential ecological functions",
+      "explanation": "Society, the environment, and human health are deeply interconnected."
+    },
+    {
+      "id": "sts-s6-28",
+      "type": "multiple-choice",
+      "topic": "Nanoscale Visibility",
+      "question": "Why was the nano world unrecognized by early civilizations until specialized microscopes were developed?",
+      "options": [
+        "Because nanostructures (measured in 10⁻⁹ meters) are far too tiny to be seen by the naked eye",
+        "Because nanoparticles only exist on Mars",
+        "Because atoms were invented in 1995",
+        "Because light cannot reflect off carbon"
+      ],
+      "answer": "Because nanostructures (measured in 10⁻⁹ meters) are far too tiny to be seen by the naked eye",
+      "explanation": "Even natural catalysts, minerals, and DNA (~3 nm wide) operate invisibly at the nanoscale."
+    },
+    {
+      "id": "sts-s6-29",
+      "type": "multiple-choice",
+      "topic": "Correlation vs. Causation",
+      "question": "In Chapter 12, what scientific caution is raised when interpreting the strong correlation between rising atmospheric CO₂ and rising global temperature?",
+      "options": [
+        "Correlation alone does not automatically prove cause-and-effect—scientists had to turn to historical data and physics to substantiate the causal link",
+        "Correlation means CO₂ lowers global temperature",
+        "Scientists ignore all historical climate records",
+        "Temperature cannot be measured accurately"
+      ],
+      "answer": "Correlation alone does not automatically prove cause-and-effect—scientists had to turn to historical data and physics to substantiate the causal link",
+      "explanation": "Distinguishing correlation from causation is fundamental to rigorous climate science."
+    },
+    {
+      "id": "sts-s6-30",
+      "type": "multiple-choice",
+      "topic": "Transgenic Organisms",
+      "question": "Why are genetically modified organisms (GMOs) also referred to as 'transgenic' organisms?",
+      "options": [
+        "Because they travel across continents by ship",
+        "Because genetic engineering transfers ('trans-') genes from the DNA of one species into an unrelated organism",
+        "Because they have zero DNA inside their cells",
+        "Because they are grown without soil"
+      ],
+      "answer": "Because genetic engineering transfers ('trans-') genes from the DNA of one species into an unrelated organism",
+      "explanation": "Transgenic crops borrow specific trait-bearing gene sections from another species via recombinant DNA."
+    },
+    {
+      "id": "sts-s6-31",
+      "type": "multiple-choice",
+      "topic": "Aspirin at the Nanoscale",
+      "question": "What example does Chapter 11 use to show how 'old' medical breakthroughs connect to modern nano and gene science?",
+      "options": [
+        "Aspirin—known for relieving pain long before its ~0.5 nm molecular structure was understood at the nanoscale",
+        "The bamboo laundry-basket incubator",
+        "The Gutenberg metal printing press",
+        "The Salamander amphibious tricycle"
+      ],
+      "answer": "Aspirin—known for relieving pain long before its ~0.5 nm molecular structure was understood at the nanoscale",
+      "explanation": "Applying molecular and atomic insights to genes opens new frontiers in targeted human healthcare."
+    },
+    {
+      "id": "sts-s6-32",
+      "type": "multiple-choice",
+      "topic": "Industrialization & CO₂",
+      "question": "How did post-WWII industrialization dramatically change atmospheric CO₂ compared to John Tyndall's mid-19th-century observations?",
+      "options": [
+        "Widespread agrarian economies converted into large-scale coal- and fossil-fuel-powered industries, releasing huge amounts of CO₂ as a by-product",
+        "Industrialization eliminated all fossil fuel burning",
+        "Agrarian farms emitted more coal smoke than modern factories",
+        "Post-WWII factories ran exclusively on saltwater lamps"
+      ],
+      "answer": "Widespread agrarian economies converted into large-scale coal- and fossil-fuel-powered industries, releasing huge amounts of CO₂ as a by-product",
+      "explanation": "Rapid global industrialization turned Tyndall's theoretical warning into measurable atmospheric change."
+    },
+    {
+      "id": "sts-s6-33",
+      "type": "multiple-choice",
+      "topic": "Greenhouse Gas Note",
+      "question": "What important reminder does Chapter 12 give regarding carbon dioxide (CO₂) and other greenhouse gases?",
+      "options": [
+        "While CO₂ is a primary indicator of global warming, it is NOT the only greenhouse gas (water vapor, for example, is prevalent too)",
+        "CO₂ is the only gas present in Earth's atmosphere",
+        "Oxygen causes 100% of the greenhouse effect",
+        "Greenhouse gases freeze the oceans"
+      ],
+      "answer": "While CO₂ is a primary indicator of global warming, it is NOT the only greenhouse gas (water vapor, for example, is prevalent too)",
+      "explanation": "Multiple greenhouse gases trap infrared radiation, though rising fossil-fuel CO₂ drives modern warming concern."
+    },
+    {
+      "id": "sts-s6-34",
+      "type": "multiple-choice",
+      "topic": "Bottom-Up Nanotechnology",
+      "question": "In Chapter 10's activity on George Tulevski's TED Talk, why is nature cited as an inspiration for nanotechnology?",
+      "options": [
+        "Nature builds complex living organisms from the bottom up, molecule by molecule and atom by atom",
+        "Nature only uses large concrete blocks",
+        "Nature avoids chemical bonding",
+        "Nature operates exclusively at kilometer scales"
+      ],
+      "answer": "Nature builds complex living organisms from the bottom up, molecule by molecule and atom by atom",
+      "explanation": "Chemistry and self-assembly teach nanotechnologists how to construct functional structures from atomic building blocks."
+    },
+    {
+      "id": "sts-s6-35",
+      "type": "multiple-choice",
+      "topic": "Science as a Cookbook",
+      "question": "Why does the conclusion of Chapter 12 compare science to 'a cookbook rather than a blueprint'?",
+      "options": [
+        "Because science is open to experimentation, innovation, and refinement—requiring wise judgment ('a fine sense of taste') rather than rigid blind formulas",
+        "Because scientists only study culinary arts",
+        "Because blueprints cannot be drawn by hand",
+        "Because experiments never need data"
+      ],
+      "answer": "Because science is open to experimentation, innovation, and refinement—requiring wise judgment ('a fine sense of taste') rather than rigid blind formulas",
+      "explanation": "Living the good life in an age of rapid S&T demands both scientific rigor and ethical wisdom."
+    }
+  ]
+}

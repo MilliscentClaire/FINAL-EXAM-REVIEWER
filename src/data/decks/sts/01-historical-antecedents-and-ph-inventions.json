@@ -1,0 +1,503 @@
+{
+  "id": "sts-s1-historical-antecedents",
+  "course": "Science, Technology, and Society",
+  "sectionOrder": 1,
+  "sectionLabel": "Section 1",
+  "title": "Historical Antecedents & Philippine Inventions",
+  "subject": "Science, Technology, and Society",
+  "description": "Origins of science and technology, ancient civilizations (Sumerian, Babylonian, Egyptian, Greek, Roman, Chinese), Medieval and Modern breakthroughs, and iconic Filipino inventions.",
+  "sourceFile": "STS-WK1-MTWThF A book reference in STS.pdf, STS MIDTERM REVIEWER.docx",
+  "createdAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "sts-s1-01",
+      "type": "multiple-choice",
+      "topic": "Course Foundations",
+      "question": "In ancient Greece, what were the earliest scientists called before the modern term 'scientist' existed?",
+      "options": [
+        "Industrial engineers",
+        "Philosophers of nature",
+        "Royal scribes",
+        "Alchemists of steel"
+      ],
+      "answer": "Philosophers of nature",
+      "explanation": "Science was originally called 'philosophy of the natural world,' and early scientists were known as philosophers of nature."
+    },
+    {
+      "id": "sts-s1-02",
+      "type": "multiple-choice",
+      "topic": "Course Foundations",
+      "question": "The word 'technology' comes from which two Greek root words, and what do they mean together?",
+      "options": [
+        "tekhnē ('art or craft') and -logia ('subject or interest') — practical applications of knowledge about nature",
+        "logos ('number') and phusis ('sky') — pure theoretical astronomy",
+        "klinein ('to slope') and oikos ('house') — domestic engineering",
+        "scire ('to write') and metron ('weight') — legal record-keeping"
+      ],
+      "answer": "tekhnē ('art or craft') and -logia ('subject or interest') — practical applications of knowledge about nature",
+      "explanation": "Tekhnē and -logia together refer to the practical application of scientific principles to improve the human situation."
+    },
+    {
+      "id": "sts-s1-03",
+      "type": "multiple-choice",
+      "topic": "Course Foundations",
+      "question": "Under CHED Memorandum Order No. 20, what is the overarching goal of the Science, Technology, and Society (STS) course?",
+      "options": [
+        "To memorize chemical equations without examining social context",
+        "To engage students interdisciplinarily with S&T realities—socio-political, cultural, economic, and philosophical—so they live the good life and make ethical decisions",
+        "To train students solely in patent law and corporate finance",
+        "To replace history and philosophy with mechanical drafting"
+      ],
+      "answer": "To engage students interdisciplinarily with S&T realities—socio-political, cultural, economic, and philosophical—so they live the good life and make ethical decisions",
+      "explanation": "STS links science and society through technology, cultivating reflective ethical decision-making."
+    },
+    {
+      "id": "sts-s1-04",
+      "type": "multiple-choice",
+      "topic": "Scientific Method",
+      "question": "During hypothesis testing in the scientific method, what is the standard goal regarding the null hypothesis (H₀) and alternative hypothesis (H₁)?",
+      "options": [
+        "Accept H₀ without running any experiment",
+        "Test experimentally to see if data supports rejecting H₀ and accepting H₁ for statistical significance",
+        "Ignore dependent variables entirely",
+        "Replace observation with personal opinion"
+      ],
+      "answer": "Test experimentally to see if data supports rejecting H₀ and accepting H₁ for statistical significance",
+      "explanation": "Experiments manipulate independent variables, measure dependent variables, and test whether H₀ can be rejected in favor of H₁."
+    },
+    {
+      "id": "sts-s1-05",
+      "type": "multiple-choice",
+      "topic": "Sumerian Civilization",
+      "question": "What was the first writing system developed by the Sumerians, using word pictures and triangular symbols carved on clay with wedge instruments?",
+      "options": [
+        "Hieroglyphics",
+        "Cuneiform",
+        "Quipu",
+        "Sanskrit"
+      ],
+      "answer": "Cuneiform",
+      "explanation": "Cuneiform used wedge-shaped marks pressed onto wet clay tablets, then left to dry for historical and trade records."
+    },
+    {
+      "id": "sts-s1-06",
+      "type": "multiple-choice",
+      "topic": "Sumerian Civilization",
+      "question": "How did the Sumerians build the City of Uruk—considered the first true city in the world—despite lacking building stones and lumber?",
+      "options": [
+        "They imported white marble from India",
+        "They mixed river mud/clay with reeds to produce sun-baked bricks",
+        "They carved dwellings directly into granite cliffs",
+        "They wove giant bamboo domes"
+      ],
+      "answer": "They mixed river mud/clay with reeds to produce sun-baked bricks",
+      "explanation": "Using sun-baked mud-and-reed bricks, Sumerians erected houses, city walls, and the Great Ziggurat of Ur ('mountain of god')."
+    },
+    {
+      "id": "sts-s1-07",
+      "type": "multiple-choice",
+      "topic": "Sumerian Civilization",
+      "question": "Why was the Great Ziggurat of Ur built, and who was permitted to enter its inner sanctuary?",
+      "options": [
+        "As a public marketplace open to all foreign traders",
+        "As the sacred temple of their chief god, where only priests were allowed to enter",
+        "As a royal library for Roman codices",
+        "As a grain watermill powered by oxen"
+      ],
+      "answer": "As the sacred temple of their chief god, where only priests were allowed to enter",
+      "explanation": "Known as the 'mountain of god,' the Ziggurat of Ur was built of sun-baked bricks as a sacred temple restricted to priests."
+    },
+    {
+      "id": "sts-s1-08",
+      "type": "multiple-choice",
+      "topic": "Sumerian Civilization",
+      "question": "For what purpose were the very first Sumerian wheels originally invented?",
+      "options": [
+        "Chariot racing in Olympic arenas",
+        "Farm work and food processing (such as milling grains with wheel and axle)",
+        "Oceanic sailboat steering",
+        "Mechanical wristwatches"
+      ],
+      "answer": "Farm work and food processing (such as milling grains with wheel and axle)",
+      "explanation": "The textbook notes the earliest Sumerian wheels were made for farm work and milling grains rather than transportation."
+    },
+    {
+      "id": "sts-s1-09",
+      "type": "multiple-choice",
+      "topic": "Sumerian Civilization",
+      "question": "What black sticky substance similar to asphalt did the Sumerians pour over sun-baked brick roads to smoothen them?",
+      "options": [
+        "Galena",
+        "Bitumen",
+        "Potassium nitrate",
+        "Paraffin"
+      ],
+      "answer": "Bitumen",
+      "explanation": "Sumerians paved roads with sun-baked bricks and bitumen to keep traffic organized even during rainy muddy seasons."
+    },
+    {
+      "id": "sts-s1-10",
+      "type": "multiple-choice",
+      "topic": "Sumerian & Babylonian",
+      "question": "Which engineering achievements solved river flooding and scarce water for Sumerian farms, and which legendary tiered garden was attributed to Babylonian King Nebuchadnezzar II?",
+      "options": [
+        "Dikes and irrigation canals; Hanging Gardens of Babylon (for Queen Amytis)",
+        "Chinampas; Great Stupa",
+        "Aqueducts; Parthenon",
+        "Windmills; Great Wall"
+      ],
+      "answer": "Dikes and irrigation canals; Hanging Gardens of Babylon (for Queen Amytis)",
+      "explanation": "Sumerians built dikes and irrigation canals for year-round farming; Nebuchadnezzar II legendarily built the Hanging Gardens for Queen Amytis (though no physical evidence has been found)."
+    },
+    {
+      "id": "sts-s1-11",
+      "type": "multiple-choice",
+      "topic": "Egyptian Civilization",
+      "question": "Why was the Egyptian invention of papyrus a major improvement over Mesopotamian clay tablets?",
+      "options": [
+        "Papyrus was heavier and prevented letters from ever being folded",
+        "Papyrus was lighter, thinner, less breakable, and easier to carry, store, and protect from raiders",
+        "Papyrus could only be read underwater",
+        "Papyrus did not require any ink to write upon"
+      ],
+      "answer": "Papyrus was lighter, thinner, less breakable, and easier to carry, store, and protect from raiders",
+      "explanation": "Processed from Nile papyrus plants, sheets were paired with tamper-proof soot-and-chemical ink for records and correspondence."
+    },
+    {
+      "id": "sts-s1-12",
+      "type": "multiple-choice",
+      "topic": "Egyptian Civilization",
+      "question": "In ancient Egypt, why did people wear kohl around their eyes and wear wigs on shaved heads?",
+      "options": [
+        "Kohl (soot/malachite + galena) prevented/cured eye diseases and warded off evil; wigs protected from sun rays, let heat escape, and prevented head lice",
+        "Both were used strictly as winter thermal insulation",
+        "Kohl was a wartime camouflage; wigs were military helmets",
+        "Both were purely modern fashion imports from Rome"
+      ],
+      "answer": "Kohl (soot/malachite + galena) prevented/cured eye diseases and warded off evil; wigs protected from sun rays, let heat escape, and prevented head lice",
+      "explanation": "Ancient Egyptian cosmetics and wigs served crucial health, hygiene, and spiritual functions alongside aesthetics."
+    },
+    {
+      "id": "sts-s1-13",
+      "type": "multiple-choice",
+      "topic": "Egyptian Civilization",
+      "question": "How did the ancient Egyptian water clock (clepsydra) measure elapsed time?",
+      "options": [
+        "By burning knotted silk ropes at a steady rate",
+        "By using gravity to control water flowing from one vessel to another and reading the remaining water height",
+        "By measuring shadows cast by a magnetic compass",
+        "By counting pendulum swings on a bronze gear"
+      ],
+      "answer": "By using gravity to control water flowing from one vessel to another and reading the remaining water height",
+      "explanation": "The clepsydra measured elapsed time from the water level remaining as gravity drained the upper vessel."
+    },
+    {
+      "id": "sts-s1-14",
+      "type": "multiple-choice",
+      "topic": "Greek Civilization",
+      "question": "How did Plato's ancient Greek alarm clock signal the start of his lectures?",
+      "options": [
+        "A mechanical spring rang a brass bell",
+        "Water siphoned through four vertical vessels forced trapped air out of a third vessel, creating a whistling noise",
+        "A rooster was released from a wooden cage",
+        "Hot steam spun a copper turbine"
+      ],
+      "answer": "Water siphoned through four vertical vessels forced trapped air out of a third vessel, creating a whistling noise",
+      "explanation": "Plato's water-siphon alarm clock used four stacked vessels so rapid siphoning expelled air in a whistle."
+    },
+    {
+      "id": "sts-s1-15",
+      "type": "multiple-choice",
+      "topic": "Greek Civilization",
+      "question": "Why were Greek watermills considered superior to animal-powered mills for grinding grains?",
+      "options": [
+        "They could operate in the middle of dry deserts",
+        "They required less effort and time because farmers did not need to raise animals—only access to flowing rivers",
+        "They produced electricity for Roman streetlights",
+        "They used gunpowder to spin the stones"
+      ],
+      "answer": "They required less effort and time because farmers did not need to raise animals—only access to flowing rivers",
+      "explanation": "Watermills harnessed flowing water with bucketed wheels to mass-produce flour, cereals, and rice efficiently."
+    },
+    {
+      "id": "sts-s1-16",
+      "type": "multiple-choice",
+      "topic": "Roman Civilization",
+      "question": "Before paper became widespread in Rome, how were the first Roman newspapers—called 'gazettes'—published?",
+      "options": [
+        "Printed on Gutenberg's cast-metal press",
+        "Engraved in metal or stone tablets and publicly displayed",
+        "Tied as knotted quipu strings",
+        "Painted on silk scrolls"
+      ],
+      "answer": "Engraved in metal or stone tablets and publicly displayed",
+      "explanation": "Roman gazettes originally used engraved metal or stone tablets before shifting to shorthand paper editions of Senate proceedings."
+    },
+    {
+      "id": "sts-s1-17",
+      "type": "multiple-choice",
+      "topic": "Roman Civilization",
+      "question": "What Roman innovation, reportedly started by Julius Caesar stacking papyrus sheets and later bound with durable animal-skin covers, became the first true bound book?",
+      "options": [
+        "Cuneiform tablet",
+        "Codex",
+        "Scroll",
+        "Papyrus roll"
+      ],
+      "answer": "Codex",
+      "explanation": "Bound books or codices replaced bulky clay tablets and scrolls, making historical and legal record-keeping compact and durable."
+    },
+    {
+      "id": "sts-s1-18",
+      "type": "multiple-choice",
+      "topic": "Roman Civilization",
+      "question": "Why did the expanding Roman Empire devise Roman numerals despite earlier number systems already existing?",
+      "options": [
+        "To write secret love poetry",
+        "To meet higher calculation demands from growing trade and communication across conquered territories",
+        "Because Hindu-Arabic numerals were too easy to write",
+        "To calculate planetary orbits in heliocentric models"
+      ],
+      "answer": "To meet higher calculation demands from growing trade and communication across conquered territories",
+      "explanation": "Roman numerals provided a standardized counting method for empire-wide commerce and administration."
+    },
+    {
+      "id": "sts-s1-19",
+      "type": "multiple-choice",
+      "topic": "Chinese Civilization",
+      "question": "How did ancient Chinese alchemists accidentally invent gunpowder?",
+      "options": [
+        "While trying to brew black tea faster",
+        "While mixing charcoal, sulfur, and potassium nitrate in search of an elixir of immortality",
+        "While firing blue-and-white porcelain vases",
+        "While smelting iron armor for the Great Wall"
+      ],
+      "answer": "While mixing charcoal, sulfur, and potassium nitrate in search of an elixir of immortality",
+      "explanation": "Instead of prolonging life, the mixture generated instant heat and gas—leading to both weapons and celebratory fireworks."
+    },
+    {
+      "id": "sts-s1-20",
+      "type": "multiple-choice",
+      "topic": "Chinese Civilization",
+      "question": "Besides silk and the Great Wall (built to deter invaders), what Chinese invention used a wheel-based mechanism with sharp edges attached to a wooden or ceramic pot?",
+      "options": [
+        "A tea-leaf shredding machine that boosted tea production and exports",
+        "A water clock for pharaohs",
+        "A mechanical calculator",
+        "A compound microscope"
+      ],
+      "answer": "A tea-leaf shredding machine that boosted tea production and exports",
+      "explanation": "The Chinese tea-shredding machine enabled large-scale tea production and made China famous for tea exports alongside silk."
+    },
+    {
+      "id": "sts-s1-21",
+      "type": "multiple-choice",
+      "topic": "Medieval / Middle Ages",
+      "question": "How did Johann Gutenberg's 15th-century printing press improve upon earlier Chinese woodblock printing?",
+      "options": [
+        "It used laser beams on papyrus",
+        "It used movable cast-metal type pressed firmly onto paper via a wooden press, spreading books rapidly even to non-writers",
+        "It required engraving every page onto stone slabs",
+        "It operated exclusively on steam power"
+      ],
+      "answer": "It used movable cast-metal type pressed firmly onto paper via a wooden press, spreading books rapidly even to non-writers",
+      "explanation": "Gutenberg's cast-type press enabled mass book production and rapid dissemination of knowledge."
+    },
+    {
+      "id": "sts-s1-22",
+      "type": "multiple-choice",
+      "topic": "Medieval / Middle Ages",
+      "question": "What social problem during the Middle Ages spurred Zacharias Janssen to develop the first compound microscope?",
+      "options": [
+        "Ship captains getting lost at sea",
+        "Population growth and polluted urbanization causing widespread illness, requiring a tool to observe tiny unseen organisms",
+        "Too many books piling up in monasteries",
+        "Spoilage of milk during train transport"
+      ],
+      "answer": "Population growth and polluted urbanization causing widespread illness, requiring a tool to observe tiny unseen organisms",
+      "explanation": "Guided by earlier eyeglass principles, Janssen's compound microscope revealed microorganisms invisible to the naked eye."
+    },
+    {
+      "id": "sts-s1-23",
+      "type": "multiple-choice",
+      "topic": "Medieval / Middle Ages",
+      "question": "Why were the telescope, compass, oars, and rudders crucial during the Age of Exploration, and what armor solved the heavy immobility of iron plate armor?",
+      "options": [
+        "They enabled safe far-distance sea navigation; chainmail",
+        "They purified river water; bitumen",
+        "They milled grain; watermills",
+        "They bound books; codex"
+      ],
+      "answer": "They enabled safe far-distance sea navigation; chainmail",
+      "explanation": "Telescopes let navigators spot distant hazards and coasts; chainmail protected soldiers in close combat without the crippling weight of solid iron armor."
+    },
+    {
+      "id": "sts-s1-24",
+      "type": "multiple-choice",
+      "topic": "Modern Times",
+      "question": "What food-safety crisis led French scientist Louis Pasteur to invent pasteurization?",
+      "options": [
+        "Bread turning black in wooden ovens",
+        "Dairy products (especially milk) spoiling rapidly and transmitting diphtheria, food poisoning, and typhoid fever",
+        "Saltwater lamps catching fire",
+        "Mosquitoes breeding in rice terraces"
+      ],
+      "answer": "Dairy products (especially milk) spoiling rapidly and transmitting diphtheria, food poisoning, and typhoid fever",
+      "explanation": "Heating dairy products killed harmful bacteria, extending shelf life and preventing milk-borne diseases."
+    },
+    {
+      "id": "sts-s1-25",
+      "type": "multiple-choice",
+      "topic": "Modern Times",
+      "question": "Who invented kerosene ('illuminating oil') by refining petroleum when animal oil supplies could no longer meet lighting demand?",
+      "options": [
+        "Alexander Graham Bell",
+        "Samuel M. Kier",
+        "Louis Pasteur",
+        "Zacharias Janssen"
+      ],
+      "answer": "Samuel M. Kier",
+      "explanation": "Samuel M. Kier's refinement of kerosene established the modern petroleum refinery industry."
+    },
+    {
+      "id": "sts-s1-26",
+      "type": "multiple-choice",
+      "topic": "Modern Times",
+      "question": "Which modern inventions addressed real-time long-distance state/trade communication and rapid daily arithmetic computation?",
+      "options": [
+        "Gutenberg press and clepsydra",
+        "Alexander Graham Bell's telephone and modern mechanical calculators (forerunners of computers)",
+        "Roman gazettes and abacus",
+        "Bitumen roads and plows"
+      ],
+      "answer": "Alexander Graham Bell's telephone and modern mechanical calculators (forerunners of computers)",
+      "explanation": "Bell's telephone enabled real-time voice communication, while mechanical calculators paved the way for computers."
+    },
+    {
+      "id": "sts-s1-27",
+      "type": "multiple-choice",
+      "topic": "Philippine Inventions",
+      "question": "What problem in the Philippines led Victor Llave and his team at H2O Technologies to invent the 'Salamander'?",
+      "options": [
+        "Lack of rural hospital incubators",
+        "Frequent monsoon flooding making streets impassable for regular tricycles (and inter-island travel needs)",
+        "Dengue transmission by Aedes aegypti",
+        "High cost of solar batteries"
+      ],
+      "answer": "Frequent monsoon flooding making streets impassable for regular tricycles (and inter-island travel needs)",
+      "explanation": "The Salamander is an amphibious tricycle capable of traversing both flooded streets and rivers or lakes."
+    },
+    {
+      "id": "sts-s1-28",
+      "type": "multiple-choice",
+      "topic": "Philippine Inventions",
+      "question": "How does Filipina inventor Aisa Mijeno's SALt (Sustainable Alternative Lighting) lamp generate safe, non-toxic light?",
+      "options": [
+        "By burning refined kerosene inside bamboo tubes",
+        "By running on saltwater (including 2 tablespoons of salt mixed in tap water), avoiding candle/kerosene fire hazards",
+        "By charging through diesel jeepney exhaust",
+        "By trapping rainwater with solar mirrors"
+      ],
+      "answer": "By running on saltwater (including 2 tablespoons of salt mixed in tap water), avoiding candle/kerosene fire hazards",
+      "explanation": "The SALt lamp provides clean, fire-safe illumination for coastal and off-grid rural communities."
+    },
+    {
+      "id": "sts-s1-29",
+      "type": "multiple-choice",
+      "topic": "Philippine Inventions",
+      "question": "How did pediatrician Dr. Fe del Mundo construct her non-electric medical incubator for premature newborns in rural areas?",
+      "options": [
+        "From imported German steel and lithium batteries",
+        "By placing a smaller native laundry basket inside a larger one, inserting hot water bottles for warmth, and adding a makeshift oxygen hood",
+        "By using saltwater LEDs inside a clay pot",
+        "By converting surplus WWII jeepney engines"
+      ],
+      "answer": "By placing a smaller native laundry basket inside a larger one, inserting hot water bottles for warmth, and adding a makeshift oxygen hood",
+      "explanation": "Dr. Fe del Mundo—first Asian woman admitted to Harvard Medical School—also pioneered jaundice treatment and the BRAT diet for diarrhea."
+    },
+    {
+      "id": "sts-s1-30",
+      "type": "multiple-choice",
+      "topic": "Philippine Inventions",
+      "question": "Why did DOST-ITDI introduce the Mosquito Ovicidal/Larvicidal Trap System (OL Trap) in 2010?",
+      "options": [
+        "To replace saltwater lamps in coastal towns",
+        "Because Aedes aegypti mosquitoes (dengue vectors) developed insecticide resistance and chemical sprays harmed humans and the environment",
+        "To purify drinking water in Manila",
+        "To pollinate mango trees faster"
+      ],
+      "answer": "Because Aedes aegypti mosquitoes (dengue vectors) developed insecticide resistance and chemical sprays harmed humans and the environment",
+      "explanation": "The OL Trap uses natural ingredients lethal to mosquito eggs and larvae while remaining safe for people and ecosystems."
+    },
+    {
+      "id": "sts-s1-31",
+      "type": "multiple-choice",
+      "topic": "Philippine Inventions",
+      "question": "How did the eJeepney improve upon the iconic post-WWII Filipino jeepney?",
+      "options": [
+        "It added amphibious pontoons for deep ocean travel",
+        "It replaced expensive diesel engines with electricity, eliminating black smoke and exhaust noise pollution",
+        "It shrank the chassis to carry only one rider",
+        "It switched from rubber tires to wooden wheels"
+      ],
+      "answer": "It replaced expensive diesel engines with electricity, eliminating black smoke and exhaust noise pollution",
+      "explanation": "Traditional jeepneys were adapted from surplus US military jeeps; eJeepneys modernize them into zero-emission urban transport."
+    },
+    {
+      "id": "sts-s1-32",
+      "type": "multiple-choice",
+      "topic": "Mesoamerica & Ancient World",
+      "question": "Which civilization built 'chinampas' (floating canal farms) and instituted mandatory education for children, and which built 'quipu' knotted-rope records and Machu Picchu?",
+      "options": [
+        "Aztec; Inca",
+        "Maya; Sumerian",
+        "Egyptian; Roman",
+        "Inca; Babylonian"
+      ],
+      "answer": "Aztec; Inca",
+      "explanation": "Aztecs created chinampas and mandatory education; Incas developed paved roads, Machu Picchu, suspension bridges, and quipu."
+    },
+    {
+      "id": "sts-s1-33",
+      "type": "multiple-choice",
+      "topic": "Ancient World",
+      "question": "Which Mesoamerican civilization developed Maya hieroglyphics, complex calendar systems, hydraulics, and the mathematical concept of zero?",
+      "options": [
+        "Maya",
+        "Inca",
+        "Babylonian",
+        "Greek"
+      ],
+      "answer": "Maya",
+      "explanation": "The Maya excelled in astronomy, calendar calculations, hydraulics, hieroglyphics, and the concept of zero."
+    },
+    {
+      "id": "sts-s1-34",
+      "type": "multiple-choice",
+      "topic": "Ancient Africa & Asia",
+      "question": "What is the Lebombo Bone (~35,000 BCE) from Southern Africa recognized as, and what medical system originated in ancient India?",
+      "options": [
+        "The oldest known mathematical artifact; Ayurveda",
+        "A Roman surgical knife; Pasteurization",
+        "A Chinese tea shredder; Gunpowder",
+        "An Egyptian sailboat oar; Cuneiform"
+      ],
+      "answer": "The oldest known mathematical artifact; Ayurveda",
+      "explanation": "Southern Africa's Lebombo Bone is the oldest known mathematical artifact; ancient India developed Ayurveda, advanced steel works, and Aryabhata's trigonometry."
+    },
+    {
+      "id": "sts-s1-35",
+      "type": "multiple-choice",
+      "topic": "Nature of S&T Progress",
+      "question": "According to Chapter 1 of the STS textbook, what is the primary driving force behind the continuous, gradual improvement of science and technology across history?",
+      "options": [
+        "Random entertainment without practical goals",
+        "The desire to raise the quality of life of the people in response to human needs",
+        "Avoiding all communication with neighboring societies",
+        "Eliminating agricultural production"
+      ],
+      "answer": "The desire to raise the quality of life of the people in response to human needs",
+      "explanation": "Inventions build gradually on prior works out of human necessity to improve health, food, transport, safety, and daily life."
+    }
+  ]
+}

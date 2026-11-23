@@ -1,0 +1,433 @@
+{
+  "id": "sts-s3-nation-building-indigenous",
+  "course": "Science, Technology, and Society",
+  "sectionOrder": 3,
+  "sectionLabel": "Section 3",
+  "title": "Philippine Nation-Building & Indigenous Science and Technology",
+  "subject": "Science, Technology, and Society",
+  "description": "Pre-colonial, Spanish, American, and Post-colonial S&T history in the Philippines, DOST mandates and programs, Outstanding Filipino Scientists, and Indigenous Knowledge Systems.",
+  "sourceFile": "STS-WK1-MTWThF A book reference in STS.pdf, STS MIDTERM REVIEWER.docx",
+  "createdAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "sts-s3-01",
+      "type": "multiple-choice",
+      "topic": "Pre-Colonial Period",
+      "question": "What complicated pre-colonial engineering feat in the Cordilleras demonstrates early Filipinos' ingenuity in surviving cold mountain terrain?",
+      "options": [
+        "Concrete suspension highways",
+        "Hand-built rice terraces incorporating an elaborate irrigation system using water from forests and mountaintops",
+        "Coal-fired steam locomotives",
+        "Steel suspension bridges"
+      ],
+      "answer": "Hand-built rice terraces incorporating an elaborate irrigation system using water from forests and mountaintops",
+      "explanation": "The Cordillera Rice Terraces remain functional today as a testament to indigenous engineering and environmental adaptation."
+    },
+    {
+      "id": "sts-s3-02",
+      "type": "multiple-choice",
+      "topic": "Pre-Colonial Period",
+      "question": "Which scientific practices did early pre-colonial Filipinos already apply before Spanish colonization?",
+      "options": [
+        "Using medicinal plants/herbs, farming and animal-raising, and terrestrial and maritime transportation",
+        "Satellite weather forecasting and genetic splicing",
+        "Petroleum refining and nuclear power",
+        "Electric jeepneys and microprocessors"
+      ],
+      "answer": "Using medicinal plants/herbs, farming and animal-raising, and terrestrial and maritime transportation",
+      "explanation": "Pre-colonial communities possessed practical folk and indigenous science tailored to daily survival and local ecology."
+    },
+    {
+      "id": "sts-s3-03",
+      "type": "multiple-choice",
+      "topic": "Spanish Colonial Period",
+      "question": "How did Spanish colonization alter science, education, and infrastructure in the Philippines?",
+      "options": [
+        "It dismantled all stone structures and banned universities",
+        "It introduced Western science via the Galleon Trade, founded the University of Santo Tomas (offering medicine, pharmacy, etc.), and built stone walls, roads, bridges, and sanitation mainly for the principalia",
+        "It immediately established DOST and PAGASA",
+        "It secularized all public schools under Act No. 74"
+      ],
+      "answer": "It introduced Western science via the Galleon Trade, founded the University of Santo Tomas (offering medicine, pharmacy, etc.), and built stone walls, roads, bridges, and sanitation mainly for the principalia",
+      "explanation": "Spanish colonial infrastructure and higher education at UST laid early Western academic foundations, though access was largely limited to the principalia."
+    },
+    {
+      "id": "sts-s3-04",
+      "type": "multiple-choice",
+      "topic": "American Colonial Period",
+      "question": "What major educational and scientific institutions did the American occupation establish to modernize Philippine S&T?",
+      "options": [
+        "Secularized public education (Act No. 74 of 1901), Philippine Normal School (now PNU), and the Bureau of Science",
+        "The University of Santo Tomas and Galleon Trade",
+        "PAGASA and the Philippine Science High School",
+        "The Balik Scientist Program and eJeepney"
+      ],
+      "answer": "Secularized public education (Act No. 74 of 1901), Philippine Normal School (now PNU), and the Bureau of Science",
+      "explanation": "The American era institutionalized public teacher training and national scientific research through the Bureau of Science."
+    },
+    {
+      "id": "sts-s3-05",
+      "type": "multiple-choice",
+      "topic": "Post-Colonial Period",
+      "question": "Which key scientific agencies were created or strengthened during President Ferdinand Marcos's administration?",
+      "options": [
+        "Bureau of Science and UST",
+        "PAGASA (replacing the Weather Bureau), NAST (National Academy of Science and Technology), and NSTA (reconstituted from the 1958 NSDB, now DOST)",
+        "Cartagena Protocol and CERN",
+        "Philippine Normal School and Rotary Club"
+      ],
+      "answer": "PAGASA (replacing the Weather Bureau), NAST (National Academy of Science and Technology), and NSTA (reconstituted from the 1958 NSDB, now DOST)",
+      "explanation": "Marcos expanded national S&T institutions, recognizing science and technology as vital drivers of nation-building."
+    },
+    {
+      "id": "sts-s3-06",
+      "type": "multiple-choice",
+      "topic": "DOST Mandate",
+      "question": "Under Executive Order No. 128 (1987), which department serves as the Philippines' premier agency mandated to lead and coordinate S&T efforts for economic and social benefit?",
+      "options": [
+        "Department of Trade and Industry (DTI)",
+        "Department of Science and Technology (DOST)",
+        "National Commission for Culture and the Arts (NCCA)",
+        "Commission on Higher Education (CHED)"
+      ],
+      "answer": "Department of Science and Technology (DOST)",
+      "explanation": "EO 128 elevated NSTA into the cabinet-level DOST, pursuing an 11-point S&T agenda."
+    },
+    {
+      "id": "sts-s3-07",
+      "type": "multiple-choice",
+      "topic": "Government S&T Programs",
+      "question": "What is the goal of the Philippines' 'Balik Scientist Program'?",
+      "options": [
+        "To send all high school students abroad permanently",
+        "To incentivize foreign-based Filipino scientists and experts to return and contribute to local R&D",
+        "To replace science teachers with AI chatbots",
+        "To privatize PAGASA weather stations"
+      ],
+      "answer": "To incentivize foreign-based Filipino scientists and experts to return and contribute to local R&D",
+      "explanation": "The Balik Scientist Program counters brain drain by bringing Filipino experts home to strengthen local research and mentorship."
+    },
+    {
+      "id": "sts-s3-08",
+      "type": "multiple-choice",
+      "topic": "Science Education in PH",
+      "question": "Which specialized Philippine public educational initiatives nurture gifted youth in science, technology, engineering, and mathematics (STEM)?",
+      "options": [
+        "Philippine Science High School System (PSHSS) and Special Science Elementary Schools (SSES)",
+        "Galleon Trade Academy and Bureau of Customs",
+        "Kattukong Craft Guilds only",
+        "Sarswela and Senakulo troupes"
+      ],
+      "answer": "Philippine Science High School System (PSHSS) and Special Science Elementary Schools (SSES)",
+      "explanation": "PSHSS, SSES, STEM scholarships, and the K to 12 Spiral Progression build national scientific human capital."
+    },
+    {
+      "id": "sts-s3-09",
+      "type": "multiple-choice",
+      "topic": "Government S&T Programs",
+      "question": "Why does the government establish Science & Technology (S&T) Parks alongside National Science & Engineering Complexes (such as at UP Diliman)?",
+      "options": [
+        "To replace farmland with shopping malls",
+        "To foster collaboration and partnerships between academic researchers and industry",
+        "To ban foreign technology transfers",
+        "To serve as tourist theme parks"
+      ],
+      "answer": "To foster collaboration and partnerships between academic researchers and industry",
+      "explanation": "S&T Parks connect university innovation directly with industrial commercialization and national development."
+    },
+    {
+      "id": "sts-s3-10",
+      "type": "multiple-choice",
+      "topic": "Filipino Scientists",
+      "question": "Which of the 10 Outstanding Filipino Scientists (cited by Dr. Queena Lee-Chua, 2000) is renowned for mango flowering and tissue culture research?",
+      "options": [
+        "Ramon Barba",
+        "Rafael Guerrero III",
+        "Josefino Comiso",
+        "Enrique Ostrea Jr."
+      ],
+      "answer": "Ramon Barba",
+      "explanation": "Ramon Barba revolutionized Philippine mango production through flower induction and tissue culture research."
+    },
+    {
+      "id": "sts-s3-11",
+      "type": "multiple-choice",
+      "topic": "Filipino Scientists",
+      "question": "Who among the Outstanding Filipino Scientists pioneered tilapia sex-reversal culture research, greatly boosting aquaculture?",
+      "options": [
+        "Lourdes Cruz",
+        "Rafael Guerrero III",
+        "Fabian Dayrit",
+        "Gregory Tangonan"
+      ],
+      "answer": "Rafael Guerrero III",
+      "explanation": "Rafael Guerrero III developed practical tilapia sex-reversal techniques for Philippine fisheries."
+    },
+    {
+      "id": "sts-s3-12",
+      "type": "multiple-choice",
+      "topic": "Filipino Scientists",
+      "question": "Dr. Lourdes Cruz gained international recognition for her biochemical research on:",
+      "options": [
+        "Satellite imagery of Antarctica",
+        "Sea snail venom (conotoxins)",
+        "Graph theory in mathematics",
+        "Meconium newborn drug testing"
+      ],
+      "answer": "Sea snail venom (conotoxins)",
+      "explanation": "Lourdes Cruz's pioneering work on Conus sea snail venom (conotoxins) advanced neuroscience and pharmacology."
+    },
+    {
+      "id": "sts-s3-13",
+      "type": "multiple-choice",
+      "topic": "Filipino Scientists",
+      "question": "Match the Filipino scientist to their contribution: Josefino Comiso, Enrique Ostrea Jr., and Fabian Dayrit.",
+      "options": [
+        "Comiso: Antarctica satellite imagery; Ostrea Jr.: meconium drug testing; Dayrit: herbal medicine (lagundi, coconut oil)",
+        "Comiso: mango tissue culture; Ostrea Jr.: tilapia sex reversal; Dayrit: IEEE electrical leadership",
+        "Comiso: plant biotech; Ostrea Jr.: graph theory; Dayrit: communications tech",
+        "Comiso: bamboo incubator; Ostrea Jr.: SALt lamp; Dayrit: eJeepney"
+      ],
+      "answer": "Comiso: Antarctica satellite imagery; Ostrea Jr.: meconium drug testing; Dayrit: herbal medicine (lagundi, coconut oil)",
+      "explanation": "Each scientist represents Philippine excellence across earth observation, pediatrics/diagnostics, and natural products chemistry."
+    },
+    {
+      "id": "sts-s3-14",
+      "type": "multiple-choice",
+      "topic": "Filipino Scientists",
+      "question": "Match the remaining Outstanding Filipino Scientists: Jose Cruz Jr., Lilian Patena, Mari-jo Ruiz, and Gregory Tangonan.",
+      "options": [
+        "Cruz Jr.: Electrical engineering/IEEE; Patena: Plant biotechnology; Ruiz: Graph theory & math education; Tangonan: Communications technology",
+        "Cruz Jr.: Conotoxins; Patena: Herbal medicine; Ruiz: Antarctica satellites; Tangonan: Tilapia culture",
+        "Cruz Jr.: Pediatrics; Patena: Saltwater lamps; Ruiz: Flood tricycles; Tangonan: Dengue traps",
+        "Cruz Jr.: Astronomy; Patena: Civil law; Ruiz: Painting; Tangonan: Architecture"
+      ],
+      "answer": "Cruz Jr.: Electrical engineering/IEEE; Patena: Plant biotechnology; Ruiz: Graph theory & math education; Tangonan: Communications technology",
+      "explanation": "All ten scientists listed by Queena Lee-Chua (2000) demonstrate world-class Filipino research across diverse fields."
+    },
+    {
+      "id": "sts-s3-15",
+      "type": "multiple-choice",
+      "topic": "Nation-Building Goal",
+      "question": "According to the Midterm Reviewer, how does S&T contribute to Philippine nation-building and citizens' quality of life?",
+      "options": [
+        "It ensures national isolation from global research",
+        "It helps establish cohesive national goals (Alesina & Reich, 2015), solves modern problems, and supports a 'matatag, maginhawa at panatag na buhay'",
+        "It eliminates all traditional indigenous practices",
+        "It focuses exclusively on luxury consumer imports"
+      ],
+      "answer": "It helps establish cohesive national goals (Alesina & Reich, 2015), solves modern problems, and supports a 'matatag, maginhawa at panatag na buhay'",
+      "explanation": "S&T empowers informed decision-making and fosters national self-reliance and resilience."
+    },
+    {
+      "id": "sts-s3-16",
+      "type": "multiple-choice",
+      "topic": "Indigenous Knowledge System",
+      "question": "How is an Indigenous Knowledge System preserved and transmitted across generations in Philippine communities?",
+      "options": [
+        "Through corporate patents and encrypted cloud servers",
+        "Embedded in daily community life and passed down by elders through cultural practices, life stories, songs, and poems",
+        "Strictly via American colonial textbooks",
+        "Through standardized international SAT exams"
+      ],
+      "answer": "Embedded in daily community life and passed down by elders through cultural practices, life stories, songs, and poems",
+      "explanation": "Indigenous knowledge lives in community traditions, oral storytelling, and everyday environmental practices."
+    },
+    {
+      "id": "sts-s3-17",
+      "type": "multiple-choice",
+      "topic": "Indigenous Science",
+      "question": "What is the relationship between an Indigenous Knowledge System and Indigenous Science?",
+      "options": [
+        "They are completely unrelated opposites.",
+        "Indigenous science is a subset of the indigenous knowledge system—comprising complex knowledge, expertise, and practices guiding human interaction with the natural environment.",
+        "Indigenous science rejects all observation of nature.",
+        "Indigenous knowledge system is strictly modern AI software."
+      ],
+      "answer": "Indigenous science is a subset of the indigenous knowledge system—comprising complex knowledge, expertise, and practices guiding human interaction with the natural environment.",
+      "explanation": "Indigenous science encompasses empirical community practices built from generations of observing local ecosystems."
+    },
+    {
+      "id": "sts-s3-18",
+      "type": "multiple-choice",
+      "topic": "Indigenous Science Practices",
+      "question": "Which of the following is an authentic example of Philippine indigenous science?",
+      "options": [
+        "Predicting weather and seasons by observing animal behaviors and celestial patterns",
+        "Synthesizing plastics in petrochemical refineries",
+        "Launching geostationary weather satellites",
+        "Running CRISPR gene-editing clinics"
+      ],
+      "answer": "Predicting weather and seasons by observing animal behaviors and celestial patterns",
+      "explanation": "Indigenous communities forecast weather, preserve food (salting, drying, fermentation), select seeds, use herbal medicine, and manage irrigation."
+    },
+    {
+      "id": "sts-s3-19",
+      "type": "multiple-choice",
+      "topic": "Indigenous Science Practices",
+      "question": "Which list accurately captures additional Philippine indigenous S&T practices from Unit 3?",
+      "options": [
+        "Food preservation (salting, drying, fermentation), classifying flora/fauna/soil types, seed selection, indigenous irrigation, and fruit wine/juice production",
+        "Steam engines, Gutenberg presses, and nuclear submarines",
+        "Kerosene refining and telegraphy",
+        "Digital 3D printing and blockchain"
+      ],
+      "answer": "Food preservation (salting, drying, fermentation), classifying flora/fauna/soil types, seed selection, indigenous irrigation, and fruit wine/juice production",
+      "explanation": "These practices show systematic observation, classification, preservation, and sustainable resource management."
+    },
+    {
+      "id": "sts-s3-20",
+      "type": "multiple-choice",
+      "topic": "S&T Integration",
+      "question": "How do innovations like Dr. Fe del Mundo's bamboo incubator and Aisa Mijeno's SALt lamp illustrate the integration of indigenous/local resources with modern S&T?",
+      "options": [
+        "They use scarce, expensive European materials",
+        "They creatively adapt abundant local materials and contexts to produce low-cost, ethical, accessible scientific solutions",
+        "They ignore rural community needs entirely",
+        "They depend on diesel generators"
+      ],
+      "answer": "They creatively adapt abundant local materials and contexts to produce low-cost, ethical, accessible scientific solutions",
+      "explanation": "Filipino ingenuity bridges local materials and modern scientific principles to solve pressing community challenges."
+    },
+    {
+      "id": "sts-s3-21",
+      "type": "multiple-choice",
+      "topic": "Outstanding Young Scientists",
+      "question": "In the 2006 Outstanding Young Scientists roster cited in Unit 2, which fields are represented by Rhodora Aldemita/Glenn Gregorio and Ma. Alicia Aguinaldo/Christina Binag respectively?",
+      "options": [
+        "Biology and Chemistry",
+        "Astronomy and Architecture",
+        "Mechanical Engineering and Law",
+        "Geology and Oceanography"
+      ],
+      "answer": "Biology and Chemistry",
+      "explanation": "Aldemita and Gregorio were recognized in biology, Aguinaldo and Binag in chemistry, alongside scholars like Queena Lee-Chua and Dindo Campilan."
+    },
+    {
+      "id": "sts-s3-22",
+      "type": "multiple-choice",
+      "topic": "Education & Research Policy",
+      "question": "What is the purpose of the 'K to 12 Spiral Progression' approach in Philippine science education?",
+      "options": [
+        "To teach science only in Grade 12",
+        "To integrate and revisit science concepts progressively with increasing depth across grade levels",
+        "To remove laboratory experiments from schools",
+        "To focus exclusively on foreign languages"
+      ],
+      "answer": "To integrate and revisit science concepts progressively with increasing depth across grade levels",
+      "explanation": "Spiral progression builds foundational concepts early and deepens scientific literacy systematically across grades."
+    },
+    {
+      "id": "sts-s3-23",
+      "type": "multiple-choice",
+      "topic": "Agency Evolution",
+      "question": "What was the precursor agency created in 1958 that was later reconstituted into NSTA under Marcos and eventually became DOST?",
+      "options": [
+        "National Science and Development Board (NSDB)",
+        "Philippine Atmospheric Agency (PAA)",
+        "Bureau of Plant Industry",
+        "Department of Public Works"
+      ],
+      "answer": "National Science and Development Board (NSDB)",
+      "explanation": "Established in 1958 as NSDB, it became NSTA under Marcos and DOST under EO 128 in 1987."
+    },
+    {
+      "id": "sts-s3-24",
+      "type": "multiple-choice",
+      "topic": "Public Health & Science",
+      "question": "Besides her non-electric bamboo incubator, which pediatric breakthroughs are credited to Dr. Fe del Mundo?",
+      "options": [
+        "Immunization advocacy, jaundice treatment, and the BRAT diet for curing diarrhea",
+        "Inventing the first compound microscope and penicillin",
+        "Mapping the Antarctic ice sheet",
+        "Developing Golden Rice"
+      ],
+      "answer": "Immunization advocacy, jaundice treatment, and the BRAT diet for curing diarrhea",
+      "explanation": "Dr. Fe del Mundo transformed Filipino pediatric care through accessible innovations and public health research."
+    },
+    {
+      "id": "sts-s3-25",
+      "type": "multiple-choice",
+      "topic": "Colonial Contrast",
+      "question": "How did the focus of public education and science differ between the Spanish and American periods in the Philippines?",
+      "options": [
+        "Spanish era education/sanitation largely benefited the principalia and church-run colleges (like UST), whereas the American era secularized public schooling (Act No. 74) and founded the Bureau of Science",
+        "Spanish era banned all churches; American era banned public schools",
+        "Spanish era created DOST; American era created the Cordillera rice terraces",
+        "There was no difference in educational policy"
+      ],
+      "answer": "Spanish era education/sanitation largely benefited the principalia and church-run colleges (like UST), whereas the American era secularized public schooling (Act No. 74) and founded the Bureau of Science",
+      "explanation": "Each colonial era left distinct institutional legacies that shaped Philippine S&T."
+    },
+    {
+      "id": "sts-s3-26",
+      "type": "multiple-choice",
+      "topic": "Indigenous Classification",
+      "question": "How do indigenous Philippine communities classify plants, animals, and soil types?",
+      "options": [
+        "Randomly without names",
+        "Based on cultural properties, ecological utility, and lived environmental observation",
+        "Only by Latin binomial names invented in Europe",
+        "Strictly by industrial market price"
+      ],
+      "answer": "Based on cultural properties, ecological utility, and lived environmental observation",
+      "explanation": "Indigenous taxonomy connects ecological traits with practical farming, medicine, and cultural meaning."
+    },
+    {
+      "id": "sts-s3-27",
+      "type": "multiple-choice",
+      "topic": "Post-Colonial Legacy",
+      "question": "Why did President Ferdinand Marcos replace the older Weather Bureau with PAGASA?",
+      "options": [
+        "To eliminate meteorology from government",
+        "To strengthen geophysical, atmospheric, and astronomical monitoring as part of national S&T modernization",
+        "To transfer weather tracking to private shipping firms",
+        "To focus only on mining operations"
+      ],
+      "answer": "To strengthen geophysical, atmospheric, and astronomical monitoring as part of national S&T modernization",
+      "explanation": "Establishing PAGASA, NAST, and NSTA aimed to institutionalize modern scientific capacity in the Philippines."
+    },
+    {
+      "id": "sts-s3-28",
+      "type": "multiple-choice",
+      "topic": "R&D Incentives",
+      "question": "Which DOST initiatives directly support researchers, students, and patent development in the Philippines?",
+      "options": [
+        "R&D funding grants for projects/patents and undergraduate/graduate STEM scholarships",
+        "Prohibiting Filipino students from entering universities",
+        "Taxing scientific publications",
+        "Eliminating engineering programs"
+      ],
+      "answer": "R&D funding grants for projects/patents and undergraduate/graduate STEM scholarships",
+      "explanation": "Funding grants, scholarships, and S&T complexes work together to cultivate local talent and innovation."
+    },
+    {
+      "id": "sts-s3-29",
+      "type": "multiple-choice",
+      "topic": "Indigenous Agriculture",
+      "question": "How do the Cordillera rice terraces prevent water scarcity and sustain mountain agriculture?",
+      "options": [
+        "Through electric water pumps powered by coal",
+        "Through an integrated gravity irrigation system channeling water from mountain forests and peaks down through stepped terraces",
+        "By importing bottled water daily",
+        "By growing crops only during typhoons"
+      ],
+      "answer": "Through an integrated gravity irrigation system channeling water from mountain forests and peaks down through stepped terraces",
+      "explanation": "Forest-fed irrigation and terraced stonework transform steep mountainsides into productive sustainable farms."
+    },
+    {
+      "id": "sts-s3-30",
+      "type": "multiple-choice",
+      "topic": "Self-Reliance",
+      "question": "Why is science education considered vital to Philippine nation-building?",
+      "options": [
+        "It trains skilled professionals who foster national self-reliance and solve local challenges ethically",
+        "It guarantees everyone becomes a politician",
+        "It removes the need for agriculture and healthcare",
+        "It replaces cultural identity with foreign trends"
+      ],
+      "answer": "It trains skilled professionals who foster national self-reliance and solve local challenges ethically",
+      "explanation": "Strong science education builds domestic capability to tackle public health, disaster resilience, and economic development."
+    }
+  ]
+}
