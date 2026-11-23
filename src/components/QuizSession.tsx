@@ -507,8 +507,8 @@ export function QuizSession({
     )}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
 
     return (
-      <div className="mx-auto max-w-2xl space-y-6">
-        <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
+      <div className="mx-auto max-w-2xl space-y-4 sm:space-y-6">
+        <div className="rounded-2xl border border-zinc-200 bg-white p-4 shadow-xs sm:p-6 dark:border-zinc-800 dark:bg-zinc-900">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
               <p className="text-xs font-medium tracking-wide text-indigo-600 uppercase dark:text-indigo-400">
@@ -524,8 +524,8 @@ export function QuizSession({
               </p>
             </div>
 
-            <div className="flex h-20 w-20 flex-col items-center justify-center rounded-2xl bg-indigo-50 text-indigo-700 dark:bg-indigo-950/70 dark:text-indigo-300">
-              <span className="text-2xl font-bold">{scorePercent}%</span>
+            <div className="flex h-16 w-16 flex-col items-center justify-center rounded-2xl bg-indigo-50 text-indigo-700 sm:h-20 sm:w-20 dark:bg-indigo-950/70 dark:text-indigo-300">
+              <span className="text-xl font-bold sm:text-2xl">{scorePercent}%</span>
               <span className="text-[11px] font-medium">Score</span>
             </div>
           </div>
@@ -742,11 +742,11 @@ export function QuizSession({
         />
       </div>
 
-      <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
+      <div className="rounded-2xl border border-zinc-200 bg-white p-4 shadow-xs sm:p-6 dark:border-zinc-800 dark:bg-zinc-900">
         <p className="text-xs font-medium tracking-wide text-zinc-400 uppercase">
           {currentQuestion.type.replace('-', ' ')}
         </p>
-        <h2 className="mt-2 text-lg leading-snug font-semibold text-zinc-900 dark:text-zinc-100">
+        <h2 className="mt-2 text-base leading-snug font-semibold text-zinc-900 sm:text-lg dark:text-zinc-100">
           {currentQuestion.question}
         </h2>
 
@@ -819,7 +819,7 @@ export function QuizSession({
                   type="button"
                   disabled={revealed}
                   onClick={() => submitChoice(option)}
-                  className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left text-sm transition ${styleClass}`}
+                  className={`flex w-full items-center gap-2.5 rounded-xl border px-3 py-2.5 text-left text-xs transition sm:gap-3 sm:px-4 sm:py-3 sm:text-sm ${styleClass}`}
                 >
                   <kbd className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md border border-current/20 bg-black/5 text-xs font-semibold dark:bg-white/5">
                     {idx + 1}
@@ -902,7 +902,7 @@ export function QuizSession({
         )}
       </div>
 
-      <p className="text-center text-xs text-zinc-400 dark:text-zinc-500">
+      <p className="hidden text-center text-xs text-zinc-400 sm:block dark:text-zinc-500">
         Shortcuts: <kbd className="font-mono">1-4</kbd> pick answer ·{' '}
         <kbd className="font-mono">Enter</kbd> / <kbd className="font-mono">Space</kbd> /{' '}
         <kbd className="font-mono">→</kbd> next · <kbd className="font-mono">Esc</kbd> exit

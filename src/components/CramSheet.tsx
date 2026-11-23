@@ -59,7 +59,7 @@ export function CramSheet({
 
   return (
     <div className="space-y-5">
-      <div className="flex flex-col justify-between gap-3 rounded-xl border border-zinc-200 bg-white p-4 sm:flex-row sm:items-center dark:border-zinc-800 dark:bg-zinc-900">
+      <div className="flex flex-col justify-between gap-3 rounded-xl border border-zinc-200 bg-white p-3.5 sm:flex-row sm:items-center sm:p-4 dark:border-zinc-800 dark:bg-zinc-900">
         <div>
           <p className="text-xs font-medium text-indigo-600 dark:text-indigo-400">
             {deck.subject} · Cram Sheet
@@ -151,7 +151,7 @@ export function CramSheet({
             <div
               key={item.id}
               onClick={() => toggleCardAnswer(item.id)}
-              className={`rounded-xl border bg-white p-4 transition dark:bg-zinc-900 ${
+              className={`min-w-0 rounded-xl border bg-white p-3.5 transition sm:p-4 dark:bg-zinc-900 ${
                 hideAnswers ? 'cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700' : ''
               } ${
                 isMissed

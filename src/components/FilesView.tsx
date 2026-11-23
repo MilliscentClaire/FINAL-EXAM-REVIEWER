@@ -56,13 +56,13 @@ export function FilesView({ files, decks, onStartQuiz }: FilesViewProps) {
   }, [files, query, selectedCourse]);
 
   return (
-    <div className="space-y-6">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+    <div className="space-y-4 sm:space-y-6">
+      <div className="flex flex-col gap-2.5 sm:flex-row sm:items-end sm:justify-between sm:gap-3">
         <div>
-          <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+          <h1 className="text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl dark:text-zinc-100">
             Course Source Files
           </h1>
-          <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+          <p className="mt-0.5 text-xs text-zinc-500 sm:mt-1 sm:text-sm dark:text-zinc-400">
             Original documents from <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-800">docs/reviewer files/</code> linked to their categorized quiz sections.
           </p>
         </div>
@@ -110,7 +110,7 @@ export function FilesView({ files, decks, onStartQuiz }: FilesViewProps) {
           return (
             <div
               key={file.id}
-              className="rounded-xl border border-zinc-200 bg-white p-5 shadow-xs transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700"
+              className="min-w-0 rounded-xl border border-zinc-200 bg-white p-3.5 shadow-xs transition hover:border-zinc-300 sm:p-5 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700"
             >
               <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-start">
                 <div className="min-w-0 flex-1">
@@ -132,7 +132,7 @@ export function FilesView({ files, decks, onStartQuiz }: FilesViewProps) {
                     </span>
                   </div>
 
-                  <h2 className="mt-2 flex items-center gap-2 text-base font-semibold break-words text-zinc-900 dark:text-zinc-100">
+                  <h2 className="mt-2 flex items-center gap-2 text-sm font-semibold break-all text-zinc-900 sm:text-base sm:break-words dark:text-zinc-100">
                     <FileText className="h-4 w-4 shrink-0 text-zinc-400" />
                     <span>{file.fileName}</span>
                   </h2>

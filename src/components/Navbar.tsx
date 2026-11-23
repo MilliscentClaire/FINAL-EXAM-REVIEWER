@@ -27,17 +27,17 @@ export function Navbar({
 }: NavbarProps) {
   return (
     <header className="sticky top-0 z-20 border-b border-zinc-200 bg-white/90 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/90">
-      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between gap-3 px-4 sm:px-6">
-        <div className="flex min-w-0 items-center gap-3">
+      <div className="mx-auto flex h-12 max-w-5xl items-center justify-between gap-2 px-3 sm:h-14 sm:gap-3 sm:px-6">
+        <div className="flex min-w-0 items-center gap-2 sm:gap-3">
           <button
             type="button"
             onClick={onGoHome}
-            className="flex shrink-0 items-center gap-2 rounded-lg py-1 pr-2 text-left transition hover:opacity-80"
+            className="flex shrink-0 items-center gap-2 rounded-lg py-1 pr-1 text-left transition hover:opacity-80 sm:pr-2"
           >
-            <span className="flex h-7 w-7 items-center justify-center rounded-md bg-indigo-600 text-white">
-              <Zap className="h-4 w-4" />
+            <span className="flex h-6 w-6 items-center justify-center rounded-md bg-indigo-600 text-white sm:h-7 sm:w-7">
+              <Zap className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
             </span>
-            <span className="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
+            <span className="text-sm font-semibold tracking-tight text-zinc-900 sm:text-base dark:text-zinc-100">
               QuickReview
             </span>
           </button>
@@ -45,12 +45,12 @@ export function Navbar({
           {!inSession ? (
             <nav
               aria-label="Primary tabs"
-              className="flex items-center gap-1 rounded-lg border border-zinc-200 bg-zinc-100/80 p-0.5 dark:border-zinc-800 dark:bg-zinc-900"
+              className="hidden items-center gap-1 rounded-lg border border-zinc-200 bg-zinc-100/80 p-0.5 sm:flex dark:border-zinc-800 dark:bg-zinc-900"
             >
               <button
                 type="button"
                 onClick={() => onSelectTab('reviewers')}
-                className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs font-medium transition ${
+                className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs font-medium whitespace-nowrap transition ${
                   activeTab === 'reviewers'
                     ? 'bg-white text-zinc-900 shadow-xs dark:bg-zinc-800 dark:text-zinc-100'
                     : 'text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-200'
@@ -66,7 +66,7 @@ export function Navbar({
               <button
                 type="button"
                 onClick={() => onSelectTab('files')}
-                className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs font-medium transition ${
+                className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs font-medium whitespace-nowrap transition ${
                   activeTab === 'files'
                     ? 'bg-white text-zinc-900 shadow-xs dark:bg-zinc-800 dark:text-zinc-100'
                     : 'text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-200'
@@ -88,15 +88,16 @@ export function Navbar({
           )}
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
           {inSession && (
             <button
               type="button"
               onClick={onGoHome}
-              className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-700 transition hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-2.5 py-1.5 text-xs font-medium text-zinc-700 transition hover:bg-zinc-100 sm:px-3 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
             >
               <ArrowLeft className="h-3.5 w-3.5" />
-              <span>Back to Decks</span>
+              <span>Back</span>
+              <span className="hidden sm:inline">to Decks</span>
               <kbd className="hidden rounded border border-zinc-200 bg-zinc-50 px-1 text-[10px] text-zinc-500 sm:inline dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-400">
                 Esc
               </kbd>
@@ -113,6 +114,47 @@ export function Navbar({
           </button>
         </div>
       </div>
+
+      {!inSession && (
+        <div className="border-t border-zinc-100 px-3 py-1.5 sm:hidden dark:border-zinc-800/80">
+          <nav
+            aria-label="Mobile tabs"
+            className="grid grid-cols-2 gap-1 rounded-lg border border-zinc-200 bg-zinc-100/80 p-0.5 dark:border-zinc-800 dark:bg-zinc-900"
+          >
+            <button
+              type="button"
+              onClick={() => onSelectTab('reviewers')}
+              className={`inline-flex items-center justify-center gap-1.5 rounded-md px-2 py-1 text-xs font-medium whitespace-nowrap transition ${
+                activeTab === 'reviewers'
+                  ? 'bg-white text-zinc-900 shadow-xs dark:bg-zinc-800 dark:text-zinc-100'
+                  : 'text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-200'
+              }`}
+            >
+              <LayoutGrid className="h-3.5 w-3.5 shrink-0" />
+              <span>Reviewers</span>
+              <span className="rounded bg-zinc-200/80 px-1.5 py-0.2 text-[10px] font-semibold text-zinc-700 dark:bg-zinc-700 dark:text-zinc-200">
+                {reviewerCount}
+              </span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => onSelectTab('files')}
+              className={`inline-flex items-center justify-center gap-1.5 rounded-md px-2 py-1 text-xs font-medium whitespace-nowrap transition ${
+                activeTab === 'files'
+                  ? 'bg-white text-zinc-900 shadow-xs dark:bg-zinc-800 dark:text-zinc-100'
+                  : 'text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-200'
+              }`}
+            >
+              <FolderOpen className="h-3.5 w-3.5 shrink-0" />
+              <span>Files</span>
+              <span className="rounded bg-zinc-200/80 px-1.5 py-0.2 text-[10px] font-semibold text-zinc-700 dark:bg-zinc-700 dark:text-zinc-200">
+                {fileCount}
+              </span>
+            </button>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

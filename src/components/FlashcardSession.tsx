@@ -69,7 +69,7 @@ export function FlashcardSession({ deck, onExit }: FlashcardSessionProps) {
 
   if (!currentCard) {
     return (
-      <div className="mx-auto max-w-xl rounded-2xl border border-zinc-200 bg-white p-8 text-center shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
+      <div className="mx-auto max-w-xl rounded-2xl border border-zinc-200 bg-white p-5 text-center shadow-xs sm:p-8 dark:border-zinc-800 dark:bg-zinc-900">
         <p className="text-xs font-medium tracking-wide text-indigo-600 uppercase dark:text-indigo-400">
           {deck.subject}
         </p>
@@ -126,7 +126,7 @@ export function FlashcardSession({ deck, onExit }: FlashcardSessionProps) {
         onKeyDown={(e) => {
           if (e.key === 'Enter') setFlipped((f) => !f);
         }}
-        className="flex min-h-72 cursor-pointer flex-col justify-between rounded-2xl border border-zinc-200 bg-white p-6 shadow-xs transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700"
+        className="flex min-h-60 cursor-pointer flex-col justify-between rounded-2xl border border-zinc-200 bg-white p-4 shadow-xs sm:min-h-72 sm:p-6 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700"
       >
         <div>
           <div className="flex items-center justify-between gap-2">
@@ -140,7 +140,7 @@ export function FlashcardSession({ deck, onExit }: FlashcardSessionProps) {
             )}
           </div>
 
-          <h2 className="mt-4 text-lg leading-snug font-semibold text-zinc-900 dark:text-zinc-100">
+          <h2 className="mt-3 text-base leading-snug font-semibold text-zinc-900 sm:mt-4 sm:text-lg dark:text-zinc-100">
             {currentCard.question}
           </h2>
 

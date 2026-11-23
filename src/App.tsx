@@ -170,7 +170,7 @@ export function App() {
   }, [activeDeck, activeMissedIds, missedOnlyMode]);
 
   return (
-    <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+    <div className="min-h-screen overflow-x-hidden bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <Navbar
         darkMode={prefs.darkMode}
         inSession={view !== 'dashboard'}
@@ -188,7 +188,7 @@ export function App() {
         onGoHome={handleGoHome}
       />
 
-      <main className="mx-auto max-w-5xl px-4 py-6 sm:px-6 sm:py-8">
+      <main className="mx-auto max-w-5xl px-3 py-4 sm:px-6 sm:py-8">
         {view === 'dashboard' || !activeDeck ? (
           activeTab === 'files' ? (
             <FilesView
