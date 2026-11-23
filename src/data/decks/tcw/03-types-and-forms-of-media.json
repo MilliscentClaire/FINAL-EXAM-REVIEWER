@@ -1,0 +1,377 @@
+{
+  "id": "tcw-s3-media-literacy",
+  "course": "The Contemporary World",
+  "sectionOrder": 3,
+  "sectionLabel": "Section 3",
+  "title": "Types & Forms of Media and Responsible Media Literacy",
+  "subject": "The Contemporary World",
+  "description": "Six major forms of media (Print, Broadcast, Film, Digital/New, Social, Multimedia), gatekeeping, convergence, echo chambers, and verifying online information.",
+  "sourceFile": "Types and Forms of Media.pdf, Finals Reading Material.pdf",
+  "createdAt": "2026-11-24",
+  "questions": [
+    {
+      "id": "tcw-s3-01",
+      "type": "multiple-choice",
+      "topic": "Definition of Media",
+      "question": "How is 'media' broadly defined in the reading material 'Understanding the Types and Forms of Media'?",
+      "options": [
+        "Only television news broadcasts",
+        "The channels, technologies, institutions, and processes used to produce, distribute, and exchange information",
+        "Strictly printed daily newspapers",
+        "Only smartphone entertainment apps"
+      ],
+      "answer": "The channels, technologies, institutions, and processes used to produce, distribute, and exchange information",
+      "explanation": "Media shapes societies, public opinion, and cross-border communication across political, economic, and cultural spheres."
+    },
+    {
+      "id": "tcw-s3-02",
+      "type": "multiple-choice",
+      "topic": "Six Forms of Media",
+      "question": "Which list correctly identifies the six widely categorized forms of media?",
+      "options": [
+        "Print media, Broadcast media, Film/Cinema, Digital/New media, Social media, and Multimedia",
+        "Telegraph, Clay tablets, Papyrus, Smoke signals, Morse code, and Posters",
+        "Radio, Television, Cable, Satellite, Wi-Fi, and Bluetooth",
+        "Books, Novels, Poems, Essays, Dictionaries, and Encyclopedias"
+      ],
+      "answer": "Print media, Broadcast media, Film/Cinema, Digital/New media, Social media, and Multimedia",
+      "explanation": "Each of the six categories has distinct technological foundations, strengths, and cultural functions."
+    },
+    {
+      "id": "tcw-s3-03",
+      "type": "multiple-choice",
+      "topic": "Print Media",
+      "question": "Following the 15th-century Gutenberg printing press, what three defining characteristics continue to give print media authority in academic and legal domains?",
+      "options": [
+        "Interactivity, algorithms, and instant edits",
+        "Permanence, tangibility, and textual depth (fixed, unaltered content suitable for archiving)",
+        "Electromagnetic transmission and live sound",
+        "Virtual reality immersion"
+      ],
+      "answer": "Permanence, tangibility, and textual depth (fixed, unaltered content suitable for archiving)",
+      "explanation": "Print media (books, newspapers, journals, posters) launched mass communication and remains trusted for fixed long-term reference."
+    },
+    {
+      "id": "tcw-s3-04",
+      "type": "multiple-choice",
+      "topic": "Print Media History",
+      "question": "Which historical milestones were heavily propelled by the rise of print media?",
+      "options": [
+        "Literacy development, education, political revolutions, and the dissemination of religious and scientific ideas",
+        "Wireless radio broadcasting",
+        "Algorithmic social media feeds",
+        "Virtual reality corporate training"
+      ],
+      "answer": "Literacy development, education, political revolutions, and the dissemination of religious and scientific ideas",
+      "explanation": "Print standardized and democratized access to knowledge across regions."
+    },
+    {
+      "id": "tcw-s3-05",
+      "type": "multiple-choice",
+      "topic": "Broadcast Media",
+      "question": "How does broadcast media transmit information, and what makes radio uniquely valuable compared to other media?",
+      "options": [
+        "Transmits via electromagnetic airwaves/cable; radio uses audio signals and remains accessible even in geographically isolated or economically disadvantaged areas",
+        "Transmits exclusively via paper; radio requires high-speed fiber internet",
+        "Transmits only silent text",
+        "Reaches only one viewer at a time"
+      ],
+      "answer": "Transmits via electromagnetic airwaves/cable; radio uses audio signals and remains accessible even in geographically isolated or economically disadvantaged areas",
+      "explanation": "Broadcast media (radio and TV) send one-to-many real-time reports and shape national identity."
+    },
+    {
+      "id": "tcw-s3-06",
+      "type": "multiple-choice",
+      "topic": "Broadcast Media: Television",
+      "question": "How did 20th-century television enhance broadcast communication compared to radio alone?",
+      "options": [
+        "By eliminating sound completely",
+        "By integrating audio and visual components simultaneously (moving images + sound), enabling collective mass viewing",
+        "By printing paper transcripts inside every TV",
+        "By allowing every viewer to edit live broadcasts"
+      ],
+      "answer": "By integrating audio and visual components simultaneously (moving images + sound), enabling collective mass viewing",
+      "explanation": "Regulated by government agencies and commercial networks, radio and TV transformed news, entertainment, and political discourse."
+    },
+    {
+      "id": "tcw-s3-07",
+      "type": "multiple-choice",
+      "topic": "Broadcast vs. Digital",
+      "question": "How does the communication flow of traditional radio/TV differ from modern digital platforms (Reading Material 5)?",
+      "options": [
+        "Radio/TV typically send information one-way from one broadcaster to many people, whereas digital platforms allow many people to create, share, and respond globally",
+        "Radio/TV allow unlimited two-way commenting; digital platforms are one-way only",
+        "Neither can cross national borders",
+        "Digital platforms cannot carry audio or video"
+      ],
+      "answer": "Radio/TV typically send information one-way from one broadcaster to many people, whereas digital platforms allow many people to create, share, and respond globally",
+      "explanation": "Digital media empowers students, artists, and small businesses to reach international audiences directly."
+    },
+    {
+      "id": "tcw-s3-08",
+      "type": "multiple-choice",
+      "topic": "Film and Cinema",
+      "question": "Beyond entertainment, why is film/cinema described as an important 'cultural institution'?",
+      "options": [
+        "It reflects societal values, critiques systems, constructs collective memory, and immersively explores historical events and ethical dilemmas",
+        "It strictly avoids political or historical themes",
+        "It relies solely on written footnotes without sound or imagery",
+        "It can only be watched on printed paper"
+      ],
+      "answer": "It reflects societal values, critiques systems, constructs collective memory, and immersively explores historical events and ethical dilemmas",
+      "explanation": "Cinema serves as a powerful medium for education, cultural expression, social critique, and even propaganda."
+    },
+    {
+      "id": "tcw-s3-09",
+      "type": "multiple-choice",
+      "topic": "Digital or New Media",
+      "question": "Which four defining characteristics distinguish Digital (New) Media from passive traditional media?",
+      "options": [
+        "Permanence, paper texture, slow mail, and fixed ink",
+        "Interactivity, convergence, speed, and user participation",
+        "Strictly government-owned airwaves only",
+        "Absence of internet connectivity"
+      ],
+      "answer": "Interactivity, convergence, speed, and user participation",
+      "explanation": "Digital media (websites, blogs, podcasts, e-books, streaming, messaging apps) blurs producer/audience lines."
+    },
+    {
+      "id": "tcw-s3-10",
+      "type": "multiple-choice",
+      "topic": "Digital Media Impact",
+      "question": "What does blurring the line between media producers and audiences in digital media give rise to?",
+      "options": [
+        "Participatory cultures and citizen journalism",
+        "Complete elimination of podcasts and blogs",
+        "Return to 15th-century hand-copying",
+        "Total censorship of user comments"
+      ],
+      "answer": "Participatory cultures and citizen journalism",
+      "explanation": "Users actively remix, comment, report, and customize content rather than passively receiving broadcasts."
+    },
+    {
+      "id": "tcw-s3-11",
+      "type": "multiple-choice",
+      "topic": "Social Media",
+      "question": "How is social media defined as a distinct subset of digital media?",
+      "options": [
+        "Platforms emphasizing user-generated content, online communities, and continuous interaction without traditional institutional gatekeeping",
+        "State-run AM radio stations",
+        "Printed academic encyclopedias",
+        "Offline movie theaters"
+      ],
+      "answer": "Platforms emphasizing user-generated content, online communities, and continuous interaction without traditional institutional gatekeeping",
+      "explanation": "Platforms like Facebook, Instagram, TikTok, X, and YouTube turn personal communication into public discourse."
+    },
+    {
+      "id": "tcw-s3-12",
+      "type": "multiple-choice",
+      "topic": "Social Media Algorithms",
+      "question": "What major risk arises from social media's algorithm-driven content feeds?",
+      "options": [
+        "They force every user to read identical printed textbooks",
+        "They shape what users see, creating echo chambers and influencing public behavior",
+        "They prevent real-time messaging",
+        "They require formal peer review before posting"
+      ],
+      "answer": "They shape what users see, creating echo chambers and influencing public behavior",
+      "explanation": "Echo chambers reinforce existing biases while making users vulnerable to viral misinformation."
+    },
+    {
+      "id": "tcw-s3-13",
+      "type": "multiple-choice",
+      "topic": "Multimedia",
+      "question": "What defines 'multimedia,' and what are common examples?",
+      "options": [
+        "Integrating multiple content forms—text, images, audio, video, animation, and interactivity—into a unified digital environment (e.g., interactive websites, LMS, infographics, VR)",
+        "Printing text with black ink only on newsprint",
+        "Audio-only radio speeches",
+        "Silent black-and-white film reels"
+      ],
+      "answer": "Integrating multiple content forms—text, images, audio, video, animation, and interactivity—into a unified digital environment (e.g., interactive websites, LMS, infographics, VR)",
+      "explanation": "Multimedia engages multiple senses dynamically in education, corporate training, and entertainment."
+    },
+    {
+      "id": "tcw-s3-14",
+      "type": "multiple-choice",
+      "topic": "Media Verification",
+      "question": "According to Finals Reading Material 5, if a dramatic photo circulating on social media is real—yet was actually taken years earlier at an unrelated event—what habit prevents sharing misleading info?",
+      "options": [
+        "Sharing immediately if it has many likes ('popular = accurate')",
+        "Checking the source, date, context, and evidence, and comparing reliable reports before sharing",
+        "Only reading the headline",
+        "Turning off all news completely"
+      ],
+      "answer": "Checking the source, date, context, and evidence, and comparing reliable reports before sharing",
+      "explanation": "Out-of-context real photos are a common form of misleading content; popularity never guarantees accuracy."
+    },
+    {
+      "id": "tcw-s3-15",
+      "type": "multiple-choice",
+      "topic": "Cultural Hybridity in Media",
+      "question": "A local musician recording a song in a native language blended with a musical genre learned online from another country illustrates:",
+      "options": [
+        "Cultural exchange and mixing enabled by border-crossing media",
+        "Strict media gatekeeping",
+        "Total isolation from digital networks",
+        "Print archiving"
+      ],
+      "answer": "Cultural exchange and mixing enabled by border-crossing media",
+      "explanation": "Digital media enables rapid cultural sharing, artistic hybridization, and international organizing."
+    },
+    {
+      "id": "tcw-s3-16",
+      "type": "multiple-choice",
+      "topic": "Media Convergence",
+      "question": "When a single news organization publishes a written article, embeds an infographic, links a podcast, and streams live video on one web portal, this illustrates which digital media trait?",
+      "options": [
+        "Convergence",
+        "Solidity",
+        "Physical tangibility",
+        "Gatekeeping absence"
+      ],
+      "answer": "Convergence",
+      "explanation": "Convergence merges previously separate media formats and channels into unified digital platforms."
+    },
+    {
+      "id": "tcw-s3-17",
+      "type": "multiple-choice",
+      "topic": "Traditional Gatekeeping",
+      "question": "In traditional print and broadcast media, what does 'gatekeeping' mean?",
+      "options": [
+        "Editors, producers, and media institutions filtering, verifying, and deciding what content gets published or aired",
+        "Physical locks on radio towers",
+        "Allowing anyone to publish anything unedited",
+        "Blocking Wi-Fi signals in schools"
+      ],
+      "answer": "Editors, producers, and media institutions filtering, verifying, and deciding what content gets published or aired",
+      "explanation": "Social media bypassed institutional gatekeepers—boosting free expression while raising misinformation challenges."
+    },
+    {
+      "id": "tcw-s3-18",
+      "type": "multiple-choice",
+      "topic": "Print vs. Digital",
+      "question": "Which pair accurately contrasts Print Media with Digital Media?",
+      "options": [
+        "Print: fixed, permanent, tangible; Digital: instantly updatable, interactive, globally disseminated across devices",
+        "Print: requires Wi-Fi; Digital: printed on paper",
+        "Print: user-generated comments; Digital: unchangeable after printing",
+        "Print: 21st-century invention; Digital: 15th-century invention"
+      ],
+      "answer": "Print: fixed, permanent, tangible; Digital: instantly updatable, interactive, globally disseminated across devices",
+      "explanation": "Understanding each medium's strengths helps citizens evaluate credibility and context."
+    },
+    {
+      "id": "tcw-s3-19",
+      "type": "multiple-choice",
+      "topic": "Broadcast Regulation",
+      "question": "Why do traditional broadcast media (radio and TV) often play a major role in shaping national identities and public consciousness?",
+      "options": [
+        "Because they create shared mass/collective viewing experiences and are regulated by national agencies and networks",
+        "Because they operate only in foreign languages",
+        "Because nobody watches or listens to them",
+        "Because they cannot report live news"
+      ],
+      "answer": "Because they create shared mass/collective viewing experiences and are regulated by national agencies and networks",
+      "explanation": "Live national broadcasts unite dispersed audiences into shared civic and cultural moments."
+    },
+    {
+      "id": "tcw-s3-20",
+      "type": "multiple-choice",
+      "topic": "Social Media Mobilization",
+      "question": "Beyond personal self-expression, what civic roles does social media play in contemporary society?",
+      "options": [
+        "Political mobilization, social activism, real-time information exchange, and organizing international support",
+        "Only archiving 15th-century legal codes",
+        "Preventing communities from communicating",
+        "Replacing physical water pipes"
+      ],
+      "answer": "Political mobilization, social activism, real-time information exchange, and organizing international support",
+      "explanation": "Social media transforms private voices into public discourse capable of rallying support across borders."
+    },
+    {
+      "id": "tcw-s3-21",
+      "type": "multiple-choice",
+      "topic": "Media Literacy Goal",
+      "question": "Why does the 'Types and Forms of Media' reading state that media literacy is indispensable today?",
+      "options": [
+        "Because citizens are both consumers and producers in an instant-flow environment where media wields immense political, economic, and cultural power",
+        "Because print media no longer exists anywhere",
+        "Because only film directors need to read news",
+        "Because algorithms always verify facts automatically"
+      ],
+      "answer": "Because citizens are both consumers and producers in an instant-flow environment where media wields immense political, economic, and cultural power",
+      "explanation": "Critical media literacy equips global citizens to evaluate sources, spot bias, and participate responsibly."
+    },
+    {
+      "id": "tcw-s3-22",
+      "type": "multiple-choice",
+      "topic": "Examples of Print Media",
+      "question": "Which group consists exclusively of Print Media examples?",
+      "options": [
+        "Newspapers, magazines, journals, books, pamphlets, brochures, and posters",
+        "Podcasts, blogs, and streaming platforms",
+        "Facebook, TikTok, and YouTube",
+        "Virtual reality simulations and LMS"
+      ],
+      "answer": "Newspapers, magazines, journals, books, pamphlets, brochures, and posters",
+      "explanation": "Print media distributes information on paper via mechanical or digital printing."
+    },
+    {
+      "id": "tcw-s3-23",
+      "type": "multiple-choice",
+      "topic": "Examples of Digital Media",
+      "question": "Which group consists exclusively of Digital / New Media examples listed in the reading?",
+      "options": [
+        "Websites, blogs, online news portals, podcasts, e-books, streaming platforms, messaging apps, and online ads",
+        "Brochures, newsletters, and posters",
+        "Cinema projectors and 35mm film strips only",
+        "AM/FM radio towers"
+      ],
+      "answer": "Websites, blogs, online news portals, podcasts, e-books, streaming platforms, messaging apps, and online ads",
+      "explanation": "Digital media covers internet-delivered content accessible on diverse devices."
+    },
+    {
+      "id": "tcw-s3-24",
+      "type": "multiple-choice",
+      "topic": "Multimedia in Education",
+      "question": "Why is multimedia widely adopted in education, corporate training, and advertising?",
+      "options": [
+        "Because combining text, visuals, audio, video, and interactivity presents complex info dynamically and engages multiple senses",
+        "Because it removes all visual and audio cues",
+        "Because it cannot run on computers",
+        "Because it is slower than clay tablets"
+      ],
+      "answer": "Because combining text, visuals, audio, video, and interactivity presents complex info dynamically and engages multiple senses",
+      "explanation": "Learning management systems, interactive simulations, and infographics exemplify effective educational multimedia."
+    },
+    {
+      "id": "tcw-s3-25",
+      "type": "multiple-choice",
+      "topic": "Media & Propaganda",
+      "question": "Which medium is noted in the reading as being used both to evoke deep empathy/education and historically as a tool for propaganda and cultural critique?",
+      "options": [
+        "Film and Cinema",
+        "Paper newsletters only",
+        "Silent calculators",
+        "Weather barometers"
+      ],
+      "answer": "Film and Cinema",
+      "explanation": "Cinema's emotional immersion makes it potent for historical storytelling, ethical reflection, critique, and propaganda."
+    },
+    {
+      "id": "tcw-s3-26",
+      "type": "multiple-choice",
+      "topic": "UNESCO Framework",
+      "question": "Which international body listed in the media reading's references published the 2021 'Media and Information Literacy: Policy and Strategy Guidelines'?",
+      "options": [
+        "UNESCO (United Nations Educational, Scientific and Cultural Organization)",
+        "WTO",
+        "IMF",
+        "ICJ"
+      ],
+      "answer": "UNESCO (United Nations Educational, Scientific and Cultural Organization)",
+      "explanation": "UNESCO champions global media and information literacy alongside scholars like Baran, Dominick, McQuail, Potter, and Kellner & Share."
+    }
+  ]
+}

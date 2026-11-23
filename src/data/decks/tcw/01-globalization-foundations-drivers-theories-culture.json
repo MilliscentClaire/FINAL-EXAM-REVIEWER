@@ -1,0 +1,461 @@
+{
+  "id": "tcw-s1-globalization-foundations",
+  "course": "The Contemporary World",
+  "sectionOrder": 1,
+  "sectionLabel": "Section 1",
+  "title": "Globalization: Foundations, Drivers, Theories & Culture",
+  "subject": "The Contemporary World",
+  "description": "Steger's triad, Bauman's metaphors (solids, liquids, flows), dimensions & historical roots, drivers, blessing vs. curse debate, World-System & Network theories, cultural globalization, and glocalization.",
+  "sourceFile": "TCW MIDTERM REVIEWER.docx",
+  "createdAt": "2026-11-24",
+  "questions": [
+    {
+      "id": "tcw-s1-01",
+      "type": "multiple-choice",
+      "topic": "Steger's Triad",
+      "question": "In Manfred Steger's core distinctions, how do 'globalization,' 'globality,' and 'globalism' differ?",
+      "options": [
+        "Globalization is the process (the how); globality is the condition/destination where borders lose traditional significance (the what); globalism is the ideology promoting free-market global integration (the why).",
+        "Globalization is a political party; globality is an ocean trade route; globalism is a smartphone brand.",
+        "Globalization is fixed barriers; globality is tariff enforcement; globalism is national isolation.",
+        "All three terms mean the exact same economic treaty."
+      ],
+      "answer": "Globalization is the process (the how); globality is the condition/destination where borders lose traditional significance (the what); globalism is the ideology promoting free-market global integration (the why).",
+      "explanation": "Steger's triad separates the ongoing social process (globalization), the resulting social condition (globality), and the market ideology (globalism)."
+    },
+    {
+      "id": "tcw-s1-02",
+      "type": "multiple-choice",
+      "topic": "Scholars' Definitions",
+      "question": "Which thinker described globalization as an ongoing, non-static process involving the 'inexorable integration of markets, nation-states, and technologies to an unprecedented degree'?",
+      "options": [
+        "Thomas Friedman",
+        "Zygmunt Bauman",
+        "Immanuel Wallerstein",
+        "Arjun Appadurai"
+      ],
+      "answer": "Thomas Friedman",
+      "explanation": "Thomas Friedman (author of The World Is Flat) emphasized the unprecedented integration of markets, nation-states, and technologies."
+    },
+    {
+      "id": "tcw-s1-03",
+      "type": "multiple-choice",
+      "topic": "Characteristics of Globalization",
+      "question": "What is the difference between 'expansion' and 'intensification' of social relations under globalization?",
+      "options": [
+        "Expansion means raising tariffs; intensification means closing borders.",
+        "Expansion means reaching new geographic locations and social spheres; intensification means increasing the frequency, speed, and density of interactions.",
+        "Expansion applies only to airplanes; intensification applies only to shipping.",
+        "Expansion reduces social media; intensification slows mail delivery."
+      ],
+      "answer": "Expansion means reaching new geographic locations and social spheres; intensification means increasing the frequency, speed, and density of interactions.",
+      "explanation": "Compare sending mail over weeks (earlier era) versus instant global messaging today (intensification)."
+    },
+    {
+      "id": "tcw-s1-04",
+      "type": "multiple-choice",
+      "topic": "Bauman's Metaphors",
+      "question": "In Zygmunt Bauman's metaphors of globalization, what do 'solids,' 'liquids,' and 'flows' represent respectively?",
+      "options": [
+        "Solids: barriers/borders that hinder movement (tariffs, walls); Liquids: phenomena moving adaptively without fixed boundaries (digital data, capital); Flows: actual cross-border movement of people, tech, goods, and info.",
+        "Solids: liquid oceans; Liquids: mountain ranges; Flows: import taxes.",
+        "Solids: smartphones; Liquids: newspapers; Flows: customs checkpoints.",
+        "Solids: global treaties; Liquids: national passports; Flows: domestic tariffs."
+      ],
+      "answer": "Solids: barriers/borders that hinder movement (tariffs, walls); Liquids: phenomena moving adaptively without fixed boundaries (digital data, capital); Flows: actual cross-border movement of people, tech, goods, and info.",
+      "explanation": "Bauman's metaphor captures how modern forces melt rigid boundaries ('solids') into rapid, continuous 'liquids' and 'flows.'"
+    },
+    {
+      "id": "tcw-s1-05",
+      "type": "multiple-choice",
+      "topic": "Dimensions of Globalization",
+      "question": "Which dimension of globalization primarily encompasses multinational corporations (MNCs), free trade, and institutions like the WTO, IMF, and World Bank?",
+      "options": [
+        "Cultural dimension",
+        "Economic dimension",
+        "Demographic dimension",
+        "Environmental dimension"
+      ],
+      "answer": "Economic dimension",
+      "explanation": "The five major dimensions are Economic, Political, Cultural, Demographic/Social, and Environmental."
+    },
+    {
+      "id": "tcw-s1-06",
+      "type": "multiple-choice",
+      "topic": "Narrow vs. Broad Definitions",
+      "question": "How do narrow and broad definitions of globalization differ?",
+      "options": [
+        "Narrow focuses mainly on economic integration (trade, finance, investments); broad covers economic, political, cultural, social, and environmental dimensions.",
+        "Narrow includes pandemics and K-pop; broad excludes trade and MNCs.",
+        "Narrow applies only to Asia; broad applies only to Europe.",
+        "Narrow defines treaties; broad defines solely domestic farming."
+      ],
+      "answer": "Narrow focuses mainly on economic integration (trade, finance, investments); broad covers economic, political, cultural, social, and environmental dimensions.",
+      "explanation": "Philippine banana exports to Japan reflect a narrow economic view, whereas COVID-19 responses or global K-drama culture illustrate a broad definition."
+    },
+    {
+      "id": "tcw-s1-07",
+      "type": "multiple-choice",
+      "topic": "Historical Roots",
+      "question": "Which historical trade networks prove that globalization is NOT a purely recent phenomenon invented by the internet?",
+      "options": [
+        "The Silk Road (Mediterranean to East Asia) and the Manila Galleon Trade (1565–1815 linking Asia, the Americas, and Europe)",
+        "Only 21st-century fiber-optic cables",
+        "SpaceX satellite constellations",
+        "Post-2020 video conferencing platforms"
+      ],
+      "answer": "The Silk Road (Mediterranean to East Asia) and the Manila Galleon Trade (1565–1815 linking Asia, the Americas, and Europe)",
+      "explanation": "O'Rourke & Williamson (2000) emphasize globalization has roots across centuries of colonization and transoceanic trade."
+    },
+    {
+      "id": "tcw-s1-08",
+      "type": "multiple-choice",
+      "topic": "Modern Acceleration",
+      "question": "If cross-border trade has existed for centuries, what makes contemporary globalization uniquely different?",
+      "options": [
+        "Its unprecedented scale, velocity, and geographic range (seen in global supply chains, rapid financial contagion, and fast-spreading disease vectors)",
+        "The complete disappearance of national governments",
+        "The elimination of all ocean shipping",
+        "A total halt in human migration"
+      ],
+      "answer": "Its unprecedented scale, velocity, and geographic range (seen in global supply chains, rapid financial contagion, and fast-spreading disease vectors)",
+      "explanation": "Modern speed and scale mean events like the 2008 financial crisis or COVID-19 reverberate worldwide almost immediately."
+    },
+    {
+      "id": "tcw-s1-09",
+      "type": "multiple-choice",
+      "topic": "Drivers of Globalization",
+      "question": "What are the two main drivers accelerating contemporary globalization according to Part 2 of the Midterm Reviewer?",
+      "options": [
+        "Higher border walls and slower cargo ships",
+        "Decline in trade and investment barriers (tariffs/quotas policed by WTO) AND technological change (internet, jet airliners, containerization)",
+        "Elimination of all multinational firms and end of telecommunications",
+        "Replacement of currency with barter systems"
+      ],
+      "answer": "Decline in trade and investment barriers (tariffs/quotas policed by WTO) AND technological change (internet, jet airliners, containerization)",
+      "explanation": "Lowered policy barriers plus breakthroughs in ICT and transport shrink effective distance across the globe."
+    },
+    {
+      "id": "tcw-s1-10",
+      "type": "multiple-choice",
+      "topic": "Shrinking World Concept",
+      "question": "Which four human feats contribute to the 'Shrinking World' concept?",
+      "options": [
+        "Modern Transportation, Information & Communication Technology (ICT), Medical Advancement, and Technological Innovation",
+        "Mercantilism, Isolationism, Censorship, and Deforestation",
+        "Feudalism, Tariffs, Quotas, and Border Walls",
+        "Monopolies, Sanctions, Strikes, and Embargoes"
+      ],
+      "answer": "Modern Transportation, Information & Communication Technology (ICT), Medical Advancement, and Technological Innovation",
+      "explanation": "These four advancements make distant parts of the planet feel closer and more tightly connected."
+    },
+    {
+      "id": "tcw-s1-11",
+      "type": "multiple-choice",
+      "topic": "Blessing vs. Curse Debate",
+      "question": "Which argument supports the 'Blessing' side of globalization?",
+      "options": [
+        "Cultural homogenization eroding native languages",
+        "Economic growth, poverty reduction, faster innovation/medical transfer, and wider consumer choice at lower prices (trade grew >50-fold from 1970–2015)",
+        "Worker exploitation in unregulated sweatshops",
+        "Rapid global spread of financial crises"
+      ],
+      "answer": "Economic growth, poverty reduction, faster innovation/medical transfer, and wider consumer choice at lower prices (trade grew >50-fold from 1970–2015)",
+      "explanation": "Proponents highlight growth, innovation diffusion, cultural exchange, and expanded consumer choice."
+    },
+    {
+      "id": "tcw-s1-12",
+      "type": "multiple-choice",
+      "topic": "Blessing vs. Curse Debate",
+      "question": "Which concern belongs to the 'Curse' (critics') arguments against globalization?",
+      "options": [
+        "Widening inequality/worker exploitation, local job displacement, cultural homogenization, environmental degradation, and transnational crisis vulnerability",
+        "Lower consumer prices and wider choices",
+        "Rapid sharing of life-saving vaccines",
+        "Increased transnational cooperation"
+      ],
+      "answer": "Widening inequality/worker exploitation, local job displacement, cultural homogenization, environmental degradation, and transnational crisis vulnerability",
+      "explanation": "Mitigating these curses requires fair labor standards, environmental protections, and safety nets for vulnerable communities."
+    },
+    {
+      "id": "tcw-s1-13",
+      "type": "multiple-choice",
+      "topic": "World-System Theory",
+      "question": "How does Immanuel Wallerstein's World-System Theory view globalization and structure the world economy?",
+      "options": [
+        "As a flat web of equal internet nodes",
+        "As a direct product of capitalism's global expansion organized into a three-tier hierarchy: Core, Semi-Periphery, and Periphery",
+        "As a purely cultural exchange of food and music",
+        "As an alliance of equal cities with no inequality"
+      ],
+      "answer": "As a direct product of capitalism's global expansion organized into a three-tier hierarchy: Core, Semi-Periphery, and Periphery",
+      "explanation": "World-System Theory focuses on unequal structural positions in the global capitalist economy."
+    },
+    {
+      "id": "tcw-s1-14",
+      "type": "multiple-choice",
+      "topic": "World-System Theory",
+      "question": "In World-System Theory, how do wealth and resources flow among the Core, Semi-Periphery, and Periphery?",
+      "options": [
+        "Raw materials and low-cost labor flow upward (Periphery -> Semi-Periphery -> Core), while capital, high technology, and finished goods flow downward",
+        "Periphery nations control global finance and set trade rules for the Core",
+        "All three tiers retain 100% of their resources with zero trade",
+        "Capital flows exclusively from Periphery to Core without finished goods"
+      ],
+      "answer": "Raw materials and low-cost labor flow upward (Periphery -> Semi-Periphery -> Core), while capital, high technology, and finished goods flow downward",
+      "explanation": "Core nations (e.g., US, Western Europe) dominate finance and tech, while Semi-Periphery (e.g., Mexico, Brazil) and Periphery supply manufacturing, raw goods, and labor."
+    },
+    {
+      "id": "tcw-s1-15",
+      "type": "multiple-choice",
+      "topic": "Network Theory",
+      "question": "What distinguishes Network Theory from World-System Theory?",
+      "options": [
+        "Network Theory views globalization as a rigid pyramid ruled by one state.",
+        "Network Theory views globalization as a web of interconnected nodes with multidirectional flows of info, goods, capital, and people—where a change in one node affects all others.",
+        "Network Theory denies the existence of the internet.",
+        "Network Theory focuses solely on colonial tariffs."
+      ],
+      "answer": "Network Theory views globalization as a web of interconnected nodes with multidirectional flows of info, goods, capital, and people—where a change in one node affects all others.",
+      "explanation": "Network Theory emphasizes relationships, webs, and interconnections regardless of nation-state hierarchy."
+    },
+    {
+      "id": "tcw-s1-16",
+      "type": "multiple-choice",
+      "topic": "Cultural Globalization",
+      "question": "According to Jan Nederveen Pieterse (2009), what does cultural globalization typically produce rather than total global uniformity?",
+      "options": [
+        "Cultural diversity and hybrid practices ('global melange' / heterogeneity)",
+        "Complete elimination of all music and food",
+        "Universal adoption of a single language overnight",
+        "Isolation of rural villages from all media"
+      ],
+      "answer": "Cultural diversity and hybrid practices ('global melange' / heterogeneity)",
+      "explanation": "Pieterse argues cross-border cultural exchange creates creative hybrids rather than pure homogenization."
+    },
+    {
+      "id": "tcw-s1-17",
+      "type": "multiple-choice",
+      "topic": "Cultural Scholars",
+      "question": "What did Arjun Appadurai (1996) observe about cross-border cultural flows, and what did Manuel Castells (2000) call the ICT-driven paradigm?",
+      "options": [
+        "Appadurai: cultural flows enable exchange but can disrupt local traditions; Castells: Informationalism",
+        "Appadurai: World-System pyramid; Castells: Solids and liquids",
+        "Appadurai: container shipping; Castells: GATT tariffs",
+        "Appadurai: Manila Galleon; Castells: Globalism"
+      ],
+      "answer": "Appadurai: cultural flows enable exchange but can disrupt local traditions; Castells: Informationalism",
+      "explanation": "Appadurai studied cross-border cultural scapes/flows, while Castells analyzed the network society powered by Informationalism."
+    },
+    {
+      "id": "tcw-s1-18",
+      "type": "multiple-choice",
+      "topic": "Glocalization",
+      "question": "Which scenario is the clearest example of 'glocalization'?",
+      "options": [
+        "A Filipino student listening to an unaltered South Korean pop song",
+        "McDonald's adding McSpaghetti and rice meals in the Philippines or McAloo Tikki in India",
+        "A nation imposing a 100% tariff on all imported cars",
+        "Two states signing an environmental treaty"
+      ],
+      "answer": "McDonald's adding McSpaghetti and rice meals in the Philippines or McAloo Tikki in India",
+      "explanation": "Glocalization adapts global brands, ideas, or formats (like local reality TV editions) to fit local tastes and cultures."
+    },
+    {
+      "id": "tcw-s1-19",
+      "type": "multiple-choice",
+      "topic": "Academic Framework",
+      "question": "In the Part 6 Academic Framework, which scholar explains that globalization operates within an 'interstate system' of sovereign yet economically unequal nation-states?",
+      "options": [
+        "Immanuel Wallerstein (2004)",
+        "Manuel Castells (2000)",
+        "Jan Nederveen Pieterse (2009)",
+        "Thomas Friedman (2005)"
+      ],
+      "answer": "Immanuel Wallerstein (2004)",
+      "explanation": "Wallerstein emphasized how powerful economies shape rules within a competitive interstate system."
+    },
+    {
+      "id": "tcw-s1-20",
+      "type": "multiple-choice",
+      "topic": "Concept Matrix",
+      "question": "If an international reality TV franchise launches a Philippine edition featuring Filipino hosts, contestants, and cultural humor, this illustrates:",
+      "options": [
+        "Cultural homogenization",
+        "Glocalization",
+        "World-System periphery extraction",
+        "Solidity"
+      ],
+      "answer": "Glocalization",
+      "explanation": "Adapting a global media format to local hosts and cultural context is classic glocalization."
+    },
+    {
+      "id": "tcw-s1-21",
+      "type": "multiple-choice",
+      "topic": "Concept Matrix",
+      "question": "A young listener in Brazil streaming South Korean K-Pop or a diner eating Japanese sushi in Paris primarily illustrates:",
+      "options": [
+        "Cultural Globalization",
+        "Trade Deficit",
+        "Free-Rider Problem",
+        "Solidity"
+      ],
+      "answer": "Cultural Globalization",
+      "explanation": "Cultural globalization describes how ideas, foods, music, and values travel across borders."
+    },
+    {
+      "id": "tcw-s1-22",
+      "type": "multiple-choice",
+      "topic": "Global Flows",
+      "question": "According to the Council on Foreign Relations (CFR), what negative flows accompany positive flows like capital, ideas, and goods?",
+      "options": [
+        "Only printed books",
+        "Weaponry, viruses/disease vectors, and greenhouse gas emissions",
+        "Local handicrafts only",
+        "Domestic tax receipts"
+      ],
+      "answer": "Weaponry, viruses/disease vectors, and greenhouse gas emissions",
+      "explanation": "Global flows include both beneficial exchanges and shared transnational threats."
+    },
+    {
+      "id": "tcw-s1-23",
+      "type": "multiple-choice",
+      "topic": "Global Consciousness",
+      "question": "What does the characteristic 'Creation of Global Consciousness' refer to?",
+      "options": [
+        "Individuals increasingly seeing themselves as global citizens connected to humanity beyond strict national borders",
+        "Forgetting one's own national language",
+        "Replacing all local governments with one king",
+        "Refusing to follow international news"
+      ],
+      "answer": "Individuals increasingly seeing themselves as global citizens connected to humanity beyond strict national borders",
+      "explanation": "Global flows foster awareness of shared global challenges and responsibilities."
+    },
+    {
+      "id": "tcw-s1-24",
+      "type": "multiple-choice",
+      "topic": "Stretching of Social Activities",
+      "question": "When a semiconductor factory flood in one country halts smartphone assembly and delays retail deliveries worldwide, this exemplifies:",
+      "options": [
+        "Stretching of social activities across distant regions",
+        "Pure national self-sufficiency",
+        "Cultural homogenization",
+        "Glocalization"
+      ],
+      "answer": "Stretching of social activities across distant regions",
+      "explanation": "Events and disruptions in one location rapidly impact livelihoods and markets across the globe."
+    },
+    {
+      "id": "tcw-s1-25",
+      "type": "multiple-choice",
+      "topic": "Driver: Containerization",
+      "question": "Why is 'containerization' in shipping listed as a key technological driver of globalization?",
+      "options": [
+        "Standardized shipping containers drastically lowered transport costs and sped up loading/unloading of global cargo",
+        "Containers prevented ships from crossing oceans",
+        "Containers are used only for storing digital files",
+        "Containers eliminated the need for airplanes"
+      ],
+      "answer": "Standardized shipping containers drastically lowered transport costs and sped up loading/unloading of global cargo",
+      "explanation": "Alongside jet airliners and the internet, containerization made global supply chains economically viable."
+    },
+    {
+      "id": "tcw-s1-26",
+      "type": "multiple-choice",
+      "topic": "Role of WTO",
+      "question": "Within Driver 1 (Decline in Trade and Investment Barriers), what is the primary role of the World Trade Organization (WTO)?",
+      "options": [
+        "To police the global trading system and ensure member nations adhere to agreed trade rules",
+        "To manufacture smartphones in Vietnam",
+        "To deploy UN peacekeeping troops",
+        "To issue global passports"
+      ],
+      "answer": "To police the global trading system and ensure member nations adhere to agreed trade rules",
+      "explanation": "The WTO oversees trade agreements and adjudicates trade barrier disputes among member states."
+    },
+    {
+      "id": "tcw-s1-27",
+      "type": "multiple-choice",
+      "topic": "Skeptical vs. Hyperglobalist",
+      "question": "In globalization debates, which view treats globalization as uneven, fragmented, and historically overhyped rather than a uniform transformation?",
+      "options": [
+        "Skepticism",
+        "Hyperglobalism",
+        "Informationalism",
+        "Globalism"
+      ],
+      "answer": "Skepticism",
+      "explanation": "Skeptics contend globalization is piecemeal and fragmented rather than affecting every place uniformly."
+    },
+    {
+      "id": "tcw-s1-28",
+      "type": "multiple-choice",
+      "topic": "Demographic Dimension",
+      "question": "Migration, rapid urban concentration, and the cross-border mobility of workers belong to which dimension of globalization?",
+      "options": [
+        "Demographic / Social dimension",
+        "Environmental dimension",
+        "Solidity dimension",
+        "Geological dimension"
+      ],
+      "answer": "Demographic / Social dimension",
+      "explanation": "Human mobility, remittances, and global workforce shifts fall under the demographic/social dimension."
+    },
+    {
+      "id": "tcw-s1-29",
+      "type": "multiple-choice",
+      "topic": "Environmental Dimension",
+      "question": "Why are pollution, deforestation, climate change, and pandemics classified under the Environmental dimension of globalization?",
+      "options": [
+        "Because ecological impacts and pathogens disregard national borders and affect shared global ecosystems",
+        "Because trees are sold only in local markets",
+        "Because air stays strictly inside one country's territory",
+        "Because only rich countries experience weather"
+      ],
+      "answer": "Because ecological impacts and pathogens disregard national borders and affect shared global ecosystems",
+      "explanation": "Environmental risks are inherently transnational and require cooperative solutions."
+    },
+    {
+      "id": "tcw-s1-30",
+      "type": "multiple-choice",
+      "topic": "Theoretical Lens",
+      "question": "If a researcher asks: 'Which theory explains why wealthy countries capture high-tech profits while poorer nations supply cheap raw materials and labor?'—the best fit is:",
+      "options": [
+        "World-System Theory",
+        "Network Theory",
+        "Glocalization",
+        "Informationalism"
+      ],
+      "answer": "World-System Theory",
+      "explanation": "World-System Theory directly analyzes unequal economic positions between Core, Semi-Periphery, and Periphery."
+    },
+    {
+      "id": "tcw-s1-31",
+      "type": "multiple-choice",
+      "topic": "Smartphone Supply Chain",
+      "question": "A smartphone designed in the US, using chips from Taiwan, batteries from China, and assembled in Vietnam illustrates:",
+      "options": [
+        "Complex global supply chains and flows across borders",
+        "Economic isolationism",
+        "Cultural homogeneity",
+        "Barter trade"
+      ],
+      "answer": "Complex global supply chains and flows across borders",
+      "explanation": "Appadurai's flows and global production networks coordinate specialized inputs across multiple countries."
+    },
+    {
+      "id": "tcw-s1-32",
+      "type": "multiple-choice",
+      "topic": "Equity & Globalization",
+      "question": "According to Part 3 of the Midterm Reviewer, how should international bodies respond to the 'Blessing vs. Curse' trade-off?",
+      "options": [
+        "By abolishing all international trade",
+        "By promoting sustainable trade, fair labor standards, environmental protections, and policies shielding vulnerable communities from economic shocks",
+        "By allowing unregulated exploitation of workers",
+        "By eliminating all consumer choices"
+      ],
+      "answer": "By promoting sustainable trade, fair labor standards, environmental protections, and policies shielding vulnerable communities from economic shocks",
+      "explanation": "Thoughtful governance aims to maximize globalization's benefits while mitigating its harms."
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "id": "tcw-s2-governance-economy",
+  "course": "The Contemporary World",
+  "sectionOrder": 2,
+  "sectionLabel": "Section 2",
+  "title": "Contemporary Global Governance & Structures of the Global Economy",
+  "subject": "The Contemporary World",
+  "description": "Global governance vs. world government, state & non-state actors, treaties vs. soft law, governance theories, pillars of the global economy, outsourcing, surpluses/deficits, GVCs, and market integration.",
+  "sourceFile": "TCW MIDTERM REVIEWER.docx",
+  "createdAt": "2026-11-24",
+  "questions": [
+    {
+      "id": "tcw-s2-01",
+      "type": "multiple-choice",
+      "topic": "Global Governance",
+      "question": "What is the key distinction between 'global governance' and a 'world government'?",
+      "options": [
+        "Global governance is a single centralized world parliament that taxes every citizen.",
+        "There is no central world government; global governance coordinates states, IGOs, and non-state actors through voluntary cooperation, negotiation, and agreements.",
+        "Global governance bans sovereign states from making domestic laws.",
+        "World government currently runs all local city halls."
+      ],
+      "answer": "There is no central world government; global governance coordinates states, IGOs, and non-state actors through voluntary cooperation, negotiation, and agreements.",
+      "explanation": "Global governance relies on shared rules, norms, and institutions rather than a supreme global authority."
+    },
+    {
+      "id": "tcw-s2-02",
+      "type": "multiple-choice",
+      "topic": "Global Governance Actors",
+      "question": "In global governance, how do Sovereign States, IGOs, and Non-State Actors differ?",
+      "options": [
+        "Sovereign States hold legal/treaty authority; IGOs (UN, WTO, ASEAN) are intergovernmental bodies setting/monitoring standards; Non-State Actors (NGOs, MNCs, media) advocate, invest, and shape agendas.",
+        "NGOs are the only bodies allowed to sign treaties.",
+        "MNCs hold seats as sovereign voting countries in the UN General Assembly.",
+        "IGOs have no member governments."
+      ],
+      "answer": "Sovereign States hold legal/treaty authority; IGOs (UN, WTO, ASEAN) are intergovernmental bodies setting/monitoring standards; Non-State Actors (NGOs, MNCs, media) advocate, invest, and shape agendas.",
+      "explanation": "Effective governance coordinates sovereign states alongside global/regional IGOs and civil/private non-state actors."
+    },
+    {
+      "id": "tcw-s2-03",
+      "type": "multiple-choice",
+      "topic": "Cooperation Mechanisms",
+      "question": "What distinguishes 'international treaties/conventions' from 'soft law' in global cooperation?",
+      "options": [
+        "Treaties (e.g., Paris Agreement) are legally binding with reporting standards; soft law consists of non-binding norms and voluntary standards.",
+        "Soft law carries automatic military penalties; treaties are purely optional suggestions.",
+        "Treaties only apply to private companies; soft law applies only to kings.",
+        "Both are legally identical."
+      ],
+      "answer": "Treaties (e.g., Paris Agreement) are legally binding with reporting standards; soft law consists of non-binding norms and voluntary standards.",
+      "explanation": "Alongside treaties and soft law, Public-Private Partnerships unite governments, businesses, and civil society."
+    },
+    {
+      "id": "tcw-s2-04",
+      "type": "multiple-choice",
+      "topic": "Governance Obstacles",
+      "question": "In global governance, what is the 'free-rider problem'?",
+      "options": [
+        "Tourists riding buses without paying local fares",
+        "Certain states enjoying the benefits of global public goods (like climate stability or security) without contributing their fair share",
+        "Unequal voting rights in the UN Security Council",
+        "Too many treaties covering the same river"
+      ],
+      "answer": "Certain states enjoying the benefits of global public goods (like climate stability or security) without contributing their fair share",
+      "explanation": "The free-rider problem, uneven compliance/enforcement, and institutional fragmentation are key obstacles to cooperation."
+    },
+    {
+      "id": "tcw-s2-05",
+      "type": "multiple-choice",
+      "topic": "Governance Obstacles",
+      "question": "What is 'institutional fragmentation' in global governance?",
+      "options": [
+        "Building physical walls around embassies",
+        "Overlapping jurisdictions and conflicting mandates among different international institutions",
+        "Translating treaties into multiple languages",
+        "Holding UN summits in different cities"
+      ],
+      "answer": "Overlapping jurisdictions and conflicting mandates among different international institutions",
+      "explanation": "Fragmentation complicates coordination alongside sovereignty tensions and unequal power between wealthy and developing states."
+    },
+    {
+      "id": "tcw-s2-06",
+      "type": "multiple-choice",
+      "topic": "National Policy Options",
+      "question": "While no nation can opt out of globalization entirely, what policy choices do national governments still retain?",
+      "options": [
+        "Choosing their level of openness toward trade, capital investment, visitors, immigrants, refugees, and internet traffic",
+        "Deciding whether gravity applies within their borders",
+        "Preventing climate change from crossing their airspace",
+        "Abolishing all neighboring countries"
+      ],
+      "answer": "Choosing their level of openness toward trade, capital investment, visitors, immigrants, refugees, and internet traffic",
+      "explanation": "States navigate globalization by calibrating openness and domestic safeguards."
+    },
+    {
+      "id": "tcw-s2-07",
+      "type": "multiple-choice",
+      "topic": "Governance Theories",
+      "question": "Match the global governance theory to its core view: Realism vs. Liberal Institutionalism.",
+      "options": [
+        "Realism: states act under international anarchy driven by national interest and relative power; Liberal Institutionalism: international institutions reduce uncertainty, lower transaction costs, and foster cooperation.",
+        "Realism: institutions eliminate power politics; Liberal Institutionalism: cooperation is impossible.",
+        "Realism: values/norms drive everything; Liberal Institutionalism: only MNCs matter.",
+        "Realism: focuses solely on Global South marginalization; Liberal Institutionalism: rejects all treaties."
+      ],
+      "answer": "Realism: states act under international anarchy driven by national interest and relative power; Liberal Institutionalism: international institutions reduce uncertainty, lower transaction costs, and foster cooperation.",
+      "explanation": "Compare Realism's power-centric skepticism with Liberal Institutionalism's emphasis on cooperative rules."
+    },
+    {
+      "id": "tcw-s2-08",
+      "type": "multiple-choice",
+      "topic": "Governance Theories",
+      "question": "Which three theoretical perspectives examine (1) shared norms/values reshaping state interests, (2) historical Western dominance marginalizing the Global South, and (3) collective management of climate/health stability?",
+      "options": [
+        "(1) Constructivism, (2) Critical & Postcolonial, (3) Global Public Goods",
+        "(1) Realism, (2) Mercantilism, (3) Protectionism",
+        "(1) Behavioralism, (2) Monetarism, (3) Isolationism",
+        "(1) Structuralism, (2) Hedonism, (3) Feudalism"
+      ],
+      "answer": "(1) Constructivism, (2) Critical & Postcolonial, (3) Global Public Goods",
+      "explanation": "Table 6 outlines five perspectives: Realism, Liberal Institutionalism, Constructivism, Critical & Postcolonial, and Global Public Goods."
+    },
+    {
+      "id": "tcw-s2-09",
+      "type": "multiple-choice",
+      "topic": "Effective Global Policy",
+      "question": "Which four requirements are necessary for effective global policy according to Part 7 §8?",
+      "options": [
+        "Collective management, fair representation (including developing nations), accountability & transparency, and inclusiveness (state + private + civil society)",
+        "Secrecy, unilateral veto power, trade embargoes, and closed borders",
+        "Exclusive control by MNCs without public oversight",
+        "Eliminating all NGOs and local governments"
+      ],
+      "answer": "Collective management, fair representation (including developing nations), accountability & transparency, and inclusiveness (state + private + civil society)",
+      "explanation": "Synchronized action and fair representation build legitimacy and prevent weak links."
+    },
+    {
+      "id": "tcw-s2-10",
+      "type": "multiple-choice",
+      "topic": "Global Economy",
+      "question": "How is the 'Global Economy' defined, and what are its five pillars?",
+      "options": [
+        "All national economies combined into one interconnected system; Pillars: International Trade (visible/invisible), Finance & Capital Flows (FDI/FX), Global Production Networks, MNCs, and Cross-Border Labor Mobility",
+        "Only gold reserves held in Europe; Pillars: Tariffs, Quotas, Embargoes, Barter, and Guilds",
+        "A single currency controlled by the UN; Pillars: Local farms only",
+        "Strictly domestic retail stores"
+      ],
+      "answer": "All national economies combined into one interconnected system; Pillars: International Trade (visible/invisible), Finance & Capital Flows (FDI/FX), Global Production Networks, MNCs, and Cross-Border Labor Mobility",
+      "explanation": "Operating on global supply and demand, disruptions in one region directly affect prices and jobs worldwide."
+    },
+    {
+      "id": "tcw-s2-11",
+      "type": "multiple-choice",
+      "topic": "International Trade",
+      "question": "In international trade terminology, what is the difference between 'visible trade' and 'invisible trade'?",
+      "options": [
+        "Visible trade exchanges physical goods; invisible trade exchanges services (e.g., BPO support, tourism, finance)",
+        "Visible trade happens during daytime; invisible trade happens at night",
+        "Visible trade uses paper money; invisible trade uses gold coins",
+        "Visible trade is legal; invisible trade is smuggling"
+      ],
+      "answer": "Visible trade exchanges physical goods; invisible trade exchanges services (e.g., BPO support, tourism, finance)",
+      "explanation": "Both goods and cross-border services form core components of international trade."
+    },
+    {
+      "id": "tcw-s2-12",
+      "type": "multiple-choice",
+      "topic": "Outsourcing History",
+      "question": "What historical examples in Part 8 show that outsourcing existed long before modern call centers?",
+      "options": [
+        "Ancient Rome delegating tax collection to private agents, and early American industry outsourcing wagon cover production to Scotland using Indian raw materials",
+        "Gutenberg outsourcing the printing press to Mars",
+        "Ancient Egypt outsourcing pyramid building to software firms",
+        "Sumerians outsourcing cuneiform to CERN"
+      ],
+      "answer": "Ancient Rome delegating tax collection to private agents, and early American industry outsourcing wagon cover production to Scotland using Indian raw materials",
+      "explanation": "Outsourcing—contracting external organizations for tasks previously handled internally—has deep historical roots."
+    },
+    {
+      "id": "tcw-s2-13",
+      "type": "multiple-choice",
+      "topic": "Types of Outsourcing",
+      "question": "Match the three modern strategic types of outsourcing—ITO, BPO, and Transformational Outsourcing:",
+      "options": [
+        "ITO: IT infrastructure/software dev; BPO: back-office/customer operations (call centers, accounting); Transformational: partnering for strategic innovation and structural change",
+        "ITO: farming tools; BPO: cargo shipping; Transformational: mining coal",
+        "ITO: import tariffs; BPO: border patrols; Transformational: currency printing",
+        "ITO: television ads; BPO: film directing; Transformational: book binding"
+      ],
+      "answer": "ITO: IT infrastructure/software dev; BPO: back-office/customer operations (call centers, accounting); Transformational: partnering for strategic innovation and structural change",
+      "explanation": "Modern outsourcing spans technical IT (ITO), operational processes (BPO), and strategic transformation."
+    },
+    {
+      "id": "tcw-s2-14",
+      "type": "multiple-choice",
+      "topic": "Surpluses",
+      "question": "Match the four surplus types in Table 7: Budget, Trade, Inventory, and Consumer Surplus.",
+      "options": [
+        "Budget: tax revenues > spending; Trade: exports > imports; Inventory: supply > market demand; Consumer: max willingness to pay − actual price paid",
+        "Budget: imports > exports; Trade: spending > tax; Inventory: demand > supply; Consumer: price paid − production cost",
+        "All four measure government debt",
+        "All four measure foreign currency outflows"
+      ],
+      "answer": "Budget: tax revenues > spending; Trade: exports > imports; Inventory: supply > market demand; Consumer: max willingness to pay − actual price paid",
+      "explanation": "For example, if you are willing to pay $100 and pay $70, your consumer surplus is $30."
+    },
+    {
+      "id": "tcw-s2-15",
+      "type": "multiple-choice",
+      "topic": "Deficits",
+      "question": "How do a Trade Deficit, Balance of Payments Deficit, and Fiscal Deficit differ?",
+      "options": [
+        "Trade Deficit: imports > exports; BoP Deficit: foreign currency outflows > inflows (pressuring reserves); Fiscal Deficit: comprehensive gap including budget shortfall + total net state borrowing needs",
+        "Trade Deficit: exports > imports; BoP Deficit: tax revenue > spending; Fiscal Deficit: consumer savings",
+        "All three mean a country has extra unsold inventory",
+        "They are three words for consumer surplus"
+      ],
+      "answer": "Trade Deficit: imports > exports; BoP Deficit: foreign currency outflows > inflows (pressuring reserves); Fiscal Deficit: comprehensive gap including budget shortfall + total net state borrowing needs",
+      "explanation": "Tables 7 and 8 carefully distinguish fiscal/budget balances from external trade and currency balances."
+    },
+    {
+      "id": "tcw-s2-16",
+      "type": "multiple-choice",
+      "topic": "Surplus vs. Deficit Trade-offs",
+      "question": "What analytical trade-off can a persistent trade surplus vs. a persistent trade deficit signal?",
+      "options": [
+        "Persistent surpluses can signal domestic underconsumption/imbalances; persistent deficits allow diverse goods access but heighten vulnerability to foreign shocks and currency swings",
+        "Surpluses always guarantee zero poverty; deficits automatically double exports",
+        "Surpluses weaken foreign reserves; deficits eliminate debt",
+        "Neither affects currency or domestic consumers"
+      ],
+      "answer": "Persistent surpluses can signal domestic underconsumption/imbalances; persistent deficits allow diverse goods access but heighten vulnerability to foreign shocks and currency swings",
+      "explanation": "Economists evaluate both surpluses and deficits for their structural trade-offs rather than treating either simplistically."
+    },
+    {
+      "id": "tcw-s2-17",
+      "type": "multiple-choice",
+      "topic": "Global Value Chains (GVCs)",
+      "question": "In a Global Value Chain (such as smartphone production across the US/South Korea, Taiwan, Japan, China, and Vietnam), where is the highest profit/value typically captured?",
+      "options": [
+        "In basic physical assembly alone",
+        "In design, R&D, technological innovation, and branding/marketing rather than basic physical assembly",
+        "Only in raw iron ore mining",
+        "Strictly in local retail packaging"
+      ],
+      "answer": "In design, R&D, technological innovation, and branding/marketing rather than basic physical assembly",
+      "explanation": "Higher value capture concentrates in R&D, IP, and high-tech design, while developing nations often handle assembly."
+    },
+    {
+      "id": "tcw-s2-18",
+      "type": "multiple-choice",
+      "topic": "Porter's Value Chain",
+      "question": "What is the sequence of primary activities in Porter's Value Chain Model cited under GVC drivers?",
+      "options": [
+        "Inbound logistics -> Operations -> Outbound logistics -> Marketing & Sales -> Service",
+        "Service -> Marketing -> Inbound logistics -> Mining -> Taxes",
+        "Tariffs -> Quotas -> Assembly -> Disposal",
+        "Imports -> Deficits -> Surpluses -> Liquidation"
+      ],
+      "answer": "Inbound logistics -> Operations -> Outbound logistics -> Marketing & Sales -> Service",
+      "explanation": "Global Value Chains fragment Porter's value chain stages across optimal countries worldwide."
+    },
+    {
+      "id": "tcw-s2-19",
+      "type": "multiple-choice",
+      "topic": "GVCs & Developing Nations",
+      "question": "According to WTO data cited in Part 8 §5, roughly how much of developing countries' exports are tied to GVCs, and what determines their gains?",
+      "options": [
+        "Over half of developing country exports; gains depend heavily on domestic infrastructure and leave economies exposed to external supply shocks",
+        "Less than 1%; gains are guaranteed regardless of infrastructure",
+        "100%; developing nations face zero supply shock risk",
+        "Zero exports involve GVCs"
+      ],
+      "answer": "Over half of developing country exports; gains depend heavily on domestic infrastructure and leave economies exposed to external supply shocks",
+      "explanation": "Stronger domestic infrastructure, skills, and upgrading help developing countries capture greater GVC value."
+    },
+    {
+      "id": "tcw-s2-20",
+      "type": "multiple-choice",
+      "topic": "Market Integration Types",
+      "question": "Match the four types of Market Integration: Price, Financial, Trade, and Labor integration.",
+      "options": [
+        "Price: commodity prices align across regions; Financial: linked stock/capital markets; Trade: FTAs/lowered tariffs (EU, USMCA, ASEAN); Labor: free cross-border worker mobility",
+        "Price: fixed government price ceilings; Financial: banning foreign banks; Trade: raising tariffs; Labor: closing visas",
+        "All four refer strictly to agricultural subsidies",
+        "All four apply only to domestic city markets"
+      ],
+      "answer": "Price: commodity prices align across regions; Financial: linked stock/capital markets; Trade: FTAs/lowered tariffs (EU, USMCA, ASEAN); Labor: free cross-border worker mobility",
+      "explanation": "For example, EU citizens working in any EU member state without special visas illustrates Labor Market Integration."
+    },
+    {
+      "id": "tcw-s2-21",
+      "type": "multiple-choice",
+      "topic": "Integrated vs. Separate Markets",
+      "question": "In Table 9 comparing Integrated Markets vs. Separate National Markets, what trade-off does an Integrated Market accept?",
+      "options": [
+        "Wider market access and global competition in exchange for reduced national policy flexibility and higher exposure to international shocks",
+        "Complete policy autonomy with zero exposure to foreign shocks",
+        "High protectionist tariffs and strictly domestic competition",
+        "Zero foreign trade"
+      ],
+      "answer": "Wider market access and global competition in exchange for reduced national policy flexibility and higher exposure to international shocks",
+      "explanation": "Separate markets retain independent national policymaking but face limited market access and domestic-crisis vulnerability."
+    },
+    {
+      "id": "tcw-s2-22",
+      "type": "multiple-choice",
+      "topic": "Benefits & Vulnerabilities",
+      "question": "In Part 9's summary matrix, what key vulnerability pairs with the Cultural Realm benefit of cross-cultural learning and media sharing?",
+      "options": [
+        "Threat of cultural homogenization and loss of local languages or traditions",
+        "Higher consumer product variety",
+        "Exchange rate volatility",
+        "Global supply chain bottlenecks"
+      ],
+      "answer": "Threat of cultural homogenization and loss of local languages or traditions",
+      "explanation": "Every domain—Consumers, Business, Socio-Economic, Cultural, and Environmental—carries paired opportunities and risks."
+    },
+    {
+      "id": "tcw-s2-23",
+      "type": "multiple-choice",
+      "topic": "Benefits & Vulnerabilities",
+      "question": "In the Environmental domain of Part 9, what contradiction exists between globalization's opportunity and vulnerability?",
+      "options": [
+        "Opportunity: international agreements on biodiversity and sustainability; Vulnerability: higher carbon footprint from global shipping and rapid resource consumption",
+        "Opportunity: higher carbon emissions; Vulnerability: too many environmental treaties",
+        "Opportunity: zero shipping; Vulnerability: lack of imports",
+        "There are no environmental impacts from global trade"
+      ],
+      "answer": "Opportunity: international agreements on biodiversity and sustainability; Vulnerability: higher carbon footprint from global shipping and rapid resource consumption",
+      "explanation": "Global trade enables environmental treaties yet simultaneously expands transport emissions and extraction."
+    },
+    {
+      "id": "tcw-s2-24",
+      "type": "multiple-choice",
+      "topic": "Sovereignty Tension",
+      "question": "What does 'sovereignty tension' mean in contemporary global governance?",
+      "options": [
+        "The persistent conflict between maintaining national autonomy and adhering to binding international governance commitments",
+        "Disagreements over soccer referee calls",
+        "Competition between smartphone operating systems",
+        "Conflicts strictly between neighboring cities"
+      ],
+      "answer": "The persistent conflict between maintaining national autonomy and adhering to binding international governance commitments",
+      "explanation": "States want collective solutions to global problems while resisting limits on domestic authority."
+    },
+    {
+      "id": "tcw-s2-25",
+      "type": "multiple-choice",
+      "topic": "Global vs. Regional IGOs",
+      "question": "Which grouping correctly separates Global IGOs from Regional IGOs?",
+      "options": [
+        "Global: UN, WTO, World Bank, IMF, WHO; Regional: EU, ASEAN",
+        "Global: ASEAN, EU; Regional: UN, WHO",
+        "Global: McDonald's, Apple; Regional: Red Cross",
+        "Global: Local city councils; Regional: WTO"
+      ],
+      "answer": "Global: UN, WTO, World Bank, IMF, WHO; Regional: EU, ASEAN",
+      "explanation": "Global IGOs coordinate worldwide standards, whereas regional IGOs focus on economic integration and security within a region."
+    },
+    {
+      "id": "tcw-s2-26",
+      "type": "multiple-choice",
+      "topic": "Real-World Example: Price Integration",
+      "question": "When a major wheat drought and price surge in the United States directly pushes up bread prices in Europe and Africa, this demonstrates:",
+      "options": [
+        "Price integration across global commodity markets",
+        "Labor market integration",
+        "Soft law",
+        "Inventory surplus"
+      ],
+      "answer": "Price integration across global commodity markets",
+      "explanation": "Linked supply and demand cause regional commodity prices to align globally (adjusted for shipping/tariffs)."
+    },
+    {
+      "id": "tcw-s2-27",
+      "type": "multiple-choice",
+      "topic": "Real-World Example: Financial Integration",
+      "question": "When a sharp Wall Street stock drop immediately triggers sell-offs across Asian and European exchanges, this illustrates:",
+      "options": [
+        "Financial market integration",
+        "Budget surplus",
+        "Free-rider problem",
+        "Cultural glocalization"
+      ],
+      "answer": "Financial market integration",
+      "explanation": "Integrated capital markets transmit financial shocks across continents almost instantaneously."
+    },
+    {
+      "id": "tcw-s2-28",
+      "type": "multiple-choice",
+      "topic": "Budget vs. Trade Balance",
+      "question": "If a government collects $500B in annual taxes and spends $650B, what specific type of deficit occurs?",
+      "options": [
+        "Budget deficit ($150B)",
+        "Trade surplus ($150B)",
+        "Inventory surplus",
+        "Consumer surplus"
+      ],
+      "answer": "Budget deficit ($150B)",
+      "explanation": "A budget deficit occurs when government expenditure exceeds tax revenue in a fiscal year; trade deficit compares exports vs. imports."
+    },
+    {
+      "id": "tcw-s2-29",
+      "type": "multiple-choice",
+      "topic": "Trade Balance Calculation",
+      "question": "If Country X exports $200B in goods and imports $150B, Country X is experiencing a:",
+      "options": [
+        "Trade surplus of $50B",
+        "Trade deficit of $50B",
+        "Budget deficit of $50B",
+        "Inventory deficit"
+      ],
+      "answer": "Trade surplus of $50B",
+      "explanation": "Exports ($200B) minus Imports ($150B) = +$50B trade surplus."
+    },
+    {
+      "id": "tcw-s2-30",
+      "type": "multiple-choice",
+      "topic": "Role of MNCs & NGOs",
+      "question": "Within Non-State Actors in global governance, what primary roles do NGOs vs. MNCs play?",
+      "options": [
+        "NGOs advocate for human rights, environment, and social justice; MNCs influence global trade flows, capital allocation, and technical standards",
+        "NGOs set global tariffs; MNCs write national constitutions",
+        "Neither NGOs nor MNCs interact with governments",
+        "Both are organs of the UN Security Council"
+      ],
+      "answer": "NGOs advocate for human rights, environment, and social justice; MNCs influence global trade flows, capital allocation, and technical standards",
+      "explanation": "Non-state actors complement—and sometimes challenge—state authority in shaping global outcomes."
+    },
+    {
+      "id": "tcw-s2-31",
+      "type": "multiple-choice",
+      "topic": "Public-Private Partnerships",
+      "question": "What are 'Public-Private Partnerships' (PPPs) as a mechanism of international cooperation?",
+      "options": [
+        "Multi-stakeholder collaborations uniting governments, businesses, and civil society to tackle shared problems",
+        "Secret treaties between two rival armies",
+        "Selling public schools to foreign banks",
+        "Bans on corporate research"
+      ],
+      "answer": "Multi-stakeholder collaborations uniting governments, businesses, and civil society to tackle shared problems",
+      "explanation": "PPPs combine public legitimacy/regulation with private capital, innovation, and NGO outreach."
+    },
+    {
+      "id": "tcw-s2-32",
+      "type": "multiple-choice",
+      "topic": "FDI Pillar",
+      "question": "Under the International Finance & Capital Flows pillar of the global economy, what does FDI stand for?",
+      "options": [
+        "Foreign Direct Investment",
+        "Federal Domestic Income",
+        "Fixed Deficit Index",
+        "Fiscal Debt Integration"
+      ],
+      "answer": "Foreign Direct Investment",
+      "explanation": "FDI, cross-border stock/bond markets, and foreign exchange trading drive international capital flows."
+    }
+  ]
+}

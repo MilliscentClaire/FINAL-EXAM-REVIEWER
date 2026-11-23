@@ -196,4 +196,63 @@ export const COURSE_FILES: CourseFile[] = [
       'sts-s2-intellectual-revolutions',
     ],
   },
+  {
+    id: 'tcw-midterm-reviewer-docx',
+    course: 'The Contemporary World',
+    fileName: 'TCW MIDTERM REVIEWER.docx',
+    relativePath: 'TCW FILES/TCW MIDTERM REVIEWER.docx',
+    format: 'DOCX',
+    sizeLabel: '3.0 MB',
+    summary:
+      'Comprehensive midterm guide covering Steger’s Triad, Bauman’s solids/liquids/flows, drivers & core debate, World-System & Network theories, glocalization, global governance, outsourcing, surpluses/deficits, GVCs, and market integration.',
+    topics: [
+      'Globalization Foundations',
+      'Drivers & Theories',
+      'Cultural Glocalization',
+      'Global Governance',
+      'Global Economy & GVCs',
+    ],
+    linkedDeckIds: [
+      'tcw-s1-globalization-foundations',
+      'tcw-s2-governance-economy',
+    ],
+  },
+  {
+    id: 'tcw-types-of-media-pdf',
+    course: 'The Contemporary World',
+    fileName: 'Types and Forms of Media.pdf',
+    relativePath: 'TCW FILES/Types and Forms of Media.pdf',
+    format: 'PDF',
+    sizeLabel: '592 KB · 4 pages',
+    summary:
+      'Reading material analyzing the six forms of media—Print, Broadcast (Radio & TV), Film/Cinema, Digital/New Media, Social Media, and Multimedia—alongside gatekeeping, convergence, algorithms, and media literacy.',
+    topics: [
+      'Print & Broadcast Media',
+      'Film & Cinema',
+      'Digital & Social Media',
+      'Multimedia & Convergence',
+    ],
+    linkedDeckIds: ['tcw-s3-media-literacy'],
+  },
+  {
+    id: 'tcw-finals-reading-pdf',
+    course: 'The Contemporary World',
+    fileName: 'Finals Reading Material.pdf',
+    relativePath: 'TCW FILES/Finals Reading Material.pdf',
+    format: 'PDF',
+    sizeLabel: '45 KB · 8 pages',
+    summary:
+      'Finals readings covering interdependence, state/nation/sovereignty, UN 6 organs, WTO/IMF/World Bank, UDHR & ICJ vs. ICC, asylum/refugees, media literacy & global citizenship, UNSC veto, Paris Agreement, and the 4 pillars of food security.',
+    topics: [
+      'UN, WTO, IMF & World Bank',
+      'Rights, ICJ vs. ICC & Asylum',
+      'Global Citizenship',
+      'Sustainability & Paris Agreement',
+      'Food Security Pillars',
+    ],
+    linkedDeckIds: [
+      'tcw-s3-media-literacy',
+      'tcw-s4-finals-global-issues',
+    ],
+  },
 ];

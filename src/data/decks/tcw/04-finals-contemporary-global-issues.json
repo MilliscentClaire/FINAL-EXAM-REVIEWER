@@ -1,0 +1,503 @@
+{
+  "id": "tcw-s4-finals-global-issues",
+  "course": "The Contemporary World",
+  "sectionOrder": 4,
+  "sectionLabel": "Section 4",
+  "title": "Global Institutions, Rights, Citizenship, Sustainability & Food Security",
+  "subject": "The Contemporary World",
+  "description": "State vs. nation vs. colony, UN 6 main organs, WTO/IMF/World Bank, UDHR & ICJ vs. ICC, asylum & refugees, global citizenship roles, UNSC veto, Paris Agreement, and the 4 pillars of food security.",
+  "sourceFile": "Finals Reading Material.pdf",
+  "createdAt": "2026-11-24",
+  "questions": [
+    {
+      "id": "tcw-s4-01",
+      "type": "multiple-choice",
+      "topic": "Interdependence",
+      "question": "In Reading Material 1, when imported fuel prices rise and businesses raise food delivery prices as a result, what concept does this illustrate?",
+      "options": [
+        "Interdependence among countries",
+        "Complete local self-isolation",
+        "Colony status",
+        "Regional veto power"
+      ],
+      "answer": "Interdependence among countries",
+      "explanation": "Interdependence means distant economic or environmental events directly affect daily prices, jobs, and supplies locally."
+    },
+    {
+      "id": "tcw-s4-02",
+      "type": "multiple-choice",
+      "topic": "OFW Remittances",
+      "question": "How does a Filipino working abroad sending money home illustrate the multiple dimensions of globalization?",
+      "options": [
+        "It connects economies via financial remittances while exchanging customs and cultures across borders",
+        "It proves globalization affects only politicians",
+        "It stops cross-border communication",
+        "It prevents cultural exchange"
+      ],
+      "answer": "It connects economies via financial remittances while exchanging customs and cultures across borders",
+      "explanation": "Remittances support education and food at home while workers both share Filipino customs and learn host cultures."
+    },
+    {
+      "id": "tcw-s4-03",
+      "type": "multiple-choice",
+      "topic": "Unequal Gains",
+      "question": "Why do some individuals benefit more from global connections than others according to Reading Material 1?",
+      "options": [
+        "Because access to reliable internet, money, and educational/economic opportunities is unevenly distributed",
+        "Because only large countries can be states",
+        "Because interdependence guarantees equal wealth for everyone",
+        "Because fuel prices never change"
+      ],
+      "answer": "Because access to reliable internet, money, and educational/economic opportunities is unevenly distributed",
+      "explanation": "Global connections widen opportunities yet reproduce disparities when access to resources is unequal."
+    },
+    {
+      "id": "tcw-s4-04",
+      "type": "multiple-choice",
+      "topic": "State, Nation & Colony",
+      "question": "How do a 'state,' a 'nation,' and a 'colony' differ in world affairs?",
+      "options": [
+        "A state has people, territory, government, and independent external relations; a nation is a group sharing identity/history/belonging; a colony is controlled by another country and lacks full independence.",
+        "A state must always be giant in size; a nation is a treaty; a colony has full sovereignty.",
+        "State and nation are 100% identical.",
+        "A colony has veto power in the UN Security Council."
+      ],
+      "answer": "A state has people, territory, government, and independent external relations; a nation is a group sharing identity/history/belonging; a colony is controlled by another country and lacks full independence.",
+      "explanation": "A single state can encompass diverse communities and national identities, regardless of geographic size."
+    },
+    {
+      "id": "tcw-s4-05",
+      "type": "multiple-choice",
+      "topic": "Sovereignty & Regionalism",
+      "question": "What is 'sovereignty,' and what is 'regionalism' (exemplified by ASEAN)?",
+      "options": [
+        "Sovereignty: a state's authority over domestic affairs and independence abroad; Regionalism: cooperation among neighboring countries within a region on shared concerns.",
+        "Sovereignty: total world government; Regionalism: banning trade with neighbors.",
+        "Sovereignty: joining the ICC; Regionalism: vetoing treaties.",
+        "Sovereignty: UN Secretariat staff; Regionalism: IMF loans."
+      ],
+      "answer": "Sovereignty: a state's authority over domestic affairs and independence abroad; Regionalism: cooperation among neighboring countries within a region on shared concerns.",
+      "explanation": "Even when joining international agreements, national governments remain essential for services, rights protection, and domestic implementation."
+    },
+    {
+      "id": "tcw-s4-06",
+      "type": "multiple-choice",
+      "topic": "UN Six Main Organs",
+      "question": "Which of the United Nations' six main organs holds the primary responsibility for international peace and security, and which organ has suspended regular operations after overseeing territories toward self-government?",
+      "options": [
+        "Security Council (peace & security); Trusteeship Council (suspended regular operations)",
+        "General Assembly (peace & security); Secretariat (suspended)",
+        "ECOSOC (peace & security); ICJ (suspended)",
+        "ICC (peace & security); WTO (suspended)"
+      ],
+      "answer": "Security Council (peace & security); Trusteeship Council (suspended regular operations)",
+      "explanation": "The 6 UN organs are General Assembly, Security Council, ECOSOC, Secretariat, International Court of Justice (ICJ), and Trusteeship Council."
+    },
+    {
+      "id": "tcw-s4-07",
+      "type": "multiple-choice",
+      "topic": "UN Organs Matching",
+      "question": "Match the General Assembly, ECOSOC, and Secretariat to their UN responsibilities:",
+      "options": [
+        "General Assembly: universal discussion forum; ECOSOC: coordinates development & social work; Secretariat: handles daily administrative work",
+        "General Assembly: prosecutes individuals; ECOSOC: lends bailout funds; Secretariat: vetoes resolutions",
+        "General Assembly: handles daily work; ECOSOC: resolves border wars; Secretariat: debates treaties",
+        "All three have identical judicial powers"
+      ],
+      "answer": "General Assembly: universal discussion forum; ECOSOC: coordinates development & social work; Secretariat: handles daily administrative work",
+      "explanation": "Each of the UN's six main bodies plays a distinct institutional role."
+    },
+    {
+      "id": "tcw-s4-08",
+      "type": "multiple-choice",
+      "topic": "WTO vs. IMF vs. World Bank",
+      "question": "How do the core mandates of the WTO, IMF, and World Bank differ?",
+      "options": [
+        "WTO: trade rules, agreements & trade disputes; IMF: financial/economic stability & conditional balance-of-payment loans; World Bank: long-term development, infrastructure & poverty reduction",
+        "WTO: criminal trials; IMF: climate treaties; World Bank: peacekeeping troops",
+        "WTO: poverty loans; IMF: tariffs; World Bank: daily UN admin",
+        "All three exist solely to print US dollars"
+      ],
+      "answer": "WTO: trade rules, agreements & trade disputes; IMF: financial/economic stability & conditional balance-of-payment loans; World Bank: long-term development, infrastructure & poverty reduction",
+      "explanation": "Although their work can overlap, the WTO, IMF, and World Bank serve distinct functions in the global economy."
+    },
+    {
+      "id": "tcw-s4-09",
+      "type": "multiple-choice",
+      "topic": "Treaty vs. Declaration",
+      "question": "What is the key legal difference between an international 'treaty' and a 'declaration' (such as the UDHR)?",
+      "options": [
+        "A treaty creates binding legal duties for joining countries, whereas a declaration sets out shared principles or standards (though its principles often shape later treaties and laws)",
+        "A declaration automatically imposes military sanctions; a treaty is informal",
+        "Treaties are signed only by NGOs; declarations are signed only by businesses",
+        "There is no difference between them"
+      ],
+      "answer": "A treaty creates binding legal duties for joining countries, whereas a declaration sets out shared principles or standards (though its principles often shape later treaties and laws)",
+      "explanation": "The UDHR (1948) is a foundational declaration rather than a treaty, yet deeply influences international and domestic law."
+    },
+    {
+      "id": "tcw-s4-10",
+      "type": "multiple-choice",
+      "topic": "Human Rights Foundations",
+      "question": "Why does Reading Material 4 state that 'fair access to resources' is integral to human rights?",
+      "options": [
+        "Because rights matter in daily life—children need schooling, and communities need safe water and protection from violence, especially when facing greater barriers",
+        "Because human dignity depends on a person's income or nationality",
+        "Because only citizens of rich nations have rights",
+        "Because declarations eliminate all barriers instantly without effort"
+      ],
+      "answer": "Because rights matter in daily life—children need schooling, and communities need safe water and protection from violence, especially when facing greater barriers",
+      "explanation": "People never lose inherent dignity because of nationality, income, religion, or background."
+    },
+    {
+      "id": "tcw-s4-11",
+      "type": "multiple-choice",
+      "topic": "ICJ vs. ICC",
+      "question": "How do the International Court of Justice (ICJ) and the International Criminal Court (ICC) differ?",
+      "options": [
+        "ICJ is a main UN organ handling legal disputes between states; ICC is a separate court (not a main UN organ) prosecuting individuals accused of very serious international crimes",
+        "ICJ prosecutes individual criminals; ICC settles trade tariffs",
+        "Both are identical chambers inside the WTO",
+        "ICC replaces every local police station and court in all countries"
+      ],
+      "answer": "ICJ is a main UN organ handling legal disputes between states; ICC is a separate court (not a main UN organ) prosecuting individuals accused of very serious international crimes",
+      "explanation": "The ICC complements—rather than replaces—national courts, and an accusation alone never proves guilt."
+    },
+    {
+      "id": "tcw-s4-12",
+      "type": "multiple-choice",
+      "topic": "Asylum & Refugees",
+      "question": "Which statement accurately describes international refugee and asylum protection in Reading Material 4?",
+      "options": [
+        "Entering without usual documents automatically disqualifies an asylum claim, and countries can return refugees to any danger immediately",
+        "Asylum claims must be assessed fairly even without usual entry documents, and refugee protection includes a rule against returning people to certain serious dangers (non-refoulement)—though it does not grant an unlimited right to settle anywhere",
+        "People moving purely for jobs or study receive automatic refugee status",
+        "Host communities require no support when receiving refugees"
+      ],
+      "answer": "Asylum claims must be assessed fairly even without usual entry documents, and refugee protection includes a rule against returning people to certain serious dangers (non-refoulement)—though it does not grant an unlimited right to settle anywhere",
+      "explanation": "Refugee protection balances fair assessment and safety from persecution with fair procedures and support for host communities."
+    },
+    {
+      "id": "tcw-s4-13",
+      "type": "multiple-choice",
+      "topic": "Global Citizenship",
+      "question": "What does 'global citizenship' mean—and what does it NOT mean—according to Reading Material 5?",
+      "options": [
+        "It means recognizing our connection and responsibility to people beyond our borders; it does NOT replace national citizenship or grant a 'world passport'",
+        "It means renouncing your home country's passport",
+        "It means ignoring local community problems",
+        "It means forcing every culture to adopt identical food and dress"
+      ],
+      "answer": "It means recognizing our connection and responsibility to people beyond our borders; it does NOT replace national citizenship or grant a 'world passport'",
+      "explanation": "Caring about one's own community and respecting people elsewhere go hand in hand."
+    },
+    {
+      "id": "tcw-s4-14",
+      "type": "multiple-choice",
+      "topic": "Global Competence & Engagement",
+      "question": "How are 'global competence,' 'social responsibility,' and 'global civic engagement' defined?",
+      "options": [
+        "Global competence: understanding wider issues & communicating across differences; Social responsibility: considering how actions affect others; Global civic engagement: participating in public concerns with wider awareness",
+        "Global competence: memorizing flags; Social responsibility: avoiding public life; Civic engagement: online gaming",
+        "All three mean maximizing personal profit at others' expense",
+        "They apply only to diplomats over age 50"
+      ],
+      "answer": "Global competence: understanding wider issues & communicating across differences; Social responsibility: considering how actions affect others; Global civic engagement: participating in public concerns with wider awareness",
+      "explanation": "Listening, verifying facts, supporting education, and peaceful conflict resolution put these values into action."
+    },
+    {
+      "id": "tcw-s4-15",
+      "type": "multiple-choice",
+      "topic": "Cultural Respect vs. Harm",
+      "question": "Does respecting other cultures require accepting harmful practices according to Reading Material 5?",
+      "options": [
+        "Yes—cultural respect forbids questioning any practice",
+        "No—respecting culture means understanding without stereotyping, yet we can still raise concerns about harm while listening and treating communities with dignity",
+        "Only if a treaty allows it",
+        "Respecting culture means avoiding all contact with other societies"
+      ],
+      "answer": "No—respecting culture means understanding without stereotyping, yet we can still raise concerns about harm while listening and treating communities with dignity",
+      "explanation": "Dignity and dialogue allow addressing harm without stereotyping entire communities."
+    },
+    {
+      "id": "tcw-s4-16",
+      "type": "multiple-choice",
+      "topic": "Ways People Contribute",
+      "question": "Match each global role from Reading Material 6: Global Reformer, Transnational Activist, and Politically Conscious Regionalist.",
+      "options": [
+        "Global reformer: improves unfair policies (e.g., labor/education); Transnational activist: collaborates across borders on shared campaigns; Regionalist: supports regional cooperation (e.g., ASEAN)",
+        "Global reformer: blocks UN votes; Transnational activist: avoids foreign groups; Regionalist: closes regional borders",
+        "All three refer exclusively to corporate CEOs",
+        "None of these roles can overlap"
+      ],
+      "answer": "Global reformer: improves unfair policies (e.g., labor/education); Transnational activist: collaborates across borders on shared campaigns; Regionalist: supports regional cooperation (e.g., ASEAN)",
+      "explanation": "Roles such as businessperson, environmental manager, reformer, activist, and regionalist frequently overlap."
+    },
+    {
+      "id": "tcw-s4-17",
+      "type": "multiple-choice",
+      "topic": "Green Claims & Business",
+      "question": "In Reading Material 6, what responsibility accompanies an 'elite global businessperson' and a 'global environmental manager'?",
+      "options": [
+        "Only maximizing quarterly stock prices",
+        "Business influence brings responsibility toward workers, communities, and the environment; environmental managers track pollution/supply chains and ensure 'eco-friendly' claims are backed by evidence",
+        "Printing green logos without checking suppliers",
+        "Avoiding international networks"
+      ],
+      "answer": "Business influence brings responsibility toward workers, communities, and the environment; environmental managers track pollution/supply chains and ensure 'eco-friendly' claims are backed by evidence",
+      "explanation": "Evidence-based environmental stewardship prevents misleading greenwashing."
+    },
+    {
+      "id": "tcw-s4-18",
+      "type": "multiple-choice",
+      "topic": "UN Security Council Veto",
+      "question": "Why can shared UN action sometimes be blocked even when a clear majority of countries support it?",
+      "options": [
+        "Because the five permanent members of the UN Security Council can use their veto power to block substantive decisions",
+        "Because the General Assembly never meets",
+        "Because the Trusteeship Council vetoes all budgets",
+        "Because ASEAN controls UN voting"
+      ],
+      "answer": "Because the five permanent members of the UN Security Council can use their veto power to block substantive decisions",
+      "explanation": "Unequal power, lack of funding/staff, and conflicting national policies make global cooperation challenging."
+    },
+    {
+      "id": "tcw-s4-19",
+      "type": "multiple-choice",
+      "topic": "Sustainability & Paris Agreement",
+      "question": "How is 'sustainability' defined, and what important detail does Reading Material 7 note about the 2015 Paris Agreement?",
+      "options": [
+        "Sustainability meets present needs while protecting future generations' conditions; the Paris Agreement is a legally binding 2015 climate treaty where countries share plans, though it lacks automatic punishments for missed targets",
+        "Sustainability prioritizes jobs regardless of water or health damage; Paris Agreement imposes automatic prison sentences",
+        "Paris Agreement is a 1948 non-binding trade memo",
+        "Sustainability ignores future generations"
+      ],
+      "answer": "Sustainability meets present needs while protecting future generations' conditions; the Paris Agreement is a legally binding 2015 climate treaty where countries share plans, though it lacks automatic punishments for missed targets",
+      "explanation": "True sustainability links human well-being with environmental care across generations."
+    },
+    {
+      "id": "tcw-s4-20",
+      "type": "multiple-choice",
+      "topic": "Four Pillars of Food Security",
+      "question": "What are the four FAO pillars that explain 'food security' in Reading Material 7?",
+      "options": [
+        "Availability, Access, Utilization, and Stability",
+        "Production, Tariffs, Exports, and Surplus",
+        "Farming, Packaging, Advertising, and Disposal",
+        "Calories, Sugar, Salt, and Oil"
+      ],
+      "answer": "Availability, Access, Utilization, and Stability",
+      "explanation": "Food security requires food to be present (availability), obtainable/affordable (access), nutritious/safe (utilization), and reliable over time (stability)."
+    },
+    {
+      "id": "tcw-s4-21",
+      "type": "multiple-choice",
+      "topic": "Food Security Case Example",
+      "question": "A local market has plenty of rice, fish, and vegetables, yet a family cannot afford balanced meals—and after a typhoon, washed-out roads halt food deliveries. Which food security pillars are failing?",
+      "options": [
+        "Access (affordability and physical delivery) and Stability (continuity over time), even when food is available in the region",
+        "Availability only",
+        "Global citizenship",
+        "Trusteeship"
+      ],
+      "answer": "Access (affordability and physical delivery) and Stability (continuity over time), even when food is available in the region",
+      "explanation": "Having food physically produced somewhere does not guarantee households can afford or reliably reach it."
+    },
+    {
+      "id": "tcw-s4-22",
+      "type": "multiple-choice",
+      "topic": "Food Security Utilization",
+      "question": "Within the four pillars of food security, what does 'Utilization' specifically concern?",
+      "options": [
+        "Nutrition, food safety, clean preparation, and the bodily/sanitary conditions needed to benefit from food",
+        "Exporting crops to wealthier nations",
+        "Building highway tollbooths",
+        "Printing grocery receipts"
+      ],
+      "answer": "Nutrition, food safety, clean preparation, and the bodily/sanitary conditions needed to benefit from food",
+      "explanation": "Utilization ensures food actually nourishes people safely rather than causing illness or malnutrition."
+    },
+    {
+      "id": "tcw-s4-23",
+      "type": "multiple-choice",
+      "topic": "Technology & Access",
+      "question": "According to Reading Material 7 ('Choices for the coming years'), why is inventing a useful new agricultural or energy technology not enough by itself?",
+      "options": [
+        "Because communities also need money, skills, and supporting infrastructure (storage, transport, etc.) to actually access and use it",
+        "Because technology always makes farming worse",
+        "Because 2050 is already completely predetermined",
+        "Because waste has zero effect on food supply"
+      ],
+      "answer": "Because communities also need money, skills, and supporting infrastructure (storage, transport, etc.) to actually access and use it",
+      "explanation": "Multi-level action across individuals, businesses, governments, and IGOs shapes a sustainable 2050."
+    },
+    {
+      "id": "tcw-s4-24",
+      "type": "multiple-choice",
+      "topic": "Promises vs. Action",
+      "question": "When world leaders hold summits and issue promises to act on global crises, what does Reading Material 3 remind us is still needed for real impact?",
+      "options": [
+        "Funding, clear responsibilities, and concrete implementation/follow-through",
+        "Simply repeating the speech online",
+        "Waiting for another summit ten years later",
+        "Suspending all national governments"
+      ],
+      "answer": "Funding, clear responsibilities, and concrete implementation/follow-through",
+      "explanation": "International organizations rely on member state resources and genuine execution to turn pledges into results."
+    },
+    {
+      "id": "tcw-s4-25",
+      "type": "multiple-choice",
+      "topic": "ICC Legal Authority",
+      "question": "What misconception about the International Criminal Court (ICC) does Reading Material 4 clarify regarding national authority?",
+      "options": [
+        "Claims about national authority do not automatically settle whether an international court can hear a case—its specific legal authority/jurisdiction must be examined",
+        "Any tweet automatically convicts a suspect at the ICC",
+        "The ICC is part of the UN Trusteeship Council",
+        "The ICC handles only commercial trademark lawsuits"
+      ],
+      "answer": "Claims about national authority do not automatically settle whether an international court can hear a case—its specific legal authority/jurisdiction must be examined",
+      "explanation": "International criminal jurisdiction depends on legal treaties, complementarity, and factual evidence."
+    },
+    {
+      "id": "tcw-s4-26",
+      "type": "multiple-choice",
+      "topic": "Improving Global Cooperation",
+      "question": "Facing thorny challenges like sharing refugee costs, fair vaccine/medical supply distribution, and cyberattack responses, what three practices improve international cooperation?",
+      "options": [
+        "Clear responsibilities, honest reporting, and participation from affected communities",
+        "Hidden budgets, unilateral vetoes, and excluding local communities",
+        "Cutting off all international flights",
+        "Replacing treaties with rumors"
+      ],
+      "answer": "Clear responsibilities, honest reporting, and participation from affected communities",
+      "explanation": "Transparency and inclusion help bridge uneven power and resource gaps."
+    },
+    {
+      "id": "tcw-s4-27",
+      "type": "multiple-choice",
+      "topic": "IMF Conditionality",
+      "question": "When the International Monetary Fund (IMF) lends money to member states experiencing severe balance-of-payment crises, what often accompanies its assistance?",
+      "options": [
+        "Policy conditions aimed at restoring financial and macroeconomic stability",
+        "Automatic UN Security Council permanent seats",
+        "Free military equipment",
+        "Zero accountability or reporting"
+      ],
+      "answer": "Policy conditions aimed at restoring financial and macroeconomic stability",
+      "explanation": "IMF conditionality is a frequent topic of debate regarding national policy autonomy vs. economic stabilization."
+    },
+    {
+      "id": "tcw-s4-28",
+      "type": "multiple-choice",
+      "topic": "World Bank Focus",
+      "question": "Which global institution specifically focuses on long-term development, reducing poverty, and financing infrastructure and public services?",
+      "options": [
+        "The World Bank",
+        "The International Criminal Court",
+        "The Trusteeship Council",
+        "UNESCO alone"
+      ],
+      "answer": "The World Bank",
+      "explanation": "While the IMF focuses on short/medium-term monetary stability and WTO on trade rules, the World Bank targets long-term poverty reduction and development."
+    },
+    {
+      "id": "tcw-s4-29",
+      "type": "multiple-choice",
+      "topic": "Rights & Responsibilities",
+      "question": "In Reading Material 5 ('Turning concern into action'), what principle balances claiming rights?",
+      "options": [
+        "Rights come with responsibilities toward others—wanting a clean environment requires helping protect it, and valuing peace requires supporting dialogue",
+        "Rights mean taking whatever you want without considering neighbors",
+        "Responsibilities apply only to foreign governments",
+        "Helping communities means ignoring what they actually need"
+      ],
+      "answer": "Rights come with responsibilities toward others—wanting a clean environment requires helping protect it, and valuing peace requires supporting dialogue",
+      "explanation": "Effective aid and solidarity respond to people's real needs and respect their agency."
+    },
+    {
+      "id": "tcw-s4-30",
+      "type": "multiple-choice",
+      "topic": "2050 Choices",
+      "question": "Which practical everyday actions does Reading Material 7 highlight as connecting individuals to global sustainability and food security?",
+      "options": [
+        "Checking information, avoiding food/resource waste, respecting others, and joining credible community efforts",
+        "Hoarding excess plastic packaging",
+        "Ignoring damaged local infrastructure",
+        "Sharing unverified rumors"
+      ],
+      "answer": "Checking information, avoiding food/resource waste, respecting others, and joining credible community efforts",
+      "explanation": "Individual habits reinforce national and international action across levels."
+    },
+    {
+      "id": "tcw-s4-31",
+      "type": "multiple-choice",
+      "topic": "Cooperation in ASEAN",
+      "question": "How does ASEAN illustrate 'regionalism' in Southeast Asia?",
+      "options": [
+        "Neighboring Southeast Asian countries collaborate on shared concerns like regional trade, migration, and natural resources",
+        "It acts as a single world government over Europe and Africa",
+        "It bans member states from speaking to each other",
+        "It replaces all national constitutions"
+      ],
+      "answer": "Neighboring Southeast Asian countries collaborate on shared concerns like regional trade, migration, and natural resources",
+      "explanation": "Regionalism addresses cross-border challenges at a neighborhood scale."
+    },
+    {
+      "id": "tcw-s4-32",
+      "type": "multiple-choice",
+      "topic": "Improving Food Security",
+      "question": "Besides increasing harvests, what practical measures listed in Reading Material 7 strengthen long-term food security?",
+      "options": [
+        "Better food storage, stronger transport systems, healthy soil, support for farmers, and reducing food waste",
+        "Destroying rural roads",
+        "Exporting all water supplies",
+        "Closing local markets"
+      ],
+      "answer": "Better food storage, stronger transport systems, healthy soil, support for farmers, and reducing food waste",
+      "explanation": "Post-harvest storage and resilient transport directly protect availability, access, and stability."
+    },
+    {
+      "id": "tcw-s4-33",
+      "type": "multiple-choice",
+      "topic": "Why Local Links Matter",
+      "question": "What does Reading Material 1 mean by 'a local problem may have causes beyond the community, and a local action may affect people elsewhere'?",
+      "options": [
+        "Local prices, jobs, weather, and consumption choices are embedded in global economic, cultural, and environmental networks",
+        "Local communities have zero connection to the outside world",
+        "Only big capital cities experience globalization",
+        "Global problems never affect rural areas"
+      ],
+      "answer": "Local prices, jobs, weather, and consumption choices are embedded in global economic, cultural, and environmental networks",
+      "explanation": "Understanding the contemporary world begins with noticing how everyday life links local and global realities."
+    },
+    {
+      "id": "tcw-s4-34",
+      "type": "multiple-choice",
+      "topic": "Migrants vs. Refugees",
+      "question": "Why does Reading Material 4 distinguish between people moving primarily for jobs or study and refugees seeking asylum?",
+      "options": [
+        "Refugees cross borders fleeing persecution or serious danger and invoke specific protection rules against forced return to harm, unlike voluntary labor/study migrants",
+        "Students are never allowed to study abroad",
+        "Refugees travel only for tourism",
+        "Countries have no fair procedures for either group"
+      ],
+      "answer": "Refugees cross borders fleeing persecution or serious danger and invoke specific protection rules against forced return to harm, unlike voluntary labor/study migrants",
+      "explanation": "International refugee law specifically protects people facing persecution or grave danger."
+    },
+    {
+      "id": "tcw-s4-35",
+      "type": "multiple-choice",
+      "topic": "UN & International Law",
+      "question": "Which official sources are cited in Reading Material 8 for food security and climate treaty concepts?",
+      "options": [
+        "Food and Agriculture Organization (FAO) for food security concepts, and UNFCCC for the Paris Agreement (alongside UN, WTO, IMF, ICC, and UNHCR)",
+        "NASA and FIFA",
+        "Hollywood Studios and Wall Street",
+        "OPEC and NATO"
+      ],
+      "answer": "Food and Agriculture Organization (FAO) for food security concepts, and UNFCCC for the Paris Agreement (alongside UN, WTO, IMF, ICC, and UNHCR)",
+      "explanation": "Knowing the official specialized institutions helps verify global data and policy claims."
+    }
+  ]
+}

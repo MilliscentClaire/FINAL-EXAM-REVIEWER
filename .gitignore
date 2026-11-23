@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Private exam question photos (never push to GitHub)
+**/MIDTERM QUESTIONS/
+docs/reviewer files/TCW FILES/MIDTERM QUESTIONS/
