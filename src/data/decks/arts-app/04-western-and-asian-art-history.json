@@ -1,0 +1,517 @@
+{
+  "id": "arts-app-s4-western-asian-history",
+  "course": "Arts Appreciation",
+  "sectionOrder": 4,
+  "sectionLabel": "Section 4",
+  "title": "Western Art History & Asian Art (Chinese, Japanese & Indian)",
+  "subject": "Arts Appreciation",
+  "description": "All 14 Western art eras from Prehistoric Cave Art to Modern & Contemporary movements, plus Chinese philosophy/landscape/porcelain, Japanese aesthetics (Wabi-sabi, Ukiyo-e, Ma, Kintsugi, Zen), and Indian art & architecture.",
+  "sourceFile": "Art History of Asia Chinese, Japanese, and India….docx, midterm reviewer.docx, ART APPRECIATION REVIEWER - FINAL EXAMINATION.pdf",
+  "createdAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "aa-s4-01",
+      "type": "multiple-choice",
+      "topic": "Western Art: Prehistoric & Egyptian",
+      "question": "Famous cave painting sites such as Lascaux, Chauvet, and Altamira (created using ochre and charcoal) belong to which era?",
+      "options": [
+        "Ancient Greek Art",
+        "Cave Art / Prehistoric Art",
+        "Medieval Art",
+        "Baroque Art"
+      ],
+      "answer": "Cave Art / Prehistoric Art",
+      "explanation": "Prehistoric cave paintings (~40,000 BCE+) used natural pigments like ochre and charcoal to depict animals, humans, and symbols."
+    },
+    {
+      "id": "aa-s4-02",
+      "type": "multiple-choice",
+      "topic": "Western Art: Prehistoric & Egyptian",
+      "question": "Hierarchical scale, rigid composite views, symmetry, and a deep focus on pharaohs and the afterlife characterize which art tradition?",
+      "options": [
+        "Ancient Egyptian Art",
+        "Rococo Art",
+        "Impressionism",
+        "Fauvism"
+      ],
+      "answer": "Ancient Egyptian Art",
+      "explanation": "Ancient Egyptian art (e.g., Pyramids of Giza, Great Sphinx, Bust of Nefertiti) used hierarchical scale and symbolism for religion and the afterlife."
+    },
+    {
+      "id": "aa-s4-03",
+      "type": "multiple-choice",
+      "topic": "Western Art: Greek & Roman",
+      "question": "In Ancient Greek sculpture, what does 'contrapposto' refer to?",
+      "options": [
+        "Using strong dark-and-light contrasts in oil paint",
+        "Shifting the body's weight onto one leg to create a natural, lifelike pose",
+        "Building pointed arches with flying buttresses",
+        "Painting portraits with exaggerated facial flaws"
+      ],
+      "answer": "Shifting the body's weight onto one leg to create a natural, lifelike pose",
+      "explanation": "Ancient Greek art focused on ideal beauty, proportion, and naturalism through contrapposto, alongside Doric, Ionic, and Corinthian architecture like the Parthenon."
+    },
+    {
+      "id": "aa-s4-04",
+      "type": "multiple-choice",
+      "topic": "Western Art: Greek & Roman",
+      "question": "Which civilization is particularly known for realistic portraiture, mosaics, frescoes, and monumental public architecture like the Colosseum and Pantheon?",
+      "options": [
+        "Ancient Roman Art",
+        "Ancient Egyptian Art",
+        "Prehistoric Art",
+        "Rococo Art"
+      ],
+      "answer": "Ancient Roman Art",
+      "explanation": "Ancient Roman art communicated imperial power and civic life through realistic portraiture and structures like the Colosseum and Pantheon."
+    },
+    {
+      "id": "aa-s4-05",
+      "type": "multiple-choice",
+      "topic": "Western Art: Medieval",
+      "question": "Pointed arches, luminous stained glass windows, and flying buttresses are hallmarks of which Medieval architectural style?",
+      "options": [
+        "Byzantine",
+        "Gothic",
+        "Neoclassical",
+        "Mughal"
+      ],
+      "answer": "Gothic",
+      "explanation": "Gothic cathedrals used pointed arches, stained glass, and flying buttresses to inspire awe and teach biblical stories."
+    },
+    {
+      "id": "aa-s4-06",
+      "type": "multiple-choice",
+      "topic": "Western Art: Renaissance",
+      "question": "Literally meaning 'rebirth,' the Renaissance was driven by Humanism and introduced which key visual innovations?",
+      "options": [
+        "Hierarchical scale and flat stick figures",
+        "Linear perspective, naturalism, balanced proportion, and anatomical study",
+        "Random drip painting and neon plastics",
+        "Pastel aristocratic leisure scenes"
+      ],
+      "answer": "Linear perspective, naturalism, balanced proportion, and anatomical study",
+      "explanation": "Renaissance masters like Leonardo da Vinci, Michelangelo (David, Creation of Adam), and Raphael (School of Athens) revived classical ideals with perspective and anatomy."
+    },
+    {
+      "id": "aa-s4-07",
+      "type": "multiple-choice",
+      "topic": "Western Art: Baroque & Rococo",
+      "question": "Dramatic movement, intense emotion, and 'chiaroscuro' (strong light-and-dark contrast) by artists such as Caravaggio, Bernini, and Rembrandt define which period?",
+      "options": [
+        "Baroque",
+        "Neoclassicism",
+        "Realism",
+        "Minimalism"
+      ],
+      "answer": "Baroque",
+      "explanation": "Baroque art (c. 1600–1700) sought to emotionally engage viewers through drama, dynamism, and chiaroscuro."
+    },
+    {
+      "id": "aa-s4-08",
+      "type": "multiple-choice",
+      "topic": "Western Art: Baroque & Rococo",
+      "question": "Developing in France as a lighter, playful reaction to Baroque grandeur, which style favored pastel colors, ornate decoration, and aristocratic leisure scenes (Watteau, Boucher, Fragonard)?",
+      "options": [
+        "Rococo",
+        "Realism",
+        "Cubism",
+        "Gothic"
+      ],
+      "answer": "Rococo",
+      "explanation": "Rococo (c. 1700–1775) emphasized elegance, pastel palettes, and playful aristocratic themes."
+    },
+    {
+      "id": "aa-s4-09",
+      "type": "multiple-choice",
+      "topic": "Western Art: Neoclassicism",
+      "question": "Drawing inspiration from ancient Greece and Rome, which movement valued order, clarity, reason, restraint, and civic virtue (exemplified by Jacques-Louis David's 'Oath of the Horatii')?",
+      "options": [
+        "Romanticism",
+        "Neoclassicism",
+        "Surrealism",
+        "Expressionism"
+      ],
+      "answer": "Neoclassicism",
+      "explanation": "Neoclassicism (c. 1760–1830) revived classical Greek and Roman discipline, symmetry, and moral clarity."
+    },
+    {
+      "id": "aa-s4-10",
+      "type": "multiple-choice",
+      "topic": "Western Art: Romanticism",
+      "question": "A painting of a dramatic ocean storm that conveys fear, awe, and the overwhelming power of nature best exemplifies which movement?",
+      "options": [
+        "Neoclassicism",
+        "Romanticism",
+        "Realism",
+        "Cubism"
+      ],
+      "answer": "Romanticism",
+      "explanation": "Romanticism (Delacroix, Turner, Friedrich) reacted against cold rationality by celebrating emotion, imagination, and the dramatic power of nature."
+    },
+    {
+      "id": "aa-s4-11",
+      "type": "multiple-choice",
+      "topic": "Western Art: Realism",
+      "question": "An honest, unidealized painting of stone breakers or everyday peasants working in the fields (such as Gustave Courbet's 'The Stone Breakers') belongs to:",
+      "options": [
+        "Realism",
+        "Rococo",
+        "Romanticism",
+        "Surrealism"
+      ],
+      "answer": "Realism",
+      "explanation": "Realism (c. 1830–1880) depicted ordinary people and contemporary social conditions without romantic idealization."
+    },
+    {
+      "id": "aa-s4-12",
+      "type": "multiple-choice",
+      "topic": "Western Art: Impressionism",
+      "question": "Capturing fleeting visual impressions, changing sunlight, atmosphere, and visible brushstrokes (as in Claude Monet's 'Impression, Sunrise') characterizes:",
+      "options": [
+        "Impressionism",
+        "Neoclassicism",
+        "Medieval Art",
+        "Baroque"
+      ],
+      "answer": "Impressionism",
+      "explanation": "Impressionists (Monet, Renoir, Degas, Pissarro) focused on light, color, atmosphere, and momentary perception."
+    },
+    {
+      "id": "aa-s4-13",
+      "type": "multiple-choice",
+      "topic": "Western Art: Modern Art",
+      "question": "Which early 20th-century movement, co-founded by Pablo Picasso, broke objects into geometric planes and showed multiple viewpoints simultaneously?",
+      "options": [
+        "Surrealism",
+        "Cubism",
+        "Fauvism",
+        "Pop Art"
+      ],
+      "answer": "Cubism",
+      "explanation": "Cubism (1907–1914) fragmented forms into geometric facets and multiple perspectives."
+    },
+    {
+      "id": "aa-s4-14",
+      "type": "multiple-choice",
+      "topic": "Western Art: Modern Art",
+      "question": "Match each Modern Art movement to its defining focus and key artist:",
+      "options": [
+        "Fauvism: bold non-naturalistic color (Matisse); Dada: anti-convention (Duchamp); Surrealism: dreams/unconscious (Dalí); Abstract: non-representational (Kandinsky/Pollock)",
+        "Fauvism: dreams (Dalí); Surrealism: comic books (Warhol); Dada: Greek symmetry (David)",
+        "Cubism: pastel leisure (Boucher); Expressionism: marble pharaohs; Pop Art: cave charcoal",
+        "Dada: Gothic stained glass; Abstract: chiaroscuro; Fauvism: pointillism only"
+      ],
+      "answer": "Fauvism: bold non-naturalistic color (Matisse); Dada: anti-convention (Duchamp); Surrealism: dreams/unconscious (Dalí); Abstract: non-representational (Kandinsky/Pollock)",
+      "explanation": "Modern Art challenged convention across Fauvism (Matisse), Expressionism (Kandinsky), Cubism (Picasso), Dada (Duchamp), Surrealism (Dalí), Abstract (Pollock), and Pop Art."
+    },
+    {
+      "id": "aa-s4-15",
+      "type": "multiple-choice",
+      "topic": "Western Art: Contemporary",
+      "question": "How does Contemporary Western Art (c. 1980–Present) often differ from older classical traditions?",
+      "options": [
+        "It forbids the use of photography and video.",
+        "It often prioritizes ideas, concepts, identity, globalization, and technology over traditional beauty alone.",
+        "It strictly follows Roman architectural orders.",
+        "It restricts artists to oil on wood panel."
+      ],
+      "answer": "It often prioritizes ideas, concepts, identity, globalization, and technology over traditional beauty alone.",
+      "explanation": "Contemporary art expands traditional media to include installation, video, performance, and digital tools while exploring identity, politics, and technology."
+    },
+    {
+      "id": "aa-s4-16",
+      "type": "multiple-choice",
+      "topic": "Chinese Art",
+      "question": "Which three philosophical and religious traditions most deeply shaped Chinese art?",
+      "options": [
+        "Shinto, Hinduism, and Catholicism",
+        "Confucianism, Daoism, and Buddhism",
+        "Jainism, Zoroastrianism, and Stoicism",
+        "Islam, Puritanism, and Existentialism"
+      ],
+      "answer": "Confucianism, Daoism, and Buddhism",
+      "explanation": "Chinese art evolved under Confucianism, Daoism, and Buddhism, emphasizing harmony with nature, discipline, and ancestral respect."
+    },
+    {
+      "id": "aa-s4-17",
+      "type": "multiple-choice",
+      "topic": "Chinese Art",
+      "question": "Why do traditional Chinese landscape paintings—like Fan Kuan's 'Travelers Among Mountains and Streams'—depict tiny human figures beneath towering mountains and mist?",
+      "options": [
+        "To reflect Daoist philosophy, showing humanity's humble place in harmony with vast nature",
+        "Because ancient Chinese artists did not know how to draw larger people",
+        "To imitate European Rococo garden scenes",
+        "To emphasize Western linear perspective"
+      ],
+      "answer": "To reflect Daoist philosophy, showing humanity's humble place in harmony with vast nature",
+      "explanation": "Daoism emphasizes harmony with nature and the natural order; monumental peaks dwarf human travelers to express this worldview."
+    },
+    {
+      "id": "aa-s4-18",
+      "type": "multiple-choice",
+      "topic": "Chinese Art",
+      "question": "In Chinese visual culture, what do the dragon and the lotus traditionally symbolize?",
+      "options": [
+        "Dragon: military defeat; Lotus: winter cold",
+        "Dragon: power and good fortune; Lotus: purity",
+        "Dragon: agriculture; Lotus: commerce",
+        "Dragon: tragedy; Lotus: war"
+      ],
+      "answer": "Dragon: power and good fortune; Lotus: purity",
+      "explanation": "Rich symbolism in Chinese art associates dragons with power and good fortune and the lotus with purity."
+    },
+    {
+      "id": "aa-s4-19",
+      "type": "multiple-choice",
+      "topic": "Chinese Art",
+      "question": "Why was the life-sized Terracotta Army created in ancient China?",
+      "options": [
+        "As tourist souvenirs along the Silk Road",
+        "To guard and accompany Emperor Qin Shi Huang in the afterlife",
+        "To decorate Buddhist caves in India",
+        "To serve as props in Japanese Kabuki theater"
+      ],
+      "answer": "To guard and accompany Emperor Qin Shi Huang in the afterlife",
+      "explanation": "The Terracotta Army consists of life-sized clay soldiers, horses, and chariots built for Emperor Qin Shi Huang's tomb."
+    },
+    {
+      "id": "aa-s4-20",
+      "type": "multiple-choice",
+      "topic": "Chinese Art",
+      "question": "Which Chinese art form uses brush and ink to create expressive written characters where stroke quality, movement, and arrangement are prized?",
+      "options": [
+        "Chinese calligraphy",
+        "Ukiyo-e",
+        "Blue-and-white porcelain",
+        "Ikebana"
+      ],
+      "answer": "Chinese calligraphy",
+      "explanation": "Chinese calligraphy is revered as a major visual art form expressing energy and balance through brushwork."
+    },
+    {
+      "id": "aa-s4-21",
+      "type": "multiple-choice",
+      "topic": "Japanese Art",
+      "question": "Which indigenous Japanese belief system celebrates nature spirits called 'kami,' and which Buddhist tradition later brought meditation and minimalism to Japanese art?",
+      "options": [
+        "Daoism; Islam",
+        "Shinto; Zen Buddhism",
+        "Confucianism; Jainism",
+        "Hinduism; Protestantism"
+      ],
+      "answer": "Shinto; Zen Buddhism",
+      "explanation": "Japanese art blends indigenous Shinto reverence for nature (kami) with Zen Buddhist simplicity and meditation."
+    },
+    {
+      "id": "aa-s4-22",
+      "type": "multiple-choice",
+      "topic": "Japanese Art",
+      "question": "An irregular, handmade tea bowl valued for its simplicity, naturalness, and signs of aging best illustrates which Japanese aesthetic concept?",
+      "options": [
+        "Ukiyo-e",
+        "Wabi-sabi",
+        "Japonisme",
+        "Sumi-e"
+      ],
+      "answer": "Wabi-sabi",
+      "explanation": "Wabi-sabi is the appreciation of imperfection, simplicity, impermanence, and natural aging."
+    },
+    {
+      "id": "aa-s4-23",
+      "type": "multiple-choice",
+      "topic": "Japanese Art",
+      "question": "What is 'Kintsugi'?",
+      "options": [
+        "Japanese flower arrangement",
+        "Repairing broken pottery with lacquer, often highlighting the seams with gold",
+        "Raked gravel zen gardening",
+        "Ink wash landscape painting"
+      ],
+      "answer": "Repairing broken pottery with lacquer, often highlighting the seams with gold",
+      "explanation": "Kintsugi treats breakage and repair as part of an object's history rather than something to hide."
+    },
+    {
+      "id": "aa-s4-24",
+      "type": "multiple-choice",
+      "topic": "Japanese Art",
+      "question": "In Japanese aesthetics, what does 'Ma' refer to?",
+      "options": [
+        "A meaningful interval, pause, or emptiness between objects or events that creates calm and balance",
+        "A woodblock print of urban actors",
+        "A multi-tiered pagoda roof",
+        "A bright red silk kimono pattern"
+      ],
+      "answer": "A meaningful interval, pause, or emptiness between objects or events that creates calm and balance",
+      "explanation": "Ma values negative space or meaningful intervals—emptiness contributes actively to balance and calm."
+    },
+    {
+      "id": "aa-s4-25",
+      "type": "multiple-choice",
+      "topic": "Japanese Art",
+      "question": "What does 'Ukiyo-e' translate to, and who created its famous print 'The Great Wave off Kanagawa'?",
+      "options": [
+        "'Pictures of the floating world'; Katsushika Hokusai",
+        "'Ink of the silent mountain'; Fan Kuan",
+        "'Golden seam repair'; Emperor Ashoka",
+        "'Harmonious flowers'; Shah Jahan"
+      ],
+      "answer": "'Pictures of the floating world'; Katsushika Hokusai",
+      "explanation": "Ukiyo-e means 'pictures of the floating world'—Japanese woodblock prints such as Hokusai's Great Wave from Thirty-six Views of Mount Fuji."
+    },
+    {
+      "id": "aa-s4-26",
+      "type": "multiple-choice",
+      "topic": "Japanese Art",
+      "question": "Which pair correctly defines 'Sumi-e,' 'Ikebana,' and 'Japonisme'?",
+      "options": [
+        "Sumi-e: ink wash painting; Ikebana: flower arrangement; Japonisme: Western fascination with and influence from Japanese art",
+        "Sumi-e: stone garden; Ikebana: tea bowl; Japonisme: Chinese porcelain",
+        "Sumi-e: origami; Ikebana: woodblock printing; Japonisme: Buddhist temple",
+        "Sumi-e: gold lacquer repair; Ikebana: calligraphy; Japonisme: Zen meditation"
+      ],
+      "answer": "Sumi-e: ink wash painting; Ikebana: flower arrangement; Japonisme: Western fascination with and influence from Japanese art",
+      "explanation": "Sumi-e is ink wash painting, Ikebana is flower arrangement, and Japonisme is the Western artistic interest in Japanese aesthetics."
+    },
+    {
+      "id": "aa-s4-27",
+      "type": "multiple-choice",
+      "topic": "Japanese Art",
+      "question": "The Ryōan-ji Rock Garden in Kyoto, composed of carefully arranged stones and raked gravel, was designed primarily to encourage:",
+      "options": [
+        "Military parades",
+        "Zen meditation, reflection, and calmness",
+        "Commercial marketplaces",
+        "Symmetrical Baroque spectacles"
+      ],
+      "answer": "Zen meditation, reflection, and calmness",
+      "explanation": "Zen dry landscape gardens (like Ryōan-ji) use minimal rocks and raked gravel to inspire contemplation."
+    },
+    {
+      "id": "aa-s4-28",
+      "type": "multiple-choice",
+      "topic": "Indian Art",
+      "question": "In Hindu sculpture, why are deities such as Shiva often depicted with multiple arms?",
+      "options": [
+        "To attempt strict anatomical realism",
+        "To symbolize divine attributes, powers, and spiritual roles",
+        "To show motion blur like Impressionist painting",
+        "Because sculptors followed Greek contrapposto rules"
+      ],
+      "answer": "To symbolize divine attributes, powers, and spiritual roles",
+      "explanation": "Multiple arms and symbolic hand gestures (mudras) communicate divine attributes and cosmic powers rather than anatomical literalism."
+    },
+    {
+      "id": "aa-s4-29",
+      "type": "multiple-choice",
+      "topic": "Indian Art",
+      "question": "In Indian iconography, what are 'mudras'?",
+      "options": [
+        "White marble domes",
+        "Symbolic hand gestures used in sculpture and painting to communicate spiritual meanings",
+        "Ceramic glazing ovens",
+        "Traditional bamboo looms"
+      ],
+      "answer": "Symbolic hand gestures used in sculpture and painting to communicate spiritual meanings",
+      "explanation": "Mudras are symbolic hand gestures alongside poses and attributes that convey religious teachings."
+    },
+    {
+      "id": "aa-s4-30",
+      "type": "multiple-choice",
+      "topic": "Indian Art",
+      "question": "The Taj Mahal in Agra—a symmetrical white marble mausoleum commissioned by Emperor Shah Jahan for Mumtaz Mahal—is a premier example of which architectural tradition?",
+      "options": [
+        "Nagara architecture",
+        "Dravida architecture",
+        "Mughal architecture",
+        "Gothic architecture"
+      ],
+      "answer": "Mughal architecture",
+      "explanation": "The Taj Mahal exemplifies Mughal architecture (Islamic-influenced Indian art), distinct from Nagara and Dravida temple traditions."
+    },
+    {
+      "id": "aa-s4-31",
+      "type": "multiple-choice",
+      "topic": "Indian Art",
+      "question": "Where is the celebrated Buddhist mural 'Bodhisattva Padmapani' (depicting a compassionate figure holding a lotus) located?",
+      "options": [
+        "Taj Mahal",
+        "Ajanta Cave 1, Maharashtra, India",
+        "Ryōan-ji Temple, Kyoto",
+        "Parthenon, Athens"
+      ],
+      "answer": "Ajanta Cave 1, Maharashtra, India",
+      "explanation": "The Bodhisattva Padmapani wall painting is one of the most famous murals of the Ajanta Caves in Maharashtra, India."
+    },
+    {
+      "id": "aa-s4-32",
+      "type": "multiple-choice",
+      "topic": "Indian Art",
+      "question": "Which ancient Buddhist dome monument with elaborate stone gateway carvings is traditionally associated with Emperor Ashoka?",
+      "options": [
+        "Great Stupa at Sanchi",
+        "Colosseum",
+        "Great Wall",
+        "Hagia Sophia"
+      ],
+      "answer": "Great Stupa at Sanchi",
+      "explanation": "The Great Stupa at Sanchi is a foundational monument of early Buddhist architecture associated with Emperor Ashoka."
+    },
+    {
+      "id": "aa-s4-33",
+      "type": "multiple-choice",
+      "topic": "Asian Art Comparison",
+      "question": "Which summary accurately contrasts the core emphasis of Chinese, Japanese, and Indian art?",
+      "options": [
+        "Chinese: harmony & philosophy; Japanese: simplicity & impermanence; Indian: spirituality & religious mythology",
+        "Chinese: Gothic arches; Japanese: Mughal marble; Indian: terracotta soldiers",
+        "Chinese: asymmetry; Japanese: hierarchical scale; Indian: oil impasto",
+        "Chinese: Pop Art; Japanese: Realism; Indian: Dadaism"
+      ],
+      "answer": "Chinese: harmony & philosophy; Japanese: simplicity & impermanence; Indian: spirituality & religious mythology",
+      "explanation": "Chinese art highlights harmony/nature/philosophy; Japanese art highlights simplicity/impermanence; Indian art highlights spirituality/divine narratives."
+    },
+    {
+      "id": "aa-s4-34",
+      "type": "multiple-choice",
+      "topic": "Western vs. Asian Art",
+      "question": "Which pair of art terms is INCORRECTLY matched?",
+      "options": [
+        "Ukiyo-e — Japanese woodblock printing",
+        "Sumi-e — Japanese ink wash painting",
+        "Chiaroscuro — Greek architectural column order",
+        "Wabi-sabi — Beauty in imperfection and aging"
+      ],
+      "answer": "Chiaroscuro — Greek architectural column order",
+      "explanation": "Chiaroscuro is the Baroque strong light-and-dark contrast; the Greek column orders are Doric, Ionic, and Corinthian."
+    },
+    {
+      "id": "aa-s4-35",
+      "type": "multiple-choice",
+      "topic": "Western Art: Era Sequence",
+      "question": "In the big picture of Western art history, which sequence correctly orders the major eras chronologically?",
+      "options": [
+        "Prehistoric -> Greek -> Medieval -> Renaissance -> Baroque -> Neoclassicism -> Romanticism -> Impressionism -> Modern",
+        "Renaissance -> Medieval -> Greek -> Baroque -> Romanticism -> Realism -> Prehistoric -> Modern",
+        "Impressionism -> Neoclassicism -> Rococo -> Renaissance -> Egyptian -> Modern",
+        "Baroque -> Renaissance -> Gothic -> Roman -> Impressionism -> Romanticism"
+      ],
+      "answer": "Prehistoric -> Greek -> Medieval -> Renaissance -> Baroque -> Neoclassicism -> Romanticism -> Impressionism -> Modern",
+      "explanation": "Western art progresses chronologically from Prehistoric, Egyptian/Greek/Roman, and Medieval through Renaissance, Baroque/Rococo, Neoclassicism, Romanticism, Realism, Impressionism, Modern, and Contemporary."
+    },
+    {
+      "id": "aa-s4-36",
+      "type": "multiple-choice",
+      "topic": "Western Art: Era Clues",
+      "question": "An exam describes 'classical themes, symmetry, restraint, and disciplined composition.' Which Western movement is being described?",
+      "options": [
+        "Romanticism",
+        "Neoclassicism",
+        "Impressionism",
+        "Surrealism"
+      ],
+      "answer": "Neoclassicism",
+      "explanation": "Neoclassicism values classical Greek/Roman inspiration, symmetry, order, clarity, and restraint."
+    }
+  ]
+}

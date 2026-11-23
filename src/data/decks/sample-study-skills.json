@@ -1,0 +1,102 @@
+{
+  "id": "sample-study-skills",
+  "title": "Active Recall & Fast Review Demo",
+  "subject": "Demo",
+  "description": "A quick 8-question sample deck demonstrating multiple-choice, true/false, and identification questions.",
+  "sourceFile": "docs/README.md",
+  "createdAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "demo-1",
+      "type": "multiple-choice",
+      "topic": "Study Techniques",
+      "question": "Which study strategy produces stronger long-term retention than passive re-reading?",
+      "options": [
+        "Highlighting every sentence in bright colors",
+        "Active recall (testing yourself without looking at notes)",
+        "Copying notes word-for-word",
+        "Cramming all topics in one uninterrupted sitting"
+      ],
+      "answer": "Active recall (testing yourself without looking at notes)",
+      "explanation": "Retrieving information from memory strengthens neural pathways far more effectively than passive review."
+    },
+    {
+      "id": "demo-2",
+      "type": "true-false",
+      "topic": "Spacing Effect",
+      "question": "Spaced repetition works by reviewing material just before you are about to forget it.",
+      "options": ["True", "False"],
+      "answer": "True",
+      "explanation": "Effortful retrieval right before forgetting resets the forgetting curve and extends retention intervals."
+    },
+    {
+      "id": "demo-3",
+      "type": "identification",
+      "topic": "Memory",
+      "question": "What is the cognitive effect called when spacing study sessions over time beats massed cramming?",
+      "answer": "Spacing effect",
+      "acceptedAnswers": ["the spacing effect", "spaced practice", "distributed practice"],
+      "explanation": "The spacing effect (distributed practice) consistently outperforms massed practice across subjects."
+    },
+    {
+      "id": "demo-4",
+      "type": "multiple-choice",
+      "topic": "Keyboard Review",
+      "question": "During a fast quiz session in QuickReview, which keys let you pick multiple-choice answers without reaching for the mouse?",
+      "options": [
+        "Keys 1 through 4",
+        "Keys Q, W, E, R",
+        "Function keys F1 through F4",
+        "Arrow Up and Arrow Down only"
+      ],
+      "answer": "Keys 1 through 4",
+      "explanation": "Number keys 1-4 select options immediately, and Enter, Space, or ArrowRight advances to the next item."
+    },
+    {
+      "id": "demo-5",
+      "type": "true-false",
+      "topic": "Metacognition",
+      "question": "Feeling fluent while re-reading a textbook always means you can recall that information on an exam.",
+      "options": ["True", "False"],
+      "answer": "False",
+      "explanation": "This is the illusion of competence: recognition feels easy, but exams require unaided recall."
+    },
+    {
+      "id": "demo-6",
+      "type": "identification",
+      "topic": "Study Techniques",
+      "question": "Name the technique where you learn a concept deeply by explaining it in plain, simple language as if teaching a beginner.",
+      "answer": "Feynman technique",
+      "acceptedAnswers": ["the feynman technique", "feynman method"],
+      "explanation": "The Feynman technique exposes gaps in understanding whenever you struggle to simplify an idea."
+    },
+    {
+      "id": "demo-7",
+      "type": "multiple-choice",
+      "topic": "Targeted Review",
+      "question": "Once you finish a quiz round with a few mistakes, what is the fastest way to close those gaps?",
+      "options": [
+        "Re-read the entire chapter from page one",
+        "Use Retry Missed Only to drill only the questions you got wrong",
+        "Delete your progress and stop studying",
+        "Only review questions you already got right"
+      ],
+      "answer": "Use Retry Missed Only to drill only the questions you got wrong",
+      "explanation": "Focusing on missed items avoids wasting time on material you already know."
+    },
+    {
+      "id": "demo-8",
+      "type": "multiple-choice",
+      "topic": "Adding Reviewers",
+      "question": "Where should new reviewer JSON files be placed so QuickReview automatically discovers them?",
+      "options": [
+        "src/data/decks/",
+        "public/images/",
+        "node_modules/",
+        "src/components/"
+      ],
+      "answer": "src/data/decks/",
+      "explanation": "Any valid .json deck file added to src/data/decks/ is automatically loaded on startup."
+    }
+  ]
+}

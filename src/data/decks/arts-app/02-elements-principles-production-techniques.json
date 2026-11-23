@@ -1,0 +1,461 @@
+{
+  "id": "arts-app-s2-elements-techniques",
+  "course": "Arts Appreciation",
+  "sectionOrder": 2,
+  "sectionLabel": "Section 2",
+  "title": "Elements of Art, Principles of Design, Production Process & Techniques",
+  "subject": "Arts Appreciation",
+  "description": "The 7 elements of art, 10 principles of design, Rule of Thirds, 8 stages of the production process, media vs. support vs. technique, drawing/painting/sculpture methods, and the 4 steps of art criticism.",
+  "sourceFile": "midterm reviewer.docx, ART APPRECIATION REVIEWER - FINAL EXAMINATION.pdf, CONTEMPORARY PHILIPPINE ARTS (1).pdf",
+  "createdAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "aa-s2-01",
+      "type": "multiple-choice",
+      "topic": "Elements of Art",
+      "question": "Which list contains all seven basic elements of art?",
+      "options": [
+        "Balance, Emphasis, Contrast, Movement, Pattern, Rhythm, Unity",
+        "Line, Shape, Form, Color, Value, Texture, Space",
+        "Hue, Saturation, Brightness, Scale, Proportion, Harmony, Variety",
+        "Concept, Research, Planning, Execution, Evaluation, Refinement, Presentation"
+      ],
+      "answer": "Line, Shape, Form, Color, Value, Texture, Space",
+      "explanation": "The 7 basic elements of art are Line, Shape, Form, Color, Value, Texture, and Space."
+    },
+    {
+      "id": "aa-s2-02",
+      "type": "multiple-choice",
+      "topic": "Elements of Art",
+      "question": "In visual composition, which type of line typically suggests calmness and stability?",
+      "options": [
+        "Horizontal line",
+        "Diagonal line",
+        "Zigzag line",
+        "Spiral line"
+      ],
+      "answer": "Horizontal line",
+      "explanation": "Horizontal lines suggest calmness or stability; vertical lines suggest strength/height; diagonal lines suggest movement; zigzag lines suggest tension."
+    },
+    {
+      "id": "aa-s2-03",
+      "type": "multiple-choice",
+      "topic": "Elements of Art",
+      "question": "Which type of line is most effective for suggesting excitement, chaos, or tension?",
+      "options": [
+        "Horizontal line",
+        "Curved line",
+        "Zigzag line",
+        "Dotted vertical line"
+      ],
+      "answer": "Zigzag line",
+      "explanation": "Zigzag lines create sharp directional changes that suggest excitement or tension."
+    },
+    {
+      "id": "aa-s2-04",
+      "type": "multiple-choice",
+      "topic": "Elements of Art",
+      "question": "What is the key difference between 'shape' and 'form'?",
+      "options": [
+        "Shape is 3D with depth; form is flat and 2D.",
+        "Shape is a 2D enclosed area (height and width); form is 3D (height, width, and depth).",
+        "Shape only exists in sculpture; form only exists in poetry.",
+        "Shape requires color; form cannot have color."
+      ],
+      "answer": "Shape is a 2D enclosed area (height and width); form is 3D (height, width, and depth).",
+      "explanation": "Shape = 2D (e.g., circle, square, leaf); Form = 3D (e.g., sphere, cube, pyramid) with height, width, and depth."
+    },
+    {
+      "id": "aa-s2-05",
+      "type": "multiple-choice",
+      "topic": "Elements of Art",
+      "question": "Leaves, clouds, and the human body are examples of which category of shapes?",
+      "options": [
+        "Geometric shapes",
+        "Organic shapes",
+        "Architectural planes",
+        "Negative forms"
+      ],
+      "answer": "Organic shapes",
+      "explanation": "Organic shapes are irregular, natural shapes like leaves, clouds, and flowers, unlike geometric shapes (circle, square, triangle)."
+    },
+    {
+      "id": "aa-s2-06",
+      "type": "multiple-choice",
+      "topic": "Elements of Art",
+      "question": "In basic color theory, which group consists of the three secondary colors?",
+      "options": [
+        "Red, Yellow, Blue",
+        "Orange, Green, Violet",
+        "Black, White, Gray",
+        "Red, Orange, Yellow"
+      ],
+      "answer": "Orange, Green, Violet",
+      "explanation": "Primary colors are Red, Yellow, and Blue; secondary colors are Orange, Green, and Violet."
+    },
+    {
+      "id": "aa-s2-07",
+      "type": "multiple-choice",
+      "topic": "Elements of Art",
+      "question": "Which element of art refers specifically to the lightness or darkness of a color or tone?",
+      "options": [
+        "Value",
+        "Texture",
+        "Hue",
+        "Proportion"
+      ],
+      "answer": "Value",
+      "explanation": "Value measures lightness or darkness (e.g., white -> gray -> black) and helps create highlights, shadows, and depth."
+    },
+    {
+      "id": "aa-s2-08",
+      "type": "multiple-choice",
+      "topic": "Elements of Art",
+      "question": "A hyperrealistic painting of rough tree bark on a completely smooth canvas demonstrates:",
+      "options": [
+        "Actual texture",
+        "Implied texture",
+        "Negative space",
+        "Symmetrical balance"
+      ],
+      "answer": "Implied texture",
+      "explanation": "Implied texture creates the visual illusion of a surface quality even though the physical surface is smooth."
+    },
+    {
+      "id": "aa-s2-09",
+      "type": "multiple-choice",
+      "topic": "Elements of Art",
+      "question": "In a portrait photograph of a person standing against a blank studio wall, the person occupies _____ space while the blank background is _____ space.",
+      "options": [
+        "negative; positive",
+        "positive; negative",
+        "primary; secondary",
+        "actual; implied"
+      ],
+      "answer": "positive; negative",
+      "explanation": "Positive space is the area occupied by the main subject; negative space is the empty area surrounding it."
+    },
+    {
+      "id": "aa-s2-10",
+      "type": "multiple-choice",
+      "topic": "Principles of Design",
+      "question": "How do the Elements of Art relate to the Principles of Design?",
+      "options": [
+        "Elements are how artists arrange things; Principles are the physical paint tubes.",
+        "Elements of Art are what artists use (building blocks); Principles of Design are how artists organize and arrange them.",
+        "They are identical lists with different names.",
+        "Principles only apply to architecture, not painting."
+      ],
+      "answer": "Elements of Art are what artists use (building blocks); Principles of Design are how artists organize and arrange them.",
+      "explanation": "Elements are the visual building blocks, while principles are the guidelines for organizing those elements."
+    },
+    {
+      "id": "aa-s2-11",
+      "type": "multiple-choice",
+      "topic": "Principles of Design",
+      "question": "A butterfly's wings mirroring each other on the left and right sides illustrate:",
+      "options": [
+        "Asymmetrical balance",
+        "Symmetrical balance",
+        "Contrast",
+        "Variety"
+      ],
+      "answer": "Symmetrical balance",
+      "explanation": "Symmetrical balance occurs when both sides of a composition mirror or closely match each other."
+    },
+    {
+      "id": "aa-s2-12",
+      "type": "multiple-choice",
+      "topic": "Principles of Design",
+      "question": "Which principle of design refers to the overall distribution of visual weight—for example, counterbalancing a large shape on one side with smaller detailed shapes on the other?",
+      "options": [
+        "Balance",
+        "Emphasis",
+        "Rhythm",
+        "Pattern"
+      ],
+      "answer": "Balance",
+      "explanation": "Balance is the distribution of visual weight across a composition to create visual stability."
+    },
+    {
+      "id": "aa-s2-13",
+      "type": "multiple-choice",
+      "topic": "Principles of Design",
+      "question": "A mostly black-and-white poster containing one bright red flower uses color contrast to achieve which principle?",
+      "options": [
+        "Emphasis",
+        "Proportion",
+        "Unity",
+        "Pattern"
+      ],
+      "answer": "Emphasis",
+      "explanation": "Emphasis makes one area or subject stand out as the focal point—what the viewer notices first."
+    },
+    {
+      "id": "aa-s2-14",
+      "type": "multiple-choice",
+      "topic": "Principles of Design",
+      "question": "What distinguishes 'rhythm' from 'pattern'?",
+      "options": [
+        "Pattern is simple repetition of elements, whereas rhythm is repetition arranged to create a sense of visual movement or flow.",
+        "Pattern only uses color, whereas rhythm only uses shapes.",
+        "Rhythm cannot exist in static visual art.",
+        "Pattern creates chaos, whereas rhythm removes all repetition."
+      ],
+      "answer": "Pattern is simple repetition of elements, whereas rhythm is repetition arranged to create a sense of visual movement or flow.",
+      "explanation": "Pattern = organized repetition; Rhythm = repetition that creates visual flow or movement."
+    },
+    {
+      "id": "aa-s2-15",
+      "type": "multiple-choice",
+      "topic": "Principles of Design",
+      "question": "Which principle occurs when different parts of an artwork work together seamlessly so the piece feels like one complete whole?",
+      "options": [
+        "Unity",
+        "Contrast",
+        "Variety",
+        "Emphasis"
+      ],
+      "answer": "Unity",
+      "explanation": "Unity creates a sense of completeness and cohesion across all parts of an artwork."
+    },
+    {
+      "id": "aa-s2-16",
+      "type": "multiple-choice",
+      "topic": "Principles of Design",
+      "question": "Why do artists use 'variety' in a composition?",
+      "options": [
+        "To make every element identical in size and color",
+        "To introduce differences in elements that create visual interest and avoid monotony",
+        "To eliminate all focal points",
+        "To ensure the artwork has no background"
+      ],
+      "answer": "To introduce differences in elements that create visual interest and avoid monotony",
+      "explanation": "Variety introduces controlled differences in shapes, colors, sizes, or textures to keep the viewer engaged."
+    },
+    {
+      "id": "aa-s2-17",
+      "type": "multiple-choice",
+      "topic": "Principles of Design",
+      "question": "Making sure a drawn person's head relates naturally in size to their torso and limbs involves which principle?",
+      "options": [
+        "Proportion",
+        "Movement",
+        "Value",
+        "Contrast"
+      ],
+      "answer": "Proportion",
+      "explanation": "Proportion is the size relationship of parts to one another and to the whole composition."
+    },
+    {
+      "id": "aa-s2-18",
+      "type": "multiple-choice",
+      "topic": "Principles of Design",
+      "question": "Placing rough textures next to smooth textures, or light values next to dark values, directly creates:",
+      "options": [
+        "Contrast",
+        "Symmetry",
+        "Harmony",
+        "Proportion"
+      ],
+      "answer": "Contrast",
+      "explanation": "Contrast places noticeably different elements together to create visual impact and distinction."
+    },
+    {
+      "id": "aa-s2-19",
+      "type": "multiple-choice",
+      "topic": "Rule of Thirds",
+      "question": "In the Rule of Thirds, an image is divided into nine equal parts using two horizontal lines and two vertical lines. What are the four intersections called?",
+      "options": [
+        "Vanishing points",
+        "Power points (or points of interest)",
+        "Golden ratios",
+        "Horizon nodes"
+      ],
+      "answer": "Power points (or points of interest)",
+      "explanation": "The four intersections in the Rule of Thirds grid are called power points or points of interest, ideal for placing key subjects."
+    },
+    {
+      "id": "aa-s2-20",
+      "type": "multiple-choice",
+      "topic": "Rule of Thirds",
+      "question": "Which statement is TRUE about the Rule of Thirds?",
+      "options": [
+        "It is a rigid law that forbids centered subjects in all artworks.",
+        "It is a composition guideline; artists may still center a subject intentionally to convey symmetry or stability.",
+        "It applies exclusively to black-and-white photography.",
+        "It requires dividing a canvas into sixteen unequal squares."
+      ],
+      "answer": "It is a composition guideline; artists may still center a subject intentionally to convey symmetry or stability.",
+      "explanation": "The Rule of Thirds is a helpful guideline for dynamic balance, not an unbreakable rule."
+    },
+    {
+      "id": "aa-s2-21",
+      "type": "multiple-choice",
+      "topic": "Production Process",
+      "question": "What is the correct sequence of the eight stages of the artistic production process?",
+      "options": [
+        "Planning -> Preparation -> Idea -> Execution -> Presentation -> Evaluation -> Refinement -> Research",
+        "Idea/Concept -> Research & Exploration -> Planning -> Preparation -> Execution -> Evaluation -> Refinement -> Presentation",
+        "Execution -> Planning -> Evaluation -> Idea -> Preparation -> Research -> Presentation -> Refinement",
+        "Research -> Execution -> Refinement -> Idea -> Planning -> Preparation -> Evaluation -> Presentation"
+      ],
+      "answer": "Idea/Concept -> Research & Exploration -> Planning -> Preparation -> Execution -> Evaluation -> Refinement -> Presentation",
+      "explanation": "The 8 stages progress from Idea/Concept, Research & Exploration, Planning, and Preparation to Execution, Evaluation, Refinement, and Presentation."
+    },
+    {
+      "id": "aa-s2-22",
+      "type": "multiple-choice",
+      "topic": "Production Process",
+      "question": "During which stage of the production process does an artist examine the developing work and ask 'Does the work communicate the intended idea, and what needs to be changed?'",
+      "options": [
+        "Preparation",
+        "Evaluation",
+        "Presentation",
+        "Concept generation"
+      ],
+      "answer": "Evaluation",
+      "explanation": "Evaluation involves critically assessing the developing work's effectiveness before making adjustments in Refinement."
+    },
+    {
+      "id": "aa-s2-23",
+      "type": "multiple-choice",
+      "topic": "Production Process",
+      "question": "Gathering tools, setting up the workspace, and organizing materials take place in which stage of production?",
+      "options": [
+        "Preparation",
+        "Refinement",
+        "Presentation",
+        "Evaluation"
+      ],
+      "answer": "Preparation",
+      "explanation": "Preparation follows Planning and gets all tools, materials, equipment, and workspace ready before Execution."
+    },
+    {
+      "id": "aa-s2-24",
+      "type": "multiple-choice",
+      "topic": "Media and Support",
+      "question": "In the phrase 'acrylic paint on canvas,' which is the MEDIUM and which is the SUPPORT?",
+      "options": [
+        "Canvas is the medium; acrylic paint is the support.",
+        "Acrylic paint is the medium; canvas is the support.",
+        "Both acrylic paint and canvas are techniques.",
+        "Acrylic paint is the subject; canvas is the content."
+      ],
+      "answer": "Acrylic paint is the medium; canvas is the support.",
+      "explanation": "The medium is the material applied (acrylic paint), and the support is the surface or structure it is applied onto (canvas)."
+    },
+    {
+      "id": "aa-s2-25",
+      "type": "multiple-choice",
+      "topic": "Media vs. Technique",
+      "question": "Which concise rule accurately distinguishes 'medium' from 'technique'?",
+      "options": [
+        "Medium is HOW it is used; Technique is WHAT is used.",
+        "Medium is WHAT is used; Technique is HOW it is used.",
+        "Medium is always plural; Technique is always singular.",
+        "Medium refers only to digital tools; Technique refers only to oil paint."
+      ],
+      "answer": "Medium is WHAT is used; Technique is HOW it is used.",
+      "explanation": "Medium refers to the physical material or means used, whereas technique is the method or skill used to manipulate that medium."
+    },
+    {
+      "id": "aa-s2-26",
+      "type": "multiple-choice",
+      "topic": "Drawing Techniques",
+      "question": "Which drawing technique uses dots to build up tone, texture, and value?",
+      "options": [
+        "Hatching",
+        "Cross-hatching",
+        "Stippling",
+        "Impasto"
+      ],
+      "answer": "Stippling",
+      "explanation": "Stippling uses clusters of dots to create shading and value; hatching uses parallel lines and cross-hatching uses intersecting lines."
+    },
+    {
+      "id": "aa-s2-27",
+      "type": "multiple-choice",
+      "topic": "Drawing Techniques",
+      "question": "Using intersecting sets of lines to create darker areas of shading in a drawing is called:",
+      "options": [
+        "Cross-hatching",
+        "Stippling",
+        "Wet-on-wet",
+        "Casting"
+      ],
+      "answer": "Cross-hatching",
+      "explanation": "Cross-hatching layers intersecting sets of lines to achieve deeper tonal values."
+    },
+    {
+      "id": "aa-s2-28",
+      "type": "multiple-choice",
+      "topic": "Painting Techniques",
+      "question": "Which painting technique involves applying paint so thickly that brushstrokes or palette-knife marks create visible physical texture on the surface?",
+      "options": [
+        "Wet-on-wet",
+        "Impasto",
+        "Stippling",
+        "Blending"
+      ],
+      "answer": "Impasto",
+      "explanation": "Impasto applies thick layers of paint so the paint surface itself stands out in tactile relief."
+    },
+    {
+      "id": "aa-s2-29",
+      "type": "multiple-choice",
+      "topic": "Painting Techniques",
+      "question": "Applying fresh wet paint directly onto another still-wet layer of paint so colors diffuse softly is known as:",
+      "options": [
+        "Impasto",
+        "Wet-on-wet",
+        "Carving",
+        "Hatching"
+      ],
+      "answer": "Wet-on-wet",
+      "explanation": "Wet-on-wet applies wet paint onto a wet surface layer for soft, fluid transitions."
+    },
+    {
+      "id": "aa-s2-30",
+      "type": "multiple-choice",
+      "topic": "Sculpture Techniques",
+      "question": "Which sculpture technique is subtractive, involving removing material from a solid block of wood or stone?",
+      "options": [
+        "Modeling",
+        "Carving",
+        "Casting",
+        "Assemblage"
+      ],
+      "answer": "Carving",
+      "explanation": "Carving removes unwanted material from a solid block; modeling shapes soft clay, casting pours liquid into a mold, and assemblage joins separate objects."
+    },
+    {
+      "id": "aa-s2-31",
+      "type": "multiple-choice",
+      "topic": "Sculpture Techniques",
+      "question": "Creating a bronze sculpture by pouring molten metal into a prepared mold is an example of:",
+      "options": [
+        "Carving",
+        "Casting",
+        "Modeling",
+        "Stippling"
+      ],
+      "answer": "Casting",
+      "explanation": "Casting produces forms by pouring liquid or pliable material into a mold where it hardens."
+    },
+    {
+      "id": "aa-s2-32",
+      "type": "multiple-choice",
+      "topic": "Art Criticism",
+      "question": "What are the four steps in critiquing an artwork in the proper order?",
+      "options": [
+        "Evaluation -> Interpretation -> Analysis -> Description",
+        "Description -> Analysis -> Interpretation -> Evaluation",
+        "Analysis -> Description -> Evaluation -> Interpretation",
+        "Interpretation -> Description -> Analysis -> Evaluation"
+      ],
+      "answer": "Description -> Analysis -> Interpretation -> Evaluation",
+      "explanation": "Art criticism moves from Description (what you see), to Analysis (how it is organized), Interpretation (meaning), and Evaluation (effectiveness)."
+    }
+  ]
+}

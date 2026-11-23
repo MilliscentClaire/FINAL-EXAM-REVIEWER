@@ -1,0 +1,545 @@
+{
+  "id": "arts-app-s3-ph-artists-gamaba",
+  "course": "Arts Appreciation",
+  "sectionOrder": 3,
+  "sectionLabel": "Section 3",
+  "title": "Philippine & Bikolano Art Forms, Artists vs. Artisans, GAMABA & National Artists",
+  "subject": "Arts Appreciation",
+  "description": "8 major Philippine art forms, Bikolano traditions (Pantomina, Peñafrancia, Abaca), Artist vs. Artisan (Amorsolo, Juan Luna, Tina Maristela-Ocampo), GAMABA (RA 7355 & all Living Treasures), and Order of National Artists.",
+  "sourceFile": "midterm reviewer.docx, ART APPRECIATION REVIEWER - FINAL EXAMINATION.pdf",
+  "createdAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "aa-s3-01",
+      "type": "multiple-choice",
+      "topic": "Philippine Art Forms",
+      "question": "Which category of Philippine art combines artistic creativity with objects that serve a practical everyday function, such as weaving, pottery, basketry, and woodcarving?",
+      "options": [
+        "Applied Arts",
+        "Theater",
+        "Literature",
+        "Film"
+      ],
+      "answer": "Applied Arts",
+      "explanation": "Applied arts merge artistic design and craftsmanship with functional objects like textiles, pottery, furniture, and basketry."
+    },
+    {
+      "id": "aa-s3-02",
+      "type": "multiple-choice",
+      "topic": "Philippine Art Forms",
+      "question": "Kulintang and Gangsa ensembles belong to which major Philippine art form?",
+      "options": [
+        "Visual Arts",
+        "Music",
+        "Architecture",
+        "Literature"
+      ],
+      "answer": "Music",
+      "explanation": "Kulintang and Gangsa are traditional Philippine instrumental music traditions."
+    },
+    {
+      "id": "aa-s3-03",
+      "type": "multiple-choice",
+      "topic": "Philippine Art Forms",
+      "question": "Traditional theatrical forms like Senakulo and Sarswela fall under which Philippine art form?",
+      "options": [
+        "Theater",
+        "Applied Arts",
+        "Architecture",
+        "Visual Arts"
+      ],
+      "answer": "Theater",
+      "explanation": "Senakulo and Sarswela are staged dramatic storytelling performances categorized under Theater."
+    },
+    {
+      "id": "aa-s3-04",
+      "type": "multiple-choice",
+      "topic": "Bikolano Arts",
+      "question": "Pantomina, also known as the 'Dance of the Doves,' is a traditional courtship dance strongly associated with which Philippine region?",
+      "options": [
+        "Ilocos Region",
+        "Bicol Region",
+        "Cordillera",
+        "Zamboanga Peninsula"
+      ],
+      "answer": "Bicol Region",
+      "explanation": "Pantomina is a signature Bikolano courtship dance inspired by the movements of doves."
+    },
+    {
+      "id": "aa-s3-05",
+      "type": "multiple-choice",
+      "topic": "Bikolano Arts",
+      "question": "Which major religious festival in Naga City brings together religious processions, music, dance, costumes, decorations, and performances?",
+      "options": [
+        "Sinulog Festival",
+        "Peñafrancia Festival",
+        "Kadayawan Festival",
+        "Ati-Atihan Festival"
+      ],
+      "answer": "Peñafrancia Festival",
+      "explanation": "The Peñafrancia Festival in Naga City is a prominent Bikolano religious and festival art tradition combining multiple art forms."
+    },
+    {
+      "id": "aa-s3-06",
+      "type": "multiple-choice",
+      "topic": "Bikolano Arts",
+      "question": "Bicol is especially renowned for handicrafts, bags, ropes, and woven goods made from abaca fiber, which is derived from what plant?",
+      "options": [
+        "Musa textilis",
+        "Oryza sativa",
+        "Cocos nucifera",
+        "Bambusa vulgaris"
+      ],
+      "answer": "Musa textilis",
+      "explanation": "Abaca fiber comes from Musa textilis and connects nature, livelihood, craftsmanship, and Bikolano cultural identity."
+    },
+    {
+      "id": "aa-s3-07",
+      "type": "multiple-choice",
+      "topic": "Appreciating Indigenous Art",
+      "question": "When using the Question Guide to appreciate indigenous art, asking 'HOW is it connected to the community's beliefs, environment, livelihood, or identity?' helps avoid:",
+      "options": [
+        "Using proper lighting in museums",
+        "Dismissing indigenous art as merely 'old-fashioned' or purely decorative",
+        "Measuring the dimensions of a basket",
+        "Identifying the artist's hometown"
+      ],
+      "answer": "Dismissing indigenous art as merely 'old-fashioned' or purely decorative",
+      "explanation": "Indigenous arts are living systems of knowledge, belief, and identity that must be understood within their cultural context."
+    },
+    {
+      "id": "aa-s3-08",
+      "type": "multiple-choice",
+      "topic": "Artist vs. Artisan",
+      "question": "What is the primary distinction between an artist and an artisan?",
+      "options": [
+        "Artists never work with physical materials, while artisans only paint landscapes.",
+        "Artists emphasize creative expression and ideas (indirectly functional fine arts), while artisans emphasize specialized craftsmanship producing functional or decorative objects.",
+        "Artisans are strictly unpaid volunteers, while artists only work in films.",
+        "Artists cannot receive national awards, while artisans can."
+      ],
+      "answer": "Artists emphasize creative expression and ideas (indirectly functional fine arts), while artisans emphasize specialized craftsmanship producing functional or decorative objects.",
+      "explanation": "Though the two roles can overlap, artists emphasize expressive/conceptual creation while artisans emphasize specialized craft mastery."
+    },
+    {
+      "id": "aa-s3-09",
+      "type": "multiple-choice",
+      "topic": "Famous Filipino Artists",
+      "question": "Which painter is celebrated as the 'Grand Old Man of Philippine Art,' became the very first National Artist in 1972, and was famed for rural landscapes, Dalagang Filipina, and backlighting?",
+      "options": [
+        "Juan Luna",
+        "Fernando Amorsolo",
+        "Carlos 'Botong' Francisco",
+        "Napoleon Abueva"
+      ],
+      "answer": "Fernando Amorsolo",
+      "explanation": "Fernando Cueto Amorsolo (born May 30, 1892) was the sole 1972 National Artist for Visual Arts, renowned for sunlit rural scenes and backlighting."
+    },
+    {
+      "id": "aa-s3-10",
+      "type": "multiple-choice",
+      "topic": "Famous Filipino Artists",
+      "question": "Which masterpiece by Juan Luna won three gold medals at the Exposición Nacional de Bellas Artes in 1884 and inspired José Rizal's speech 'The Glorification of Genius'?",
+      "options": [
+        "Planting Rice",
+        "Spoliarium",
+        "Tinimbang Ka Ngunit Kulang",
+        "Making of the Philippine Flag"
+      ],
+      "answer": "Spoliarium",
+      "explanation": "Juan Luna's 1884 Neoclassical/Romantic-Realist painting Spoliarium is housed at the National Museum of the Philippines."
+    },
+    {
+      "id": "aa-s3-11",
+      "type": "multiple-choice",
+      "topic": "Famous Filipino Artisans",
+      "question": "Filipino artisan Tina Maristela-Ocampo founded which brand to showcase handmade bags crafted from local indigenous materials by Filipino artisans?",
+      "options": [
+        "Kultura",
+        "Celestina",
+        "Mulat",
+        "Filipinescas"
+      ],
+      "answer": "Celestina",
+      "explanation": "Tina Maristela-Ocampo conceptualized Celestina to 'bring whatever is here in the Philippines out to the world' through artisan-crafted bags."
+    },
+    {
+      "id": "aa-s3-12",
+      "type": "multiple-choice",
+      "topic": "GAMABA",
+      "question": "What does GAMABA stand for, and what law institutionalized it in 1992?",
+      "options": [
+        "Gawad sa Manlilikha ng Bayan; Republic Act No. 7355",
+        "Gawad ng Makabayang Alagad; Republic Act No. 1425",
+        "Grupo ng mga Alagad ng Sining; Republic Act No. 9155",
+        "Gawad para sa Modernong Arkitektura; Executive Order No. 200"
+      ],
+      "answer": "Gawad sa Manlilikha ng Bayan; Republic Act No. 7355",
+      "explanation": "GAMABA (National Living Treasures Award) was institutionalized on April 3, 1992 under RA 7355, administered by the NCCA."
+    },
+    {
+      "id": "aa-s3-13",
+      "type": "multiple-choice",
+      "topic": "GAMABA",
+      "question": "To qualify as a Manlilikha ng Bayan (GAMABA), the folk art tradition practiced by the candidate must have been in existence and documented for at least:",
+      "options": [
+        "10 years",
+        "25 years",
+        "50 years",
+        "100 years"
+      ],
+      "answer": "50 years",
+      "explanation": "Candidates must engage in a folk art tradition documented for at least 50 years and pass on their skills to community members."
+    },
+    {
+      "id": "aa-s3-14",
+      "type": "multiple-choice",
+      "topic": "GAMABA",
+      "question": "Who spearheaded the institutionalization of GAMABA, and which Philippine president signed RA 7355 into law?",
+      "options": [
+        "Leandro Locsin; Fidel V. Ramos",
+        "Felipe M. de Leon, Jr.; Corazon C. Aquino",
+        "Fernando Amorsolo; Ferdinand Marcos",
+        "Ryan Cayabyab; Gloria Macapagal Arroyo"
+      ],
+      "answer": "Felipe M. de Leon, Jr.; Corazon C. Aquino",
+      "explanation": "NCCA chairman Felipe M. de Leon, Jr. spearheaded GAMABA, and President Corazon C. Aquino signed RA 7355 on April 3, 1992."
+    },
+    {
+      "id": "aa-s3-15",
+      "type": "multiple-choice",
+      "topic": "GAMABA",
+      "question": "What incentives are granted to a GAMABA awardee under RA 7355 and NCCA provisions?",
+      "options": [
+        "A plaque only, with no financial support",
+        "A specially designed medallion, ₱100,000 initial grant, lifetime monthly stipend/allowance, and up to ₱750,000 annual medical benefit",
+        "A diplomatic passport and seat in Congress",
+        "A one-time ₱10,000 gift certificate"
+      ],
+      "answer": "A specially designed medallion, ₱100,000 initial grant, lifetime monthly stipend/allowance, and up to ₱750,000 annual medical benefit",
+      "explanation": "Awardees receive a medallion, ₱100,000 initial grant, ₱10,000 monthly stipend (increased via ₱14,000 allowance), up to ₱750,000/year medical benefit, and funeral honors."
+    },
+    {
+      "id": "aa-s3-16",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Which 1998 GAMABA awardee from Lake Sebu, South Cotabato was honored for her mastery of T'boli t'nalak abaca ikat weaving?",
+      "options": [
+        "Salinta Monon",
+        "Lang Dulay",
+        "Darhata Sawabi",
+        "Magdalena Gamayo"
+      ],
+      "answer": "Lang Dulay",
+      "explanation": "Lang Dulay was recognized in 1998 for preserving T'boli t'nalak weaving."
+    },
+    {
+      "id": "aa-s3-17",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Ginaw Bilog (1993 GAMABA awardee) from Oriental Mindoro was recognized for preserving:",
+      "options": [
+        "Kalinga gangsa music",
+        "Hanunuo Mangyan script and ambahan/ambalan poetry",
+        "Tausug pis syabit tapestry",
+        "Kapampangan silver plateria"
+      ],
+      "answer": "Hanunuo Mangyan script and ambahan/ambalan poetry",
+      "explanation": "Ginaw Bilog preserved the Hanunuo Mangyan script and traditional poetry for posterity."
+    },
+    {
+      "id": "aa-s3-18",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Samaon Sulaiman of Maguindanao received the 1993 GAMABA award for his mastery of which difficult two-stringed plucked lute?",
+      "options": [
+        "Kulintang",
+        "Kutyapi",
+        "Gabbang",
+        "Kwintagan"
+      ],
+      "answer": "Kutyapi",
+      "explanation": "Samaon Sulaiman was acclaimed for his mastery of the Magindanao kutyapi."
+    },
+    {
+      "id": "aa-s3-19",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Which 1993 GAMABA awardee from Brookes Point, Palawan was honored for his mastery of the basal gong ensemble and the kulilal and bagit traditions?",
+      "options": [
+        "Masino Intaray",
+        "Alonzo Saclag",
+        "Federico Caballero",
+        "Uwang Ahadas"
+      ],
+      "answer": "Masino Intaray",
+      "explanation": "Masino Intaray was a versatile Pala'wan musician, poet, epic chanter, and storyteller."
+    },
+    {
+      "id": "aa-s3-20",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Salinta Monon (1998 GAMABA) from Bansalan, Davao del Sur was honored for preserving which Bagobo abaca ikat weaving tradition?",
+      "options": [
+        "T'nalak",
+        "Inabal",
+        "Binakol",
+        "Inaul"
+      ],
+      "answer": "Inabal",
+      "explanation": "Salinta Monon demonstrated mastery of Tagabawa Bagobo abaca ikat weaving called inabal."
+    },
+    {
+      "id": "aa-s3-21",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Which 2000 GAMABA awardee from Lubuagan, Kalinga dedicated his life to Kalinga dance, music, and cultural consciousness?",
+      "options": [
+        "Alonzo Saclag",
+        "Eduardo Mutuc",
+        "Teofilo Garcia",
+        "Samaon Sulaiman"
+      ],
+      "answer": "Alonzo Saclag",
+      "explanation": "Alonzo Saclag mastered Kalinga dance and performing arts and promoted Kalinga heritage."
+    },
+    {
+      "id": "aa-s3-22",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Federico Caballero (2000 GAMABA) of Calinog, Iloilo was recognized as an epic chanter who preserved the oral literature of the:",
+      "options": [
+        "Sulod-Bukidnon",
+        "Ifugao",
+        "Yakan",
+        "Tausug"
+      ],
+      "answer": "Sulod-Bukidnon",
+      "explanation": "Federico Caballero worked with scholars to document Sulod-Bukidnon epics composed in an archaic language."
+    },
+    {
+      "id": "aa-s3-23",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Despite dimming eyesight, which Yakan master musician from Lamitan, Basilan won the 2000 GAMABA for playing kwintagan, gabbang, agung, and tuntungan?",
+      "options": [
+        "Uwang Ahadas",
+        "Masino Intaray",
+        "Samaon Sulaiman",
+        "Alonzo Saclag"
+      ],
+      "answer": "Uwang Ahadas",
+      "explanation": "Uwang Ahadas devoted his life to teaching Yakan instrumental traditions."
+    },
+    {
+      "id": "aa-s3-24",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Eduardo Mutuc of Apalit, Pampanga (2004 GAMABA) revived which Spanish colonial-era craft using silver, bronze, and wood?",
+      "options": [
+        "Basketry",
+        "Plateria (religious and secular metalwork)",
+        "Gourd casque making",
+        "Ikat dyeing"
+      ],
+      "answer": "Plateria (religious and secular metalwork)",
+      "explanation": "Eduardo Mutuc is a self-taught Kapampangan metalsmith recognized for reviving plateria."
+    },
+    {
+      "id": "aa-s3-25",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Darhata Sawabi (2004 GAMABA) of Parang, Sulu was a master weaver of which Tausug headcloth tapestry?",
+      "options": [
+        "Pis syabit",
+        "Dagmay",
+        "Binakol",
+        "Inaul"
+      ],
+      "answer": "Pis syabit",
+      "explanation": "Darhata Sawabi mastered the intricate geometric Tausug pis syabit headcloth."
+    },
+    {
+      "id": "aa-s3-26",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Haja Amina Appi (2004 GAMABA) of Tandubas, Tawi-Tawi was recognized as a Sama master in:",
+      "options": [
+        "Mat weaving",
+        "Pottery",
+        "Woodcarving",
+        "Epic chanting"
+      ],
+      "answer": "Mat weaving",
+      "explanation": "Haja Amina Appi created Sama mats celebrated for complex geometric patterns and color combinations."
+    },
+    {
+      "id": "aa-s3-27",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Teofilo Garcia (2012 GAMABA) of San Quintin, Abra is renowned for crafting traditional Ilocano gourd casques (headgear) called:",
+      "options": [
+        "Bulul",
+        "Kattukong",
+        "Panolong",
+        "Malong"
+      ],
+      "answer": "Kattukong",
+      "explanation": "Teofilo Garcia crafts the kattukong, a traditional gourd hat decorated with woven nito or bamboo."
+    },
+    {
+      "id": "aa-s3-28",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Magdalena Gamayo (2012 GAMABA) of Pinili, Ilocos Norte is a master Ilocano abel weaver known for traditional patterns such as:",
+      "options": [
+        "Sarimanok and Naga",
+        "Binakol, inuritan, kusikos, and sinan-sabong",
+        "Ukiyo-e and Sumi-e",
+        "Inabal and Dagmay"
+      ],
+      "answer": "Binakol, inuritan, kusikos, and sinan-sabong",
+      "explanation": "Magdalena Gamayo preserves Ilocano abel weaving patterns including binakol, inuritan, kusikos, and sinan-sabong."
+    },
+    {
+      "id": "aa-s3-29",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Which 2016 GAMABA/National Living Treasure weaver from Basilan mastered all Yakan textile categories including suwah bekkat and suwah pendan?",
+      "options": [
+        "Ambalang Ausalin",
+        "Estelita Bantilan",
+        "Yabing Masalon Dulo",
+        "Adelita Romualdo Bagcal"
+      ],
+      "answer": "Ambalang Ausalin",
+      "explanation": "Ambalang Ausalin of Lamitan, Basilan mastered Yakan weaving techniques including bunga sama embellishments."
+    },
+    {
+      "id": "aa-s3-30",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Who among the following preserved the Ilocano oral literary tradition known as 'Dallot'?",
+      "options": [
+        "Adelita Romualdo Bagcal",
+        "Estelita Bantilan",
+        "Yabing Masalon Dulo",
+        "Lang Dulay"
+      ],
+      "answer": "Adelita Romualdo Bagcal",
+      "explanation": "Adelita Romualdo Bagcal is a GAMABA practitioner of Dallot, highlighting oral heritage alongside visual crafts."
+    },
+    {
+      "id": "aa-s3-31",
+      "type": "multiple-choice",
+      "topic": "GAMABA Awardees",
+      "question": "Yabing Masalon Dulo (2016) was honored for keeping alive which vanishing Mindanao textile tradition, while Estelita Bantilan (2016) of Sarangani was honored for?",
+      "options": [
+        "Blaan ikat weaving; mat weaving",
+        "Tausug pis syabit; brassware",
+        "Ilocano binakol; pottery",
+        "Mandaya dagmay; woodcarving"
+      ],
+      "answer": "Blaan ikat weaving; mat weaving",
+      "explanation": "Yabing Masalon Dulo is a Blaan ikat weaver, and Estelita Bantilan is a master mat weaver from Sarangani."
+    },
+    {
+      "id": "aa-s3-32",
+      "type": "multiple-choice",
+      "topic": "Order of National Artists",
+      "question": "Who designed the iconic landmarks of the CCP Complex—including the Cultural Center of the Philippines, Folk Arts Theatre, and PICC—and was named National Artist for Architecture in 1990?",
+      "options": [
+        "Francisco 'Bobby' Mañosa",
+        "Leandro V. Locsin",
+        "Juan Nakpil",
+        "Napoleon V. Abueva"
+      ],
+      "answer": "Leandro V. Locsin",
+      "explanation": "Leandro V. Locsin designed the CCP Complex structures, blending oriental and occidental streams into harmonious architecture."
+    },
+    {
+      "id": "aa-s3-33",
+      "type": "multiple-choice",
+      "topic": "Order of National Artists",
+      "question": "Which National Artist for Cinema directed 'Tinimbang Ka Ngunit Kulang,' 'Maynila sa mga Kuko ng Liwanag,' and 'Insiang' (the first Filipino film shown at Cannes)?",
+      "options": [
+        "Kidlat Tahimik",
+        "Lino Brocka",
+        "Wilfrido Ma. Guerrero",
+        "Larry Alcala"
+      ],
+      "answer": "Lino Brocka",
+      "explanation": "Lino Brocka (1997) championed freedom of expression and social activism in Philippine cinema."
+    },
+    {
+      "id": "aa-s3-34",
+      "type": "multiple-choice",
+      "topic": "Order of National Artists",
+      "question": "Which National Artist for Literature and Music (1997) rewrote lyrics for traditional Filipino melodies and entered the Guinness Book of World Records for playing music using a leaf?",
+      "options": [
+        "Levi Celerio",
+        "Ryan Cayabyab",
+        "Lucrecia R. Kasilag",
+        "Felipe Padilla de Leon"
+      ],
+      "answer": "Levi Celerio",
+      "explanation": "Levi Celerio was a prolific lyricist and composer famous as the leaf musician in the Guinness Book of World Records."
+    },
+    {
+      "id": "aa-s3-35",
+      "type": "multiple-choice",
+      "topic": "Order of National Artists",
+      "question": "Carlos 'Botong' Francisco of Angono (1973) is celebrated for reviving which visual art form, while Napoleon V. Abueva is known as the 'Father of Modern Philippine Sculpture'?",
+      "options": [
+        "Modern Philippine mural painting",
+        "Editorial cartooning",
+        "Stained glass windows",
+        "Digital animation"
+      ],
+      "answer": "Modern Philippine mural painting",
+      "explanation": "Botong Francisco revived modern mural painting in the Philippines for nearly 30 years."
+    },
+    {
+      "id": "aa-s3-36",
+      "type": "multiple-choice",
+      "topic": "Order of National Artists",
+      "question": "Match the pioneering National Artists to their legacy: Leonor Orosa Goquingco, Francisca Reyes Aquino, and Lucrecia R. Kasilag.",
+      "options": [
+        "Goquingco: Theater Dance ('Filipinescas'); Aquino: Folk dance research; Kasilag: Fusing ethnic Filipino and Western music",
+        "Goquingco: Architecture; Aquino: Film; Kasilag: Literature",
+        "Goquingco: Pottery; Aquino: Comics; Kasilag: Sculpture",
+        "Goquingco: Sculpture; Aquino: Opera; Kasilag: Theater puppetry"
+      ],
+      "answer": "Goquingco: Theater Dance ('Filipinescas'); Aquino: Folk dance research; Kasilag: Fusing ethnic Filipino and Western music",
+      "explanation": "Goquingco is the 'Mother of Philippine Theater Dance,' Aquino pioneered folk dance research, and Kasilag fused indigenous instruments with Western music."
+    },
+    {
+      "id": "aa-s3-37",
+      "type": "multiple-choice",
+      "topic": "Order of National Artists",
+      "question": "Which 2018 National Artist for Literature wrote the five-novel 'Rosales Saga' earlier (2001) vs. the 2018 literary laureates Resil Mojares and Ramon Muzones?",
+      "options": [
+        "F. Sionil Jose wrote the Rosales Saga (2001); Resil Mojares (Cebuano scholar) and Ramon Muzones (Hiligaynon novelist) were awarded in 2018.",
+        "Wilfrido Ma. Guerrero wrote the Rosales Saga; Larry Alcala and Ryan Cayabyab were awarded for Literature.",
+        "Federico Aguilar Alcuaz wrote the Rosales Saga in 1972.",
+        "Felipe Padilla de Leon wrote the Rosales Saga for UP Mobile Theater."
+      ],
+      "answer": "F. Sionil Jose wrote the Rosales Saga (2001); Resil Mojares (Cebuano scholar) and Ramon Muzones (Hiligaynon novelist) were awarded in 2018.",
+      "explanation": "F. Sionil Jose (2001) authored the Rosales Saga; Resil Mojares and Ramon Muzones (Margosatubig) were the 2018 Literature laureates."
+    },
+    {
+      "id": "aa-s3-38",
+      "type": "multiple-choice",
+      "topic": "2018 National Artists",
+      "question": "Which grouping correctly matches the 2018 National Artists to their fields?",
+      "options": [
+        "Larry Alcala (Visual Arts), Amelia Lapeña Bonifacio (Theater), Ryan Cayabyab (Music), Francisco 'Bobby' Mañosa (Architecture), Kidlat Tahimik (Cinema)",
+        "Larry Alcala (Music), Ryan Cayabyab (Architecture), Bobby Mañosa (Cinema), Kidlat Tahimik (Theater)",
+        "Amelia Bonifacio (Cinema), Kidlat Tahimik (Visual Arts), Ryan Cayabyab (Literature)",
+        "Federico Aguilar Alcuaz (Theater), Wilfrido Guerrero (Architecture), Botong Francisco (Cinema)"
+      ],
+      "answer": "Larry Alcala (Visual Arts), Amelia Lapeña Bonifacio (Theater), Ryan Cayabyab (Music), Francisco 'Bobby' Mañosa (Architecture), Kidlat Tahimik (Cinema)",
+      "explanation": "The 2018 National Artists include Alcala (Slice of Life), Bonifacio (children's puppet theater), Cayabyab (OPM), Mañosa (Coconut Palace), Mojares & Muzones (Literature), and Kidlat Tahimik (Independent Cinema)."
+    }
+  ]
+}

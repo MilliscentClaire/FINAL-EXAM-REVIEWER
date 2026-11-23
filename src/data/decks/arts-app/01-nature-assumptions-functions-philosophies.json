@@ -1,0 +1,433 @@
+{
+  "id": "arts-app-s1-foundations",
+  "course": "Arts Appreciation",
+  "sectionOrder": 1,
+  "sectionLabel": "Section 1",
+  "title": "Nature, Assumptions, Functions & Philosophies of Art",
+  "subject": "Arts Appreciation",
+  "description": "Perspectives and characteristics of art, 4 assumptions, personal/social/physical/aesthetic/religious functions, Plato/Aristotle/Kant/Dewey, subject vs. content, and representational vs. nonrepresentational art.",
+  "sourceFile": "midterm reviewer.docx, ART APPRECIATION REVIEWER - FINAL EXAMINATION.pdf",
+  "createdAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "aa-s1-01",
+      "type": "multiple-choice",
+      "topic": "Nature of Art",
+      "question": "Which statement best describes the nature of art?",
+      "options": [
+        "Art is strictly limited to oil paintings and marble sculptures.",
+        "Art communicates human ideas, emotions, beliefs, and experiences through creative forms.",
+        "Art only exists when an object serves a mechanical utility.",
+        "Art can only be appreciated by trained museum curators."
+      ],
+      "answer": "Art communicates human ideas, emotions, beliefs, and experiences through creative forms.",
+      "explanation": "Art may be visual, performing, literary, or spatial, expressing human thoughts, memories, and experiences."
+    },
+    {
+      "id": "aa-s1-02",
+      "type": "multiple-choice",
+      "topic": "Perspectives of Art",
+      "question": "Which philosopher is associated with the Expressive Perspective, which states that art communicates emotion from the artist to the audience?",
+      "options": [
+        "Plato",
+        "Leo Tolstoy",
+        "Immanuel Kant",
+        "John Dewey"
+      ],
+      "answer": "Leo Tolstoy",
+      "explanation": "Leo Tolstoy represents the Expressive Perspective, viewing art as a medium for transmitting emotion from artist to audience."
+    },
+    {
+      "id": "aa-s1-03",
+      "type": "multiple-choice",
+      "topic": "Perspectives of Art",
+      "question": "The Experiential Perspective, which defines art as an experience between the artwork and the viewer connected to everyday life, is associated with:",
+      "options": [
+        "John Dewey",
+        "Plato",
+        "Aristotle",
+        "Leo Tolstoy"
+      ],
+      "answer": "John Dewey",
+      "explanation": "John Dewey emphasized art as an experience rooted in everyday life and human interaction with the environment."
+    },
+    {
+      "id": "aa-s1-04",
+      "type": "multiple-choice",
+      "topic": "Perspectives of Art",
+      "question": "Which perspective views art as including diverse forms and meanings shaped by culture, context, and audience in the present day?",
+      "options": [
+        "Classical Perspective",
+        "Expressive Perspective",
+        "Contemporary Perspective",
+        "Formalist Perspective"
+      ],
+      "answer": "Contemporary Perspective",
+      "explanation": "The Contemporary Perspective reflects how art today encompasses diverse forms shaped by culture, context, and audience."
+    },
+    {
+      "id": "aa-s1-05",
+      "type": "multiple-choice",
+      "topic": "Characteristics of Art",
+      "question": "One viewer sees a painting as joyful while another feels sadness looking at the same piece. Which characteristic of the nature of art does this illustrate?",
+      "options": [
+        "Art is Dynamic",
+        "Art is Subjective",
+        "Art is Mechanical",
+        "Art is Uniform"
+      ],
+      "answer": "Art is Subjective",
+      "explanation": "Art is subjective because people interpret the same artwork differently depending on their personal experiences and beliefs."
+    },
+    {
+      "id": "aa-s1-06",
+      "type": "multiple-choice",
+      "topic": "Characteristics of Art",
+      "question": "The emergence of digital art, AI-generated art, and virtual reality art best demonstrates that:",
+      "options": [
+        "Art is static and unchanging",
+        "Art is dynamic and evolves with society and technology",
+        "Art is restricted to physical pigments",
+        "Art ignores cultural changes"
+      ],
+      "answer": "Art is dynamic and evolves with society and technology",
+      "explanation": "Art is dynamic: it evolves as society, technology, and culture change, giving rise to new forms like digital and multimedia art."
+    },
+    {
+      "id": "aa-s1-07",
+      "type": "multiple-choice",
+      "topic": "Characteristics of Art",
+      "question": "Designing an original logo or composing an original song highlights which characteristic of art?",
+      "options": [
+        "Art is Creative",
+        "Art is Imitative Only",
+        "Art is Objective",
+        "Art is Industrial"
+      ],
+      "answer": "Art is Creative",
+      "explanation": "Art is creative because it results from imagination, originality, and skill."
+    },
+    {
+      "id": "aa-s1-08",
+      "type": "multiple-choice",
+      "topic": "Assumptions of Art",
+      "question": "A Japanese woodblock print or a classical symphony can move people from different countries even if they do not speak the same language. Which assumption of art does this show?",
+      "options": [
+        "Art is cultural",
+        "Art is universal",
+        "Art is commercial",
+        "Art is temporary"
+      ],
+      "answer": "Art is universal",
+      "explanation": "Art is universal because it exists across all cultures and historical periods and can be appreciated across linguistic and cultural boundaries."
+    },
+    {
+      "id": "aa-s1-09",
+      "type": "multiple-choice",
+      "topic": "Assumptions of Art",
+      "question": "Which assumption of art explains that artworks reflect the traditions, values, beliefs, history, and identity of the society where they were created?",
+      "options": [
+        "Art is cultural",
+        "Art is universal",
+        "Art is experienced",
+        "Art is abstract"
+      ],
+      "answer": "Art is cultural",
+      "explanation": "Art is cultural because it mirrors the community's beliefs, values, traditions, and shared identity."
+    },
+    {
+      "id": "aa-s1-10",
+      "type": "multiple-choice",
+      "topic": "Assumptions of Art",
+      "question": "What does the assumption 'Art is experienced' mean?",
+      "options": [
+        "Art can only be understood by reading textbooks.",
+        "Art gains meaning through the personal observation, emotions, and response of the viewer or participant.",
+        "Art must be sold in a gallery to be valid.",
+        "Art requires physical exercise to create."
+      ],
+      "answer": "Art gains meaning through the personal observation, emotions, and response of the viewer or participant.",
+      "explanation": "Art is experienced through direct personal engagement, observation, and emotional response."
+    },
+    {
+      "id": "aa-s1-11",
+      "type": "multiple-choice",
+      "topic": "Assumptions of Art",
+      "question": "Which assumption emphasizes that art is a way for creators to communicate their inner thoughts, feelings, and imagination?",
+      "options": [
+        "Art is expression",
+        "Art is utilitarian",
+        "Art is uniform",
+        "Art is static"
+      ],
+      "answer": "Art is expression",
+      "explanation": "Art is expression because it conveys the artist's thoughts, emotions, and experiences."
+    },
+    {
+      "id": "aa-s1-12",
+      "type": "multiple-choice",
+      "topic": "Functions of Art",
+      "question": "A large mural depicting farmers' struggles displayed in a public plaza primarily demonstrates which function of art?",
+      "options": [
+        "Physical function",
+        "Social function",
+        "Personal function",
+        "Commercial function"
+      ],
+      "answer": "Social function",
+      "explanation": "The social function of art communicates public concerns, raises awareness, and encourages discussion within society."
+    },
+    {
+      "id": "aa-s1-13",
+      "type": "multiple-choice",
+      "topic": "Functions of Art",
+      "question": "An artist paints a piece to process personal grief after losing a loved one. Which function of art is most evident?",
+      "options": [
+        "Personal function",
+        "Physical function",
+        "Religious function",
+        "Architectural function"
+      ],
+      "answer": "Personal function",
+      "explanation": "The personal function relates to the individual artist's or viewer's emotions, memories, and personal experiences."
+    },
+    {
+      "id": "aa-s1-14",
+      "type": "multiple-choice",
+      "topic": "Functions of Art",
+      "question": "A handwoven banig used as a sleeping mat, pottery used for cooking, and well-designed furniture illustrate which function of art?",
+      "options": [
+        "Physical function",
+        "Social function",
+        "Personal function",
+        "Literary function"
+      ],
+      "answer": "Physical function",
+      "explanation": "The physical function refers to art created to serve a practical or useful everyday purpose."
+    },
+    {
+      "id": "aa-s1-15",
+      "type": "multiple-choice",
+      "topic": "Functions of Art",
+      "question": "Which function of art provides visual beauty, sensory pleasure, and artistic enjoyment without needing a practical utility?",
+      "options": [
+        "Aesthetic function",
+        "Physical function",
+        "Political function",
+        "Economic function"
+      ],
+      "answer": "Aesthetic function",
+      "explanation": "The aesthetic function focuses on visual beauty, sensory pleasure, and artistic appreciation."
+    },
+    {
+      "id": "aa-s1-16",
+      "type": "multiple-choice",
+      "topic": "Functions of Art",
+      "question": "Biblical paintings displayed inside a church to support worship and teach faith demonstrate the:",
+      "options": [
+        "Religious function of art",
+        "Physical function of art",
+        "Secular function of art",
+        "Commercial function of art"
+      ],
+      "answer": "Religious function of art",
+      "explanation": "The religious function supports worship, communicates faith, and teaches spiritual beliefs."
+    },
+    {
+      "id": "aa-s1-17",
+      "type": "multiple-choice",
+      "topic": "Philosophies of Art",
+      "question": "Why did Plato question art's ability to represent truth?",
+      "options": [
+        "He believed art only belonged to wealthy patrons.",
+        "He viewed physical reality as an imperfect copy of ideal Forms, making art an 'imitation of an imitation.'",
+        "He thought art was too scientific and mathematical.",
+        "He believed only photography could capture truth."
+      ],
+      "answer": "He viewed physical reality as an imperfect copy of ideal Forms, making art an 'imitation of an imitation.'",
+      "explanation": "Plato viewed art as mimesis (imitation) twice removed from ideal truth: Ideal Form -> Physical Object -> Artwork."
+    },
+    {
+      "id": "aa-s1-18",
+      "type": "multiple-choice",
+      "topic": "Philosophies of Art",
+      "question": "What is the Greek term used by both Plato and Aristotle to describe art as 'imitation'?",
+      "options": [
+        "Catharsis",
+        "Mimesis",
+        "Sfumato",
+        "Aisthesis"
+      ],
+      "answer": "Mimesis",
+      "explanation": "Mimesis means imitation, a central concept in both Plato's and Aristotle's views of art."
+    },
+    {
+      "id": "aa-s1-19",
+      "type": "multiple-choice",
+      "topic": "Philosophies of Art",
+      "question": "How did Aristotle's view of imitation differ from Plato's?",
+      "options": [
+        "Aristotle banned all poetry and drama from the city.",
+        "Aristotle saw imitation as a natural human activity that helps people learn, understand life, and experience catharsis.",
+        "Aristotle argued that art has no emotional effect on viewers.",
+        "Aristotle believed art only imitates geometric shapes."
+      ],
+      "answer": "Aristotle saw imitation as a natural human activity that helps people learn, understand life, and experience catharsis.",
+      "explanation": "Aristotle viewed mimesis positively as a natural way humans learn and gain emotional insight (catharsis)."
+    },
+    {
+      "id": "aa-s1-20",
+      "type": "multiple-choice",
+      "topic": "Philosophies of Art",
+      "question": "In Aristotle's philosophy of tragedy, what does 'catharsis' refer to?",
+      "options": [
+        "The architectural symmetry of a Greek theater",
+        "The emotional release or clarification experienced through powerful emotions in tragedy",
+        "The financial cost of staging a play",
+        "The use of masks by ancient actors"
+      ],
+      "answer": "The emotional release or clarification experienced through powerful emotions in tragedy",
+      "explanation": "Catharsis is the emotional purification, release, or clarification felt by the audience through tragedy."
+    },
+    {
+      "id": "aa-s1-21",
+      "type": "multiple-choice",
+      "topic": "Philosophies of Art",
+      "question": "Immanuel Kant connected aesthetic judgment with:",
+      "options": [
+        "Disinterested pleasure and the experience of beauty without needing practical gain",
+        "Political propaganda and social activism",
+        "Strict imitation of physical objects for technical accuracy",
+        "Religious obedience and church liturgy"
+      ],
+      "answer": "Disinterested pleasure and the experience of beauty without needing practical gain",
+      "explanation": "For Kant, aesthetic judgment involves disinterested pleasure—appreciating beauty for its own sake without material utility."
+    },
+    {
+      "id": "aa-s1-22",
+      "type": "multiple-choice",
+      "topic": "Subject and Content",
+      "question": "When analyzing an artwork, what question helps identify its SUBJECT?",
+      "options": [
+        "How much did the materials cost?",
+        "What do you see? (What does the artwork depict?)",
+        "Who bought the painting?",
+        "What is the moral lesson of the museum?"
+      ],
+      "answer": "What do you see? (What does the artwork depict?)",
+      "explanation": "The subject is the visible or identifiable person, object, place, event, or form depicted in the artwork."
+    },
+    {
+      "id": "aa-s1-23",
+      "type": "multiple-choice",
+      "topic": "Subject and Content",
+      "question": "In a painting showing a farmer working in a rice field, the farmer and the rice field are the _____, while 'the dignity of labor' is the _____.",
+      "options": [
+        "content; subject",
+        "subject; content",
+        "medium; support",
+        "form; medium"
+      ],
+      "answer": "subject; content",
+      "explanation": "Subject is what is visibly shown (the farmer in a rice field), whereas content is the interpreted message or meaning (the dignity of labor)."
+    },
+    {
+      "id": "aa-s1-24",
+      "type": "multiple-choice",
+      "topic": "Content and Form",
+      "question": "In an artwork of a mother embracing her child, what represents the FORM of the artwork?",
+      "options": [
+        "The message of familial love and protection",
+        "The figures, colors, materials, and visual arrangement used to present the work",
+        "The viewer's childhood memories",
+        "The historical era of the buyer"
+      ],
+      "answer": "The figures, colors, materials, and visual arrangement used to present the work",
+      "explanation": "Form refers to how the artwork is organized or presented—its visual elements, materials, and composition—while content is its message."
+    },
+    {
+      "id": "aa-s1-25",
+      "type": "multiple-choice",
+      "topic": "Content and Form",
+      "question": "Which statement accurately distinguishes content from form?",
+      "options": [
+        "Content is the canvas size; form is the price tag.",
+        "Content is the meaning, idea, or message; form is how the artwork is organized or presented.",
+        "Content is only found in music; form is only found in sculpture.",
+        "Content and form mean the exact same thing in art criticism."
+      ],
+      "answer": "Content is the meaning, idea, or message; form is how the artwork is organized or presented.",
+      "explanation": "Content is the underlying meaning or message, while form is the visual structure, materials, and arrangement."
+    },
+    {
+      "id": "aa-s1-26",
+      "type": "multiple-choice",
+      "topic": "Subject and Content",
+      "question": "A painting depicts a destroyed forest. If a viewer interprets its message as an urgent warning about environmental neglect, that interpretation is the artwork's:",
+      "options": [
+        "Support",
+        "Content",
+        "Texture",
+        "Subject"
+      ],
+      "answer": "Content",
+      "explanation": "Environmental concern is the interpreted meaning or message—therefore the content—of the artwork."
+    },
+    {
+      "id": "aa-s1-27",
+      "type": "multiple-choice",
+      "topic": "Representational vs. Nonrepresentational",
+      "question": "An artwork composed solely of overlapping geometric triangles, bold lines, and primary colors with no recognizable real-world object is classified as:",
+      "options": [
+        "Representational art",
+        "Nonrepresentational art",
+        "Photorealism",
+        "Classical portraiture"
+      ],
+      "answer": "Nonrepresentational art",
+      "explanation": "Nonrepresentational art does not depict recognizable subjects from the visible real world."
+    },
+    {
+      "id": "aa-s1-28",
+      "type": "multiple-choice",
+      "topic": "Representational vs. Nonrepresentational",
+      "question": "Which of the following is an example of representational art?",
+      "options": [
+        "A painting of blooming sunflowers in a vase",
+        "A canvas covered only with random splashes of blue paint",
+        "A composition of pure color blocks with no real-world reference",
+        "An arrangement of abstract lines without any identifiable subject"
+      ],
+      "answer": "A painting of blooming sunflowers in a vase",
+      "explanation": "Representational art shows recognizable subjects from the real world, such as people, landscapes, or flowers."
+    },
+    {
+      "id": "aa-s1-29",
+      "type": "multiple-choice",
+      "topic": "Combined Art",
+      "question": "What is 'combined art'?",
+      "options": [
+        "An artwork created by copying another painter's signature",
+        "An artwork that merges two or more different art forms, media, or techniques in one creative work",
+        "A painting that uses only one shade of gray",
+        "An unfinished sketch left in a studio"
+      ],
+      "answer": "An artwork that merges two or more different art forms, media, or techniques in one creative work",
+      "explanation": "Combined art integrates multiple art forms or media—such as theater + music + dance, or sculpture + digital projection."
+    },
+    {
+      "id": "aa-s1-30",
+      "type": "multiple-choice",
+      "topic": "Combined Art",
+      "question": "Which pairing best illustrates combined art?",
+      "options": [
+        "A single charcoal sketch on paper",
+        "A stage production integrating live theater, music, and choreographed dance",
+        "A plain clay pot fired in a kiln",
+        "A silent reading of a printed poem"
+      ],
+      "answer": "A stage production integrating live theater, music, and choreographed dance",
+      "explanation": "Combining theater, music, and dance in one unified presentation exemplifies combined art."
+    }
+  ]
+}

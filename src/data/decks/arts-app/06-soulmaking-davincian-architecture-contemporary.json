@@ -1,0 +1,433 @@
+{
+  "id": "arts-app-s6-soulmaking-architecture-contemporary",
+  "course": "Arts Appreciation",
+  "sectionOrder": 6,
+  "sectionLabel": "Section 6",
+  "title": "Soulmaking, Da Vincian Principles, Filipino Architecture & Contemporary Art",
+  "subject": "Arts Appreciation",
+  "description": "Soulmaking, all 7 Da Vincian Principles, Traditional Filipino Architecture (Torogan, Ifugao Bale, Bahay Kubo, Bahay na Bato), Contemporary Philippine Art, Christian/Muslim/Okir traditions, globalization, and technology.",
+  "sourceFile": "CONTEMPORARY PHILIPPINE ARTS (1).pdf, ART APPRECIATION REVIEWER - FINAL EXAMINATION.pdf",
+  "createdAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "aa-s6-01",
+      "type": "multiple-choice",
+      "topic": "Soulmaking",
+      "question": "What is 'soulmaking' in Art Appreciation?",
+      "options": [
+        "Copying a famous painting line by line without reflection",
+        "A process of personal reflection, emotional processing, and deeper self-understanding through creative expression",
+        "Memorizing museum ticket prices",
+        "Restoring broken pottery with gold lacquer"
+      ],
+      "answer": "A process of personal reflection, emotional processing, and deeper self-understanding through creative expression",
+      "explanation": "Soulmaking goes beyond copying or formal analysis—creating art helps individuals reflect on experiences and understand themselves deeply."
+    },
+    {
+      "id": "aa-s6-02",
+      "type": "multiple-choice",
+      "topic": "Soulmaking",
+      "question": "Creating a painting or poem in response to a painful or life-changing experience in order to process one's emotions best illustrates:",
+      "options": [
+        "Soulmaking",
+        "Warp ikat",
+        "Neoclassical restraint",
+        "Casting"
+      ],
+      "answer": "Soulmaking",
+      "explanation": "Soulmaking uses creative expression to explore and make sense of personal emotions and lived experiences."
+    },
+    {
+      "id": "aa-s6-03",
+      "type": "multiple-choice",
+      "topic": "Da Vincian Principles",
+      "question": "Which Da Vincian principle means having an insatiably curious approach to life—asking questions and continuously exploring unfamiliar ideas?",
+      "options": [
+        "Sfumato",
+        "Curiosità",
+        "Corporalità",
+        "Sensazione"
+      ],
+      "answer": "Curiosità",
+      "explanation": "Curiosità is relentless curiosity and continuous questioning."
+    },
+    {
+      "id": "aa-s6-04",
+      "type": "multiple-choice",
+      "topic": "Da Vincian Principles",
+      "question": "Learning through hands-on experience, experimentation, testing ideas, and learning from mistakes describes which Da Vincian principle?",
+      "options": [
+        "Dimostrazione",
+        "Connessione",
+        "Curiosità",
+        "Sfumato"
+      ],
+      "answer": "Dimostrazione",
+      "explanation": "Dimostrazione emphasizes testing knowledge through direct experience and experimentation rather than blind acceptance."
+    },
+    {
+      "id": "aa-s6-05",
+      "type": "multiple-choice",
+      "topic": "Da Vincian Principles",
+      "question": "Refining the senses—especially sight—to observe and experience the world more richly refers to:",
+      "options": [
+        "Corporalità",
+        "Sensazione",
+        "Arte/Scienza",
+        "Dimostrazione"
+      ],
+      "answer": "Sensazione",
+      "explanation": "Sensazione is the continual sharpening and refinement of sensory awareness."
+    },
+    {
+      "id": "aa-s6-06",
+      "type": "multiple-choice",
+      "topic": "Da Vincian Principles",
+      "question": "Which Da Vincian principle means embracing uncertainty, ambiguity, and the willingness to explore multiple possibilities without rushing to premature answers?",
+      "options": [
+        "Sfumato",
+        "Curiosità",
+        "Corporalità",
+        "Arte/Scienza"
+      ],
+      "answer": "Sfumato",
+      "explanation": "Literally 'going up in smoke,' Sfumato embraces paradox, uncertainty, and open-ended exploration."
+    },
+    {
+      "id": "aa-s6-07",
+      "type": "multiple-choice",
+      "topic": "Da Vincian Principles",
+      "question": "Developing a harmonious balance between art and science, imagination and logic, is the essence of:",
+      "options": [
+        "Arte/Scienza",
+        "Corporalità",
+        "Sensazione",
+        "Sfumato"
+      ],
+      "answer": "Arte/Scienza",
+      "explanation": "Arte/Scienza stands for whole-brain thinking that unites artistic imagination with scientific logic."
+    },
+    {
+      "id": "aa-s6-08",
+      "type": "multiple-choice",
+      "topic": "Da Vincian Principles",
+      "question": "Cultivating physical grace, fitness, coordination, and bodily awareness aligns with which Da Vincian principle?",
+      "options": [
+        "Connessione",
+        "Corporalità",
+        "Dimostrazione",
+        "Curiosità"
+      ],
+      "answer": "Corporalità",
+      "explanation": "Corporalità emphasizes health, poise, ambidexterity, and mind-body coordination."
+    },
+    {
+      "id": "aa-s6-09",
+      "type": "multiple-choice",
+      "topic": "Da Vincian Principles",
+      "question": "Recognizing the interconnectedness of all things, ideas, systems, and experiences describes:",
+      "options": [
+        "Connessione",
+        "Sfumato",
+        "Sensazione",
+        "Dimostrazione"
+      ],
+      "answer": "Connessione",
+      "explanation": "Connessione is systems thinking—seeing how seemingly separate ideas and phenomena connect."
+    },
+    {
+      "id": "aa-s6-10",
+      "type": "multiple-choice",
+      "topic": "Traditional Filipino Architecture",
+      "question": "What is the 'Torogan,' and what are its projecting carved wooden beams called?",
+      "options": [
+        "An Ifugao rice granary; Bulul",
+        "A traditional Maranao royal residence; Panolong",
+        "A Spanish masonry townhouse; Retablo",
+        "A lightweight bamboo hut; Sawali"
+      ],
+      "answer": "A traditional Maranao royal residence; Panolong",
+      "explanation": "The Torogan is the traditional Maranao royal residence, celebrated for elaborate ornamentation and projecting carved beams called panolong."
+    },
+    {
+      "id": "aa-s6-11",
+      "type": "multiple-choice",
+      "topic": "Traditional Filipino Architecture",
+      "question": "Which traditional dwelling is associated with the Ifugao people of the Cordillera region?",
+      "options": [
+        "Torogan",
+        "Ifugao Bale",
+        "Bahay na Bato",
+        "Pagoda"
+      ],
+      "answer": "Ifugao Bale",
+      "explanation": "The Ifugao Bale is the traditional house of the Ifugao people in the Cordillera mountains."
+    },
+    {
+      "id": "aa-s6-12",
+      "type": "multiple-choice",
+      "topic": "Traditional Filipino Architecture",
+      "question": "Why is the traditional 'Bahay Kubo' commonly elevated on posts and built with lightweight local materials?",
+      "options": [
+        "To imitate European Gothic stone cathedrals",
+        "To promote natural airflow/ventilation and adapt to the tropical climate and terrain",
+        "To support a heavy concrete lower floor",
+        "To seal the home completely from outside air"
+      ],
+      "answer": "To promote natural airflow/ventilation and adapt to the tropical climate and terrain",
+      "explanation": "The Bahay Kubo's elevated stilt design and porous lightweight local materials maximize natural ventilation and cooling."
+    },
+    {
+      "id": "aa-s6-13",
+      "type": "multiple-choice",
+      "topic": "Traditional Filipino Architecture",
+      "question": "Which traditional Philippine house type combines a stone or masonry lower level with a wooden upper floor?",
+      "options": [
+        "Bahay Kubo",
+        "Bahay na Bato",
+        "Torogan",
+        "Ifugao Bale"
+      ],
+      "answer": "Bahay na Bato",
+      "explanation": "The Bahay na Bato ('house of stone') developed during the Spanish era with a masonry ground level and an airy wooden upper living floor."
+    },
+    {
+      "id": "aa-s6-14",
+      "type": "multiple-choice",
+      "topic": "Contemporary Philippine Art",
+      "question": "Which description best characterizes Contemporary Philippine Art?",
+      "options": [
+        "Art strictly confined to 19th-century European oil portraits",
+        "Art created in the present period reflecting Filipino culture, identity, social issues, and combining traditional and innovative media",
+        "Art that rejects all Filipino cultural heritage",
+        "Art restricted exclusively to church altars"
+      ],
+      "answer": "Art created in the present period reflecting Filipino culture, identity, social issues, and combining traditional and innovative media",
+      "explanation": "Contemporary Philippine art responds to current life, identity, migration, environment, and technology while often bridging tradition and innovation."
+    },
+    {
+      "id": "aa-s6-15",
+      "type": "multiple-choice",
+      "topic": "Contemporary Art Forms",
+      "question": "An artist arranges video projections, recycled plastic objects, and recorded community interviews inside a gallery room to highlight coastal pollution. This work is a:",
+      "options": [
+        "Classical fresco",
+        "Multimedia installation",
+        "Traditional warp ikat",
+        "Solo pastel portrait"
+      ],
+      "answer": "Multimedia installation",
+      "explanation": "A multimedia installation combines multiple media and physical space to immerse the audience in an artistic experience."
+    },
+    {
+      "id": "aa-s6-16",
+      "type": "multiple-choice",
+      "topic": "Contemporary Art Forms",
+      "question": "How do 'Mural Art' and 'Mixed Media Art' differ in Contemporary Philippine Art?",
+      "options": [
+        "Mural art uses walls and public spaces; mixed media art combines different artistic materials in one work.",
+        "Mural art uses only computer software; mixed media uses only marble.",
+        "Mural art is invisible; mixed media is strictly musical.",
+        "They are identical terms for ceramic pottery."
+      ],
+      "answer": "Mural art uses walls and public spaces; mixed media art combines different artistic materials in one work.",
+      "explanation": "Mural art transforms public walls and spaces, mixed media blends distinct materials, installation uses arranged space, and digital art uses computers/apps."
+    },
+    {
+      "id": "aa-s6-17",
+      "type": "multiple-choice",
+      "topic": "Tradition and Innovation",
+      "question": "When a modern fashion designer collaborates with local weavers to incorporate traditional patterns into contemporary clothing, what does this practice demonstrate?",
+      "options": [
+        "Total erasure of indigenous heritage",
+        "Adaptation of cultural heritage that connects traditional craftsmanship with contemporary design",
+        "Rejection of local artisans",
+        "Violation of the Rule of Thirds"
+      ],
+      "answer": "Adaptation of cultural heritage that connects traditional craftsmanship with contemporary design",
+      "explanation": "Collaborating with artisans to adapt indigenous motifs into modern apparel honors heritage while keeping traditions relevant."
+    },
+    {
+      "id": "aa-s6-18",
+      "type": "multiple-choice",
+      "topic": "Tradition and Innovation",
+      "question": "Incorporating traditional Filipino textile motifs into a digital illustration or 3D animation best illustrates:",
+      "options": [
+        "Integration of tradition and innovation",
+        "Classical Greek mimesis",
+        "Prehistoric cave painting",
+        "Baroque chiaroscuro"
+      ],
+      "answer": "Integration of tradition and innovation",
+      "explanation": "Technology offers new ways to present and share cultural heritage without replacing the original craft tradition."
+    },
+    {
+      "id": "aa-s6-19",
+      "type": "multiple-choice",
+      "topic": "Philippine Christian Art",
+      "question": "During the Spanish colonial period, what are 'santos' and what is a 'retablo'?",
+      "options": [
+        "Santos are indigenous woven headcloths; retablo is a gong ensemble.",
+        "Santos are religious sculptures/images of Christ, Mary, and saints; a retablo is the decorative structure behind a church altar.",
+        "Santos are Maranao royal beams; retablo is a bamboo floor.",
+        "Santos are secular comics; retablo is a film camera."
+      ],
+      "answer": "Santos are religious sculptures/images of Christ, Mary, and saints; a retablo is the decorative structure behind a church altar.",
+      "explanation": "Philippine Christian art features santos (sacred sculptures), retablos (altar backdrops), biblical paintings for instruction, and church architecture."
+    },
+    {
+      "id": "aa-s6-20",
+      "type": "multiple-choice",
+      "topic": "Philippine Christian Art",
+      "question": "What was a primary educational role of biblical paintings displayed in Spanish colonial Philippine churches?",
+      "options": [
+        "To serve religious instruction by helping worshippers understand Christian teachings",
+        "To advertise European maritime trade",
+        "To teach abstract geometric mathematics",
+        "To depict secular industrial factories"
+      ],
+      "answer": "To serve religious instruction by helping worshippers understand Christian teachings",
+      "explanation": "Church paintings visually communicated biblical stories and Christian doctrine to congregations."
+    },
+    {
+      "id": "aa-s6-21",
+      "type": "multiple-choice",
+      "topic": "Philippine Muslim Art",
+      "question": "Philippine Muslim art (in Mindanao and the Sulu Archipelago) reflects Islamic artistic traditions primarily through:",
+      "options": [
+        "Sculpted marble statues of Roman emperors",
+        "Arabesques, intricate geometric patterns, floral/plant designs, calligraphy, brassware, and weaving",
+        "Biblical altarpieces and santos",
+        "Impressionist oil landscapes of Paris"
+      ],
+      "answer": "Arabesques, intricate geometric patterns, floral/plant designs, calligraphy, brassware, and weaving",
+      "explanation": "Philippine Muslim art emphasizes geometric ornamentation, arabesques, calligraphy, brassware, textiles (Inaul, Pis Syabit), and Torogan architecture."
+    },
+    {
+      "id": "aa-s6-22",
+      "type": "multiple-choice",
+      "topic": "Okir / Ukkil",
+      "question": "Okir (also spelled Ukkil or Okkil) is a flowing, curvilinear decorative carving tradition most strongly associated with which Filipino community?",
+      "options": [
+        "Maranao people of Mindanao",
+        "Ilocano people of Luzon",
+        "Tagalog people of Manila",
+        "Hiligaynon people of Panay"
+      ],
+      "answer": "Maranao people of Mindanao",
+      "explanation": "Okir/Ukkil is strongly associated with the Maranao people and features flowing curves inspired by leaves, vines, and organic forms."
+    },
+    {
+      "id": "aa-s6-23",
+      "type": "multiple-choice",
+      "topic": "Okir / Ukkil",
+      "question": "Which three motifs are classic examples found in Maranao Okir art?",
+      "options": [
+        "Binakol, Kusikos, and Sinan-sabong",
+        "Sarimanok (legendary bird with fish), Naga (serpent/dragon), and Pako Rabong (stylized growing fern)",
+        "Doric, Ionic, and Corinthian",
+        "Hatching, Stippling, and Impasto"
+      ],
+      "answer": "Sarimanok (legendary bird with fish), Naga (serpent/dragon), and Pako Rabong (stylized growing fern)",
+      "explanation": "The Sarimanok, Naga, and Pako Rabong are iconic motifs of Maranao Okir found on woodcarvings, Torogans, brassware, and modern designs."
+    },
+    {
+      "id": "aa-s6-24",
+      "type": "multiple-choice",
+      "topic": "Globalization & Technology",
+      "question": "How does globalization influence Contemporary Philippine Art?",
+      "options": [
+        "It completely bans international art exhibitions.",
+        "It connects cultures, introduces foreign styles/techniques, promotes Filipino art globally, and sparks fusion between local and modern forms.",
+        "It forces all Filipino artists to move back to prehistoric methods.",
+        "It eliminates digital technology from art schools."
+      ],
+      "answer": "It connects cultures, introduces foreign styles/techniques, promotes Filipino art globally, and sparks fusion between local and modern forms.",
+      "explanation": "Globalization fosters cultural exchange and international visibility while technology provides new tools (digital painting, video, animation, 3D modeling, AI-assisted art)."
+    },
+    {
+      "id": "aa-s6-25",
+      "type": "multiple-choice",
+      "topic": "Globalization & Technology",
+      "question": "Which set lists examples of technology-driven contemporary art tools mentioned in the learning material?",
+      "options": [
+        "Digital painting, digital photography, animation, 3D modeling, and AI-assisted art",
+        "Ochre cave pigments, stone chisels, and bone needles",
+        "Backstrap looms and terracotta kilns only",
+        "Fresco plaster and quill pens only"
+      ],
+      "answer": "Digital painting, digital photography, animation, 3D modeling, and AI-assisted art",
+      "explanation": "Contemporary artists use digital painting, video, photography, animation, 3D modeling, and AI-assisted tools to create and share art."
+    },
+    {
+      "id": "aa-s6-26",
+      "type": "multiple-choice",
+      "topic": "Diversity of Philippine Art",
+      "question": "What does studying Indigenous, Christian, Muslim, and Contemporary Philippine arts together reveal?",
+      "options": [
+        "That Philippine art follows only one uniform religious and artistic tradition",
+        "That Philippine art reflects rich, diverse cultural identities, histories, and regional traditions",
+        "That only colonial art counts as authentic Filipino art",
+        "That contemporary art has no connection to history"
+      ],
+      "answer": "That Philippine art reflects rich, diverse cultural identities, histories, and regional traditions",
+      "explanation": "Philippine art is shaped by indigenous, colonial Christian, Islamic, and contemporary global influences rather than one monolithic style."
+    },
+    {
+      "id": "aa-s6-27",
+      "type": "multiple-choice",
+      "topic": "Architectural Comparisons",
+      "question": "Which architectural pair is correctly contrasted?",
+      "options": [
+        "Torogan: Maranao royal house; Ifugao Bale: traditional Cordillera dwelling; Bahay Kubo: elevated lightweight house; Bahay na Bato: masonry ground floor + wooden upper floor",
+        "Torogan: Spanish stone church; Ifugao Bale: floating boat; Bahay Kubo: concrete skyscraper",
+        "Bahay na Bato: Tausug headcloth; Torogan: Maguindanaon malong",
+        "Ifugao Bale: Mughal white marble tomb; Bahay Kubo: Roman amphitheater"
+      ],
+      "answer": "Torogan: Maranao royal house; Ifugao Bale: traditional Cordillera dwelling; Bahay Kubo: elevated lightweight house; Bahay na Bato: masonry ground floor + wooden upper floor",
+      "explanation": "Each traditional Filipino structure reflects its community's environment, materials, and social history."
+    },
+    {
+      "id": "aa-s6-28",
+      "type": "multiple-choice",
+      "topic": "Art Criticism Applied",
+      "question": "When critiquing a Maranao Okir carving, noting its curved lines, repeated patterns, rhythm, and intricate carving details belongs primarily to which steps of art criticism?",
+      "options": [
+        "Description and Analysis",
+        "Marketing and Pricing",
+        "Casting and Firing",
+        "Copyrighting and Exporting"
+      ],
+      "answer": "Description and Analysis",
+      "explanation": "Observing visible lines/motifs (Description) and examining how rhythm, pattern, and details work together (Analysis) precede Interpretation and Evaluation."
+    },
+    {
+      "id": "aa-s6-29",
+      "type": "multiple-choice",
+      "topic": "Da Vincian Comparisons",
+      "question": "How does 'Dimostrazione' differ from 'Sfumato'?",
+      "options": [
+        "Dimostrazione is testing ideas through hands-on experience; Sfumato is embracing ambiguity and uncertainty.",
+        "Dimostrazione is physical exercise; Sfumato is refining eyesight.",
+        "Dimostrazione is ignoring evidence; Sfumato is rigid certainty.",
+        "Dimostrazione is painting smoke; Sfumato is building bridges."
+      ],
+      "answer": "Dimostrazione is testing ideas through hands-on experience; Sfumato is embracing ambiguity and uncertainty.",
+      "explanation": "Dimostrazione focuses on experiential testing and learning from mistakes, while Sfumato welcomes uncertainty and multiple possibilities."
+    },
+    {
+      "id": "aa-s6-30",
+      "type": "multiple-choice",
+      "topic": "Philippine Art Traditions",
+      "question": "Which contrast correctly distinguishes Christian Art from Muslim Art in the Philippines?",
+      "options": [
+        "Christian Art features santos, retablos, and biblical imagery; Muslim Art features Islamic geometric ornamentation, calligraphy, brassware, and okir/ukkil.",
+        "Christian Art forbids all human figures; Muslim Art centers on crucifix sculptures.",
+        "Christian Art originated only in Sulu; Muslim Art originated only in Ilocos.",
+        "Christian Art uses only digital tools; Muslim Art uses only oil on canvas."
+      ],
+      "answer": "Christian Art features santos, retablos, and biblical imagery; Muslim Art features Islamic geometric ornamentation, calligraphy, brassware, and okir/ukkil.",
+      "explanation": "Both traditions represent distinct religious and cultural streams within Philippine art history."
+    }
+  ]
+}

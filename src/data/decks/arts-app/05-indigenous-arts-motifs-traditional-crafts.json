@@ -1,0 +1,433 @@
+{
+  "id": "arts-app-s5-indigenous-crafts",
+  "course": "Arts Appreciation",
+  "sectionOrder": 5,
+  "sectionLabel": "Section 5",
+  "title": "Philippine Indigenous Arts, Motifs, Textiles & Traditional Crafts",
+  "subject": "Arts Appreciation",
+  "description": "Manunggul Jar, Spanish colonial shift, characteristics of indigenous arts, motifs, T'nalak, Dagmay, Inaul, Pis Syabit, and traditional crafts (basketry, pottery, woodcarving, beadwork, weaving).",
+  "sourceFile": "Philippine Indigenous Arts and Traditional Crafts (1).pdf, PHILIPPINE INDIGENOUS ARTS AND TRADITIONAL CRAFTS (2).pdf, ART APPRECIATION REVIEWER - FINAL EXAMINATION.pdf",
+  "createdAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "aa-s5-01",
+      "type": "multiple-choice",
+      "topic": "Manunggul Jar",
+      "question": "The Manunggul Jar, an archaeological burial jar discovered in Palawan, features two human figures aboard a boat on its lid. What does this motif symbolize?",
+      "options": [
+        "A Spanish naval battle",
+        "The journey of the soul to the afterlife",
+        "Annual rice harvesting",
+        "A wedding procession"
+      ],
+      "answer": "The journey of the soul to the afterlife",
+      "explanation": "The boatman and passenger on the Manunggul Jar lid symbolize the soul's passage to the afterlife."
+    },
+    {
+      "id": "aa-s5-02",
+      "type": "multiple-choice",
+      "topic": "Spanish Colonial Influence",
+      "question": "How did the Spanish colonial period most significantly reshape Philippine visual arts and architecture?",
+      "options": [
+        "It replaced all woodcarving with abstract digital installations.",
+        "Roman Catholicism shaped religious paintings, santos sculptures, and church architecture.",
+        "It introduced Japanese ukiyo-e woodblock printing across Mindanao.",
+        "It prohibited all stone and masonry construction."
+      ],
+      "answer": "Roman Catholicism shaped religious paintings, santos sculptures, and church architecture.",
+      "explanation": "Spanish colonization introduced Roman Catholic religious imagery, santos, retablos, and colonial churches."
+    },
+    {
+      "id": "aa-s5-03",
+      "type": "multiple-choice",
+      "topic": "Indigenous Arts Characteristics",
+      "question": "Which five core characteristics define Philippine Indigenous Arts?",
+      "options": [
+        "Commercial branding, mass factory output, plastic media, individual isolation, purely decorative",
+        "Cultural significance, traditional knowledge, connection to nature, symbolism, and practical + artistic functions",
+        "Industrial speed, Western oil techniques, digital filters, abstract minimalism, uniformity",
+        "Uniform national rules, royal patronage, imported marble, non-functional luxury, anonymity"
+      ],
+      "answer": "Cultural significance, traditional knowledge, connection to nature, symbolism, and practical + artistic functions",
+      "explanation": "Indigenous arts unite community identity, intergenerational knowledge, natural local materials, symbolism, and both practical and aesthetic functions."
+    },
+    {
+      "id": "aa-s5-04",
+      "type": "multiple-choice",
+      "topic": "Indigenous Motifs",
+      "question": "What is an 'indigenous motif'?",
+      "options": [
+        "A recurring visual element, pattern, shape, or design used in a particular Indigenous community's artistic traditions",
+        "A government copyright stamp on exported crafts",
+        "A modern software plugin for 3D modeling",
+        "A European classical column capital"
+      ],
+      "answer": "A recurring visual element, pattern, shape, or design used in a particular Indigenous community's artistic traditions",
+      "explanation": "Indigenous motifs include geometric patterns, nature-inspired forms, repeated/symmetrical designs, and culturally grounded symbols."
+    },
+    {
+      "id": "aa-s5-05",
+      "type": "multiple-choice",
+      "topic": "Indigenous Motifs",
+      "question": "Why should students avoid guessing the meaning of an indigenous motif without reliable cultural context?",
+      "options": [
+        "Because motifs have no meaning at all",
+        "Because the same shape or symbol can carry distinct meanings in different Indigenous communities",
+        "Because motifs are strictly random accidents",
+        "Because only Western museum curators invent motif meanings"
+      ],
+      "answer": "Because the same shape or symbol can carry distinct meanings in different Indigenous communities",
+      "explanation": "Interpretations must be grounded in the specific cultural knowledge of the community that creates and maintains the tradition."
+    },
+    {
+      "id": "aa-s5-06",
+      "type": "multiple-choice",
+      "topic": "Indigenous Motifs",
+      "question": "Which four visual features commonly characterize indigenous motifs?",
+      "options": [
+        "Oil impasto, chiaroscuro, linear perspective, pastel Rococo",
+        "Geometric patterns, nature-inspired designs, repetition & symmetry, and symbolic designs",
+        "Neon signage, digital pixels, graffiti tags, photographic collages",
+        "Monochrome concrete, flying buttresses, pointed arches, stained glass"
+      ],
+      "answer": "Geometric patterns, nature-inspired designs, repetition & symmetry, and symbolic designs",
+      "explanation": "Indigenous motifs feature diamonds/zigzags (geometric), plants/animals (nature-inspired), repetition/symmetry (rhythm/balance/unity), and ancestral symbolism."
+    },
+    {
+      "id": "aa-s5-07",
+      "type": "multiple-choice",
+      "topic": "Indigenous Textiles: T'nalak",
+      "question": "T'nalak is a traditional abaca textile associated with which Indigenous community and region?",
+      "options": [
+        "Mandaya of eastern Mindanao",
+        "T'boli of Lake Sebu, South Cotabato, Mindanao",
+        "Tausug of the Sulu Archipelago",
+        "Maguindanaon of the Bangsamoro region"
+      ],
+      "answer": "T'boli of Lake Sebu, South Cotabato, Mindanao",
+      "explanation": "T'nalak is woven by the T'boli people of Lake Sebu, South Cotabato."
+    },
+    {
+      "id": "aa-s5-08",
+      "type": "multiple-choice",
+      "topic": "Indigenous Textiles: T'nalak",
+      "question": "Why is T'nalak called a 'dream cloth,' and who is the spirit of abaca associated with its patterns?",
+      "options": [
+        "Weavers buy designs from dream catalogs; Sarimanok",
+        "Patterns are believed to be revealed to weavers in dreams connected to Fu Dalu, the spirit of abaca",
+        "It is only worn while sleeping; Bulul",
+        "The dye glows in the dark; Naga"
+      ],
+      "answer": "Patterns are believed to be revealed to weavers in dreams connected to Fu Dalu, the spirit of abaca",
+      "explanation": "T'boli dreamweavers receive patterns through dreams linked to Fu Dalu, guardian spirit of abaca."
+    },
+    {
+      "id": "aa-s5-09",
+      "type": "multiple-choice",
+      "topic": "Indigenous Textiles: T'nalak",
+      "question": "What are the three steps of the 'warp ikat' resist-dyeing technique used in T'nalak weaving?",
+      "options": [
+        "Carve, mold, and fire in a kiln",
+        "Tie selected sections of threads, dye the threads (tied parts resist dye), then weave on the loom",
+        "Bleach finished cloth, paint with oil, then lacquer",
+        "Cut geometric squares, sew together, then press with gold"
+      ],
+      "answer": "Tie selected sections of threads, dye the threads (tied parts resist dye), then weave on the loom",
+      "explanation": "Warp ikat resists dye by tying specific sections of lengthwise warp threads before dyeing and weaving."
+    },
+    {
+      "id": "aa-s5-10",
+      "type": "multiple-choice",
+      "topic": "Indigenous Textiles: T'nalak",
+      "question": "Which traditional color palette characterizes authentic T'nalak cloth?",
+      "options": [
+        "Neon pink, lime green, and silver",
+        "Red, black, and natural off-white earthy tones",
+        "Pastel blue and gold leaf",
+        "Cobalt blue and bright yellow only"
+      ],
+      "answer": "Red, black, and natural off-white earthy tones",
+      "explanation": "T'nalak features intricate, often symmetrical designs in red, black, and natural off-white abaca tones."
+    },
+    {
+      "id": "aa-s5-11",
+      "type": "multiple-choice",
+      "topic": "Indigenous Textiles: Dagmay",
+      "question": "Dagmay is an abaca tie-dye (ikat) textile associated with which community, and what distinctive motifs does it often feature?",
+      "options": [
+        "Tausug; plain white squares",
+        "Mandaya of eastern Mindanao / Davao Region; stylized human figures and crocodile forms",
+        "Ilocano; spiral oranges (kusikos)",
+        "Ifugao; rice granary posts"
+      ],
+      "answer": "Mandaya of eastern Mindanao / Davao Region; stylized human figures and crocodile forms",
+      "explanation": "Mandaya Dagmay uses abaca fiber and ikat tie-dye techniques featuring stylized human figures and crocodile motifs."
+    },
+    {
+      "id": "aa-s5-12",
+      "type": "multiple-choice",
+      "topic": "Indigenous Textiles: Inaul",
+      "question": "Which Mindanao textile is woven by the Maguindanaon using cotton, rayon, or lustrous specialty threads on a handloom, often worn as a tubular garment called a 'malong'?",
+      "options": [
+        "Inaul",
+        "T'nalak",
+        "Pis Syabit",
+        "Dagmay"
+      ],
+      "answer": "Inaul",
+      "explanation": "Inaul is a vibrant Maguindanaon handloom-woven fabric featuring plaid and geometric designs, traditionally used for the malong."
+    },
+    {
+      "id": "aa-s5-13",
+      "type": "multiple-choice",
+      "topic": "Indigenous Textiles: Inaul",
+      "question": "What types of looms are traditionally used to weave Maguindanaon Inaul?",
+      "options": [
+        "Computerized industrial jacquard printers",
+        "Handlooms such as the backstrap loom or fixed horizontal-frame loom",
+        "Pottery wheels and kilns",
+        "Woodblock printing presses"
+      ],
+      "answer": "Handlooms such as the backstrap loom or fixed horizontal-frame loom",
+      "explanation": "Inaul is handloom-woven—operated by hand using a backstrap or fixed horizontal-frame loom."
+    },
+    {
+      "id": "aa-s5-14",
+      "type": "multiple-choice",
+      "topic": "Indigenous Textiles: Pis Syabit",
+      "question": "Pis Syabit is a square-shaped textile with intricate, vivid geometric patterns traditionally used as a headcloth by the:",
+      "options": [
+        "Tausug people of the Sulu Archipelago",
+        "T'boli people of South Cotabato",
+        "Mandaya people of Davao",
+        "Ifugao people of the Cordillera"
+      ],
+      "answer": "Tausug people of the Sulu Archipelago",
+      "explanation": "Pis Syabit is a hallmark of Tausug weaving heritage, showcasing geometric abstraction, symmetry, and rhythm."
+    },
+    {
+      "id": "aa-s5-15",
+      "type": "multiple-choice",
+      "topic": "Textile Comparison",
+      "question": "Which pairing of Philippine textile and cultural community is INCORRECT?",
+      "options": [
+        "T'nalak — T'boli",
+        "Dagmay — Mandaya",
+        "Inaul — Maguindanaon",
+        "Pis Syabit — Ilocano"
+      ],
+      "answer": "Pis Syabit — Ilocano",
+      "explanation": "Pis Syabit belongs to the Tausug of the Sulu Archipelago; Ilocano weaving is known for abel/inabel (such as binakol)."
+    },
+    {
+      "id": "aa-s5-16",
+      "type": "multiple-choice",
+      "topic": "Traditional Crafts: Basketry",
+      "question": "Which materials are commonly interlaced in traditional Philippine basketry?",
+      "options": [
+        "Marble, bronze, and granite",
+        "Bamboo, rattan, buri, and pandan",
+        "Oil paint, acrylic, and canvas",
+        "Glass beads and molten silver"
+      ],
+      "answer": "Bamboo, rattan, buri, and pandan",
+      "explanation": "Basketry weaves plant strips like bamboo, rattan, buri, and pandan into functional and decorative baskets, hats, and containers."
+    },
+    {
+      "id": "aa-s5-17",
+      "type": "multiple-choice",
+      "topic": "Traditional Crafts: Basketry",
+      "question": "How do traditional crafts like basketry demonstrate both practical and artistic functions?",
+      "options": [
+        "A basket can carry and store crops while displaying intricate geometric patterns with cultural meaning.",
+        "Baskets are purely sculptures that cannot hold anything.",
+        "Baskets are made exclusively for museum display cases.",
+        "Baskets have no pattern or rhythm."
+      ],
+      "answer": "A basket can carry and store crops while displaying intricate geometric patterns with cultural meaning.",
+      "explanation": "Traditional crafts blend everyday utility (carrying crops, storing rice) with aesthetic design (line, pattern, texture, rhythm)."
+    },
+    {
+      "id": "aa-s5-18",
+      "type": "multiple-choice",
+      "topic": "Traditional Crafts: Pottery",
+      "question": "Pottery creates durable vessels, jars, and cooking pots by:",
+      "options": [
+        "Interlacing bamboo strips",
+        "Shaping clay and firing it at high temperatures",
+        "Carving blocks of narra hardwood",
+        "Tying abaca warp threads"
+      ],
+      "answer": "Shaping clay and firing it at high temperatures",
+      "explanation": "Pottery combines clay, water, and natural pigments/minerals, shaped by hand and hardened with heat."
+    },
+    {
+      "id": "aa-s5-19",
+      "type": "multiple-choice",
+      "topic": "Traditional Crafts: Woodcarving",
+      "question": "The Ifugao 'bulul'—a carved wooden figure associated with rice rituals and community beliefs—is an example of which craft?",
+      "options": [
+        "Pottery",
+        "Woodcarving",
+        "Metalworking",
+        "Basketry"
+      ],
+      "answer": "Woodcarving",
+      "explanation": "Philippine woodcarving transforms woods like narra, molave, acacia, and mahogany into ritual, decorative, and architectural pieces such as the Ifugao bulul."
+    },
+    {
+      "id": "aa-s5-20",
+      "type": "multiple-choice",
+      "topic": "Traditional Crafts: Woodcarving",
+      "question": "Which local hardwoods are commonly used in Philippine traditional woodcarving?",
+      "options": [
+        "Buri and pandan",
+        "Narra, molave, acacia, and mahogany",
+        "Clay and porcelain",
+        "Abaca and piña"
+      ],
+      "answer": "Narra, molave, acacia, and mahogany",
+      "explanation": "Traditional Filipino woodcarvers work with durable local woods including narra, molave, acacia, and mahogany."
+    },
+    {
+      "id": "aa-s5-21",
+      "type": "multiple-choice",
+      "topic": "Traditional Crafts: Beadwork",
+      "question": "Beadwork and jewelry making in Philippine cultural communities use glass beads, wooden beads, shells, seeds, stones, and metal primarily to express:",
+      "options": [
+        "Identity, social status, personal adornment, and ceremonial significance",
+        "Industrial mass manufacturing standards",
+        "Western Baroque theatrical drama",
+        "Strict architectural load-bearing support"
+      ],
+      "answer": "Identity, social status, personal adornment, and ceremonial significance",
+      "explanation": "Traditional beadwork and ornaments communicate identity, status, and cultural heritage during celebrations and rituals."
+    },
+    {
+      "id": "aa-s5-22",
+      "type": "multiple-choice",
+      "topic": "Traditional Crafts: Weaving",
+      "question": "Which natural fibers are commonly used across Philippine textile weaving traditions?",
+      "options": [
+        "Cotton, abaca, piña, and silk",
+        "Granite, clay, and plaster",
+        "Rattan and mahogany bark",
+        "Bronze and iron wire"
+      ],
+      "answer": "Cotton, abaca, piña, and silk",
+      "explanation": "Filipino weavers use cotton, abaca, piña, silk, and specialty threads depending on the regional tradition."
+    },
+    {
+      "id": "aa-s5-23",
+      "type": "multiple-choice",
+      "topic": "Art Elements in Crafts",
+      "question": "In traditional crafts, how is the element of LINE primarily expressed?",
+      "options": [
+        "Through threads, stripes, carved lines, and borders",
+        "Through firing clay at high heat",
+        "Through the weight of a wooden statue",
+        "Through the smell of natural plant dyes"
+      ],
+      "answer": "Through threads, stripes, carved lines, and borders",
+      "explanation": "Threads, woven stripes, incised lines, and borders all manifest the element of line in traditional crafts."
+    },
+    {
+      "id": "aa-s5-24",
+      "type": "multiple-choice",
+      "topic": "Art Elements in Crafts",
+      "question": "Roughness of woven abaca, smoothness of glazed pottery, or softness of cotton fabric illustrates which element of art in crafts?",
+      "options": [
+        "Value",
+        "Texture",
+        "Space",
+        "Proportion"
+      ],
+      "answer": "Texture",
+      "explanation": "Texture refers to the tactile surface quality—rough, smooth, thick, or soft—of craft materials."
+    },
+    {
+      "id": "aa-s5-25",
+      "type": "multiple-choice",
+      "topic": "Principles in Crafts",
+      "question": "When repeated motifs, colors, and woven structures lead the viewer's eye smoothly across a textile or basket, which principle of art is demonstrated?",
+      "options": [
+        "Rhythm",
+        "Disinterested pleasure",
+        "Mimesis",
+        "Chiaroscuro"
+      ],
+      "answer": "Rhythm",
+      "explanation": "Repetition of lines, colors, and shapes creates visual rhythm across woven and crafted surfaces."
+    },
+    {
+      "id": "aa-s5-26",
+      "type": "multiple-choice",
+      "topic": "Cultural Transmission",
+      "question": "When an elder teaches traditional weaving or basketry to younger members of the community, what is taking place?",
+      "options": [
+        "Commercial franchising",
+        "Preservation and intergenerational transmission of cultural knowledge",
+        "Replacement of local identity",
+        "Westernization of folk crafts"
+      ],
+      "answer": "Preservation and intergenerational transmission of cultural knowledge",
+      "explanation": "Passing craft skills from elders to youth keeps cultural identity, techniques, and community history alive."
+    },
+    {
+      "id": "aa-s5-27",
+      "type": "multiple-choice",
+      "topic": "Indigenous Textiles",
+      "question": "Which textile is paired with its correct distinctive technique and feature?",
+      "options": [
+        "T'nalak — warp ikat resist-dyeing on abaca with dream-inspired motifs",
+        "Inaul — clay firing at high temperatures",
+        "Pis Syabit — wooden rice god carving",
+        "Dagmay — glass bead necklace stringing"
+      ],
+      "answer": "T'nalak — warp ikat resist-dyeing on abaca with dream-inspired motifs",
+      "explanation": "T'nalak uses warp ikat on abaca; Inaul uses handlooms; Pis Syabit is Tausug geometric weaving; Dagmay is Mandaya abaca tie-dye weaving."
+    },
+    {
+      "id": "aa-s5-28",
+      "type": "multiple-choice",
+      "topic": "Indigenous Arts Context",
+      "question": "Why is an indigenous artwork's cultural meaning NOT determined solely by its commercial price or resemblance to foreign art?",
+      "options": [
+        "Because it is rooted in ancestral stories, spiritual beliefs, environment, and community practices",
+        "Because indigenous artworks cannot be sold",
+        "Because all indigenous artworks look identical",
+        "Because indigenous artworks contain no visual elements"
+      ],
+      "answer": "Because it is rooted in ancestral stories, spiritual beliefs, environment, and community practices",
+      "explanation": "Indigenous art derives its deepest meaning from the community's history, beliefs, and lived traditions."
+    },
+    {
+      "id": "aa-s5-29",
+      "type": "multiple-choice",
+      "topic": "Traditional Crafts",
+      "question": "Which craft shapes and forms metal (such as brass, silver, or bronze) into useful, ceremonial, or decorative objects?",
+      "options": [
+        "Metalworking",
+        "Basketry",
+        "Pottery",
+        "Ikebana"
+      ],
+      "answer": "Metalworking",
+      "explanation": "Metalworking shapes metal into tools, brassware, trays, musical instruments, and religious/decorative objects."
+    },
+    {
+      "id": "aa-s5-30",
+      "type": "multiple-choice",
+      "topic": "Principles in Crafts",
+      "question": "How does 'unity' appear in a traditional woven textile like Pis Syabit or Inaul?",
+      "options": [
+        "The different colors, geometric shapes, and patterns work together cohesively as one composition",
+        "Each corner uses an unrelated clashing fabric glued together",
+        "The cloth has no discernible pattern or border",
+        "Only a single unpainted thread is used"
+      ],
+      "answer": "The different colors, geometric shapes, and patterns work together cohesively as one composition",
+      "explanation": "Unity is achieved when varied colors, shapes, and repeated motifs harmonize into an integrated whole."
+    }
+  ]
+}
