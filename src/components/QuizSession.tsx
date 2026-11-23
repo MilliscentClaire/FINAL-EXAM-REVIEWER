@@ -4,6 +4,7 @@ import {
   CheckCircle2,
   Flag,
   Flame,
+  Mail,
   RotateCcw,
   Shuffle,
   XCircle,
@@ -15,14 +16,23 @@ import {
   formatDuration,
   shuffleArray,
 } from '../utils/quizHelpers';
+import {
+  clearQuizSession,
+  saveQuizSession,
+  type SavedQuizAnswer,
+  type SavedQuizSession,
+} from '../utils/storage';
 
 interface QuizSessionProps {
   deck: QuizDeck;
   questions: QuizQuestion[];
   prefs: UserPreferences;
   examMode?: boolean;
+  missedOnly?: boolean;
+  savedSession?: SavedQuizSession | null;
   onUpdatePrefs: (next: UserPreferences) => void;
   onComplete: (scorePercent: number, missedIds: string[]) => void;
+  onSavedSessionsChange?: () => void;
   onExit: () => void;
 }
 
@@ -46,34 +56,133 @@ function prepareQuestions(
   });
 }
 
+function restoreQuestionsFromSaved(
+  deckQuestions: QuizQuestion[],
+  saved: SavedQuizSession,
+  shuffleOptions: boolean,
+): QuizQuestion[] {
+  const byId = new Map<string, QuizQuestion>();
+  for (const q of deckQuestions) {
+    byId.set(q.id, q);
+  }
+
+  const ordered = saved.questionIds
+    .map((id) => byId.get(id))
+    .filter((q): q is QuizQuestion => Boolean(q));
+
+  return ordered.map((q) => {
+    if (q.type === 'multiple-choice' && q.options && shuffleOptions) {
+      return { ...q, options: shuffleArray(q.options) };
+    }
+    return q;
+  });
+}
+
+function restoreRecordsFromSaved(
+  restoredQuestions: QuizQuestion[],
+  saved: SavedQuizSession,
+): AnswerRecord[] {
+  const answerById = new Map<string, SavedQuizAnswer>();
+  for (const ans of saved.answers) {
+    answerById.set(ans.questionId, ans);
+  }
+
+  const nextRecords: AnswerRecord[] = [];
+  restoredQuestions.forEach((question, idx) => {
+    const savedAns = answerById.get(question.id);
+    if (savedAns) {
+      nextRecords[idx] = {
+        question,
+        userAnswer: savedAns.userAnswer,
+        isCorrect: savedAns.isCorrect,
+      };
+    }
+  });
+  return nextRecords;
+}
+
 export function QuizSession({
   deck,
   questions,
   prefs,
   examMode = false,
+  missedOnly = false,
+  savedSession = null,
   onUpdatePrefs,
   onComplete,
+  onSavedSessionsChange,
   onExit,
 }: QuizSessionProps) {
+  const initialState = useMemo(() => {
+    if (savedSession) {
+      const restoredQuestions = restoreQuestionsFromSaved(
+        deck.questions,
+        savedSession,
+        prefs.shuffleOptions,
+      );
+      if (restoredQuestions.length > 0) {
+        const restoredRecords = restoreRecordsFromSaved(
+          restoredQuestions,
+          savedSession,
+        );
+        const clampedIndex = Math.min(
+          Math.max(0, savedSession.currentIndex),
+          restoredQuestions.length - 1,
+        );
+        const currentExisting = restoredRecords[clampedIndex];
+        return {
+          shuffleQuestions: savedSession.shuffleQuestions,
+          instantFeedback: savedSession.instantFeedback,
+          sessionQuestions: restoredQuestions,
+          currentIndex: clampedIndex,
+          records: restoredRecords,
+          streak: savedSession.streak,
+          selectedOption: currentExisting?.userAnswer ?? null,
+          revealed: Boolean(currentExisting),
+          baseElapsedMs: savedSession.elapsedMsSoFar,
+        };
+      }
+    }
+
+    const initialShuffle = examMode ? true : prefs.shuffleQuestions;
+    const initialInstant = examMode ? false : prefs.instantFeedback;
+    return {
+      shuffleQuestions: initialShuffle,
+      instantFeedback: initialInstant,
+      sessionQuestions: prepareQuestions(
+        questions,
+        initialShuffle,
+        prefs.shuffleOptions,
+      ),
+      currentIndex: 0,
+      records: [] as AnswerRecord[],
+      streak: 0,
+      selectedOption: null as string | null,
+      revealed: false,
+      baseElapsedMs: 0,
+    };
+    // Initializer runs on mount for a keyed session instance.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const [shuffleQuestions, setShuffleQuestions] = useState(
-    () => (examMode ? true : prefs.shuffleQuestions),
+    initialState.shuffleQuestions,
   );
   const [instantFeedback, setInstantFeedback] = useState(
-    () => (examMode ? false : prefs.instantFeedback),
+    initialState.instantFeedback,
   );
-  const [sessionQuestions, setSessionQuestions] = useState<QuizQuestion[]>(() =>
-    prepareQuestions(
-      questions,
-      examMode ? true : prefs.shuffleQuestions,
-      prefs.shuffleOptions,
-    ),
+  const [sessionQuestions, setSessionQuestions] = useState<QuizQuestion[]>(
+    initialState.sessionQuestions,
   );
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [records, setRecords] = useState<AnswerRecord[]>([]);
-  const [streak, setStreak] = useState(0);
-  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(initialState.currentIndex);
+  const [records, setRecords] = useState<AnswerRecord[]>(initialState.records);
+  const [streak, setStreak] = useState(initialState.streak);
+  const [selectedOption, setSelectedOption] = useState<string | null>(
+    initialState.selectedOption,
+  );
   const [typedAnswer, setTypedAnswer] = useState('');
-  const [revealed, setRevealed] = useState(false);
+  const [revealed, setRevealed] = useState(initialState.revealed);
+  const [baseElapsedMs, setBaseElapsedMs] = useState(initialState.baseElapsedMs);
   const [startedAt, setStartedAt] = useState(() => Date.now());
   const [elapsedMs, setElapsedMs] = useState(0);
   const [finished, setFinished] = useState(false);
@@ -81,9 +190,55 @@ export function QuizSession({
   const inputRef = useRef<HTMLInputElement>(null);
   const currentQuestion = sessionQuestions[currentIndex];
   const currentRecord = records[currentIndex];
+  const answeredCount = records.filter(Boolean).length;
+
+  useEffect(() => {
+    if (finished || answeredCount === 0 || sessionQuestions.length === 0) return;
+
+    const answers: SavedQuizAnswer[] = records
+      .filter((r): r is AnswerRecord => Boolean(r))
+      .map((r) => ({
+        questionId: r.question.id,
+        userAnswer: r.userAnswer,
+        isCorrect: r.isCorrect,
+      }));
+
+    saveQuizSession({
+      deckId: deck.id,
+      examMode,
+      missedOnly,
+      shuffleQuestions,
+      instantFeedback,
+      questionIds: sessionQuestions.map((q) => q.id),
+      currentIndex,
+      answers,
+      streak,
+      elapsedMsSoFar: baseElapsedMs + (Date.now() - startedAt),
+      updatedAt: new Date().toISOString(),
+    });
+    onSavedSessionsChange?.();
+  }, [
+    answeredCount,
+    baseElapsedMs,
+    currentIndex,
+    deck.id,
+    examMode,
+    finished,
+    instantFeedback,
+    missedOnly,
+    onSavedSessionsChange,
+    records,
+    sessionQuestions,
+    shuffleQuestions,
+    startedAt,
+    streak,
+  ]);
 
   const resetRound = useCallback(
     (sourceQuestions: QuizQuestion[], shuffleQ = shuffleQuestions) => {
+      clearQuizSession(deck.id);
+      onSavedSessionsChange?.();
+
       setSessionQuestions(
         prepareQuestions(sourceQuestions, shuffleQ, prefs.shuffleOptions),
       );
@@ -93,17 +248,26 @@ export function QuizSession({
       setSelectedOption(null);
       setTypedAnswer('');
       setRevealed(false);
+      setBaseElapsedMs(0);
       setStartedAt(Date.now());
       setElapsedMs(0);
       setFinished(false);
     },
-    [prefs.shuffleOptions, shuffleQuestions],
+    [
+      deck.id,
+      onSavedSessionsChange,
+      prefs.shuffleOptions,
+      shuffleQuestions,
+    ],
   );
 
   const finishRound = useCallback(
     (finalRecords: AnswerRecord[]) => {
+      clearQuizSession(deck.id);
+      onSavedSessionsChange?.();
+
       const answered = finalRecords.filter((r): r is AnswerRecord => Boolean(r));
-      const duration = Date.now() - startedAt;
+      const duration = baseElapsedMs + (Date.now() - startedAt);
       const correctCount = answered.filter((r) => r.isCorrect).length;
       const total = answered.length;
       const scorePercent = total > 0 ? Math.round((correctCount / total) * 100) : 0;
@@ -116,7 +280,7 @@ export function QuizSession({
       setFinished(true);
       onComplete(scorePercent, missedIds);
     },
-    [onComplete, startedAt],
+    [baseElapsedMs, deck.id, onComplete, onSavedSessionsChange, startedAt],
   );
 
   const advance = useCallback(
@@ -308,6 +472,40 @@ export function QuizSession({
     const scorePercent = total > 0 ? Math.round((correctCount / total) * 100) : 0;
     const missedRecords = records.filter((r) => !r.isCorrect);
 
+    const gmailSubject = `QuickReview Result: ${deck.title} (${scorePercent}%)`;
+    const bodyLines: string[] = [
+      `Course / Subject: ${deck.course ?? deck.subject}`,
+      `Reviewer: ${deck.title}`,
+      `Score: ${correctCount} / ${total} (${scorePercent}%)`,
+      `Time Elapsed: ${formatDuration(elapsedMs)}`,
+    ];
+
+    if (topicBreakdown.length >= 2) {
+      bodyLines.push('', 'Performance by Topic:');
+      for (const t of topicBreakdown) {
+        bodyLines.push(`- ${t.topic}: ${t.correct}/${t.total} (${t.percent}%)`);
+      }
+    }
+
+    if (missedRecords.length > 0) {
+      const cap = 12;
+      bodyLines.push('', `Missed Questions (${missedRecords.length}):`);
+      missedRecords.slice(0, cap).forEach((m, idx) => {
+        bodyLines.push(
+          `${idx + 1}. ${m.question.question}`,
+          `   Your answer: ${m.userAnswer}`,
+          `   Correct answer: ${m.question.answer}`,
+        );
+      });
+      if (missedRecords.length > cap) {
+        bodyLines.push(`...and ${missedRecords.length - cap} more missed items.`);
+      }
+    }
+
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&su=${encodeURIComponent(
+      gmailSubject,
+    )}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+
     return (
       <div className="mx-auto max-w-2xl space-y-6">
         <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
@@ -354,6 +552,16 @@ export function QuizSession({
               <RotateCcw className="h-3.5 w-3.5" />
               <span>Restart</span>
             </button>
+
+            <a
+              href={gmailUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-4 py-2 text-xs font-medium text-zinc-700 transition hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
+            >
+              <Mail className="h-3.5 w-3.5 text-rose-500" />
+              <span>Send via Gmail</span>
+            </a>
 
             <button
               type="button"
@@ -443,7 +651,6 @@ export function QuizSession({
     currentQuestion.options ??
     (currentQuestion.type === 'true-false' ? ['True', 'False'] : []);
   const progressPercent = ((currentIndex + (revealed ? 1 : 0)) / sessionQuestions.length) * 100;
-  const answeredCount = records.filter(Boolean).length;
 
   return (
     <div className="mx-auto max-w-2xl space-y-4">
@@ -461,6 +668,11 @@ export function QuizSession({
           {examMode && (
             <span className="rounded-md bg-indigo-50 px-2 py-0.5 text-xs font-medium text-indigo-700 dark:bg-indigo-950/60 dark:text-indigo-300">
               Exam Mode
+            </span>
+          )}
+          {answeredCount > 0 && (
+            <span className="rounded-md bg-emerald-50 px-2 py-0.5 text-[11px] font-medium text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300">
+              Auto-saved
             </span>
           )}
           {currentQuestion.topic && (

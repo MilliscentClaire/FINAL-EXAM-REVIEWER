@@ -9,11 +9,21 @@ interface FilesViewProps {
   onStartQuiz: (deck: QuizDeck) => void;
 }
 
-function buildFileUrl(relativePath: string): string {
+const GITHUB_REPO_BASE =
+  'https://github.com/MilliscentClaire/FINAL-EXAM-REVIEWER';
+
+function buildFileUrl(relativePath: string, format: 'PDF' | 'DOCX'): string {
   const encodedSegments = relativePath
     .split('/')
-    .map((segment) => encodeURIComponent(segment));
-  return `/course-files/${encodedSegments.join('/')}`;
+    .map((segment) => encodeURIComponent(segment))
+    .join('/');
+
+  if (import.meta.env.DEV) {
+    return `/course-files/${encodedSegments}`;
+  }
+
+  const mode = format === 'PDF' ? 'blob' : 'raw';
+  return `${GITHUB_REPO_BASE}/${mode}/main/docs/reviewer%20files/${encodedSegments}`;
 }
 
 export function FilesView({ files, decks, onStartQuiz }: FilesViewProps) {
@@ -144,7 +154,7 @@ export function FilesView({ files, decks, onStartQuiz }: FilesViewProps) {
                 </div>
 
                 <a
-                  href={buildFileUrl(file.relativePath)}
+                  href={buildFileUrl(file.relativePath, file.format)}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex shrink-0 items-center gap-1.5 self-start rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs font-medium text-zinc-700 transition hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700"

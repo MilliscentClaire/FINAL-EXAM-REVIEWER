@@ -9,13 +9,17 @@ import { COURSE_FILES } from './data/courseFiles';
 import { getBuiltInDecks } from './data/loadDecks';
 import type { DeckProgress, QuizDeck, UserPreferences } from './types/quiz';
 import {
+  clearQuizSession,
   deleteCustomDeck,
+  importProgressBackup,
   loadCustomDecks,
   loadPreferences,
   loadProgress,
+  loadSavedSessions,
   saveCustomDeck,
   saveDeckResult,
   savePreferences,
+  type SavedQuizSession,
 } from './utils/storage';
 
 type ActiveView = 'dashboard' | 'quiz' | 'flashcards' | 'cram';
@@ -26,6 +30,9 @@ export function App() {
   const [progress, setProgress] = useState<Record<string, DeckProgress>>(() =>
     loadProgress(),
   );
+  const [savedSessions, setSavedSessions] = useState<
+    Record<string, SavedQuizSession>
+  >(() => loadSavedSessions());
   const [prefs, setPrefs] = useState<UserPreferences>(() => loadPreferences());
 
   const [activeTab, setActiveTab] = useState<AppTab>('reviewers');
@@ -33,10 +40,17 @@ export function App() {
   const [selectedDeckId, setSelectedDeckId] = useState<string | null>(null);
   const [missedOnlyMode, setMissedOnlyMode] = useState(false);
   const [examMode, setExamMode] = useState(false);
+  const [activeSavedSession, setActiveSavedSession] =
+    useState<SavedQuizSession | null>(null);
+  const [sessionNonce, setSessionNonce] = useState(0);
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', prefs.darkMode);
   }, [prefs.darkMode]);
+
+  const refreshSavedSessions = useCallback(() => {
+    setSavedSessions(loadSavedSessions());
+  }, []);
 
   const deckEntries = useMemo<DeckEntry[]>(() => {
     const builtInIds = new Set(builtInDecks.map((d) => d.id));
@@ -64,13 +78,31 @@ export function App() {
     setView('dashboard');
     setMissedOnlyMode(false);
     setExamMode(false);
-  }, []);
+    setActiveSavedSession(null);
+    refreshSavedSessions();
+  }, [refreshSavedSessions]);
 
   const handleStartQuiz = useCallback(
     (deck: QuizDeck, missedOnly = false, isExamMode = false) => {
+      clearQuizSession(deck.id);
+      refreshSavedSessions();
       setSelectedDeckId(deck.id);
       setMissedOnlyMode(missedOnly);
       setExamMode(isExamMode);
+      setActiveSavedSession(null);
+      setSessionNonce((n) => n + 1);
+      setView('quiz');
+    },
+    [refreshSavedSessions],
+  );
+
+  const handleResumeQuiz = useCallback(
+    (deck: QuizDeck, saved: SavedQuizSession) => {
+      setSelectedDeckId(deck.id);
+      setMissedOnlyMode(saved.missedOnly);
+      setExamMode(saved.examMode);
+      setActiveSavedSession(saved);
+      setSessionNonce((n) => n + 1);
       setView('quiz');
     },
     [],
@@ -80,6 +112,7 @@ export function App() {
     setSelectedDeckId(deck.id);
     setMissedOnlyMode(false);
     setExamMode(false);
+    setActiveSavedSession(null);
     setView('flashcards');
   }, []);
 
@@ -87,6 +120,7 @@ export function App() {
     setSelectedDeckId(deck.id);
     setMissedOnlyMode(false);
     setExamMode(false);
+    setActiveSavedSession(null);
     setView('cram');
   }, []);
 
@@ -105,6 +139,22 @@ export function App() {
 
   const handleDeleteCustomDeck = useCallback((deckId: string) => {
     setCustomDecks(deleteCustomDeck(deckId));
+  }, []);
+
+  const handleRestoreBackup = useCallback((raw: string) => {
+    try {
+      const restored = importProgressBackup(raw);
+      setProgress(restored.progress);
+      setSavedSessions(restored.savedSessions);
+      setPrefs(restored.prefs);
+      return { ok: true };
+    } catch (err) {
+      return {
+        ok: false,
+        error:
+          err instanceof Error ? err.message : 'Invalid QuickReview backup file.',
+      };
+    }
   }, []);
 
   const activeMissedIds = activeDeck
@@ -150,22 +200,28 @@ export function App() {
             <DeckList
               entries={deckEntries}
               progress={progress}
+              savedSessions={savedSessions}
               onStartQuiz={handleStartQuiz}
+              onResumeQuiz={handleResumeQuiz}
               onStartFlashcards={handleStartFlashcards}
               onOpenCram={handleOpenCram}
               onImportDeck={handleImportDeck}
               onDeleteCustomDeck={handleDeleteCustomDeck}
+              onRestoreBackup={handleRestoreBackup}
             />
           )
         ) : view === 'quiz' ? (
           <QuizSession
-            key={`${activeDeck.id}-${missedOnlyMode ? 'missed' : 'all'}-${examMode ? 'exam' : 'practice'}`}
+            key={`${activeDeck.id}-${sessionNonce}`}
             deck={activeDeck}
             questions={quizQuestions}
             prefs={prefs}
             examMode={examMode}
+            missedOnly={missedOnlyMode}
+            savedSession={activeSavedSession}
             onUpdatePrefs={handleUpdatePrefs}
             onComplete={handleCompleteQuiz}
+            onSavedSessionsChange={refreshSavedSessions}
             onExit={handleGoHome}
           />
         ) : view === 'flashcards' ? (
