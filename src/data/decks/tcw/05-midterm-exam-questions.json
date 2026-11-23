@@ -3,16 +3,15 @@
   "course": "The Contemporary World",
   "sectionOrder": 5,
   "sectionLabel": "Section 5",
-  "title": "Midterm Exam Questions (Items 1–30)",
+  "title": "Mock Exam",
   "subject": "The Contemporary World",
-  "description": "All 30 multiple-choice questions from the University of Nueva Caceres TCW Midterm Exam (Items 1–30, excluding the essay), with verified answers and explanations.",
-  "sourceFile": "Midterm Exam Questions (Items 1–30)",
+  "description": "Mock exam only.",
   "createdAt": "2026-11-24",
   "questions": [
     {
       "id": "tcw-s5-01",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q1",
+      "topic": "Mock Exam",
       "question": "This is a globalization theory which refers to the creation of various cultural practices, new economies and political groups because of the interaction of elements from different societies in the world.",
       "options": [
         "Homogeneity",
@@ -26,7 +25,7 @@
     {
       "id": "tcw-s5-02",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q2",
+      "topic": "Mock Exam",
       "question": "This refers to the movement of people, things, places and information brought by the growing 'porosity' of global limitations.",
       "options": [
         "Solidity",
@@ -40,7 +39,7 @@
     {
       "id": "tcw-s5-03",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q3",
+      "topic": "Mock Exam",
       "question": "This refers to a system of unequally powerful and competing states in which no single state is capable of imposing control on all others.",
       "options": [
         "Interstate",
@@ -54,7 +53,7 @@
     {
       "id": "tcw-s5-04",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q4",
+      "topic": "Mock Exam",
       "question": "This is the concept of strengthening the capacity of information processing and communication made possible by technological innovations.",
       "options": [
         "Informationalism",
@@ -68,7 +67,7 @@
     {
       "id": "tcw-s5-05",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q5",
+      "topic": "Mock Exam",
       "question": "Which from the given options is a major assumption of those who are skeptical about Globalization?",
       "options": [
         "Globalization affects the whole world uniformly",
@@ -82,7 +81,7 @@
     {
       "id": "tcw-s5-06",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q6",
+      "topic": "Mock Exam",
       "question": "Which of the following statements is NOT true about globalization?",
       "options": [
         "Globalization is a process of interaction and integration among the people, companies and governments of different nations, driven by international trade and investment and aided by information technology",
@@ -96,7 +95,7 @@
     {
       "id": "tcw-s5-07",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q7",
+      "topic": "Mock Exam",
       "question": "The entry of a foreign business to a developing country has what usual effect from the given options?",
       "options": [
         "Provides competition to local businesses",
@@ -110,7 +109,7 @@
     {
       "id": "tcw-s5-08",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q8",
+      "topic": "Mock Exam",
       "question": "Which scenario most clearly reflects a political indicator of globalization?",
       "options": [
         "A fashion trend spreading from Korea to Europe via social media.",
@@ -124,7 +123,7 @@
     {
       "id": "tcw-s5-09",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q9",
+      "topic": "Mock Exam",
       "question": "One characteristic of globalization is the increasing interdependence of national economies. Which situation best illustrates a negative consequence of this interdependence?",
       "options": [
         "A country receiving foreign investment to build local infrastructure.",
@@ -138,7 +137,7 @@
     {
       "id": "tcw-s5-10",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q10",
+      "topic": "Mock Exam",
       "question": "According to Robert Cox, 'the characteristics of globalization trend include the internationalizing of production, the new international division of labor, new migratory movements from South to North, the new competitive environment that accelerates these processes, and the internationalizing of the states... making states into agencies of the globalizing world.' This is what kind of definition of Globalization?",
       "options": [
         "Broad and inclusive",
@@ -152,7 +151,7 @@
     {
       "id": "tcw-s5-11",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q11",
+      "topic": "Mock Exam",
       "question": "Which of the following situations best illustrates an indicator of economic globalization?",
       "options": [
         "A nation implementing strict tariffs to protect local industries.",
@@ -166,7 +165,7 @@
     {
       "id": "tcw-s5-12",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q12",
+      "topic": "Mock Exam",
       "question": "Which statement is true about the Global Economy from the given options?",
       "options": [
         "It allows countries to access resources they do not have access to",
@@ -180,7 +179,7 @@
     {
       "id": "tcw-s5-13",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q13",
+      "topic": "Mock Exam",
       "question": "An artist who collaborates with musicians from different continents to create a new song, which is then released on a global streaming platform, is participating in:",
       "options": [
         "Economic globalization.",
@@ -194,7 +193,7 @@
     {
       "id": "tcw-s5-14",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q14",
+      "topic": "Mock Exam",
       "question": "When examining the role of international financial institutions, which perspective argues that global market forces have fundamentally eroded the autonomy of national governments, making the nation-state an 'intermediate' and increasingly obsolete layer of governance?",
       "options": [
         "Protectionism",
@@ -208,7 +207,7 @@
     {
       "id": "tcw-s5-15",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q15",
+      "topic": "Mock Exam",
       "question": "Which of the following statements is NOT true?",
       "options": [
         "The International Monetary Fund and World Bank are specialized agencies in the United Nations system",
@@ -222,7 +221,7 @@
     {
       "id": "tcw-s5-16",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q16",
+      "topic": "Mock Exam",
       "question": "A developing country that opens its markets to international corporations may experience rapid economic growth but could also see local industries struggle to compete. This scenario most likely presents a trade-off between:",
       "options": [
         "Economic stability and cultural preservation.",
@@ -236,7 +235,7 @@
     {
       "id": "tcw-s5-17",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q17",
+      "topic": "Mock Exam",
       "question": "The rise of social media platforms has enabled movements for social and political change to gain support across national borders. This phenomenon is best analyzed as an impact of globalization on:",
       "options": [
         "The global supply chain.",
@@ -250,7 +249,7 @@
     {
       "id": "tcw-s5-18",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q18",
+      "topic": "Mock Exam",
       "question": "A financial crisis that starts in one country's housing market but quickly spreads to affect banks and economies around the world is a real-world illustration of:",
       "options": [
         "National economic resilience.",
@@ -264,7 +263,7 @@
     {
       "id": "tcw-s5-19",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q19",
+      "topic": "Mock Exam",
       "question": "The debate over whether fast food chains and Hollywood movies are leading to a loss of local traditions and customs in different countries is a classic example of the conflict between:",
       "options": [
         "Economic liberalization and protectionism.",
@@ -278,7 +277,7 @@
     {
       "id": "tcw-s5-20",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q20",
+      "topic": "Mock Exam",
       "question": "Assuming that in the near future, a massive solar flare permanently destroys the internet and all modern satellite communication. Despite this, after 10 years, small groups of people begin traveling long distances on foot to trade rare materials, while others move across borders seeking better farmland or spreading new philosophical ideas. Based on the Hardwire Theory of globalization, how would you interpret this post-internet world phenomenon?",
       "options": [
         "Globalization has officially ended because the 'technological hardware' (the internet) that defined it is gone.",
@@ -292,7 +291,7 @@
     {
       "id": "tcw-s5-21",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q21",
+      "topic": "Mock Exam",
       "question": "How has economic globalization affected the power of nation-states in the modern interstate system?",
       "options": [
         "It has strengthened state sovereignty by reducing foreign influence.",
@@ -306,7 +305,7 @@
     {
       "id": "tcw-s5-22",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q22",
+      "topic": "Mock Exam",
       "question": "In what way did colonization contribute to the early phases of globalization?",
       "options": [
         "It reduced global interdependence by making colonies self-reliant.",
@@ -320,7 +319,7 @@
     {
       "id": "tcw-s5-23",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q23",
+      "topic": "Mock Exam",
       "question": "A country's government deciding to enter a regional free trade agreement, which requires it to lower tariffs on goods from member countries, can be analyzed as a way to:",
       "options": [
         "Protect domestic industries from foreign competition.",
@@ -334,7 +333,7 @@
     {
       "id": "tcw-s5-24",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q24",
+      "topic": "Mock Exam",
       "question": "How does the global interstate system reinforce the inequality described in World-Systems Theory?",
       "options": [
         "It allows all states equal power through international law.",
@@ -348,7 +347,7 @@
     {
       "id": "tcw-s5-25",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q25",
+      "topic": "Mock Exam",
       "question": "According to World-Systems Theory, which of the following best explains why core countries maintain dominance over peripheral countries?",
       "options": [
         "Core countries have more natural resources than peripheral countries.",
@@ -362,7 +361,7 @@
     {
       "id": "tcw-s5-26",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q26",
+      "topic": "Mock Exam",
       "question": "Which of the following scenarios best reflects a semi-peripheral country's role in the world-systems framework?",
       "options": [
         "A country with no industry that relies entirely on exporting agricultural goods.",
@@ -376,7 +375,7 @@
     {
       "id": "tcw-s5-27",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q27",
+      "topic": "Mock Exam",
       "question": "Prime Wear Inc., a sustainable clothing company headquartered in Sweden, designs eco-friendly active wear. The organic cotton is sourced from India, spun into yarn there, shipped to Vietnam for fabric production and sewing, sent to Germany for quality inspection and final packaging, and distributed worldwide through hubs in Europe and North America. How is Prime Wear Inc. participating in the global value chain?",
       "options": [
         "By producing all goods locally to reduce transportation costs and promote sustainability",
@@ -390,7 +389,7 @@
     {
       "id": "tcw-s5-28",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q28",
+      "topic": "Mock Exam",
       "question": "HoboTech Solutions, a growing mobile app company based in Canada, contracts a third-party firm in India to handle 24/7 customer service and bug reporting across Asia and Europe, allowing HoboTech to focus on app development and marketing. What is the most likely reason HoboTech chose to outsource its customer support operations?",
       "options": [
         "To eliminate all customer support functions and automate everything",
@@ -404,7 +403,7 @@
     {
       "id": "tcw-s5-29",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q29",
+      "topic": "Mock Exam",
       "question": "Country A consistently exports more goods and services than it imports (trade surplus), accumulating large foreign currency reserves. Country B imports far more than it exports (trade deficit), relying on foreign loans and investment. Which best explains the economic implications of this relationship?",
       "options": [
         "Country A's trade surplus weakens its currency, while Country B's trade deficit strengthens its economy.",
@@ -418,7 +417,7 @@
     {
       "id": "tcw-s5-30",
       "type": "multiple-choice",
-      "topic": "Midterm Exam Q30",
+      "topic": "Mock Exam",
       "question": "Three neighboring countries—Country A (agricultural exports), Country B (manufacturing), and Country C (high-tech services)—enter a regional trade agreement removing tariffs, increasing cross-border investments, interconnecting supply chains, and lowering consumer prices. What does this scenario most clearly illustrate about market integration?",
       "options": [
         "Market integration increases the isolation of national economies to protect domestic industries.",
