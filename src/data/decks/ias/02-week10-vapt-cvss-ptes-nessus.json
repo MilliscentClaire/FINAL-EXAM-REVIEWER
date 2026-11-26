@@ -1,0 +1,461 @@
+{
+  "id": "ias-w10-vapt-nessus",
+  "course": "Information Assurance and Security",
+  "sectionOrder": 10,
+  "sectionLabel": "Week 10",
+  "title": "Week 10: Vulnerability Assessment & Penetration Testing (VAPT) & Nessus Lab",
+  "subject": "Information Assurance and Security",
+  "description": "VA vs. PT comparison, CVSS v3.1/v4.0 metrics and severity ratings, PTES penetration testing lifecycle, enterprise vulnerability remediation, and Tenable Nessus Essentials lab.",
+  "sourceFile": "BCS411L S2W10 Vulnerability Assessment & Penetration Testing (VAPT).pdf, BCS411L S2W10 Lab Vulnerability Assessment.pdf",
+  "createdAt": "2026-11-26",
+  "questions": [
+    {
+      "id": "ias-w10-01",
+      "type": "multiple-choice",
+      "topic": "Proactive Security Assurance",
+      "question": "Why is inspecting configuration files or architecture diagrams alone insufficient to evaluate an organization's true security posture?",
+      "options": [
+        "Defensive controls suffer from configuration drift, unpatched dependencies, custom code logic flaws, and unintended operational interactions",
+        "Architecture diagrams are always encrypted with AES-256",
+        "Firewalls automatically disable all logging after 24 hours",
+        "Configuration files cannot be read on Linux or Windows hosts"
+      ],
+      "answer": "Defensive controls suffer from configuration drift, unpatched dependencies, custom code logic flaws, and unintended operational interactions",
+      "explanation": "VAPT is needed because live environments diverge from static diagrams due to configuration drift, unpatched software, logical flaws, and runtime interactions."
+    },
+    {
+      "id": "ias-w10-02",
+      "type": "multiple-choice",
+      "topic": "VA vs. PT Comparison",
+      "question": "Which statement accurately contrasts Vulnerability Assessment (VA) and Penetration Testing (PT)?",
+      "options": [
+        "VA is breadth-oriented, primarily automated, and catalogs potential flaws without exploitation; PT is depth-oriented, manual/goal-driven, and actively exploits and chains flaws",
+        "VA actively exploits systems to steal data; PT only runs automated port scans",
+        "VA has an extremely low false positive rate; PT has a high false positive rate",
+        "VA is conducted once a decade; PT is run automatically every five minutes"
+      ],
+      "answer": "VA is breadth-oriented, primarily automated, and catalogs potential flaws without exploitation; PT is depth-oriented, manual/goal-driven, and actively exploits and chains flaws",
+      "explanation": "VA focuses on breadth (cataloging all known flaws with automated tools like Nessus/Qualys/OpenVAS), whereas PT focuses on depth (validating real-world exploitability and business impact)."
+    },
+    {
+      "id": "ias-w10-03",
+      "type": "multiple-choice",
+      "topic": "VA vs. PT Deliverables",
+      "question": "What is the primary deliverable of a Penetration Test compared to a Vulnerability Assessment?",
+      "options": [
+        "PT delivers Proof-of-Concept (PoC) exploit paths and impact reports; VA delivers a prioritized list of unpatched assets and potential flaws",
+        "PT delivers raw Nmap XML files only; VA delivers signed legal contracts",
+        "PT delivers hardware write-blockers; VA delivers SIEM correlation rules",
+        "Both deliver identical unvalidated scanner spreadsheets"
+      ],
+      "answer": "PT delivers Proof-of-Concept (PoC) exploit paths and impact reports; VA delivers a prioritized list of unpatched assets and potential flaws",
+      "explanation": "VA outputs a prioritized inventory of unpatched flaws (requiring triage for false positives), while PT proves exploitability with PoC attack paths and business impact."
+    },
+    {
+      "id": "ias-w10-04",
+      "type": "multiple-choice",
+      "topic": "Vulnerability Chaining",
+      "question": "How does 'Vulnerability Chaining' demonstrate the limitation of relying purely on automated Vulnerability Assessment scanners?",
+      "options": [
+        "Automated scanners rate minor flaws in isolation, missing how a human tester can combine them (e.g., an IDOR plus a weak password policy) to achieve full system compromise",
+        "Automated scanners can only scan one IP address per year",
+        "Vulnerability chaining prevents Nessus from reading open ports",
+        "Automated scanners automatically patch vulnerabilities before reporting them"
+      ],
+      "answer": "Automated scanners rate minor flaws in isolation, missing how a human tester can combine them (e.g., an IDOR plus a weak password policy) to achieve full system compromise",
+      "explanation": "A scanner may mark two flaws as Low or Medium individually, whereas a penetration tester chains them together to bypass controls, escalate privileges, and pivot."
+    },
+    {
+      "id": "ias-w10-05",
+      "type": "multiple-choice",
+      "topic": "CVSS Base Metrics",
+      "question": "In the CVSS vector string `CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H`, what does `AV:N/PR:N/UI:N` indicate?",
+      "options": [
+        "The vulnerability is exploitable over the Network, requires No Privileges, and requires No User Interaction",
+        "The vulnerability requires Physical access, High privileges, and User Interaction",
+        "The vulnerability is Local only, requires Low privileges, and has No Availability impact",
+        "The vulnerability is Adjacent-network only and changes the Hypervisor scope"
+      ],
+      "answer": "The vulnerability is exploitable over the Network, requires No Privileges, and requires No User Interaction",
+      "explanation": "AV:N = Attack Vector: Network, PR:N = Privileges Required: None, UI:N = User Interaction: None — the classic signature of an unauthenticated remotely exploitable flaw."
+    },
+    {
+      "id": "ias-w10-06",
+      "type": "multiple-choice",
+      "topic": "CVSS Metric Groups",
+      "question": "Which CVSS metric group measures characteristics that change over time, such as Exploit Code Maturity, Remediation Level, and Report Confidence?",
+      "options": [
+        "Temporal Metric Group",
+        "Base Metric Group",
+        "Environmental Metric Group",
+        "Perimeter Metric Group"
+      ],
+      "answer": "Temporal Metric Group",
+      "explanation": "Base metrics capture intrinsic constant traits; Temporal metrics track evolving traits (exploit maturity, patches, confidence); Environmental metrics tailor scores to an organization's infrastructure and compensating controls."
+    },
+    {
+      "id": "ias-w10-07",
+      "type": "multiple-choice",
+      "topic": "CVSS Scope Metric",
+      "question": "In CVSS v3.1, when is the Scope (`S`) metric rated as Changed (`S:C`) instead of Unchanged (`S:U`)?",
+      "options": [
+        "When a vulnerability in one component allows an attacker to impact resources beyond its security authority, such as a VM flaw compromising the underlying Host Hypervisor",
+        "When the vulnerability only affects a single unauthenticated user's browser cookie",
+        "When an organization moves a server from on-premises to the cloud",
+        "When the CVSS base score is exactly 0.0"
+      ],
+      "answer": "When a vulnerability in one component allows an attacker to impact resources beyond its security authority, such as a VM flaw compromising the underlying Host Hypervisor",
+      "explanation": "Scope is Changed (`S:C`) when exploitation crosses a security authorization boundary, such as escaping a guest Virtual Machine to compromise the host hypervisor."
+    },
+    {
+      "id": "ias-w10-08",
+      "type": "multiple-choice",
+      "topic": "CVSS Severity Ratings",
+      "question": "According to the CVSS v3.1 / v4.0 severity table, which score range corresponds to 'Critical' and what is its typical operational remediation urgency?",
+      "options": [
+        "9.0 – 10.0; Emergency Response (e.g., 24–72 hours)",
+        "7.0 – 8.9; Scheduled patch windows (e.g., 30–60 days)",
+        "4.0 – 6.9; Priority remediation (e.g., 7–14 days)",
+        "0.1 – 3.9; Emergency Response (within 1 hour)"
+      ],
+      "answer": "9.0 – 10.0; Emergency Response (e.g., 24–72 hours)",
+      "explanation": "CVSS ratings: 0.0 None, 0.1–3.9 Low (standard maintenance), 4.0–6.9 Medium (30–60 days), 7.0–8.9 High (7–14 days), and 9.0–10.0 Critical (Emergency Response, 24–72 hours)."
+    },
+    {
+      "id": "ias-w10-09",
+      "type": "multiple-choice",
+      "topic": "CVSS Severity Ratings",
+      "question": "What qualitative severity rating and remediation window apply to a vulnerability with a CVSS Base Score of 7.8?",
+      "options": [
+        "High; priority remediation required (e.g., 7–14 days)",
+        "Medium; remediate within 30–60 days",
+        "Critical; emergency response in 24–72 hours",
+        "Low; remediate during standard maintenance cycles"
+      ],
+      "answer": "High; priority remediation required (e.g., 7–14 days)",
+      "explanation": "Scores from 7.0 to 8.9 are rated High and typically require priority remediation within 7–14 days."
+    },
+    {
+      "id": "ias-w10-10",
+      "type": "multiple-choice",
+      "topic": "Penetration Testing Lifecycle (PTES)",
+      "question": "What is the correct order of the six phases in the Penetration Testing Execution Standard (PTES) lifecycle?",
+      "options": [
+        "1. Pre-Engagement -> 2. Reconnaissance -> 3. Threat Modeling / Vulnerability Analysis -> 4. Exploitation -> 5. Post-Exploitation -> 6. Reporting",
+        "1. Exploitation -> 2. Pre-Engagement -> 3. Reconnaissance -> 4. Reporting -> 5. Threat Modeling -> 6. Post-Exploitation",
+        "1. Reconnaissance -> 2. Pre-Engagement -> 3. Reporting -> 4. Exploitation -> 5. Vulnerability Analysis -> 6. Post-Exploitation",
+        "1. Asset Discovery -> 2. Validation Scanning -> 3. Pre-Engagement -> 4. Patching -> 5. Exploitation -> 6. Archiving"
+      ],
+      "answer": "1. Pre-Engagement -> 2. Reconnaissance -> 3. Threat Modeling / Vulnerability Analysis -> 4. Exploitation -> 5. Post-Exploitation -> 6. Reporting",
+      "explanation": "PTES (alongside NIST SP 800-115) progresses from legal Pre-Engagement scoping to Reconnaissance, Threat Modeling/Vulnerability Analysis, Exploitation, Post-Exploitation/Pivoting, and Reporting."
+    },
+    {
+      "id": "ias-w10-11",
+      "type": "multiple-choice",
+      "topic": "Pre-Engagement Interactions",
+      "question": "Before running any technical command in a penetration test, what three legal and operational artifacts must be established during Pre-Engagement?",
+      "options": [
+        "Rules of Engagement (RoE), Scope Definition (In-Scope vs. Out-of-Scope), and signed Authorization / Permission to Test ('Get Out of Jail Free' letter)",
+        "SIEM correlation rules, WORM storage, and SHA-256 hashes",
+        "Executive Summary, PoC exploit code, and validation re-scans",
+        "Nessus activation key, Kali ISO checksum, and Metasploitable2 snapshot"
+      ],
+      "answer": "Rules of Engagement (RoE), Scope Definition (In-Scope vs. Out-of-Scope), and signed Authorization / Permission to Test ('Get Out of Jail Free' letter)",
+      "explanation": "Pre-Engagement defines explicit IP/domain targets, prohibited techniques (e.g., DoS, social engineering), testing windows, emergency contacts, and signed authorization protecting testers from legal liability."
+    },
+    {
+      "id": "ias-w10-12",
+      "type": "multiple-choice",
+      "topic": "Post-Exploitation & Pivoting",
+      "question": "During PTES Phase 5 (Post-Exploitation & Pivoting), what does 'Pivoting / Lateral Movement' refer to?",
+      "options": [
+        "Using an already compromised host as a network jump-box to bypass internal firewalls and reach isolated internal subnets",
+        "Writing an executive summary slide deck for the Board of Directors",
+        "Running an unauthenticated Nessus Basic Network Scan from outside the perimeter",
+        "Enabling Block Public Access on an Amazon S3 bucket"
+      ],
+      "answer": "Using an already compromised host as a network jump-box to bypass internal firewalls and reach isolated internal subnets",
+      "explanation": "Post-exploitation includes Local Privilege Escalation (LPE to root/SYSTEM), Pivoting/Lateral Movement via a compromised jump-box, and Persistence demonstration."
+    },
+    {
+      "id": "ias-w10-13",
+      "type": "multiple-choice",
+      "topic": "Out-of-Scope Zero-Day",
+      "question": "If a penetration tester discovers a critical Zero-Day vulnerability on a system explicitly marked Out-of-Scope during an active engagement, what should they do?",
+      "options": [
+        "Stop any interaction with the out-of-scope system immediately, document the observation safely, and notify the client's emergency contact per the Rules of Engagement",
+        "Exploit the Zero-Day immediately to prove maximum business impact",
+        "Upload the target's proprietary firmware to VirusTotal",
+        "Ignore it completely and delete all testing notes"
+      ],
+      "answer": "Stop any interaction with the out-of-scope system immediately, document the observation safely, and notify the client's emergency contact per the Rules of Engagement",
+      "explanation": "Testing or exploiting Out-of-Scope targets violates written authorization and creates civil/criminal liability; testers must cease interaction and escalate through the RoE emergency contact."
+    },
+    {
+      "id": "ias-w10-14",
+      "type": "multiple-choice",
+      "topic": "Enterprise Vulnerability Management",
+      "question": "What are the four continuous stages of the Enterprise Vulnerability Remediation Lifecycle?",
+      "options": [
+        "1. Asset Discovery -> 2. Assessment & Scanning -> 3. Prioritization & Risk -> 4. Remediation / Patching -> Verification Scan",
+        "1. Exploitation -> 2. Ransom Demand -> 3. Exfiltration -> 4. Cleanup",
+        "1. Preparation -> 2. Memory Dumping -> 3. Chain of Custody -> 4. Litigation",
+        "1. Disassembly -> 2. Debugging -> 3. YARA Authoring -> 4. Sandbox Reset"
+      ],
+      "answer": "1. Asset Discovery -> 2. Assessment & Scanning -> 3. Prioritization & Risk -> 4. Remediation / Patching -> Verification Scan",
+      "explanation": "Enterprise vulnerability management cycles continuously through Continuous Asset Discovery, Assessment & Scanning, Contextual Risk Prioritization, Remediation/Mitigation, and Validation Scanning."
+    },
+    {
+      "id": "ias-w10-15",
+      "type": "multiple-choice",
+      "topic": "Contextual Risk Prioritization",
+      "question": "Why might a vulnerability with a High CVSS Base Score (e.g., 8.5) be assigned a LOW operational remediation priority inside an enterprise program?",
+      "options": [
+        "If the affected asset is air-gapped, non-critical, has no known active exploit, or is protected by strong compensating controls (like a WAF or VLAN isolation)",
+        "Because CVSS scores above 7.0 are ignored by compliance frameworks",
+        "Because Nessus marks all High vulnerabilities as Informational (Blue)",
+        "Because High CVSS vulnerabilities cannot be patched"
+      ],
+      "answer": "If the affected asset is air-gapped, non-critical, has no known active exploit, or is protected by strong compensating controls (like a WAF or VLAN isolation)",
+      "explanation": "Contextual Risk Prioritization combines CVSS Base Scores with threat context (active exploit availability) and business criticality/exposure (public-facing vs. air-gapped)."
+    },
+    {
+      "id": "ias-w10-16",
+      "type": "multiple-choice",
+      "topic": "Remediation vs. Mitigation",
+      "question": "If a Critical vulnerability (CVSS 9.8) affects a legacy application that cannot be patched without breaking business operations, what is the best response?",
+      "options": [
+        "Implement compensating controls (mitigation) such as deploying a WAF virtual patch rule, isolating the legacy host behind a restricted VLAN, and tightening access controls",
+        "Disable all logging on the legacy server so scanners stop alerting",
+        "Expose the server directly to the public internet to distribute load",
+        "Manually lower the CVSS score to 0.0 in the PDF report"
+      ],
+      "answer": "Implement compensating controls (mitigation) such as deploying a WAF virtual patch rule, isolating the legacy host behind a restricted VLAN, and tightening access controls",
+      "explanation": "When root remediation (patching) is technically impossible, organizations apply Mitigation / Compensating Controls such as WAF rules or VLAN network isolation."
+    },
+    {
+      "id": "ias-w10-17",
+      "type": "multiple-choice",
+      "topic": "Nessus Lab: Setup & Port",
+      "question": "In the Week 10 Nessus Essentials lab, which TCP port hosts the Nessus Web Console UI, and which systemd service manages the Nessus daemon on Linux?",
+      "options": [
+        "Port 8834 (`https://localhost:8834`); managed by `nessusd.service`",
+        "Port 8080 (`http://localhost:8080`); managed by `apache2.service`",
+        "Port 6514 (`https://localhost:6514`); managed by `syslog.service`",
+        "Port 443 (`https://localhost:443`); managed by `wazuh-agent.service`"
+      ],
+      "answer": "Port 8834 (`https://localhost:8834`); managed by `nessusd.service`",
+      "explanation": "After installing the `.deb` package, you start and enable `nessusd.service` and access the Nessus Web UI at `https://localhost:8834` (or `https://127.0.0.1:8834`)."
+    },
+    {
+      "id": "ias-w10-18",
+      "type": "multiple-choice",
+      "topic": "Nessus Lab: Scan Policy Configuration",
+      "question": "When configuring the `Victim_VM_Vulnerability_Assessment` scan using the Basic Network Scan template in the lab, which Discovery and Assessment settings are selected?",
+      "options": [
+        "Discovery: `Port scan (all ports)`; Assessment: `Scan for known vulnerabilities (default)`",
+        "Discovery: `Ping only (no ports)`; Assessment: `Brute force all passwords`",
+        "Discovery: `Top 10 ports`; Assessment: `Exploit and delete database`",
+        "Discovery: `Disabled`; Assessment: `Compliance audit only`"
+      ],
+      "answer": "Discovery: `Port scan (all ports)`; Assessment: `Scan for known vulnerabilities (default)`",
+      "explanation": "Step 2.2 specifies Targets `192.168.56.20`, Discovery Scan Type `Port scan (all ports)`, and Assessment Scan Type `Scan for known vulnerabilities (default)`."
+    },
+    {
+      "id": "ias-w10-19",
+      "type": "multiple-choice",
+      "topic": "Nessus Lab: Severity Color Codes",
+      "question": "In Nessus Essentials, what color codes correspond to Critical, High, Medium, Low, and Info findings respectively?",
+      "options": [
+        "Critical = Red, High = Orange, Medium = Yellow, Low = Green, Info = Blue",
+        "Critical = Black, High = Red, Medium = Purple, Low = Blue, Info = White",
+        "Critical = Blue, High = Green, Medium = Yellow, Low = Orange, Info = Red",
+        "Critical = Purple, High = Pink, Medium = Gray, Low = Cyan, Info = Green"
+      ],
+      "answer": "Critical = Red, High = Orange, Medium = Yellow, Low = Green, Info = Blue",
+      "explanation": "Nessus maps CVSS ranges to colors: Critical 9.0–10.0 (Red), High 7.0–8.9 (Orange), Medium 4.0–6.9 (Yellow), Low 0.1–3.9 (Green), and Info 0.0 (Blue)."
+    },
+    {
+      "id": "ias-w10-20",
+      "type": "multiple-choice",
+      "topic": "Nessus Lab: Plugin Details",
+      "question": "When inspecting a Critical finding (such as Bind Shell Backdoor Detection or vsftpd 2.3.4 Backdoor) in Nessus, which field contains the raw proof returned by the target host?",
+      "options": [
+        "Plugin Output",
+        "Synopsis",
+        "Executive Summary",
+        "Folder Name"
+      ],
+      "answer": "Plugin Output",
+      "explanation": "In Nessus plugin details: Synopsis summarizes the flaw, Description explains the root cause, Solution gives remediation steps, CVSS v3.1 Base Score shows the vector/score, and Plugin Output displays the raw proof from the target."
+    },
+    {
+      "id": "ias-w10-21",
+      "type": "multiple-choice",
+      "topic": "Nessus Lab: Report Types",
+      "question": "What is the operational difference between exporting a Nessus 'Executive Summary' report versus a 'Custom / Detailed' technical report?",
+      "options": [
+        "Executive Summary provides high-level distribution charts and strategic risk for leadership, whereas Detailed Technical Reports include full plugin outputs, affected ports, and step-by-step remediation for sysadmins",
+        "Executive Summary contains only raw PCAPs; Detailed Technical Reports contain only company logos",
+        "Executive Summary exploits vulnerabilities; Detailed Technical Reports uninstall Nessus",
+        "There is no difference; both export identical 1-page summaries"
+      ],
+      "answer": "Executive Summary provides high-level distribution charts and strategic risk for leadership, whereas Detailed Technical Reports include full plugin outputs, affected ports, and step-by-step remediation for sysadmins",
+      "explanation": "Leadership uses the Executive Summary for high-level risk posture and compliance, while engineers and sysadmins need the Custom / Detailed Technical Report with plugin outputs and remediation instructions."
+    },
+    {
+      "id": "ias-w10-22",
+      "type": "multiple-choice",
+      "topic": "Nessus Lab: False Positives & Credentialed Scans",
+      "question": "Why might an automated unauthenticated Nessus scan report a 'False Positive,' and how does credentialed scanning mitigate it?",
+      "options": [
+        "Unauthenticated scans rely on exposed service banners (which may show an older base version despite OS vendor backported security patches); credentialed scans log in to inspect exact installed package versions and patch levels",
+        "Unauthenticated scans never inspect banners; credentialed scans guess vulnerabilities based on hostname",
+        "Unauthenticated scans only check port 22; credentialed scans disable the firewall",
+        "Credentialed scans automatically fix false positives by deleting the service"
+      ],
+      "answer": "Unauthenticated scans rely on exposed service banners (which may show an older base version despite OS vendor backported security patches); credentialed scans log in to inspect exact installed package versions and patch levels",
+      "explanation": "Distributions like Debian/RHEL backport security fixes without bumping the upstream version number in banners. Credentialed scanning authenticates via SSH/WinRM to verify actual package versions and registry keys."
+    },
+    {
+      "id": "ias-w10-23",
+      "type": "multiple-choice",
+      "topic": "PTES: Reconnaissance & Threat Modeling",
+      "question": "In the PTES lifecycle, which phase combines automated scan data with manual analysis to map assets and identify exploitable weaknesses before launching exploits?",
+      "options": [
+        "Phase 3: Threat Modeling / Vulnerability Analysis",
+        "Phase 1: Pre-Engagement Interactions",
+        "Phase 5: Post-Exploitation & Pivoting",
+        "Phase 6: Reporting & Remediation Support"
+      ],
+      "answer": "Phase 3: Threat Modeling / Vulnerability Analysis",
+      "explanation": "Following Reconnaissance (Phase 2), Threat Modeling / Vulnerability Analysis correlates automated and manual findings to identify exploitable paths before controlled Exploitation (Phase 4)."
+    },
+    {
+      "id": "ias-w10-24",
+      "type": "multiple-choice",
+      "topic": "Penetration Testing Characteristics",
+      "question": "Why does Penetration Testing carry a moderate risk of operational impact and require strict Rules of Engagement (RoE)?",
+      "options": [
+        "Because testers actively execute exploit payloads and craft custom attack vectors that could crash services or corrupt data if uncontrolled",
+        "Because penetration testing requires physically unplugging every server rack",
+        "Because penetration testers never ask for permission before testing",
+        "Because penetration testing only inspects static PDF policy documents"
+      ],
+      "answer": "Because testers actively execute exploit payloads and craft custom attack vectors that could crash services or corrupt data if uncontrolled",
+      "explanation": "Unlike non-intrusive VA scans, PT executes active exploits and tests SOC/Blue Team detection, requiring careful operational control and strict RoE boundaries."
+    },
+    {
+      "id": "ias-w10-25",
+      "type": "multiple-choice",
+      "topic": "Validation Scanning",
+      "question": "What is the purpose of the final stage ('Verification / Validation Scan') in the Vulnerability Remediation Lifecycle?",
+      "options": [
+        "To re-scan patched assets and confirm the vulnerability has been resolved without introducing regressions",
+        "To perform initial asset discovery on unknown cloud accounts",
+        "To calculate the organization's annual cybersecurity insurance premium",
+        "To erase all scan history from the Nessus database"
+      ],
+      "answer": "To re-scan patched assets and confirm the vulnerability has been resolved without introducing regressions",
+      "explanation": "Applying a patch or configuration change is only verified once a Validation Scan confirms the flaw is closed and no new issues were introduced."
+    },
+    {
+      "id": "ias-w10-26",
+      "type": "multiple-choice",
+      "topic": "CVSS Impact Metrics",
+      "question": "Which three core security properties are evaluated by the CVSS Impact Metrics (each rated None, Low, or High)?",
+      "options": [
+        "Confidentiality (C), Integrity (I), and Availability (A)",
+        "Authentication, Authorization, and Accounting",
+        "Prevention, Detection, and Response",
+        "Attack Vector, Complexity, and Privileges"
+      ],
+      "answer": "Confidentiality (C), Integrity (I), and Availability (A)",
+      "explanation": "CVSS Base Metrics split into Exploitability (AV, AC, PR, UI), Scope (S), and Impact (Confidentiality, Integrity, Availability)."
+    },
+    {
+      "id": "ias-w10-27",
+      "type": "multiple-choice",
+      "topic": "CVSS Attack Vector Values",
+      "question": "Which four values are valid for the Attack Vector (AV) metric in CVSS v3.1?",
+      "options": [
+        "Physical (P), Local (L), Adjacent (A), and Network (N)",
+        "Internal (I), External (E), Cloud (C), and Hybrid (H)",
+        "Passive (P), Active (A), Stealth (S), and Aggressive (G)",
+        "Low (L), Medium (M), High (H), and Critical (C)"
+      ],
+      "answer": "Physical (P), Local (L), Adjacent (A), and Network (N)",
+      "explanation": "Attack Vector measures how far away an attacker can be to exploit the flaw: Physical (P), Local (L), Adjacent (A), or Network (N)."
+    },
+    {
+      "id": "ias-w10-28",
+      "type": "multiple-choice",
+      "topic": "Nessus Lab: Initial Setup",
+      "question": "During Nessus Essentials installation on Linux, what commands install the `.deb` package and verify that the daemon is running?",
+      "options": [
+        "`sudo dpkg -i Nessus-10.*-ubuntu1110_amd64.deb` followed by `sudo systemctl start/enable/status nessusd.service`",
+        "`sudo apt install nmap -y` followed by `sudo nmap -sS localhost`",
+        "`sudo bash ./wazuh-install.sh -a` followed by `systemctl status wazuh-agent`",
+        "`pip install volatility3` followed by `vol -f mem.raw`"
+      ],
+      "answer": "`sudo dpkg -i Nessus-10.*-ubuntu1110_amd64.deb` followed by `sudo systemctl start/enable/status nessusd.service`",
+      "explanation": "In Part 1 of the lab, students install the Nessus `.deb` via `dpkg -i`, start and enable `nessusd.service`, and verify status before opening `https://localhost:8834`."
+    },
+    {
+      "id": "ias-w10-29",
+      "type": "multiple-choice",
+      "topic": "Nessus Lab: Info Findings",
+      "question": "In the Sample Executive Summary Report Output from the Week 10 lab, what does the 'Info' category (CVSS 0.0, Blue) represent?",
+      "options": [
+        "Contextual data detailing open ports, service banners, and host fingerprinting notes",
+        "Immediate remote code execution vulnerabilities without authentication",
+        "System crashes caused during active exploitation",
+        "Deprecated user passwords cracked during the scan"
+      ],
+      "answer": "Contextual data detailing open ports, service banners, and host fingerprinting notes",
+      "explanation": "Info findings (CVSS 0.0, Blue) provide useful reconnaissance context such as open ports, service banners, and OS fingerprinting details rather than exploitable flaws."
+    },
+    {
+      "id": "ias-w10-30",
+      "type": "multiple-choice",
+      "topic": "Post-Exploitation: LPE & Persistence",
+      "question": "In PTES Post-Exploitation, what is the goal of Local Privilege Escalation (LPE) and Persistence Demonstration?",
+      "options": [
+        "LPE elevates access from a low-privileged user to root/SYSTEM; Persistence documents how an adversary maintains long-term access (e.g., web shells, backdoor accounts, scheduled tasks)",
+        "LPE formats the target's disk; Persistence installs antivirus software",
+        "LPE scans external DNS servers; Persistence shuts down the target VM",
+        "Both terms refer strictly to running `nmap -sn` on an internal subnet"
+      ],
+      "answer": "LPE elevates access from a low-privileged user to root/SYSTEM; Persistence documents how an adversary maintains long-term access (e.g., web shells, backdoor accounts, scheduled tasks)",
+      "explanation": "Post-exploitation validates how deeply an attacker could entrench themselves by escalating privileges locally and demonstrating persistence mechanisms."
+    },
+    {
+      "id": "ias-w10-31",
+      "type": "multiple-choice",
+      "topic": "VA Tools & Frequency",
+      "question": "Which set of tools is specifically cited in the Week 10 lecture for automated Vulnerability Assessment scanning, and how frequently is VA typically run?",
+      "options": [
+        "Nessus, Qualys, and OpenVAS; run continuously, weekly, or monthly",
+        "Ghidra, x64dbg, and IDA Pro; run once every ten years",
+        "Autopsy, FTK Imager, and Volatility; run only after a courtroom subpoena",
+        "Filebeat, Kafka, and Logstash; run strictly during software compilation"
+      ],
+      "answer": "Nessus, Qualys, and OpenVAS; run continuously, weekly, or monthly",
+      "explanation": "Automated VA scanners (Nessus, Qualys, OpenVAS) run on a continuous, weekly, or monthly cadence, whereas Penetration Tests are typically conducted annually or after major infrastructure changes."
+    },
+    {
+      "id": "ias-w10-32",
+      "type": "multiple-choice",
+      "topic": "PT Reporting Structure",
+      "question": "In PTES Phase 6 (Reporting & Remediation Support), what distinguishes the Executive Summary from the Technical Findings section?",
+      "options": [
+        "The Executive Summary translates risk, compliance impact, and security posture for leadership; Technical Findings provide reproduction steps, PoC code, affected assets, CVSS scores, and remediation steps",
+        "The Executive Summary lists every raw TCP packet; Technical Findings contain only budget spreadsheets",
+        "The Executive Summary is only for external hackers; Technical Findings are never shared with developers",
+        "Both sections contain only CVSS 0.0 Info findings"
+      ],
+      "answer": "The Executive Summary translates risk, compliance impact, and security posture for leadership; Technical Findings provide reproduction steps, PoC code, affected assets, CVSS scores, and remediation steps",
+      "explanation": "Good PT reports serve both audiences: non-technical leadership (business risk and compliance) and technical engineers (reproduction steps, PoCs, CVSS, remediation)."
+    }
+  ]
+}

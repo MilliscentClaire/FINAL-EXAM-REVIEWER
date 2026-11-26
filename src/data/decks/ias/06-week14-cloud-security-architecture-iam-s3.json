@@ -1,0 +1,461 @@
+{
+  "id": "ias-w14-cloud-security",
+  "course": "Information Assurance and Security",
+  "sectionOrder": 14,
+  "sectionLabel": "Week 14",
+  "title": "Week 14: Cloud Security Architecture, Shared Responsibility & AWS S3/IAM Lab",
+  "subject": "Information Assurance and Security",
+  "description": "Shared Responsibility Model (IaaS/PaaS/SaaS), IAM zero-trust evaluation, NHIs & STS, SCPs, KMS (Provider/CMK/HYOK), IMDSv2 vs. SSRF, CNAPP tooling (CSPM/CWPP/CIEM), and AWS S3/IAM lab.",
+  "sourceFile": "BCS411L S2W14 Cloud Security Architecture.pdf, BCS411L S2W14 Lab Cloud Security Basics.pdf",
+  "createdAt": "2026-11-26",
+  "questions": [
+    {
+      "id": "ias-w14-01",
+      "type": "multiple-choice",
+      "topic": "Cloud Security Perimeter",
+      "question": "How does transitioning to public/hybrid cloud infrastructure alter the enterprise security perimeter compared to traditional on-premises data centers?",
+      "options": [
+        "Cloud resources are provisioned via software-defined APIs, making the control plane and identity layer (IAM) the primary security perimeter rather than physical network firewalls",
+        "Cloud providers secure all customer data and IAM configurations so the customer has zero security duties",
+        "Physical data center switches remain solely managed by the cloud customer",
+        "Cloud infrastructure eliminates all APIs and runs only on static hardware cables"
+      ],
+      "answer": "Cloud resources are provisioned via software-defined APIs, making the control plane and identity layer (IAM) the primary security perimeter rather than physical network firewalls",
+      "explanation": "Because anyone with valid API credentials can create, modify, or destroy cloud infrastructure over the internet, the control plane and identity layer become the primary security perimeter."
+    },
+    {
+      "id": "ias-w14-02",
+      "type": "multiple-choice",
+      "topic": "Shared Responsibility Model",
+      "question": "In the Cloud Shared Responsibility Model, what is the distinction between 'Security OF the Cloud' and 'Security IN the Cloud'?",
+      "options": [
+        "The Cloud Service Provider (CSP) is responsible for Security OF the Cloud (physical facilities, hardware, hypervisor); the Customer is responsible for Security IN the Cloud (data, IAM, configurations, guest OS/apps depending on model)",
+        "The Customer is responsible for Security OF the Cloud (data center guards); the CSP handles Security IN the Cloud (customer passwords and S3 bucket policies)",
+        "Security OF the Cloud applies only to SaaS; Security IN the Cloud applies only to On-Premises",
+        "Both terms mean the CSP absorbs 100% of regulatory liability for customer data breaches"
+      ],
+      "answer": "The Cloud Service Provider (CSP) is responsible for Security OF the Cloud (physical facilities, hardware, hypervisor); the Customer is responsible for Security IN the Cloud (data, IAM, configurations, guest OS/apps depending on model)",
+      "explanation": "The CSP protects the underlying cloud infrastructure ('of the cloud'), while the customer secures what they put and configure inside it ('in the cloud')."
+    },
+    {
+      "id": "ias-w14-03",
+      "type": "multiple-choice",
+      "topic": "Shared Responsibility Matrix",
+      "question": "Across On-Premises, IaaS, PaaS, and SaaS models, which two layers ALWAYS remain the Customer's responsibility?",
+      "options": [
+        "Customer Data & Content, and Identity & Access (IAM)",
+        "Physical Data Center, and Virtualization / Compute Hypervisor",
+        "Guest OS Patching, and Physical Network Switches",
+        "Application Logic, and Underlying Storage Hardware"
+      ],
+      "answer": "Customer Data & Content, and Identity & Access (IAM)",
+      "explanation": "Even in SaaS (Microsoft 365, Salesforce, Google Workspace), the customer retains accountability for their data governance/DLP, user provisioning, MFA, and IAM."
+    },
+    {
+      "id": "ias-w14-04",
+      "type": "multiple-choice",
+      "topic": "Shared Responsibility Scenario",
+      "question": "Under the Shared Responsibility Model, if an attacker exploits an unpatched Apache Struts vulnerability inside a customer's AWS EC2 instance (IaaS) to steal records from an attached S3 bucket, who is accountable?",
+      "options": [
+        "The enterprise customer is accountable because under IaaS the customer owns guest OS/application patching, security groups, and IAM/S3 data protection",
+        "AWS (the CSP) is solely accountable for patching Apache Struts inside every customer EC2 VM",
+        "The customer's ISP is accountable for the unpatched Apache Struts library",
+        "Neither party is accountable because IaaS instances are exempt from patching"
+      ],
+      "answer": "The enterprise customer is accountable because under IaaS the customer owns guest OS/application patching, security groups, and IAM/S3 data protection",
+      "explanation": "In IaaS (EC2/Azure VMs), the CSP secures hardware and hypervisor isolation, while the customer is fully responsible for guest OS/application patching, firewalls, IAM roles, and S3 access policies."
+    },
+    {
+      "id": "ias-w14-05",
+      "type": "multiple-choice",
+      "topic": "PaaS vs. SaaS Boundaries",
+      "question": "How do responsibility boundaries shift from IaaS to PaaS (e.g., AWS RDS, Google Cloud Run) and SaaS (e.g., Microsoft 365)?",
+      "options": [
+        "In PaaS, the CSP takes over OS/runtime patching and host availability while the customer secures apps, APIs, DB controls, and data; in SaaS, the CSP manages the full stack while the customer governs users, MFA, OAuth apps, and DLP",
+        "In PaaS, the customer manages physical server racks; in SaaS, the customer patches the hypervisor",
+        "In PaaS, IAM is managed solely by the CSP; in SaaS, there is no user authentication",
+        "IaaS, PaaS, and SaaS have identical customer responsibilities for OS patching"
+      ],
+      "answer": "In PaaS, the CSP takes over OS/runtime patching and host availability while the customer secures apps, APIs, DB controls, and data; in SaaS, the CSP manages the full stack while the customer governs users, MFA, OAuth apps, and DLP",
+      "explanation": "As you move from IaaS -> PaaS -> SaaS, the CSP absorbs more infrastructure/OS/application management, but IAM and Data always remain with the customer."
+    },
+    {
+      "id": "ias-w14-06",
+      "type": "multiple-choice",
+      "topic": "Cloud IAM Policy Evaluation",
+      "question": "How do cloud IAM engines (AWS IAM, Azure RBAC, GCP IAM) evaluate an API request using deterministic zero-trust logic?",
+      "options": [
+        "1. Check for Explicit DENY (if yes -> DENIED, overriding all Allows) -> 2. Check for Explicit ALLOW (if yes -> GRANTED) -> 3. Otherwise DEFAULT IMPLICIT DENY (-> DENIED)",
+        "1. Default Implicit Allow -> 2. Check Explicit Allow -> 3. Ignore Explicit Deny",
+        "1. Explicit Allow overrides Explicit Deny -> 2. Default Implicit Allow",
+        "1. Evaluate MFA only -> 2. Grant admin access if the request comes from an EC2 instance"
+      ],
+      "answer": "1. Check for Explicit DENY (if yes -> DENIED, overriding all Allows) -> 2. Check for Explicit ALLOW (if yes -> GRANTED) -> 3. Otherwise DEFAULT IMPLICIT DENY (-> DENIED)",
+      "explanation": "Cloud IAM starts with Default Implicit Deny, grants access only on Explicit Allow, and enforces that any Explicit Deny (including SCPs or Permissions Boundaries) always overrides Allow."
+    },
+    {
+      "id": "ias-w14-07",
+      "type": "multiple-choice",
+      "topic": "Human vs. Non-Human Identities (NHIs)",
+      "question": "Why are Non-Human Identities (NHIs)—such as service accounts, IAM roles, CI/CD tokens, and AI agents—a critical cloud risk, and how should they authenticate instead of static keys?",
+      "options": [
+        "NHIs vastly outnumber human users, and hardcoded static keys (`AWS_ACCESS_KEY_ID`) risk permanent leakage; best practice uses Temporary Security Credentials (STS), IAM Roles, and Workload Identity Federation expiring in 15–60 minutes",
+        "NHIs cannot be assigned IAM policies; they must always share the AWS root account password",
+        "Static API access keys automatically expire every 5 seconds, making STS unnecessary",
+        "Workload Identity Federation hardcodes plaintext secrets directly into public GitHub repositories"
+      ],
+      "answer": "NHIs vastly outnumber human users, and hardcoded static keys (`AWS_ACCESS_KEY_ID`) risk permanent leakage; best practice uses Temporary Security Credentials (STS), IAM Roles, and Workload Identity Federation expiring in 15–60 minutes",
+      "explanation": "Eliminating long-lived static credentials in favor of short-lived STS tokens via IAM Roles and Workload Identity Federation drastically reduces the blast radius of credential leakage."
+    },
+    {
+      "id": "ias-w14-08",
+      "type": "multiple-choice",
+      "topic": "Least Privilege & SCPs",
+      "question": "What is the security function of Service Control Policies (SCPs) in a multi-account cloud organization?",
+      "options": [
+        "Organization-wide guardrails applied at the root or OU level that cap the maximum permissions any account—even local account administrators—can exercise (e.g., blocking CloudTrail disablement)",
+        "Bucket-level encryption algorithms that replace TLS on port 443",
+        "Automated Nmap scripts that scan EC2 instances for vsftpd backdoors",
+        "Local firewall rules inside `/etc/iptables` on a Linux VM"
+      ],
+      "answer": "Organization-wide guardrails applied at the root or OU level that cap the maximum permissions any account—even local account administrators—can exercise (e.g., blocking CloudTrail disablement)",
+      "explanation": "SCPs enforce non-bypassable organizational boundaries across member accounts so even local admins cannot disable CloudTrail logging or bypass S3 Block Public Access."
+    },
+    {
+      "id": "ias-w14-09",
+      "type": "multiple-choice",
+      "topic": "Cryptographic Key Management (KMS)",
+      "question": "Compare Provider-Managed Keys, Customer-Managed Keys (CMK), and Client-Side / Hold Your Own Key (HYOK) in cloud KMS architectures.",
+      "options": [
+        "Provider-Managed: CSP controls/rotates keys (zero overhead, limited audit); CMK: Customer controls policies, rotation, and instant cryptographic erasure (PCI-DSS/HIPAA); HYOK: Customer encrypts locally and CSP never sees plaintext keys (sovereign/classified, disables server-side search)",
+        "Provider-Managed: disables server-side search; CMK: CSP never sees keys; HYOK: zero operational overhead",
+        "Provider-Managed: requires local C compilation; CMK: only for unencrypted public buckets; HYOK: managed entirely by AWS support",
+        "All three key models give the CSP full plaintext access and disable audit logging"
+      ],
+      "answer": "Provider-Managed: CSP controls/rotates keys (zero overhead, limited audit); CMK: Customer controls policies, rotation, and instant cryptographic erasure (PCI-DSS/HIPAA); HYOK: Customer encrypts locally and CSP never sees plaintext keys (sovereign/classified, disables server-side search)",
+      "explanation": "KMS balances operational simplicity against control and compliance: Provider-Managed for general workloads, CMK for regulated enterprise data (PCI-DSS/HIPAA), and HYOK for sovereign/classified data."
+    },
+    {
+      "id": "ias-w14-10",
+      "type": "multiple-choice",
+      "topic": "IMDSv2 & SSRF Defense",
+      "question": "Why does enforcing IMDSv2 neutralize most Server-Side Request Forgery (SSRF) credential-theft attacks against `http://169.254.169.254` whereas traditional network firewalls fail?",
+      "options": [
+        "Network firewalls allow traffic originating inside the compromised web app to reach the local link-local IP; IMDSv1 allows unauthenticated HTTP GET, whereas IMDSv2 requires an HTTP PUT with `X-aws-ec2-metadata-token-ttl-seconds` to obtain a session token",
+        "IMDSv2 moves the metadata endpoint from `169.254.169.254` to the public internet on port 8834",
+        "Network firewalls block all HTTP GET requests to port 80 globally",
+        "IMDSv2 encrypts EC2 hard drives with Client-Side HYOK keys"
+      ],
+      "answer": "Network firewalls allow traffic originating inside the compromised web app to reach the local link-local IP; IMDSv1 allows unauthenticated HTTP GET, whereas IMDSv2 requires an HTTP PUT with `X-aws-ec2-metadata-token-ttl-seconds` to obtain a session token",
+      "explanation": "SSRF originates from the legitimate VM itself, bypassing perimeter firewalls. IMDSv2 defeats simple SSRF and proxy forwarding by requiring a session-oriented PUT request + custom header before reading metadata."
+    },
+    {
+      "id": "ias-w14-11",
+      "type": "multiple-choice",
+      "topic": "Emerging Cloud Threat Vectors",
+      "question": "What is 'Configuration Drift & IaC Bypass' in cloud environments?",
+      "options": [
+        "When infrastructure is initially deployed securely via IaC (Terraform, CloudFormation), but manual emergency edits in the web console silently reopen firewall ports or disable encryption",
+        "When virtual machines physically drift across data center racks",
+        "When an S3 bucket automatically enables all four Block Public Access checkboxes",
+        "When CI/CD pipelines enforce short-lived STS tokens instead of static keys"
+      ],
+      "answer": "When infrastructure is initially deployed securely via IaC (Terraform, CloudFormation), but manual emergency edits in the web console silently reopen firewall ports or disable encryption",
+      "explanation": "Week 14 highlights three emerging cloud threat vectors: Insecure Interfaces & Shadow APIs, Configuration Drift & IaC Bypass, and Supply Chain & CI/CD Pipeline Compromise."
+    },
+    {
+      "id": "ias-w14-12",
+      "type": "multiple-choice",
+      "topic": "Cloud Security Tooling: CSPM, CWPP, CIEM",
+      "question": "Which descriptions correctly match CSPM, CWPP, and CIEM?",
+      "options": [
+        "CSPM audits control-plane configs (public buckets, open SGs, disabled logging); CWPP protects runtime workloads (VMs, containers, K8s, serverless); CIEM analyzes complex IAM policies across human/NHI identities for over-privilege",
+        "CSPM protects container runtimes; CWPP audits Terraform files; CIEM blocks public S3 ACLs",
+        "CSPM is a malware disassembler; CWPP is a syslog shipper; CIEM is a disk imager",
+        "CSPM, CWPP, and CIEM are three AWS managed IAM policies for S3 read-only access"
+      ],
+      "answer": "CSPM audits control-plane configs (public buckets, open SGs, disabled logging); CWPP protects runtime workloads (VMs, containers, K8s, serverless); CIEM analyzes complex IAM policies across human/NHI identities for over-privilege",
+      "explanation": "CSPM monitors control-plane posture against CIS/NIST benchmarks, CWPP secures compute workloads at runtime, and CIEM maps effective IAM entitlements and toxic permission combinations."
+    },
+    {
+      "id": "ias-w14-13",
+      "type": "multiple-choice",
+      "topic": "CNAPP & Alert Fatigue Reduction",
+      "question": "How does a unified CNAPP reduce alert fatigue compared to standalone CSPM and CWPP scanners when prioritizing a public container with a medium CVE vs. an isolated internal VM with a high CVE?",
+      "options": [
+        "CNAPP correlates CSPM, CWPP, CIEM, and IaC findings into a unified attack-path graph, elevating the internet-exposed container (especially if paired with an admin IAM role) above the isolated internal VM",
+        "CNAPP ignores all medium CVEs and only alerts on CVSS 10.0 findings",
+        "CNAPP automatically deletes every container that has any CVE",
+        "CNAPP disables CWPP runtime agents so fewer alerts reach the SOC"
+      ],
+      "answer": "CNAPP correlates CSPM, CWPP, CIEM, and IaC findings into a unified attack-path graph, elevating the internet-exposed container (especially if paired with an admin IAM role) above the isolated internal VM",
+      "explanation": "By correlating network exposure, runtime vulnerability, and IAM blast radius into one graph, CNAPP prioritizes true toxic attack paths over isolated theoretical CVEs."
+    },
+    {
+      "id": "ias-w14-14",
+      "type": "multiple-choice",
+      "topic": "CSA Top Cloud Risk",
+      "question": "According to the Cloud Security Alliance (CSA) Top Threats to Cloud Computing 2026 report cited in Week 14, what ranks as the #1 security risk in enterprise cloud environments?",
+      "options": [
+        "Inadequate Identity and Access Management (IAM)",
+        "Physical data center power outages",
+        "Outdated JPEG EXIF metadata libraries",
+        "Legacy Syslog over UDP port 514"
+      ],
+      "answer": "Inadequate Identity and Access Management (IAM)",
+      "explanation": "Because cloud management is API-driven, inadequate Identity and Access Management (IAM) ranks as the #1 cloud security risk."
+    },
+    {
+      "id": "ias-w14-15",
+      "type": "multiple-choice",
+      "topic": "Lab: AWS S3 Bucket Creation",
+      "question": "In Part 2 of the Week 14 Cloud Security Basics lab, what recommended setting is kept under Object Ownership when creating the S3 bucket?",
+      "options": [
+        "ACLs disabled (recommended)",
+        "ACLs enabled with Public Read/Write",
+        "Anonymous Guest Ownership",
+        "Legacy Root Account Static Keys"
+      ],
+      "answer": "ACLs disabled (recommended)",
+      "explanation": "Step 2.1 creates a globally unique S3 bucket with `ACLs disabled (recommended)` and `Block all public access` enabled."
+    },
+    {
+      "id": "ias-w14-16",
+      "type": "multiple-choice",
+      "topic": "Lab: Four Layers of S3 Block Public Access",
+      "question": "Which four safeguards are activated when 'Block all public access' is enabled on an Amazon S3 bucket?",
+      "options": [
+        "`BlockPublicAcls`, `IgnorePublicAcls`, `BlockPublicPolicy`, and `RestrictPublicBuckets`",
+        "`AllowPublicAcls`, `EnableHTTP`, `DisableTLS`, and `WildcardAction`",
+        "`DefaultDeny`, `ExplicitAllow`, `ExplicitDeny`, and `SCP`",
+        "`CSPM`, `CWPP`, `CIEM`, and `CNAPP`"
+      ],
+      "answer": "`BlockPublicAcls`, `IgnorePublicAcls`, `BlockPublicPolicy`, and `RestrictPublicBuckets`",
+      "explanation": "The first two block/ignore legacy public ACL grants, while the latter two reject public JSON bucket policies and restrict access to authorized principals/AWS services."
+    },
+    {
+      "id": "ias-w14-17",
+      "type": "multiple-choice",
+      "topic": "Lab: Testing Public Access Block",
+      "question": "In Step 2.3 of the lab, what result confirms that `confidential_test.txt` is protected when pasting its S3 Object URL into an Incognito/Private browser window?",
+      "options": [
+        "The browser returns an XML `AccessDenied` error",
+        "The browser downloads `confidential_test.txt` automatically",
+        "The browser redirects to `http://169.254.169.254`",
+        "The browser displays a Nessus PDF report"
+      ],
+      "answer": "The browser returns an XML `AccessDenied` error",
+      "explanation": "An unauthenticated Incognito browser request triggers an XML `AccessDenied` response, proving S3 Block Public Access prevents unauthorized public exposure."
+    },
+    {
+      "id": "ias-w14-18",
+      "type": "multiple-choice",
+      "topic": "Lab: Bucket vs. Account Block Public Access",
+      "question": "Why do security benchmarks recommend enabling S3 Block Public Access at the AWS account level rather than solely at the individual bucket level?",
+      "options": [
+        "Account-level Block Public Access applies globally across all existing and newly created buckets, preventing accidental exposure if a developer forgets to enable it on a new bucket or modifies one bucket's settings",
+        "Bucket-level Block Public Access only protects `.jpg` files, whereas Account-level protects `.txt` files",
+        "Account-level Block Public Access automatically deletes all IAM roles",
+        "Bucket-level settings expire after 15 minutes like STS tokens"
+      ],
+      "answer": "Account-level Block Public Access applies globally across all existing and newly created buckets, preventing accidental exposure if a developer forgets to enable it on a new bucket or modifies one bucket's settings",
+      "explanation": "Account-level safeguards enforce a blanket safety net across every bucket in the account regardless of individual bucket creation errors."
+    },
+    {
+      "id": "ias-w14-19",
+      "type": "multiple-choice",
+      "topic": "Lab: Creating Least-Privilege IAM Role",
+      "question": "In Part 3 of the Week 14 lab, how is the IAM Role `IAS-Week14-ReadOnly-Role` configured for an EC2 instance?",
+      "options": [
+        "Trusted entity type: `AWS service`, Use case / service principal: `ec2.amazonaws.com`, Permissions policy: `ReadOnlyAccess` (or `AmazonS3ReadOnlyAccess` for single-service production scoping)",
+        "Trusted entity type: `Public Internet`, Use case: `S3 Anonymous`, Permissions policy: `AdministratorAccess`",
+        "Trusted entity type: `IAM User`, Static keys stored in `/etc/passwd`, Permissions policy: `PowerUserAccess`",
+        "Trusted entity type: `External GitHub`, Permissions policy: `Action: * Resource: *`"
+      ],
+      "answer": "Trusted entity type: `AWS service`, Use case / service principal: `ec2.amazonaws.com`, Permissions policy: `ReadOnlyAccess` (or `AmazonS3ReadOnlyAccess` for single-service production scoping)",
+      "explanation": "Steps 3.1–3.3 create `IAS-Week14-ReadOnly-Role` with trust principal `ec2.amazonaws.com` and attach `ReadOnlyAccess` (noting `AmazonS3ReadOnlyAccess` is stricter for S3-only needs)."
+    },
+    {
+      "id": "ias-w14-20",
+      "type": "multiple-choice",
+      "topic": "Lab: Inspecting IAM Policy JSON",
+      "question": "When inspecting the attached `ReadOnlyAccess` JSON policy in Step 3.3, which API action prefixes are permitted and which are excluded?",
+      "options": [
+        "`Get*`, `List*`, and `Describe*` operations are permitted; `Put*`, `Create*`, and `Delete*` are excluded",
+        "`Put*` and `Delete*` are permitted; `Get*` and `List*` are excluded",
+        "`Action: *` and `Resource: *` are permitted for all services",
+        "`s3:PutObject` and `s3:DeleteBucket` are permitted"
+      ],
+      "answer": "`Get*`, `List*`, and `Describe*` operations are permitted; `Put*`, `Create*`, and `Delete*` are excluded",
+      "explanation": "`ReadOnlyAccess` limits the assumed role to read/inspection calls (`Get*`, `List*`, `Describe*`), preventing modification or deletion."
+    },
+    {
+      "id": "ias-w14-21",
+      "type": "multiple-choice",
+      "topic": "Lab: IAM Role vs. Static Access Keys",
+      "question": "Why is attaching an IAM Role to an EC2 instance more secure than storing IAM User Access Keys (`AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY`) in a server config file?",
+      "options": [
+        "IAM Roles provide automatically rotated, short-lived temporary credentials via STS/IMDS instead of long-lived static secrets sitting on disk where file disclosure or git commits could leak them permanently",
+        "IAM Roles disable all networking on the EC2 instance",
+        "Static Access Keys only work in AWS Cloud Quest simulators and never in production",
+        "IAM Roles store plaintext passwords inside S3 public buckets instead of config files"
+      ],
+      "answer": "IAM Roles provide automatically rotated, short-lived temporary credentials via STS/IMDS instead of long-lived static secrets sitting on disk where file disclosure or git commits could leak them permanently",
+      "explanation": "Eliminating static keys on disk prevents permanent credential theft if a config file, backup, or repo is compromised."
+    },
+    {
+      "id": "ias-w14-22",
+      "type": "multiple-choice",
+      "topic": "Lab: Risks of Broad Read-Only Access",
+      "question": "Although `ReadOnlyAccess` prevents modifying or deleting resources, what security risk arises if broad read-only permissions are granted unnecessarily across an entire cloud account?",
+      "options": [
+        "An attacker who compromises the role can read sensitive S3 data, inspect DynamoDB tables, enumerate network/IAM configurations, and exfiltrate secrets or environment variables across every AWS service",
+        "It allows the role to delete S3 buckets using `s3:DeleteBucket`",
+        "It automatically converts the AWS account into an on-premises data center",
+        "There is zero risk because reading data can never cause a data breach"
+      ],
+      "answer": "An attacker who compromises the role can read sensitive S3 data, inspect DynamoDB tables, enumerate network/IAM configurations, and exfiltrate secrets or environment variables across every AWS service",
+      "explanation": "Confidentiality breaches do not require write permissions. Broad `ReadOnlyAccess` violates Least Privilege—for S3-only workloads, `AmazonS3ReadOnlyAccess` scoped to specific bucket ARNs should be used."
+    },
+    {
+      "id": "ias-w14-23",
+      "type": "multiple-choice",
+      "topic": "Scoped Permissions & Conditions",
+      "question": "How do best-practice IAM policies enforce Least Privilege instead of granting `\"Action\": \"*\", \"Resource\": \"*\"`?",
+      "options": [
+        "By restricting permissions to exact API calls (e.g., `s3:GetObject`), specific resource ARNs, and contextual conditions (e.g., requiring MFA or restricting source VPC endpoints)",
+        "By granting `AdministratorAccess` and relying on users not to click delete",
+        "By disabling AWS CloudTrail so unauthorized actions are not logged",
+        "By sharing one root account across all microservices"
+      ],
+      "answer": "By restricting permissions to exact API calls (e.g., `s3:GetObject`), specific resource ARNs, and contextual conditions (e.g., requiring MFA or restricting source VPC endpoints)",
+      "explanation": "Scoped permissions adhere to Least Privilege by pinning exact actions, target ARNs, and contextual conditions."
+    },
+    {
+      "id": "ias-w14-24",
+      "type": "multiple-choice",
+      "topic": "Supply Chain & Shadow APIs",
+      "question": "Which two cloud threat vectors involve broken object-level authorization / unmonitored endpoints and compromised third-party container base images or build-server secrets?",
+      "options": [
+        "Insecure Interfaces & Shadow APIs, and Supply Chain & CI/CD Pipeline Compromise",
+        "RAM Slack and NTFS `$MFT` Overwriting",
+        "TCP SYN Stealth Scans and OS Fingerprinting",
+        "Syslog UDP 514 Spoofing and Log Truncation"
+      ],
+      "answer": "Insecure Interfaces & Shadow APIs, and Supply Chain & CI/CD Pipeline Compromise",
+      "explanation": "Modern cloud workloads face Shadow APIs/BOLA/broad OAuth scopes as well as compromised container images, open-source packages, and CI/CD pipelines."
+    },
+    {
+      "id": "ias-w14-25",
+      "type": "multiple-choice",
+      "topic": "Public Storage Exposure Vectors",
+      "question": "Which three overlapping access mechanisms can accidentally expose an object storage repository (like Amazon S3) if Block Public Access is not enabled?",
+      "options": [
+        "Legacy Access Control Lists (ACLs), JSON Resource/Bucket Policies, and overly permissive IAM roles",
+        "Windows Prefetch, Shellbags, and LNK files",
+        "Nmap NSE scripts, Nessus plugins, and Wazuh decoders",
+        "CPU registers, RAM dumps, and hardware write-blockers"
+      ],
+      "answer": "Legacy Access Control Lists (ACLs), JSON Resource/Bucket Policies, and overly permissive IAM roles",
+      "explanation": "Because ACLs, Bucket Policies, and IAM roles overlap, S3 Block Public Access acts as an overarching guardrail overriding public grants."
+    },
+    {
+      "id": "ias-w14-26",
+      "type": "multiple-choice",
+      "topic": "KMS: Cryptographic Erasure",
+      "question": "Which KMS encryption model enables instant cryptographic erasure, customer-controlled key rotation, and strict audit governance for PCI-DSS or HIPAA enterprise workloads?",
+      "options": [
+        "Customer-Managed Keys (CMK)",
+        "Provider-Managed Keys",
+        "Unencrypted Plaintext Storage",
+        "IMDSv1 Session Tokens"
+      ],
+      "answer": "Customer-Managed Keys (CMK)",
+      "explanation": "CMKs allow customers to define key policies, rotate keys, audit usage, and immediately revoke keys for cryptographic erasure."
+    },
+    {
+      "id": "ias-w14-27",
+      "type": "multiple-choice",
+      "topic": "KMS: HYOK Trade-Off",
+      "question": "What is a major operational trade-off of Client-Side / Hold Your Own Key (HYOK) encryption in cloud storage?",
+      "options": [
+        "High computational and key-management complexity, plus it disables server-side search and indexing by the CSP",
+        "The CSP receives full plaintext copies of all encryption keys",
+        "It prevents customers from uploading files smaller than 4,096 bytes",
+        "It automatically makes all S3 buckets publicly readable"
+      ],
+      "answer": "High computational and key-management complexity, plus it disables server-side search and indexing by the CSP",
+      "explanation": "Because data is encrypted locally before upload and the CSP never sees plaintext keys, cloud-side search/indexing features cannot inspect object contents."
+    },
+    {
+      "id": "ias-w14-28",
+      "type": "multiple-choice",
+      "topic": "Lab: Safe AWS Access Practice",
+      "question": "In the Week 14 lab prerequisites, what rule applies when using an AWS Free Tier account for daily tasks, and what zero-cost alternative is offered?",
+      "options": [
+        "Log in as an administrative IAM user (avoid using the root account for daily lab tasks), or use the free AWS Cloud Quest: Cloud Practitioner sandbox simulator",
+        "Always use the AWS root account with MFA disabled, or install Kali Linux on an S3 bucket",
+        "Share your credit card number and root keys in the lab report",
+        "Only use Google Cloud Run to configure Amazon S3 Block Public Access"
+      ],
+      "answer": "Log in as an administrative IAM user (avoid using the root account for daily lab tasks), or use the free AWS Cloud Quest: Cloud Practitioner sandbox simulator",
+      "explanation": "The lab provides Option A (AWS Cloud Quest simulator, no credit card needed) and Option B (AWS Free Tier via an IAM user rather than the root account)."
+    },
+    {
+      "id": "ias-w14-29",
+      "type": "multiple-choice",
+      "topic": "CNAPP Components",
+      "question": "In the Cloud-Native Application Protection Platform (CNAPP) diagram, what are the four pillars unified into one platform?",
+      "options": [
+        "CSPM (Control Plane Posture), CIEM (Identity & Entitlements), CWPP (Runtime Workload Defense), and Shift-Left IaC & Supply Chain scanning",
+        "Nmap, Nessus, Wazuh, and Autopsy",
+        "CPU Cache, Physical RAM, Network Sockets, and Local Disk",
+        "Preparation, Detection, Containment, and Lessons Learned"
+      ],
+      "answer": "CSPM (Control Plane Posture), CIEM (Identity & Entitlements), CWPP (Runtime Workload Defense), and Shift-Left IaC & Supply Chain scanning",
+      "explanation": "CNAPP unifies posture (CSPM), identity entitlements (CIEM), runtime workloads (CWPP), and pre-deployment IaC/container supply-chain scanning."
+    },
+    {
+      "id": "ias-w14-30",
+      "type": "multiple-choice",
+      "topic": "IaaS Customer Controls",
+      "question": "In an IaaS environment (e.g., AWS EC2 or Azure Virtual Machines), which controls remain the customer's responsibility?",
+      "options": [
+        "Guest OS patching, host-based firewalls, virtual network security groups, IAM policies, application logic, and data encryption",
+        "Physical data center perimeter guards and HVAC cooling",
+        "Underlying storage fabric hardware replacement and hypervisor isolation",
+        "Manufacturing server CPUs and memory DIMMs"
+      ],
+      "answer": "Guest OS patching, host-based firewalls, virtual network security groups, IAM policies, application logic, and data encryption",
+      "explanation": "Under IaaS, the CSP stops at the hypervisor/virtualization layer; everything from the guest OS upward is secured by the customer."
+    },
+    {
+      "id": "ias-w14-31",
+      "type": "multiple-choice",
+      "topic": "Shift-Left IaC Scanning",
+      "question": "What does 'Shift-Left IaC & Supply Chain' scanning inside a CNAPP achieve before resources are deployed to production?",
+      "options": [
+        "It scans Terraform/CloudFormation templates and container images directly in CI/CD pipelines to catch misconfigurations and vulnerable packages early",
+        "It shifts logs from the Hot Tier to the Frozen Glacier Tier",
+        "It moves IAM policies from Explicit Deny to Implicit Allow",
+        "It moves files from FAT32 to NTFS without changing cluster sizes"
+      ],
+      "answer": "It scans Terraform/CloudFormation templates and container images directly in CI/CD pipelines to catch misconfigurations and vulnerable packages early",
+      "explanation": "Shift-left scanning catches insecure Terraform code and vulnerable container base images inside CI/CD before deployment."
+    },
+    {
+      "id": "ias-w14-32",
+      "type": "multiple-choice",
+      "topic": "Lab: IAM Role Execution Flow",
+      "question": "In the Lab's IAM Role Least-Privilege Architecture diagram, when an EC2 instance assumes `IAS-Week14-ReadOnly-Role`, which S3 operations are Allowed vs. Denied?",
+      "options": [
+        "Allowed: Read/List (`s3:GetObject`, `s3:ListBucket`); Denied: Write/Delete (`s3:PutObject`, `s3:DeleteBucket`)",
+        "Allowed: Write/Delete (`s3:PutObject`, `s3:DeleteBucket`); Denied: Read/List (`s3:GetObject`)",
+        "Allowed: All actions (`s3:*`); Denied: None",
+        "Allowed: `ec2:TerminateInstances`; Denied: `s3:GetObject`"
+      ],
+      "answer": "Allowed: Read/List (`s3:GetObject`, `s3:ListBucket`); Denied: Write/Delete (`s3:PutObject`, `s3:DeleteBucket`)",
+      "explanation": "The read-only role architecture permits read/list operations (`s3:GetObject`, `s3:ListBucket`) while implicitly denying mutating actions (`s3:PutObject`, `s3:DeleteBucket`)."
+    }
+  ]
+}

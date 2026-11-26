@@ -1,0 +1,461 @@
+{
+  "id": "ias-w11-logging-wazuh",
+  "course": "Information Assurance and Security",
+  "sectionOrder": 11,
+  "sectionLabel": "Week 11",
+  "title": "Week 11: Logging, Monitoring & SIEM Log Analysis with Wazuh",
+  "subject": "Information Assurance and Security",
+  "description": "NIST SP 800-92 log management, Windows/Sysmon/Linux/Network/Cloud telemetry, ingestion pipelines, RFC 5424 Syslog PRIVAL & TLS, anti-forensics prevention, EPS storage tiers, and Wazuh SIEM lab.",
+  "sourceFile": "BCS411L S2W11 Logging and Monitoring.pdf, BCS411L S2W11 Lab SIEM & Log Analysis v3.pdf",
+  "createdAt": "2026-11-26",
+  "questions": [
+    {
+      "id": "ias-w11-01",
+      "type": "multiple-choice",
+      "topic": "Core Imperative & NIST SP 800-92",
+      "question": "According to the Week 11 lecture and NIST SP 800-92, what are the three vital security functions served by logging and monitoring frameworks?",
+      "options": [
+        "1. Detection & Operational Telemetry, 2. Forensic Reconstruction & Non-Repudiation, and 3. Regulatory Compliance & Assurance",
+        "1. Malware Packing, 2. Port Scanning, and 3. Social Engineering",
+        "1. File Carving, 2. LSB Steganography, and 3. Disk Encryption",
+        "1. Cloud Provisioning, 2. Load Balancing, and 3. DNS Caching"
+      ],
+      "answer": "1. Detection & Operational Telemetry, 2. Forensic Reconstruction & Non-Repudiation, and 3. Regulatory Compliance & Assurance",
+      "explanation": "Visibility precedes detection, containment, and accountability. Logs enable real-time detection, immutable audit trails (who/what/when/where), and compliance with PCI-DSS Req 10, HIPAA, SOX, and ISO/IEC 27001."
+    },
+    {
+      "id": "ias-w11-02",
+      "type": "multiple-choice",
+      "topic": "Offensive Anti-Forensics",
+      "question": "Which commands represent offensive anti-forensics techniques attackers use to wipe local audit trails on Windows and Linux?",
+      "options": [
+        "`wevtutil cl` on Windows and `rm -rf /var/log/*` (or `echo \"\" > /var/log/nginx/access.log`) on Linux",
+        "`Get-FileHash` on Windows and `sha256sum` on Linux",
+        "`nmap -sS` on Kali and `systemctl status nessusd` on Ubuntu",
+        "`strings -a` on Windows and `auditctl -l` on Linux"
+      ],
+      "answer": "`wevtutil cl` on Windows and `rm -rf /var/log/*` (or `echo \"\" > /var/log/nginx/access.log`) on Linux",
+      "explanation": "Attackers with root/SYSTEM privileges clear Windows Event Logs using `wevtutil cl` or truncate/delete `/var/log/` files on Linux, requiring tamper-resistant remote logging."
+    },
+    {
+      "id": "ias-w11-03",
+      "type": "multiple-choice",
+      "topic": "Windows Security Log Event IDs",
+      "question": "Which set of Windows Security Log Event IDs correctly matches Successful Logon, Failed Logon, Special Privileges Assigned, and User Account Created?",
+      "options": [
+        "4624 (Successful Logon), 4625 (Failed Logon), 4672 (Special Privileges Assigned), 4720 (User Account Created)",
+        "1 (Successful Logon), 3 (Failed Logon), 6 (Special Privileges), 9 (User Created)",
+        "5710 (Successful Logon), 5716 (Failed Logon), 8834 (Special Privileges), 6514 (User Created)",
+        "404 (Successful Logon), 500 (Failed Logon), 200 (Special Privileges), 403 (User Created)"
+      ],
+      "answer": "4624 (Successful Logon), 4625 (Failed Logon), 4672 (Special Privileges Assigned), 4720 (User Account Created)",
+      "explanation": "In the Windows Event Subsystem Security Log: 4624 = Successful Logon, 4625 = Failed Logon, 4672 = Special Privileges Assigned, and 4720 = User Account Created."
+    },
+    {
+      "id": "ias-w11-04",
+      "type": "multiple-choice",
+      "topic": "Sysmon Visibility",
+      "question": "Why is relying solely on native Windows Event Logs insufficient for detecting Living-off-the-Land (LotL) PowerShell attacks, and how does Sysmon close this gap?",
+      "options": [
+        "Native logs lack granular process execution details; Sysmon tracks process creations with full command-line arguments (Event ID 1), network connections (ID 3), driver loads (ID 6), and raw disk access (ID 9)",
+        "Native Windows Event Logs do not record user logins (4624/4625); Sysmon replaces Active Directory",
+        "Sysmon automatically blocks all outbound HTTP traffic on port 80 and 443",
+        "Sysmon converts Windows EVTX files into Linux `/var/log/syslog` files"
+      ],
+      "answer": "Native logs lack granular process execution details; Sysmon tracks process creations with full command-line arguments (Event ID 1), network connections (ID 3), driver loads (ID 6), and raw disk access (ID 9)",
+      "explanation": "Sysmon extends Windows telemetry by logging process lineage, command-line arguments (Event ID 1), socket connections (Event ID 3), driver loads (Event ID 6), and raw disk access (Event ID 9)."
+    },
+    {
+      "id": "ias-w11-05",
+      "type": "multiple-choice",
+      "topic": "Linux Logging & Auditd",
+      "question": "On Debian/Ubuntu vs. RHEL/CentOS systems, where are authentication attempts logged, and what does the Linux Audit Subsystem (`auditd`) capture?",
+      "options": [
+        "`/var/log/auth.log` (Debian/Ubuntu) and `/var/log/secure` (RHEL/CentOS); `auditd` captures kernel-level syscalls (`execve`), `/etc/shadow` access, and `sudo` escalations",
+        "`C:\\Windows\\Prefetch` (Debian) and `USRCLASS.DAT` (RHEL); `auditd` captures browser cookies",
+        "`/etc/passwd` (Debian) and `/var/ossec` (RHEL); `auditd` captures DNS queries only",
+        "`/var/log/nginx` (Debian) and `/tmp/syslog` (RHEL); `auditd` captures NetFlow byte counts only"
+      ],
+      "answer": "`/var/log/auth.log` (Debian/Ubuntu) and `/var/log/secure` (RHEL/CentOS); `auditd` captures kernel-level syscalls (`execve`), `/etc/shadow` access, and `sudo` escalations",
+      "explanation": "Debian/Ubuntu record auth events in `/var/log/auth.log`, RHEL/CentOS use `/var/log/secure`, general system messages go to `/var/log/syslog`, and `auditd` hooks kernel syscalls and sensitive file modifications."
+    },
+    {
+      "id": "ias-w11-06",
+      "type": "multiple-choice",
+      "topic": "Network Telemetry & NetFlow",
+      "question": "How do Flow Records (NetFlow / IPFIX) differ from NIDS/NIPS alerts (Suricata/Snort) in network telemetry?",
+      "options": [
+        "NetFlow/IPFIX summarize conversation metadata (Src/Dst IP, ports, bytes transferred, session duration) without storing packet payloads, whereas Suricata/Snort inspect traffic against signatures/anomalies to emit JSON alerts",
+        "NetFlow stores full unencrypted HTTP payloads, whereas Suricata only counts bytes",
+        "NetFlow runs inside the Linux kernel via `auditd`, whereas Snort runs only in AWS CloudTrail",
+        "Both protocols only log Windows Event ID 4625"
+      ],
+      "answer": "NetFlow/IPFIX summarize conversation metadata (Src/Dst IP, ports, bytes transferred, session duration) without storing packet payloads, whereas Suricata/Snort inspect traffic against signatures/anomalies to emit JSON alerts",
+      "explanation": "NetFlow/IPFIX provide lightweight meta-telemetry (ideal for spotting data exfiltration volumes and C2 beaconing) without payload storage, while NIDS/NIPS generate alerts on malicious traffic patterns."
+    },
+    {
+      "id": "ias-w11-07",
+      "type": "multiple-choice",
+      "topic": "Application, Database & Cloud Logs",
+      "question": "Which telemetry sources detect SQL Injection/XSS web payloads, schema changes (`ALTER`/`DROP`), and cloud management API calls respectively?",
+      "options": [
+        "Web Server Access Logs (Combined Log Format), Database Audit Logs, and Cloud Infrastructure Logs (AWS CloudTrail / Azure Activity Log / GCP Audit Logs)",
+        "Sysmon Event ID 6, NetFlow, and Windows Prefetch files",
+        "Router ARP tables, LNK files, and EXIF headers",
+        "ICMP Echo Replies, Shellbags, and IMDSv1"
+      ],
+      "answer": "Web Server Access Logs (Combined Log Format), Database Audit Logs, and Cloud Infrastructure Logs (AWS CloudTrail / Azure Activity Log / GCP Audit Logs)",
+      "explanation": "Web access logs (Apache/Nginx) record HTTP methods, URIs, and User-Agents; DB audit logs track queries and schema alterations; CloudTrail/Activity/Audit logs capture cloud control-plane API calls."
+    },
+    {
+      "id": "ias-w11-08",
+      "type": "multiple-choice",
+      "topic": "Centralized Log Ingestion Pipeline",
+      "question": "In the Centralized Log Ingestion Pipeline, what is the exact role of the Message Buffer (e.g., Apache Kafka or RabbitMQ)?",
+      "options": [
+        "It sits between Log Shippers (Filebeat/Fluentd) and Ingestion Engines (Logstash/Vector) to queue bursts and prevent log data loss during traffic spikes",
+        "It encrypts local Windows Prefetch files before reboot",
+        "It serves as the primary Cold Tier archival storage for 7 years",
+        "It generates SSH brute-force attacks against Linux endpoints"
+      ],
+      "answer": "It sits between Log Shippers (Filebeat/Fluentd) and Ingestion Engines (Logstash/Vector) to queue bursts and prevent log data loss during traffic spikes",
+      "explanation": "Pipeline flow: Log Sources -> Log Shippers (Filebeat, Fluentd, Syslog-ng, Winlogbeat) -> Message Buffer (Kafka/RabbitMQ) -> Ingestion Engine (Logstash/Vector) -> Storage/SIEM (Elasticsearch/OpenSearch/Splunk)."
+    },
+    {
+      "id": "ias-w11-09",
+      "type": "multiple-choice",
+      "topic": "Syslog PRIVAL Calculation",
+      "question": "Using the RFC 3164 / RFC 5424 Syslog formula `PRIVAL = (Facility × 8) + Severity`, what is the Priority Value for a Security/Authorization message (Facility 4) with Critical severity (Severity 2)?",
+      "options": [
+        "34",
+        "14",
+        "32",
+        "20"
+      ],
+      "answer": "34",
+      "explanation": "PRIVAL = (4 × 8) + 2 = 32 + 2 = 34. Facility 4 represents security/authorization messages, and Severity 2 represents Critical conditions."
+    },
+    {
+      "id": "ias-w11-10",
+      "type": "multiple-choice",
+      "topic": "Syslog Severity Levels",
+      "question": "In the Syslog Severity Levels (0–7), which level represents the MOST urgent condition ('System is unusable') and which represents the LEAST urgent ('Debug-level messages')?",
+      "options": [
+        "0 = Emergency (`emerg`, most urgent) and 7 = Debug (`debug`, least urgent)",
+        "7 = Emergency (`emerg`, most urgent) and 0 = Debug (`debug`, least urgent)",
+        "1 = Critical (`crit`, most urgent) and 10 = Info (`info`, least urgent)",
+        "0 = Informational (`info`, most urgent) and 7 = Alert (`alert`, least urgent)"
+      ],
+      "answer": "0 = Emergency (`emerg`, most urgent) and 7 = Debug (`debug`, least urgent)",
+      "explanation": "Syslog severity descends in urgency from 0 (Emergency), 1 (Alert), 2 (Critical), 3 (Error), 4 (Warning), 5 (Notice), 6 (Informational), to 7 (Debug)."
+    },
+    {
+      "id": "ias-w11-11",
+      "type": "multiple-choice",
+      "topic": "Syslog Transport Security",
+      "question": "Why is legacy Syslog on UDP Port 514 insecure, and what modern standard secures Syslog in transit?",
+      "options": [
+        "UDP 514 is unencrypted and vulnerable to sniffing/spoofing; secure deployments enforce Syslog over TLS on TCP Port 6514",
+        "UDP 514 compresses logs too aggressively; modern Syslog uses ICMP Echo",
+        "UDP 514 only works on Windows; modern Syslog uses SMB Port 445",
+        "UDP 514 requires client-side HYOK keys; modern Syslog uses Telnet Port 23"
+      ],
+      "answer": "UDP 514 is unencrypted and vulnerable to sniffing/spoofing; secure deployments enforce Syslog over TLS on TCP Port 6514",
+      "explanation": "Syslog over TLS (TCP Port 6514) provides confidentiality, server authentication, and transport integrity unlike cleartext UDP 514."
+    },
+    {
+      "id": "ias-w11-12",
+      "type": "multiple-choice",
+      "topic": "Anti-Forensics Prevention",
+      "question": "An attacker compromises a web server and immediately runs `echo \"\" > /var/log/nginx/access.log`. Which architectural control prevents this from wiping evidence from the central SOC?",
+      "options": [
+        "Real-time log forwarding (Write-Only Remote Logging) streaming events immediately off-host to a hardened central collector, paired with WORM storage and RBAC",
+        "Leaving logs solely on `/var/log/nginx/` with 777 permissions",
+        "Switching the web server from Apache to Nginx",
+        "Running a weekly cron job to copy logs to `/tmp`"
+      ],
+      "answer": "Real-time log forwarding (Write-Only Remote Logging) streaming events immediately off-host to a hardened central collector, paired with WORM storage and RBAC",
+      "explanation": "Streaming logs in real time to an out-of-band collector ensures historical events already exist centrally before the attacker clears local disk logs."
+    },
+    {
+      "id": "ias-w11-13",
+      "type": "multiple-choice",
+      "topic": "Log Integrity Controls",
+      "question": "How do Write-Once-Read-Many (WORM) storage and rolling HMAC-SHA256 cryptographic hash chains protect centralized logs?",
+      "options": [
+        "WORM prevents physical/logical modification or deletion of written blocks, and HMAC-SHA256 hash chains cause validation checks to fail if any sequential entry is inserted, edited, or deleted",
+        "WORM automatically deletes logs every 30 days, while HMAC-SHA256 compresses JSON into ZIP files",
+        "WORM gives SOC analysts write/delete permissions on all index volumes",
+        "HMAC-SHA256 allows attackers to modify historical timestamps silently"
+      ],
+      "answer": "WORM prevents physical/logical modification or deletion of written blocks, and HMAC-SHA256 hash chains cause validation checks to fail if any sequential entry is inserted, edited, or deleted",
+      "explanation": "WORM storage, rolling cryptographic hash chains, and strict RBAC (read-only for analysts, write-only for ingestion pipelines) safeguard log integrity."
+    },
+    {
+      "id": "ias-w11-14",
+      "type": "multiple-choice",
+      "topic": "EPS & Storage Sizing Formula",
+      "question": "Using `DailyStorage (Bytes) = AverageEPS × AverageEventSize (Bytes) × 86,400`, how much uncompressed daily log storage is required for 5,000 EPS at an average event size of 800 bytes?",
+      "options": [
+        "345.6 GB/day (345,600,000,000 Bytes)",
+        "31.1 TB/day",
+        "4.0 MB/day",
+        "86.4 GB/day"
+      ],
+      "answer": "345.6 GB/day (345,600,000,000 Bytes)",
+      "explanation": "5,000 × 800 × 86,400 = 345,600,000,000 Bytes ≈ 345.6 GB/day (which equals ~31.1 TB over a 90-day retention period)."
+    },
+    {
+      "id": "ias-w11-15",
+      "type": "multiple-choice",
+      "topic": "Log Storage Lifecycle Tiers",
+      "question": "Which Log Storage Lifecycle Tier uses high-speed NVMe/SSD for real-time SIEM correlation with sub-second search performance (typically 0 to 30 days)?",
+      "options": [
+        "Hot Tier",
+        "Warm Tier",
+        "Cold Tier",
+        "Frozen / Archive Tier"
+      ],
+      "answer": "Hot Tier",
+      "explanation": "Hot Tier (NVMe/SSD, 0–30 days) supports sub-second real-time correlation; Warm (HDD/Cloud Volumes, 31–90 days) takes seconds–minutes; Cold (S3, 91–365 days) requires re-indexing; Frozen (Glacier, 1–7+ years) takes hours to restore."
+    },
+    {
+      "id": "ias-w11-16",
+      "type": "multiple-choice",
+      "topic": "Log Storage Lifecycle Tiers",
+      "question": "Which storage tier is specifically designed for long-term legal compliance and regulatory retention (1 to 7+ years) using solutions like AWS Glacier where restoration takes hours?",
+      "options": [
+        "Frozen / Archive Tier",
+        "Hot Tier",
+        "Warm Tier",
+        "Message Buffer Tier"
+      ],
+      "answer": "Frozen / Archive Tier",
+      "explanation": "The Frozen / Archive Tier (e.g., Glacier) provides compressed, unindexed long-term archival retention (1–7+ years) at lowest cost, with multi-hour restore times."
+    },
+    {
+      "id": "ias-w11-17",
+      "type": "multiple-choice",
+      "topic": "Balancing Logging Trade-offs",
+      "question": "How should an organization balance security visibility against storage costs, ingestion bottlenecks, and alert fatigue when designing log pipelines?",
+      "options": [
+        "Filter noisy/benign debug telemetry at the shipper, buffer spikes with Kafka/RabbitMQ, route logs through Hot/Warm/Cold/Frozen storage tiers, and tune correlation/RBA rules",
+        "Log every single debug packet into Hot NVMe SSDs for 7 years without filtering",
+        "Disable logging on all endpoints and only log printer errors",
+        "Eliminate message buffers and forward UDP 514 straight to Glacier"
+      ],
+      "answer": "Filter noisy/benign debug telemetry at the shipper, buffer spikes with Kafka/RabbitMQ, route logs through Hot/Warm/Cold/Frozen storage tiers, and tune correlation/RBA rules",
+      "explanation": "Strategic filtering, message buffering, tiered storage retention, and tuned alerting maintain high-value visibility without breaking budgets or overwhelming analysts."
+    },
+    {
+      "id": "ias-w11-18",
+      "type": "multiple-choice",
+      "topic": "Wazuh Lab: Architecture & Install",
+      "question": "In the Week 11 Wazuh lab, what three central components are installed on VM 1 (Wazuh Server) by `sudo bash ./wazuh-install.sh -a`?",
+      "options": [
+        "Wazuh Manager, Wazuh Indexer, and Wazuh Dashboard",
+        "Nmap, Nessus, and Autopsy",
+        "Filebeat, RabbitMQ, and Wireshark",
+        "Ghidra, x64dbg, and Volatility"
+      ],
+      "answer": "Wazuh Manager, Wazuh Indexer, and Wazuh Dashboard",
+      "explanation": "The automated Wazuh quickstart assistant (`-a`) deploys the central Wazuh Manager, Indexer, and Dashboard onto VM 1 (`192.168.56.10`)."
+    },
+    {
+      "id": "ias-w11-19",
+      "type": "multiple-choice",
+      "topic": "Wazuh Lab: Agent Registration",
+      "question": "In Part 2 of the Wazuh lab, how is the Wazuh Agent on VM 2 configured to point to the central Wazuh Manager during APT installation?",
+      "options": [
+        "By passing the manager IP as an environment variable: `sudo WAZUH_MANAGER=\"192.168.56.10\" apt-get install wazuh-agent -y`",
+        "By editing `C:\\Windows\\System32\\drivers\\etc\\hosts` on VM 1",
+        "By running `sudo nmap -sS 192.168.56.10` from VM 2",
+        "By uploading `/var/log/auth.log` manually to VirusTotal"
+      ],
+      "answer": "By passing the manager IP as an environment variable: `sudo WAZUH_MANAGER=\"192.168.56.10\" apt-get install wazuh-agent -y`",
+      "explanation": "After importing the Wazuh GPG key and adding the repo, `WAZUH_MANAGER=\"192.168.56.10\"` registers the agent with VM 1 during installation, followed by enabling/starting `wazuh-agent`."
+    },
+    {
+      "id": "ias-w11-20",
+      "type": "multiple-choice",
+      "topic": "Wazuh Lab: Agent Configuration",
+      "question": "Where is the default Wazuh agent configuration file located on a Linux endpoint, and which XML element defines which local log files are monitored?",
+      "options": [
+        "`/var/ossec/etc/ossec.conf`, using the `<localfile>` element",
+        "`/etc/nmap/nmap.conf`, using the `<script>` element",
+        "`/var/log/wazuh.json`, using the `<syslog>` element",
+        "`/opt/nessus/nessus.ini`, using the `<plugin>` element"
+      ],
+      "answer": "`/var/ossec/etc/ossec.conf`, using the `<localfile>` element",
+      "explanation": "On Linux endpoints, `/var/ossec/etc/ossec.conf` configures the Wazuh agent, and `<localfile>` blocks specify log paths (such as `/var/log/auth.log`) and log formats to monitor."
+    },
+    {
+      "id": "ias-w11-21",
+      "type": "multiple-choice",
+      "topic": "Wazuh Lab: Simulating Security Events",
+      "question": "In Step 3.2 of the Wazuh lab, which command simulates unauthorized SSH login attempts and which local file records those raw failure events?",
+      "options": [
+        "`ssh non_existent_user@localhost` with 3–5 failed password attempts, logged to `/var/log/auth.log`",
+        "`curl https://192.168.56.10:8834`, logged to `/var/log/nginx/error.log`",
+        "`sudo dpkg -i wazuh.deb`, logged to `/etc/shadow`",
+        "`strings -a sshd`, logged to `~/.bash_history`"
+      ],
+      "answer": "`ssh non_existent_user@localhost` with 3–5 failed password attempts, logged to `/var/log/auth.log`",
+      "explanation": "Attempting SSH logins as `non_existent_user@localhost` generates failed authentication entries inside `/var/log/auth.log`, which the Wazuh agent forwards to the Manager."
+    },
+    {
+      "id": "ias-w11-22",
+      "type": "multiple-choice",
+      "topic": "Wazuh Lab: Querying & Rule IDs",
+      "question": "When filtering Security Events in the Wazuh Dashboard with `rule.groups: \"sshd\"`, what do Rule ID 5710 and Rule ID 5716 represent?",
+      "options": [
+        "Rule ID 5710 = `sshd: Attempt to login using non-existent user`; Rule ID 5716 = `sshd: Authentication failed`",
+        "Rule ID 5710 = `Windows User Account Created`; Rule ID 5716 = `Sysmon Raw Disk Access`",
+        "Rule ID 5710 = `Nmap SYN Scan Detected`; Rule ID 5716 = `S3 Public Access Blocked`",
+        "Rule ID 5710 = `Kernel Panic`; Rule ID 5716 = `Wazuh Agent Disconnected`"
+      ],
+      "answer": "Rule ID 5710 = `sshd: Attempt to login using non-existent user`; Rule ID 5716 = `sshd: Authentication failed`",
+      "explanation": "The lab triggers both Wazuh rules: Rule ID 5710 (Level 5) for attempting login with a non-existent user and Rule ID 5716 for failed SSH authentication."
+    },
+    {
+      "id": "ias-w11-23",
+      "type": "multiple-choice",
+      "topic": "Wazuh Lab: Normalized Fields",
+      "question": "When expanding an SSH alert in the Wazuh Dashboard, which normalized fields show the source IP address, severity classification, and raw log line?",
+      "options": [
+        "`data.srcip`, `rule.level`, and `full_log`",
+        "`cvss.base`, `plugin.output`, and `nmap.os`",
+        "`mft.flag`, `exif.gps`, and `entropy.score`",
+        "`syslog.prival`, `worm.hash`, and `imds.token`"
+      ],
+      "answer": "`data.srcip`, `rule.level`, and `full_log`",
+      "explanation": "Step 3.3 highlights `agent.name` (endpoint name), `data.srcip` (`127.0.0.1`), `rule.level` (severity), and `full_log` (raw log line ingested from `/var/log/auth.log`)."
+    },
+    {
+      "id": "ias-w11-24",
+      "type": "multiple-choice",
+      "topic": "Wazuh Lab: Decoders & Rules",
+      "question": "How does the Wazuh Manager transform raw text logs from endpoints into categorized security alerts inside the SIEM dashboard?",
+      "options": [
+        "Decoders first parse and extract structured fields (program name, source IP, username) from raw log strings; Rules then evaluate those decoded fields against conditions and thresholds to assign Rule IDs, levels, and rule groups",
+        "The Wazuh Dashboard runs `strings -a` on the Linux kernel directly",
+        "Wazuh Manager uses hardware write-blockers to carve JPEG headers out of `/var/log/auth.log`",
+        "Decoders delete raw logs while Rules forward alerts over unencrypted UDP 514"
+      ],
+      "answer": "Decoders first parse and extract structured fields (program name, source IP, username) from raw log strings; Rules then evaluate those decoded fields against conditions and thresholds to assign Rule IDs, levels, and rule groups",
+      "explanation": "Wazuh's analysis engine uses a two-stage pipeline: Decoders normalize raw text into key-value attributes, and Rules match patterns/frequencies to generate categorized alerts."
+    },
+    {
+      "id": "ias-w11-25",
+      "type": "multiple-choice",
+      "topic": "Syslog Facility Codes",
+      "question": "In RFC 3164 / RFC 5424 Syslog, which Facility Code range is reserved for local custom use (`local0` through `local7`), and what does Facility 0 represent?",
+      "options": [
+        "16–23 for `local0`–`local7`; Facility 0 represents kernel messages",
+        "0–7 for `local0`–`local7`; Facility 0 represents user-level debug",
+        "10–15 for `local0`–`local7`; Facility 0 represents AWS CloudTrail",
+        "24–31 for `local0`–`local7`; Facility 0 represents SSH authentication"
+      ],
+      "answer": "16–23 for `local0`–`local7`; Facility 0 represents kernel messages",
+      "explanation": "Syslog Facility Codes span 0–23: 0 = kernel messages, 3 = system daemons, 4 = security/authorization messages, and 16–23 = local0–local7."
+    },
+    {
+      "id": "ias-w11-26",
+      "type": "multiple-choice",
+      "topic": "Web Server Access Logs",
+      "question": "What fields are recorded in a standard Apache/Nginx Combined Log Format entry, and what attacks do they help detect?",
+      "options": [
+        "Client IP, Timestamp, HTTP Method, URI Query, Status Code, and User-Agent; detects SQL Injection, Path Traversal, and XSS",
+        "CPU Register, RAM Offset, and DLL Import Table; detects UPX packing",
+        "GPS Latitude, Camera Model, and UTC Offset; detects Steganography",
+        "IAM Role ARN, S3 Bucket ACL, and KMS Key ID; detects SSRF"
+      ],
+      "answer": "Client IP, Timestamp, HTTP Method, URI Query, Status Code, and User-Agent; detects SQL Injection, Path Traversal, and XSS",
+      "explanation": "Combined Log Format captures HTTP request context including URI query strings and User-Agent headers, making it essential for spotting SQLi, Path Traversal, and XSS probes."
+    },
+    {
+      "id": "ias-w11-27",
+      "type": "multiple-choice",
+      "topic": "Identity Provider Telemetry",
+      "question": "What security events are captured by Identity Providers (IdPs) such as Okta, Microsoft Entra ID, and Active Directory?",
+      "options": [
+        "Single Sign-On (SSO) requests, Multi-Factor Authentication (MFA) prompts, and conditional access rule enforcement",
+        "Hard disk sector slack space and NTFS $Bitmap flips",
+        "Kernel `execve` system calls and `/etc/shadow` reads",
+        "TCP Window Size and IP Identifier sequence generation"
+      ],
+      "answer": "Single Sign-On (SSO) requests, Multi-Factor Authentication (MFA) prompts, and conditional access rule enforcement",
+      "explanation": "IdP logs monitor identity-plane authentication, MFA fatigue/prompts, SSO token issuance, and conditional access evaluations."
+    },
+    {
+      "id": "ias-w11-28",
+      "type": "multiple-choice",
+      "topic": "Log Shippers vs. Ingestion Engines",
+      "question": "In the Centralized Log Ingestion Pipeline diagram, which tools act as lightweight Log Shippers vs. Ingestion Engines that parse, normalize, and enrich logs?",
+      "options": [
+        "Log Shippers: Filebeat, Fluentd, Syslog-ng, Winlogbeat; Ingestion Engines: Logstash and Vector",
+        "Log Shippers: Elasticsearch and Splunk; Ingestion Engines: Apache and Nginx",
+        "Log Shippers: Volatility and FTK Imager; Ingestion Engines: Ghidra and IDA Pro",
+        "Log Shippers: AWS Glacier and S3; Ingestion Engines: Suricata and Snort"
+      ],
+      "answer": "Log Shippers: Filebeat, Fluentd, Syslog-ng, Winlogbeat; Ingestion Engines: Logstash and Vector",
+      "explanation": "Endpoint/server shippers (Filebeat, Fluentd, Syslog-ng, Winlogbeat) forward logs through Kafka/RabbitMQ into Logstash or Vector for parsing/enrichment before indexing in Elasticsearch, OpenSearch, or Splunk."
+    },
+    {
+      "id": "ias-w11-29",
+      "type": "multiple-choice",
+      "topic": "RBAC in Centralized Logging",
+      "question": "How should Role-Based Access Control (RBAC) be enforced on a centralized SIEM or logging engine under Least Privilege?",
+      "options": [
+        "Security analysts receive read-only query access, while write/delete permissions on index volumes are restricted strictly to automated ingestion pipelines",
+        "All SOC analysts share the `admin` account with full index deletion rights",
+        "Linux endpoints are given root SSH access to the SIEM indexers",
+        "Write permissions are granted publicly so external threat feeds can edit historical logs"
+      ],
+      "answer": "Security analysts receive read-only query access, while write/delete permissions on index volumes are restricted strictly to automated ingestion pipelines",
+      "explanation": "Restricting analysts to read-only queries ensures neither compromised analyst credentials nor insiders can alter or purge historical audit indices."
+    },
+    {
+      "id": "ias-w11-30",
+      "type": "multiple-choice",
+      "topic": "Warm vs. Cold Tier",
+      "question": "What differentiates the Warm Tier from the Cold Tier in a tiered log lifecycle architecture?",
+      "options": [
+        "Warm Tier (31–90 days) uses HDD/Cloud Volumes with active indices queried in seconds–minutes; Cold Tier (91–365 days) uses compressed read-only Object Storage (S3) requiring re-indexing",
+        "Warm Tier uses NVMe SSDs for 7 years; Cold Tier uses CPU cache for 5 minutes",
+        "Warm Tier stores unencrypted UDP logs; Cold Tier stores live Windows Registry hives",
+        "Warm Tier has slower searches than the Frozen Glacier tier"
+      ],
+      "answer": "Warm Tier (31–90 days) uses HDD/Cloud Volumes with active indices queried in seconds–minutes; Cold Tier (91–365 days) uses compressed read-only Object Storage (S3) requiring re-indexing",
+      "explanation": "Warm storage keeps 31–90 day logs actively indexed on slower HDD/cloud volumes for investigations, whereas Cold storage compresses 91–365 day logs into S3/Blob object storage requiring re-indexing before querying."
+    },
+    {
+      "id": "ias-w11-31",
+      "type": "multiple-choice",
+      "topic": "Wazuh Lab: Agent Status Verification",
+      "question": "After starting `wazuh-agent` on VM 2 in the lab, how do you verify on VM 1's Wazuh Dashboard that the endpoint registered properly?",
+      "options": [
+        "Navigate to Endpoints / Agents in the Wazuh Dashboard and confirm VM 2 appears with a status of `Active`",
+        "Run `sudo nmap -O 192.168.56.20` from VM 1",
+        "Check `Results -> EXIF Metadata` in Autopsy",
+        "Inspect the S3 Block Public Access tab in AWS Console"
+      ],
+      "answer": "Navigate to Endpoints / Agents in the Wazuh Dashboard and confirm VM 2 appears with a status of `Active`",
+      "explanation": "Step 3.1 verifies registration by checking that the Linux endpoint appears as `Active` under Endpoints / Agents in the Wazuh Dashboard."
+    },
+    {
+      "id": "ias-w11-32",
+      "type": "multiple-choice",
+      "topic": "Sysmon Event IDs",
+      "question": "Which Sysmon Event ID is specifically valuable for detecting suspicious kernel-mode rootkit or driver loading, and which tracks raw disk access?",
+      "options": [
+        "Event ID 6 (Driver Loading) and Event ID 9 (Raw Disk Access)",
+        "Event ID 1 (Driver Loading) and Event ID 3 (Raw Disk Access)",
+        "Event ID 4624 (Driver Loading) and Event ID 4720 (Raw Disk Access)",
+        "Event ID 5710 (Driver Loading) and Event ID 5716 (Raw Disk Access)"
+      ],
+      "answer": "Event ID 6 (Driver Loading) and Event ID 9 (Raw Disk Access)",
+      "explanation": "The Week 11 lecture highlights Sysmon Event ID 1 (Process Creation), ID 3 (Network Connections), ID 6 (Driver Loading), and ID 9 (Raw Disk Access)."
+    }
+  ]
+}

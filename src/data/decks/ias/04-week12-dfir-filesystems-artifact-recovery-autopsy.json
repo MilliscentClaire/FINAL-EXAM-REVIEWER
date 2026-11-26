@@ -1,0 +1,461 @@
+{
+  "id": "ias-w12-dfir-autopsy",
+  "course": "Information Assurance and Security",
+  "sectionOrder": 12,
+  "sectionLabel": "Week 12",
+  "title": "Week 12: Digital Forensics, File System Mechanics & Artifact Recovery (Autopsy)",
+  "subject": "Information Assurance and Security",
+  "description": "Locard's Exchange Principle, legal admissibility & spoliation, FAT32 vs. NTFS deletion & SSD TRIM, slack space, file carving & magic bytes, Windows/Linux artifacts, EXIF & steganography, and Autopsy 4.x lab.",
+  "sourceFile": "BCS411L S2W12 Incident Response & Digital Forensics.pdf, BCS411L S2W12 Lab Digital Forensics & Artifact Recovery.pdf",
+  "createdAt": "2026-11-26",
+  "questions": [
+    {
+      "id": "ias-w12-01",
+      "type": "multiple-choice",
+      "topic": "Digital Forensics Paradigm",
+      "question": "What does Locard's Exchange Principle ('Every contact leaves a trace') mean in the context of Digital Forensics and Incident Response (DFIR)?",
+      "options": [
+        "Whenever an adversary executes malware, deletes a file, or attaches a USB drive, the OS inevitably modifies state structures, updates metadata pointers, and appends logs",
+        "Every physical USB cable leaves an electrical burn mark on the motherboard",
+        "Deleted files are always permanently overwritten with zeroes by the CPU",
+        "Network packets cannot traverse a router without modifying the JPEG EXIF header"
+      ],
+      "answer": "Whenever an adversary executes malware, deletes a file, or attaches a USB drive, the OS inevitably modifies state structures, updates metadata pointers, and appends logs",
+      "explanation": "Adapted from forensic science, Locard's Exchange Principle explains why user and attacker actions leave persistent traces in file systems, registries, databases, and logs."
+    },
+    {
+      "id": "ias-w12-02",
+      "type": "multiple-choice",
+      "topic": "DFIR Investigation Methodology",
+      "question": "What are the four stages of the DFIR Investigation Methodology presented in Week 12?",
+      "options": [
+        "1. Identification -> 2. Preservation -> 3. Analysis -> 4. Reporting",
+        "1. Reconnaissance -> 2. Scanning -> 3. Exploitation -> 4. Pivoting",
+        "1. Hashing -> 2. Packing -> 3. Debugging -> 4. Unhooking",
+        "1. Ingestion -> 2. Buffering -> 3. Indexing -> 4. Archiving"
+      ],
+      "answer": "1. Identification -> 2. Preservation -> 3. Analysis -> 4. Reporting",
+      "explanation": "DFIR follows Identification (scoping targets/devices/cloud), Preservation (write-blocking, bit-stream image, hashing), Analysis (file carving, timeline, artifacts), and Reporting (evidence & Chain of Custody)."
+    },
+    {
+      "id": "ias-w12-03",
+      "type": "multiple-choice",
+      "topic": "Evidence Integrity & Spoliation",
+      "question": "Why must forensic examiners create a bit-stream duplicate (`.E01`, `.dd`, `.raw`) using hardware or software write-blockers and verify $H(M_{original}) = H(M_{acquisition})$?",
+      "options": [
+        "To guarantee evidence remains unaltered; if even a single bit changes on original media or copies, the evidence can be rendered legally inadmissible due to spoliation",
+        "To compress the hard drive so it fits into RAM slack space",
+        "To trigger the SSD TRIM command before analysis begins",
+        "To rename all deleted files with generic names like File001.jpg"
+      ],
+      "answer": "To guarantee evidence remains unaltered; if even a single bit changes on original media or copies, the evidence can be rendered legally inadmissible due to spoliation",
+      "explanation": "Analyzing original media alters timestamps/metadata (spoliation). Write-blockers and cryptographic hashes (SHA-256/MD5) prove bit-for-bit integrity for court admissibility."
+    },
+    {
+      "id": "ias-w12-04",
+      "type": "multiple-choice",
+      "topic": "Deletion Mechanics: FAT32",
+      "question": "When a file is deleted on a FAT32 file system, how does the operating system update metadata without zeroing the raw file data?",
+      "options": [
+        "It overwrites the first character of the directory entry with hex `0xE5` and marks the FAT cluster chain entries as `0x0000` (free/unallocated)",
+        "It changes the `$MFT` allocation flag from `0x01` to `0x00` and flips `$Bitmap` bits",
+        "It replaces the file header magic bytes with `FF D9`",
+        "It moves the file payload into `C:\\Windows\\Prefetch`"
+      ],
+      "answer": "It overwrites the first character of the directory entry with hex `0xE5` and marks the FAT cluster chain entries as `0x0000` (free/unallocated)",
+      "explanation": "In FAT32, deleting a file replaces the first byte of its directory entry with `0xE5` and clears its cluster chain to `0x0000`, leaving raw payload clusters intact until overwritten."
+    },
+    {
+      "id": "ias-w12-05",
+      "type": "multiple-choice",
+      "topic": "Deletion Mechanics: NTFS",
+      "question": "When a file is deleted on an NTFS file system, what specific changes occur in `$MFT` and `$Bitmap`?",
+      "options": [
+        "The `$MFT` entry's allocation flag changes from `0x01` (In-Use) to `0x00` (Deleted), and corresponding `$Bitmap` bits flip from `1` to `0`",
+        "The `$MFT` entry is prefixed with `0xE5` and FAT entries become `0x0000`",
+        "The `$MFT` record is encrypted with a Customer-Managed Key (CMK)",
+        "All 4,096-byte clusters are immediately zero-filled by NTFS"
+      ],
+      "answer": "The `$MFT` entry's allocation flag changes from `0x01` (In-Use) to `0x00` (Deleted), and corresponding `$Bitmap` bits flip from `1` to `0`",
+      "explanation": "NTFS marks the file record in the Master File Table (`$MFT`) as deleted (`0x01` -> `0x00`) and marks those clusters available in `$Bitmap` (`1` -> `0`), while data clusters remain until overwritten."
+    },
+    {
+      "id": "ias-w12-06",
+      "type": "multiple-choice",
+      "topic": "SSD TRIM Impact",
+      "question": "How does the presence of Solid-State Drives (SSDs) utilizing the hardware-level TRIM command alter traditional assumptions about deleted file recovery?",
+      "options": [
+        "TRIM notifies the SSD controller that deleted blocks are no longer needed, causing garbage collection to actively erase/zero those NAND cells and making post-deletion recovery or carving largely impossible",
+        "TRIM automatically preserves deleted files forever inside a hidden `0xE5` partition",
+        "TRIM slows down deletion so investigators have 90 days to recover files",
+        "TRIM only affects JPEG EXIF GPS tags without touching file clusters"
+      ],
+      "answer": "TRIM notifies the SSD controller that deleted blocks are no longer needed, causing garbage collection to actively erase/zero those NAND cells and making post-deletion recovery or carving largely impossible",
+      "explanation": "Unlike spinning HDDs where unallocated data lingers until overwritten, SSD TRIM triggers proactive controller-level erasure/garbage collection of unallocated blocks."
+    },
+    {
+      "id": "ias-w12-07",
+      "type": "multiple-choice",
+      "topic": "Slack Space & Internal Fragmentation",
+      "question": "If a 1,000-byte text file is saved to a file system using 4,096-byte (4 KB) clusters, how many bytes constitute File Slack, and what can it contain?",
+      "options": [
+        "3,096 bytes of File Slack, which may contain residual binary fragments from previously deleted files",
+        "1,000 bytes of File Slack, containing only zeroes",
+        "512 bytes of File Slack, storing the user's BIOS password",
+        "4,096 bytes of File Slack, stored inside the CPU L1 cache"
+      ],
+      "answer": "3,096 bytes of File Slack, which may contain residual binary fragments from previously deleted files",
+      "explanation": "ClusterAllocation = n × 4096 bytes. A 1,000-byte file leaves 4096 - 1000 = 3,096 bytes of unused space in the cluster (File Slack), preserving remnants of prior files."
+    },
+    {
+      "id": "ias-w12-08",
+      "type": "multiple-choice",
+      "topic": "RAM Slack vs. File Slack",
+      "question": "What is the distinction between RAM Slack and File Slack within an allocated cluster?",
+      "options": [
+        "RAM Slack is the padded space from the end of file data to the end of its containing 512-byte sector (historically padded from RAM); File Slack is the remaining unused sectors in the cluster",
+        "RAM Slack resides in physical DRAM chips; File Slack resides in cloud S3 buckets",
+        "RAM Slack only exists on Linux ext4; File Slack only exists on FAT32",
+        "RAM Slack is created by `auditd`; File Slack is created by `wevtutil cl`"
+      ],
+      "answer": "RAM Slack is the padded space from the end of file data to the end of its containing 512-byte sector (historically padded from RAM); File Slack is the remaining unused sectors in the cluster",
+      "explanation": "Older OSes padded the remainder of the final 512-byte sector from RAM (RAM Slack), inadvertently leaking memory fragments, while subsequent unused sectors in the 4 KB cluster form File Slack."
+    },
+    {
+      "id": "ias-w12-09",
+      "type": "multiple-choice",
+      "topic": "Metadata-Driven Recovery vs. File Carving",
+      "question": "If an adversary overwrites `$MFT` metadata entries using an anti-forensic tool, why can File Carving still recover files, and what limitations will the investigator face?",
+      "options": [
+        "File Carving scans raw unallocated space for header/footer Magic Bytes independent of metadata, but restores files with generic names (e.g., `File001.jpg`), loses path/timestamp metadata, and struggles with fragmented files",
+        "File Carving reads `$MFT` backups from AWS CloudTrail, restoring original file names and exact NTFS timestamps",
+        "File Carving bypasses SSD TRIM by reading CPU registers, but only recovers `.txt` files",
+        "File Carving requires original `$MFT` pointers to work and fails completely without them"
+      ],
+      "answer": "File Carving scans raw unallocated space for header/footer Magic Bytes independent of metadata, but restores files with generic names (e.g., `File001.jpg`), loses path/timestamp metadata, and struggles with fragmented files",
+      "explanation": "Metadata-driven recovery restores original names, paths, and timestamps using `$MFT`/FAT entries; File Carving bypasses corrupted/wiped metadata via Magic Bytes but loses paths/names and struggles with fragmentation."
+    },
+    {
+      "id": "ias-w12-10",
+      "type": "multiple-choice",
+      "topic": "File Magic Numbers",
+      "question": "Which set of hexadecimal Magic Numbers correctly identifies JPEG, PDF, and ZIP/DOCX/XLSX files?",
+      "options": [
+        "JPEG: `FF D8 FF E0` / `FF D9`; PDF: `25 50 44 46` (`%PDF`) / `25 25 45 4F 46` (`%%EOF`); ZIP/DOCX/XLSX: `50 4B 03 04` (`PK..`)",
+        "JPEG: `4D 5A` (`MZ`); PDF: `7F 45 4C 46` (`.ELF`); ZIP: `0xE5`",
+        "JPEG: `0x01`; PDF: `0x00`; ZIP: `0xFFE1`",
+        "JPEG: `50 4B 03 04`; PDF: `FF D8 FF E0`; ZIP: `25 50 44 46`"
+      ],
+      "answer": "JPEG: `FF D8 FF E0` / `FF D9`; PDF: `25 50 44 46` (`%PDF`) / `25 25 45 4F 46` (`%%EOF`); ZIP/DOCX/XLSX: `50 4B 03 04` (`PK..`)",
+      "explanation": "Forensic carvers and file-type identifiers recognize JPEG (`FF D8 FF E0` .. `FF D9`), PDF (`%PDF` .. `%%EOF`), and ZIP/Office Open XML (`50 4B 03 04` `PK..`)."
+    },
+    {
+      "id": "ias-w12-11",
+      "type": "multiple-choice",
+      "topic": "Windows Prefetch Artifacts",
+      "question": "What forensic evidence is stored in Windows Prefetch files (`C:\\Windows\\Prefetch\\*.pf`)?",
+      "options": [
+        "Application execution count, first/last execution timestamps, and the list of DLLs and files loaded by the executable",
+        "Visited browser URLs and saved Chrome passwords",
+        "Camera make, model, and GPS coordinates of JPEG photos",
+        "Raw packet captures of SMB lateral movement"
+      ],
+      "answer": "Application execution count, first/last execution timestamps, and the list of DLLs and files loaded by the executable",
+      "explanation": "Windows Prefetch optimizes startup but leaves invaluable execution artifacts: run counts, first/last run timestamps, and loaded modules/files."
+    },
+    {
+      "id": "ias-w12-12",
+      "type": "multiple-choice",
+      "topic": "Windows LNK & Shellbags",
+      "question": "What is the key forensic value of Windows Shellbags (`USRCLASS.DAT`) compared to LNK files & Jump Lists?",
+      "options": [
+        "Shellbags prove a user browsed specific local or remote folders in Windows Explorer even after those folders have been deleted; LNK files reveal opened file paths, target volume serials, drive letters, and source MAC addresses",
+        "Shellbags store deleted JPEG images; LNK files store Linux bash command history",
+        "Shellbags record BIOS hypervisor flags; LNK files record Syslog PRIVAL codes",
+        "Both Shellbags and LNK files are deleted immediately when a browser tab closes"
+      ],
+      "answer": "Shellbags prove a user browsed specific local or remote folders in Windows Explorer even after those folders have been deleted; LNK files reveal opened file paths, target volume serials, drive letters, and source MAC addresses",
+      "explanation": "Shellbags in `USRCLASS.DAT` persist Explorer folder navigation history even post-deletion, while LNK shortcut files expose file paths, volume serial numbers, and source MAC addresses."
+    },
+    {
+      "id": "ias-w12-13",
+      "type": "multiple-choice",
+      "topic": "Web Browser & Linux Artifacts",
+      "question": "What underlying database format do modern web browsers (Chrome, Firefox, Edge) use to store History, Cookies, and Web Data, and which Linux files record user CLI commands?",
+      "options": [
+        "Embedded SQLite databases for browsers; `~/.bash_history` and `~/.zsh_history` for Linux shell commands",
+        "Windows EVTX files for browsers; `C:\\Windows\\Prefetch` for Linux shell commands",
+        "NTFS `$MFT` tables for browsers; `/etc/shadow` for Linux shell commands",
+        "PDF `%EOF` footers for browsers; `USRCLASS.DAT` for Linux shell commands"
+      ],
+      "answer": "Embedded SQLite databases for browsers; `~/.bash_history` and `~/.zsh_history` for Linux shell commands",
+      "explanation": "Browsers store URLs, search queries, cookies, and downloads in SQLite databases, while Linux records hands-on-keyboard commands in `~/.bash_history` and `~/.zsh_history` alongside `/var/log/` logs."
+    },
+    {
+      "id": "ias-w12-14",
+      "type": "multiple-choice",
+      "topic": "EXIF Metadata Analysis",
+      "question": "Under which JPEG header marker is EXIF metadata embedded, and what three categories of investigative intelligence does it provide?",
+      "options": [
+        "APP1 Header Marker (`0xFFE1`); provides Device Metadata (camera make/model/serial), Temporal Data (capture timestamp/UTC), and Spatial Data (GPS latitude, longitude, altitude)",
+        "EOF Footer Marker (`FF D9`); provides NTFS `$Bitmap` clusters and Prefetch counts",
+        "PE Header (`4D 5A`); provides Windows DLL Import Address Tables",
+        "Syslog Header (`PRIVAL`); provides Apache Combined Log User-Agents"
+      ],
+      "answer": "APP1 Header Marker (`0xFFE1`); provides Device Metadata (camera make/model/serial), Temporal Data (capture timestamp/UTC), and Spatial Data (GPS latitude, longitude, altitude)",
+      "explanation": "EXIF (`0xFFE1`) ties images to specific physical camera serial numbers, exact timestamps, and precise GPS geolocation coordinates."
+    },
+    {
+      "id": "ias-w12-15",
+      "type": "multiple-choice",
+      "topic": "Steganography & Steganalysis",
+      "question": "How does Least Significant Bit (LSB) Insertion steganography hide secret payloads in images, and how does Steganalysis detect it?",
+      "options": [
+        "LSB replaces the least significant bit of RGB pixel color values (causing an imperceptible color shift like 255 -> 254); Steganalysis detects statistical anomalies in histograms, color planes, or file size discrepancies",
+        "LSB encrypts the entire image with AES-256 and changes the extension to `.pdf`; Steganalysis runs `nmap -sV`",
+        "LSB stores text inside NTFS RAM Slack; Steganalysis runs `wevtutil cl`",
+        "LSB alters the `0xFFE1` EXIF GPS tag only; Steganalysis checks browser cookies"
+      ],
+      "answer": "LSB replaces the least significant bit of RGB pixel color values (causing an imperceptible color shift like 255 -> 254); Steganalysis detects statistical anomalies in histograms, color planes, or file size discrepancies",
+      "explanation": "Modifying the least significant bit changes a pixel channel by at most 1/255, invisible to human vision, but creates detectable statistical artifacts in histogram/color-plane steganalysis."
+    },
+    {
+      "id": "ias-w12-16",
+      "type": "multiple-choice",
+      "topic": "Forensic Tooling Matrix",
+      "question": "Which tool in the Week 12 Forensic Tooling Matrix provides specialized command-line Windows artifact parsers such as `AmcacheParser`, `PECmd`, and `RECmd`?",
+      "options": [
+        "Eric Zimmerman Tools",
+        "Volatility Framework",
+        "FTK Imager",
+        "INetSim"
+      ],
+      "answer": "Eric Zimmerman Tools",
+      "explanation": "Eric Zimmerman Tools (`AmcacheParser`, `PECmd`, `RECmd`) specialize in rapid Windows artifact parsing for scalable enterprise triage and timeline analysis."
+    },
+    {
+      "id": "ias-w12-17",
+      "type": "multiple-choice",
+      "topic": "Autopsy Lab: Supported Images",
+      "question": "In the Week 12 Autopsy lab, what disk image formats can be ingested as a 'Disk Image or VM File' data source?",
+      "options": [
+        "Raw disk images (`.dd` / `.raw`) or Expert Witness Format (`.E01`)",
+        "Compiled PE binaries (`.exe`) and YARA scripts (`.yar`)",
+        "JavaScript Object Notation (`.json`) and Terraform (`.tf`) files",
+        "Syslog EVTX logs (`.evtx`) only"
+      ],
+      "answer": "Raw disk images (`.dd` / `.raw`) or Expert Witness Format (`.E01`)",
+      "explanation": "Autopsy ingests raw (`.dd`/`.raw`) and Expert Witness Format (`.E01`) forensic disk images (such as NIST CFReDS or Digital Corpora sample images)."
+    },
+    {
+      "id": "ias-w12-18",
+      "type": "multiple-choice",
+      "topic": "Autopsy Lab: Ingest Modules",
+      "question": "In Step 1.3 of the Autopsy lab, which four essential Ingest Modules are enabled to parse browser artifacts, true file signatures, disguised extensions, and photo EXIF tags?",
+      "options": [
+        "`Recent Activity`, `File Type Identification`, `Extension Mismatch Detector`, and `Picture Analyzer`",
+        "`Nmap NSE`, `Nessus Daemon`, `Wazuh Indexer`, and `YARA Scanner`",
+        "`Volatility RAM`, `CAPEv2 Sandbox`, `Ghidra Decompiler`, and `FakeNet-NG`",
+        "`AWS CloudTrail`, `S3 Block Public Access`, `IAM Policy`, and `IMDSv2`"
+      ],
+      "answer": "`Recent Activity`, `File Type Identification`, `Extension Mismatch Detector`, and `Picture Analyzer`",
+      "explanation": "Recent Activity parses web history/cookies; File Type Identification checks magic headers; Extension Mismatch Detector flags renamed files; Picture Analyzer extracts EXIF metadata."
+    },
+    {
+      "id": "ias-w12-19",
+      "type": "multiple-choice",
+      "topic": "Autopsy Lab: Extension Mismatch",
+      "question": "How does Autopsy determine a file's true type (e.g., catching a PNG image intentionally renamed to `notes.txt`)?",
+      "options": [
+        "The `File Type Identification` module inspects internal binary magic headers rather than trusting the filename extension, and `Extension Mismatch Detector` flags the discrepancy",
+        "It opens the file in Microsoft Paint and guesses based on screen pixels",
+        "It queries VirusTotal using the filename string",
+        "It checks the file's creation timestamp in `USRCLASS.DAT`"
+      ],
+      "answer": "The `File Type Identification` module inspects internal binary magic headers rather than trusting the filename extension, and `Extension Mismatch Detector` flags the discrepancy",
+      "explanation": "Because file extensions are arbitrary text labels, Autopsy inspects raw file signature bytes (magic numbers) to detect true MIME/file types and flag mismatches."
+    },
+    {
+      "id": "ias-w12-20",
+      "type": "multiple-choice",
+      "topic": "Autopsy Lab: Deleted File Recovery",
+      "question": "In the Autopsy Case Tree, where do you navigate to locate deleted files, what visual icon identifies them, and how do you export one for examination?",
+      "options": [
+        "Expand `File Views -> Deleted Files`; look for entries marked with a small red `X` icon; right-click and choose `Extract File(s)`",
+        "Expand `Results -> EXIF Metadata`; look for a green checkmark; click `Delete Permanently`",
+        "Expand `Reports -> Executive Summary`; look for a blue triangle; click `Format Disk`",
+        "Expand `Data Sources -> Slack Space`; look for a yellow star; run `rm -rf`"
+      ],
+      "answer": "Expand `File Views -> Deleted Files`; look for entries marked with a small red `X` icon; right-click and choose `Extract File(s)`",
+      "explanation": "Deleted records appear under `File Views -> Deleted Files` with a small red `X` overlay, can be previewed in Hex/Text/Application tabs, and exported via `Extract File(s)`."
+    },
+    {
+      "id": "ias-w12-21",
+      "type": "multiple-choice",
+      "topic": "Autopsy Lab: Web Artifacts",
+      "question": "In Part 3 of the Autopsy lab, which three `Results` sub-nodes reveal search terms, visited URLs with browser profiles, and downloaded file source URLs/target paths?",
+      "options": [
+        "`Web Search`, `Web History`, and `Web Downloads`",
+        "`Prefetch`, `Shellbags`, and `Amcache`",
+        "`FileSystem Changes`, `Slack Space`, and `Unallocated`",
+        "`Recent Programs`, `USB Devices`, and `Installed Services`"
+      ],
+      "answer": "`Web Search`, `Web History`, and `Web Downloads`",
+      "explanation": "The Recent Activity module populates `Results -> Web Search`, `Web History`, and `Web Downloads` from browser SQLite databases."
+    },
+    {
+      "id": "ias-w12-22",
+      "type": "multiple-choice",
+      "topic": "Autopsy Lab: EXIF Panel",
+      "question": "In Part 4 of the Autopsy lab, where do investigators find Camera Make/Model, Date Time Original, and GPS Latitude/Longitude for an image like `IMG_0042.jpg`?",
+      "options": [
+        "In the left Tree Viewer under `Results -> EXIF Metadata`, viewed in the bottom-right Metadata pane",
+        "In `File Views -> File Types -> By Extension -> .txt`",
+        "In the Windows Registry `SAM` hive",
+        "In the `/var/log/auth.log` syslog viewer"
+      ],
+      "answer": "In the left Tree Viewer under `Results -> EXIF Metadata`, viewed in the bottom-right Metadata pane",
+      "explanation": "`Picture Analyzer` populates `Results -> EXIF Metadata`, displaying device make/model, capture timestamp, and GPS coordinates in the Metadata pane."
+    },
+    {
+      "id": "ias-w12-23",
+      "type": "multiple-choice",
+      "topic": "Autopsy UI Layout",
+      "question": "In the Autopsy User Interface Layout, what is the role of the bottom-right Content Viewer pane?",
+      "options": [
+        "It previews the selected file's contents using Hex View, Text View, or Application/Metadata View tabs",
+        "It configures the virtual machine's Host-Only network adapter",
+        "It compiles C source code into `.exe` mock binaries",
+        "It calculates EPS daily storage requirements"
+      ],
+      "answer": "It previews the selected file's contents using Hex View, Text View, or Application/Metadata View tabs",
+      "explanation": "Autopsy divides the workspace into Tree Viewer (left), File Listing Pane (top-right), and Content Viewer (bottom-right) with Hex, Text, and Application/Metadata tabs."
+    },
+    {
+      "id": "ias-w12-24",
+      "type": "multiple-choice",
+      "topic": "Deleted File Recovery Principle",
+      "question": "Why can a 'deleted' file still be recovered from an `.E01` or `.dd` disk image if its sectors have not yet been overwritten?",
+      "options": [
+        "Deleting a file only removes or flags the file system metadata pointer (`$MFT` or FAT directory entry) and marks clusters as unallocated; the actual binary payload remains intact on disk until overwritten",
+        "Operating systems keep a mandatory cloud copy of every deleted file in S3",
+        "Hard drives never allow any sector to be marked unallocated",
+        "Autopsy re-downloads deleted files from the user's web browser history"
+      ],
+      "answer": "Deleting a file only removes or flags the file system metadata pointer (`$MFT` or FAT directory entry) and marks clusters as unallocated; the actual binary payload remains intact on disk until overwritten",
+      "explanation": "Standard OS deletion avoids the performance penalty of zeroing disk sectors, leaving the binary data recoverable via metadata pointers or carving until new writes overwrite those clusters."
+    },
+    {
+      "id": "ias-w12-25",
+      "type": "multiple-choice",
+      "topic": "EXIF Privacy & Investigative Value",
+      "question": "What investigative intelligence value do EXIF GPS coordinates provide during a criminal or corporate incident response investigation?",
+      "options": [
+        "They can place a suspect or corporate device at an exact latitude, longitude, and timestamp, and camera serial numbers can link distributed photos to one physical device",
+        "They reveal the suspect's Active Directory password in plaintext",
+        "They automatically prove whether an image was edited with LSB steganography",
+        "They list all TCP ports open on the suspect's home router"
+      ],
+      "answer": "They can place a suspect or corporate device at an exact latitude, longitude, and timestamp, and camera serial numbers can link distributed photos to one physical device",
+      "explanation": "EXIF GPS tags and camera serial numbers establish physical location, timeline alignment, and device attribution across disparate image files."
+    },
+    {
+      "id": "ias-w12-26",
+      "type": "multiple-choice",
+      "topic": "Forensic Tooling: FTK Imager vs. Autopsy",
+      "question": "In the Forensic Tooling Matrix, what is the primary operational distinction between FTK Imager and Autopsy / Sleuth Kit?",
+      "options": [
+        "FTK Imager focuses on initial evidence acquisition (bit-stream `.E01`/`.dd` imaging and drive cloning), whereas Autopsy is a comprehensive GUI platform for ingesting images, carving files, and analyzing artifacts",
+        "FTK Imager is a Linux-only memory dumper, whereas Autopsy is an AWS IAM scanner",
+        "FTK Imager only analyzes EXIF tags, whereas Autopsy only collects NetFlow",
+        "Both tools are interactive x64 debuggers for unpacking UPX malware"
+      ],
+      "answer": "FTK Imager focuses on initial evidence acquisition (bit-stream `.E01`/`.dd` imaging and drive cloning), whereas Autopsy is a comprehensive GUI platform for ingesting images, carving files, and analyzing artifacts",
+      "explanation": "Examiners typically acquire bit-stream disk images using FTK Imager (with write-blockers) and then ingest those images into Autopsy/Sleuth Kit for dead-box investigation."
+    },
+    {
+      "id": "ias-w12-27",
+      "type": "multiple-choice",
+      "topic": "Windows Registry Hives",
+      "question": "Which four Windows Registry hives are listed under Key Windows Forensic Artifacts in Week 12?",
+      "options": [
+        "`SAM`, `SYSTEM`, `SOFTWARE`, and `NTUSER.DAT`",
+        "`$MFT`, `$LogFile`, `$UsnJrnl`, and `$Bitmap`",
+        "`auth.log`, `syslog`, `audit.log`, and `ossec.conf`",
+        "`.text`, `.rdata`, `.data`, and `.rsrc`"
+      ],
+      "answer": "`SAM`, `SYSTEM`, `SOFTWARE`, and `NTUSER.DAT`",
+      "explanation": "The Windows Registry hives `SAM`, `SYSTEM`, `SOFTWARE`, and `NTUSER.DAT` (alongside `USRCLASS.DAT`) store user accounts, hardware/USB history, installed apps, and user activity."
+    },
+    {
+      "id": "ias-w12-28",
+      "type": "multiple-choice",
+      "topic": "Chain of Custody Elements",
+      "question": "Which details MUST be recorded in a Chain of Custody log to prevent legal challenges in court?",
+      "options": [
+        "Every individual who handled the evidence, exact transfer timestamps, physical/logical storage conditions, serial numbers, and specific investigative actions performed",
+        "Only the investigator's first name and the total file size in gigabytes",
+        "The attacker's IP address and the victim's annual revenue",
+        "The CVSS Base Score and Nessus plugin ID"
+      ],
+      "answer": "Every individual who handled the evidence, exact transfer timestamps, physical/logical storage conditions, serial numbers, and specific investigative actions performed",
+      "explanation": "A rigorous Chain of Custody documents complete accountability from initial seizure through storage, transfer, and analysis."
+    },
+    {
+      "id": "ias-w12-29",
+      "type": "multiple-choice",
+      "topic": "Metadata-Driven Recovery Strengths",
+      "question": "What is the main advantage of Metadata-Driven Recovery over File Carving when file system records (`$MFT` or FAT directory entries) are still intact?",
+      "options": [
+        "It restores full original file names, directory paths, creation timestamps, and contiguous cluster locations",
+        "It works even when an SSD has completely wiped all NAND blocks with TRIM",
+        "It requires zero disk space and runs strictly in CPU cache",
+        "It automatically decrypts BitLocker volumes without a key"
+      ],
+      "answer": "It restores full original file names, directory paths, creation timestamps, and contiguous cluster locations",
+      "explanation": "Because metadata records preserve filenames, parent directories, timestamps, and cluster pointers, metadata-driven recovery yields far richer context than raw carving."
+    },
+    {
+      "id": "ias-w12-30",
+      "type": "multiple-choice",
+      "topic": "Autopsy Lab: Case Creation",
+      "question": "In Step 1.1 of the Week 12 Autopsy lab, what Case Type is selected when setting up the local investigation case `Week12_Digital_Forensics`?",
+      "options": [
+        "Single-user",
+        "Multi-tenant Cloud Cluster",
+        "Enterprise Active Directory Sync",
+        "Read-Only Guest Live CD"
+      ],
+      "answer": "Single-user",
+      "explanation": "Students create a local Single-user case named `Week12_Digital_Forensics` in `C:\\Forensics_Labs\\` before adding the disk image data source."
+    },
+    {
+      "id": "ias-w12-31",
+      "type": "multiple-choice",
+      "topic": "Public Forensic Test Corpora",
+      "question": "Which public forensic disk image repositories and sample images are recommended in the Week 12 lab prerequisites?",
+      "options": [
+        "NIST CFReDS or Digital Corpora (e.g., `nps-2009-canon-a620.raw` or `m57-jean.raw`)",
+        "VirusTotal Live Malware Feed or Exploit-DB",
+        "AWS Cloud Quest or Tenable Nessus Essentials",
+        "Mandiant capa or FLARE VM"
+      ],
+      "answer": "NIST CFReDS or Digital Corpora (e.g., `nps-2009-canon-a620.raw` or `m57-jean.raw`)",
+      "explanation": "The lab recommends downloading standard public forensic images from Digital Corpora or NIST CFReDS containing web activity and JPEG EXIF media."
+    },
+    {
+      "id": "ias-w12-32",
+      "type": "multiple-choice",
+      "topic": "Windows Execution Artifacts",
+      "question": "Besides Prefetch (`*.pf`), which two Windows execution-tracking artifacts are listed in the Key Windows Forensic Artifacts diagram?",
+      "options": [
+        "`Shimcache` and `Amcache`",
+        "`NetFlow` and `IPFIX`",
+        "`Suricata` and `Snort`",
+        "`UPX0` and `UPX1`"
+      ],
+      "answer": "`Shimcache` and `Amcache`",
+      "explanation": "Execution Tracking in Windows relies on Prefetch (`.pf`), Shimcache, and Amcache (parsed by tools like `AmcacheParser` and `PECmd`)."
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "id": "ias-w8-soc-ir-nmap",
+  "course": "Information Assurance and Security",
+  "sectionOrder": 8,
+  "sectionLabel": "Week 8",
+  "title": "Week 8: Security Operations Centers (SOC), IR & Active Reconnaissance (Nmap)",
+  "subject": "Information Assurance and Security",
+  "description": "SOC & SIEM data pipelines, alert fatigue, NIST SP 800-61 IR lifecycle, RFC 3227 order of volatility, memory vs. disk forensics, MITRE ATT&CK, threat hunting, and Nmap active reconnaissance lab.",
+  "sourceFile": "BCS411L S2W8 -  Security Operations Centers (SOC).pdf, BCS411L S2W8 Active Reconnaissance & Network Scanning.pdf",
+  "createdAt": "2026-11-26",
+  "questions": [
+    {
+      "id": "ias-w8-01",
+      "type": "multiple-choice",
+      "topic": "Operational Security Mandate",
+      "question": "Under the modern cybersecurity 'assumption of breach,' what two primary operational metrics do security operations aim to minimize?",
+      "options": [
+        "Mean Time to Detect (MTTD) and Mean Time to Respond (MTTR)",
+        "Return on Investment (ROI) and Annualized Loss Expectancy (ALE)",
+        "Maximum Tolerable Downtime (MTD) and Recovery Point Objective (RPO)",
+        "Time to Live (TTL) and Round-Trip Time (RTT)"
+      ],
+      "answer": "Mean Time to Detect (MTTD) and Mean Time to Respond (MTTR)",
+      "explanation": "Because preventative controls are never impenetrable, security operations focus on minimizing MTTD and MTTR through continuous monitoring, structured incident handling, and forensic investigation."
+    },
+    {
+      "id": "ias-w8-02",
+      "type": "multiple-choice",
+      "topic": "SIEM Data Pipeline",
+      "question": "In the SIEM Data Pipeline Architecture, what is the correct sequence of stages from raw telemetry to automated response?",
+      "options": [
+        "Log Sources -> Ingestion & Normalization Engine -> Correlation Rules & Analytics -> Alert Generation / SOAR Engine",
+        "Alert Generation -> Log Sources -> Correlation Rules & Analytics -> Ingestion & Normalization Engine",
+        "Correlation Rules & Analytics -> Log Sources -> SOAR Engine -> Ingestion & Normalization Engine",
+        "Ingestion & Normalization Engine -> SOAR Engine -> Log Sources -> Correlation Rules & Analytics"
+      ],
+      "answer": "Log Sources -> Ingestion & Normalization Engine -> Correlation Rules & Analytics -> Alert Generation / SOAR Engine",
+      "explanation": "Telemetry from firewalls, EDR, identity, servers, and cloud is first ingested and normalized into a common schema, then evaluated by correlation rules to detect multi-source TTPs, and finally routed to Alert Generation / SOAR playbooks."
+    },
+    {
+      "id": "ias-w8-03",
+      "type": "multiple-choice",
+      "topic": "SIEM Capabilities",
+      "question": "Which SIEM component converts disparate log formats such as Syslog, Windows Event Logs, JSON, and CEF into a standardized data model for uniform querying?",
+      "options": [
+        "Log Ingestion & Normalization",
+        "SOAR Automated Playbook Execution",
+        "Hardware Write-Blocking",
+        "Risk-Based Alerting (RBA)"
+      ],
+      "answer": "Log Ingestion & Normalization",
+      "explanation": "Log Ingestion & Normalization parses heterogeneous formats (Syslog, Windows Event Logs, JSON, CEF) into a common schema so analysts can query uniformly across devices and apps."
+    },
+    {
+      "id": "ias-w8-04",
+      "type": "multiple-choice",
+      "topic": "SIEM Correlation & SOAR",
+      "question": "Which scenario best illustrates a SIEM correlation rule paired with a SOAR playbook?",
+      "options": [
+        "Correlating 50 failed logins across hosts followed by a successful SMB connection, then automatically isolating the host via EDR and revoking the AD token",
+        "Recording a single failed user login to local disk without forwarding it",
+        "Manually emailing a PDF report once a month after patching servers",
+        "Running a hardware write-blocker before imaging an SSD"
+      ],
+      "answer": "Correlating 50 failed logins across hosts followed by a successful SMB connection, then automatically isolating the host via EDR and revoking the AD token",
+      "explanation": "Correlation rules cross-reference events across telemetry sources (detecting Lateral Movement / Brute-Force), while SOAR executes automated response playbooks such as token revocation or EDR isolation."
+    },
+    {
+      "id": "ias-w8-05",
+      "type": "multiple-choice",
+      "topic": "Managing Alert Fatigue",
+      "question": "What causes 'Alert Fatigue' in a Security Operations Center (SOC), and how is it mitigated?",
+      "options": [
+        "High volumes of low-fidelity alerts and false positives; mitigated by tuning correlation logic, Risk-Based Alerting (RBA), and automating tier-1 triage",
+        "Insufficient disk space for backups; mitigated by adding tape drives",
+        "Too few log sources connected to the SIEM; mitigated by disabling all firewall logs",
+        "Slow CPU clock speeds on endpoints; mitigated by removing EDR agents"
+      ],
+      "answer": "High volumes of low-fidelity alerts and false positives; mitigated by tuning correlation logic, Risk-Based Alerting (RBA), and automating tier-1 triage",
+      "explanation": "SOC analysts face burnout and missed true threats when flooded by low-fidelity alerts; continuous rule tuning, RBA, and tier-1 automation reduce noise."
+    },
+    {
+      "id": "ias-w8-06",
+      "type": "multiple-choice",
+      "topic": "NIST SP 800-61 IR Lifecycle",
+      "question": "What are the four core phases of the NIST SP 800-61 Rev. 2 Incident Response Lifecycle in exact order?",
+      "options": [
+        "1. Preparation -> 2. Detection & Analysis -> 3. Containment, Eradication & Recovery -> 4. Post-Incident Activity",
+        "1. Reconnaissance -> 2. Weaponization -> 3. Exploitation -> 4. Exfiltration",
+        "1. Detection & Analysis -> 2. Preparation -> 3. Recovery -> 4. Containment",
+        "1. Identification -> 2. Preservation -> 3. Eradication -> 4. Litigation"
+      ],
+      "answer": "1. Preparation -> 2. Detection & Analysis -> 3. Containment, Eradication & Recovery -> 4. Post-Incident Activity",
+      "explanation": "NIST SP 800-61 Rev. 2 defines four sequential phases (with a feedback loop between Detection & Analysis and Containment/Eradication/Recovery)."
+    },
+    {
+      "id": "ias-w8-07",
+      "type": "multiple-choice",
+      "topic": "NIST SP 800-61 Phases",
+      "question": "Building and training a CSIRT, deploying jump boxes and forensic toolkits, and authoring ransomware playbooks take place during which NIST SP 800-61 phase?",
+      "options": [
+        "Phase 1: Preparation",
+        "Phase 2: Detection & Analysis",
+        "Phase 3: Containment, Eradication & Recovery",
+        "Phase 4: Post-Incident Activity"
+      ],
+      "answer": "Phase 1: Preparation",
+      "explanation": "Preparation establishes the capability to respond before an incident occurs, including CSIRT training, out-of-band communications, forensic toolkits, and IR playbooks."
+    },
+    {
+      "id": "ias-w8-08",
+      "type": "multiple-choice",
+      "topic": "NIST SP 800-61 Phases",
+      "question": "During Phase 2 (Detection & Analysis), what three factors are used to assign incident severity during Categorization & Prioritization?",
+      "options": [
+        "Functional impact, information impact, and recoverability",
+        "CPU utilization, disk capacity, and fan speed",
+        "Employee tenure, salary grade, and office location",
+        "Software license cost, vendor reputation, and SLA length"
+      ],
+      "answer": "Functional impact, information impact, and recoverability",
+      "explanation": "NIST SP 800-61 prioritizes incidents based on functional impact to systems, information impact (confidentiality/integrity), and effort required for recoverability."
+    },
+    {
+      "id": "ias-w8-09",
+      "type": "multiple-choice",
+      "topic": "Containment vs. Eradication",
+      "question": "Within Phase 3 of the IR Lifecycle, what is the difference between Short-Term Containment and Eradication?",
+      "options": [
+        "Short-Term Containment limits the blast radius immediately (e.g., isolating endpoints or blocking IPs), while Eradication removes all threat components and persistence mechanisms",
+        "Short-Term Containment deletes all backups, while Eradication formats the SIEM server",
+        "Short-Term Containment is only done after Post-Incident Activity, while Eradication happens during Preparation",
+        "Short-Term Containment restores from backup, while Eradication isolates the network"
+      ],
+      "answer": "Short-Term Containment limits the blast radius immediately (e.g., isolating endpoints or blocking IPs), while Eradication removes all threat components and persistence mechanisms",
+      "explanation": "Short-term containment stops active spread (isolating hosts, disabling compromised AD accounts), long-term containment applies temporary fixes while preserving evidence, and eradication removes malware binaries, scheduled tasks, and malicious registry keys."
+    },
+    {
+      "id": "ias-w8-10",
+      "type": "multiple-choice",
+      "topic": "Post-Incident Activity",
+      "question": "Which activity belongs to Phase 4 (Post-Incident Activity / Lessons Learned) of NIST SP 800-61?",
+      "options": [
+        "Conducting a formal post-mortem to document root cause, timeline, financial impact, and updating IR playbooks and security controls",
+        "Disconnecting an infected workstation from the corporate VLAN",
+        "Capturing a volatile RAM dump using WinPmem",
+        "Running an Nmap SYN scan against a newly discovered subnet"
+      ],
+      "answer": "Conducting a formal post-mortem to document root cause, timeline, financial impact, and updating IR playbooks and security controls",
+      "explanation": "Lessons Learned reviews root cause, timeline, and impact to close technical or procedural gaps in playbooks, firewall rules, and controls."
+    },
+    {
+      "id": "ias-w8-11",
+      "type": "multiple-choice",
+      "topic": "Order of Volatility (RFC 3227)",
+      "question": "According to RFC 3227 Order of Volatility, what is the correct acquisition sequence from MOST volatile to LEAST volatile?",
+      "options": [
+        "1. CPU registers/cache -> 2. Physical RAM -> 3. Network state -> 4. Secondary storage (Disk/SSD) -> 5. Archival media/backups",
+        "1. Archival backups -> 2. Local Disk -> 3. Network state -> 4. Physical RAM -> 5. CPU registers",
+        "1. Physical RAM -> 2. Secondary storage -> 3. CPU registers -> 4. Archival backups -> 5. Network state",
+        "1. Network state -> 2. Secondary storage -> 3. CPU cache -> 4. Physical RAM -> 5. Cloud backups"
+      ],
+      "answer": "1. CPU registers/cache -> 2. Physical RAM -> 3. Network state -> 4. Secondary storage (Disk/SSD) -> 5. Archival media/backups",
+      "explanation": "RFC 3227 mandates acquiring the most ephemeral evidence first (CPU registers/cache, RAM, active network sockets/ARP cache) before persistent storage and archival backups."
+    },
+    {
+      "id": "ias-w8-12",
+      "type": "multiple-choice",
+      "topic": "Memory Forensics",
+      "question": "Why is capturing physical RAM prior to powering down a ransomware-infected host critical?",
+      "options": [
+        "RAM preserves running processes, memory-only malware, active network connections, and plain-text passwords or encryption keys that are permanently lost on reboot",
+        "RAM stores permanent NTFS Master File Table ($MFT) backups for 10 years",
+        "Powering down automatically uploads RAM contents to VirusTotal",
+        "RAM acquisition acts as a hardware write-blocker for the SSD"
+      ],
+      "answer": "RAM preserves running processes, memory-only malware, active network connections, and plain-text passwords or encryption keys that are permanently lost on reboot",
+      "explanation": "Physical memory holds volatile runtime artifacts—unencrypted malware, injected DLLs, rootkits, active sockets, and decryption keys—which vanish immediately upon power loss."
+    },
+    {
+      "id": "ias-w8-13",
+      "type": "multiple-choice",
+      "topic": "Memory vs. Disk Forensics Tools",
+      "question": "Which toolset pairs Memory Forensics acquisition/analysis with Disk Forensics acquisition?",
+      "options": [
+        "Memory: WinPmem / LiME and Volatility Framework; Disk: Hardware write-blockers, FTK Imager, and dd",
+        "Memory: Nmap and Nessus; Disk: Wireshark and Suricata",
+        "Memory: Filebeat and Kafka; Disk: Splunk and Elastic",
+        "Memory: Ghidra and IDA Pro; Disk: Burp Suite and Metasploit"
+      ],
+      "answer": "Memory: WinPmem / LiME and Volatility Framework; Disk: Hardware write-blockers, FTK Imager, and dd",
+      "explanation": "WinPmem (Windows) and LiME (Linux) dump RAM for analysis in Volatility Framework, while FTK Imager, dd, and hardware write-blockers create bit-stream disk images to inspect $MFT, $LogFile, and $UsnJrnl."
+    },
+    {
+      "id": "ias-w8-14",
+      "type": "multiple-choice",
+      "topic": "Chain of Custody & Integrity",
+      "question": "How do forensic examiners prove that a disk or memory image has not been altered by even a single bit since acquisition?",
+      "options": [
+        "By computing a cryptographic hash (SHA-256) immediately upon acquisition and verifying identical hashes on all future copies alongside a Chain of Custody form",
+        "By renaming the file extension from .raw to .bak",
+        "By compressing the evidence inside a password-free ZIP file",
+        "By storing the image in a Hot Tier SIEM index without logging access"
+      ],
+      "answer": "By computing a cryptographic hash (SHA-256) immediately upon acquisition and verifying identical hashes on all future copies alongside a Chain of Custody form",
+      "explanation": "A cryptographic hash (SHA-256) verifies bit-for-bit integrity (any single-bit change invalidates the evidence), while the Chain of Custody form records who handled the evidence, timestamps, locations, serial numbers, and transfer reasons."
+    },
+    {
+      "id": "ias-w8-15",
+      "type": "multiple-choice",
+      "topic": "MITRE ATT&CK Hierarchy",
+      "question": "In the MITRE ATT&CK Matrix Hierarchy, how are Tactics, Techniques, and Procedures distinguished?",
+      "options": [
+        "Tactics are the 'Why' (high-level goal, e.g., Persistence); Techniques are the 'How' (specific method, e.g., T1053 Scheduled Task); Procedures are the 'Detail' (specific tool execution, e.g., schtasks /create)",
+        "Tactics are the specific CLI commands; Techniques are the firewall ports; Procedures are the OS patches",
+        "Tactics are hardware devices; Techniques are software licenses; Procedures are HR policies",
+        "Tactics and Techniques are identical, while Procedures refer strictly to CVSS scores"
+      ],
+      "answer": "Tactics are the 'Why' (high-level goal, e.g., Persistence); Techniques are the 'How' (specific method, e.g., T1053 Scheduled Task); Procedures are the 'Detail' (specific tool execution, e.g., schtasks /create)",
+      "explanation": "MITRE ATT&CK organizes adversary behavior into Tactics (adversarial goal), Techniques (method to achieve it), and Procedures (exact implementation/command used by an adversary)."
+    },
+    {
+      "id": "ias-w8-16",
+      "type": "multiple-choice",
+      "topic": "Proactive Threat Hunting",
+      "question": "How does Proactive Threat Hunting differ from traditional SIEM alert monitoring, and why are 'Living off the Land' (LotL) binaries a common hunting focus?",
+      "options": [
+        "Threat hunting is an active, hypothesis-driven search through telemetry to uncover stealthy activity like adversaries abusing legitimate PowerShell/WMI tools that bypass static alerts",
+        "Threat hunting waits passively for an antivirus pop-up before investigating",
+        "Threat hunting only scans offline archival tapes once every five years",
+        "Living off the Land refers to physically unplugging servers in a data center"
+      ],
+      "answer": "Threat hunting is an active, hypothesis-driven search through telemetry to uncover stealthy activity like adversaries abusing legitimate PowerShell/WMI tools that bypass static alerts",
+      "explanation": "Unlike reactive alert monitoring, threat hunting starts with a CTI-informed hypothesis (e.g., encoded PowerShell or WMI execution without dropping executables) and searches SIEM/EDR telemetry for behavioral anomalies."
+    },
+    {
+      "id": "ias-w8-17",
+      "type": "multiple-choice",
+      "topic": "Nmap Lab: Host Discovery",
+      "question": "In the Week 8 Nmap Lab, what does the command `sudo nmap -sn 192.168.56.0/24` perform?",
+      "options": [
+        "An ICMP ping sweep / host discovery scan that disables port scanning to determine which targets on the subnet are online",
+        "A full 65,535-port TCP SYN stealth scan with OS detection",
+        "An automated vulnerability exploitation attack against port 445",
+        "A service version detection scan targeting only UDP port 53"
+      ],
+      "answer": "An ICMP ping sweep / host discovery scan that disables port scanning to determine which targets on the subnet are online",
+      "explanation": "The `-sn` flag performs a Ping Scan (no port scan) to identify live hosts on the 192.168.56.0/24 subnet."
+    },
+    {
+      "id": "ias-w8-18",
+      "type": "multiple-choice",
+      "topic": "Nmap Lab: TCP SYN Scan Mechanics",
+      "question": "During a TCP SYN Stealth Scan (`nmap -sS`), what packet sequence occurs when Nmap probes an OPEN target port?",
+      "options": [
+        "Attacker sends SYN -> Victim responds SYN-ACK -> Attacker immediately sends RST to tear down the connection before completing the handshake",
+        "Attacker sends SYN -> Victim responds SYN-ACK -> Attacker sends ACK to establish a full session",
+        "Attacker sends FIN -> Victim responds ACK -> Attacker sends HTTP GET",
+        "Attacker sends UDP -> Victim responds ICMP Port Unreachable"
+      ],
+      "answer": "Attacker sends SYN -> Victim responds SYN-ACK -> Attacker immediately sends RST to tear down the connection before completing the handshake",
+      "explanation": "Because the three-way handshake is never completed (RST is sent immediately after SYN-ACK), `-sS` is faster and less likely to be logged by basic application-level logging than a full TCP Connect scan (`-sT`)."
+    },
+    {
+      "id": "ias-w8-19",
+      "type": "multiple-choice",
+      "topic": "Nmap Lab: Stealth vs. Connect Scan",
+      "question": "Why is a TCP SYN Scan (`-sS`) considered 'stealthier' than a standard TCP Connect Scan (`-sT`) against basic application logging?",
+      "options": [
+        "Application daemons typically log connections only after the full 3-way TCP handshake completes; `-sS` tears down with RST before completion",
+        "`-sS` encrypts all packets with AES-256 so firewalls cannot see them",
+        "`-sT` sends zero packets over the network and guesses ports offline",
+        "`-sS` spoofs the MAC address of the default gateway automatically"
+      ],
+      "answer": "Application daemons typically log connections only after the full 3-way TCP handshake completes; `-sS` tears down with RST before completion",
+      "explanation": "A `-sT` scan uses the OS `connect()` syscall to complete the full 3-way handshake, triggering application logs, whereas `-sS` aborts with a `RST` after receiving `SYN-ACK`."
+    },
+    {
+      "id": "ias-w8-20",
+      "type": "multiple-choice",
+      "topic": "Nmap Lab: Full Port Range",
+      "question": "By default, Nmap scans only the top 1,000 most common ports. Which command in the lab scans ALL 65,535 TCP ports at an accelerated rate of at least 1,000 packets per second?",
+      "options": [
+        "sudo nmap -sS -p- --min-rate 1000 192.168.56.20",
+        "sudo nmap -sn -p 1000 192.168.56.20",
+        "sudo nmap -O --top-ports 1000 192.168.56.20",
+        "sudo nmap -sV -p 21,22,80 192.168.56.20"
+      ],
+      "answer": "sudo nmap -sS -p- --min-rate 1000 192.168.56.20",
+      "explanation": "`-p-` is shorthand for ports 1–65535, and `--min-rate 1000` instructs Nmap to transmit at least 1,000 packets per second."
+    },
+    {
+      "id": "ias-w8-21",
+      "type": "multiple-choice",
+      "topic": "Nmap Lab: Service Versioning",
+      "question": "How does Nmap Service Version Detection (`-sV`) identify exact software names and version numbers (e.g., `vsftpd 2.3.4`, `OpenSSH 4.7p1`)?",
+      "options": [
+        "It sends protocol-level queries (like HTTP GET or FTP HELO) and compares returned banners against the `nmap-service-probes` database",
+        "It logs into the target via SSH and reads `/etc/os-release`",
+        "It guesses software versions strictly from the target's IP address",
+        "It queries DNS TXT records on the local router"
+      ],
+      "answer": "It sends protocol-level queries (like HTTP GET or FTP HELO) and compares returned banners against the `nmap-service-probes` database",
+      "explanation": "Nmap `-sV` probes open ports with application-layer requests and matches the responses against `nmap-service-probes`."
+    },
+    {
+      "id": "ias-w8-22",
+      "type": "multiple-choice",
+      "topic": "Nmap Lab: OS Fingerprinting",
+      "question": "How does Nmap OS Detection (`-O`) fingerprint the target operating system when service banners do not explicitly state the OS?",
+      "options": [
+        "It sends TCP/UDP packets with varied header flags and options (Window Size, IP ID sequence, TCP Options order) and matches stack responses against `nmap-os-db`",
+        "It reads the Windows Registry over port 80",
+        "It checks the HTML `<title>` tag of the default web page",
+        "It relies exclusively on ICMP Echo Reply TTL being 255"
+      ],
+      "answer": "It sends TCP/UDP packets with varied header flags and options (Window Size, IP ID sequence, TCP Options order) and matches stack responses against `nmap-os-db`",
+      "explanation": "Each OS TCP/IP stack has subtle implementation quirks (window sizes, IP ID generation, TCP options ordering) cataloged in Nmap's `nmap-os-db` signature file."
+    },
+    {
+      "id": "ias-w8-23",
+      "type": "multiple-choice",
+      "topic": "Nmap Lab: Aggressive Scan",
+      "question": "What four capabilities are combined into Nmap's single `-A` (Aggressive Scan) flag?",
+      "options": [
+        "OS detection (`-O`), service versioning (`-sV`), script scanning (`-sC`), and traceroute (`--traceroute`)",
+        "ARP spoofing, DHCP starvation, DNS poisoning, and password cracking",
+        "Ping sweep (`-sn`), UDP flood, MAC cloning, and firewall disable",
+        "Memory dumping, disk imaging, hash calculation, and log deletion"
+      ],
+      "answer": "OS detection (`-O`), service versioning (`-sV`), script scanning (`-sC`), and traceroute (`--traceroute`)",
+      "explanation": "In Step 2.3 of the lab, `sudo nmap -A` combines OS detection, version detection, default script scanning, and traceroute."
+    },
+    {
+      "id": "ias-w8-24",
+      "type": "multiple-choice",
+      "topic": "Nmap Lab: NSE Language & Categories",
+      "question": "In what programming language are Nmap Scripting Engine (NSE) scripts written, and which NSE category checks target services against known CVE patterns?",
+      "options": [
+        "Written in Lua; the `vuln` category checks services against known CVE database patterns",
+        "Written in Python; the `safe` category runs destructive buffer overflows",
+        "Written in Bash; the `default` category patches vulnerable daemons",
+        "Written in C++; the `auth` category disables multi-factor authentication"
+      ],
+      "answer": "Written in Lua; the `vuln` category checks services against known CVE database patterns",
+      "explanation": "NSE scripts are written in Lua. Common categories are `safe` (non-intrusive), `default` (basic enumeration), `vuln` (known CVE checks), and `auth` (authentication/default logins)."
+    },
+    {
+      "id": "ias-w8-25",
+      "type": "multiple-choice",
+      "topic": "Nmap Lab: Targeted FTP Scripts",
+      "question": "In the lab's targeted NSE output for port 21 (`sudo nmap -p 21 --script=ftp-anon,ftp-vuln*`), what critical vulnerability was detected on `vsftpd 2.3.4`?",
+      "options": [
+        "vsftpd 2.3.4 Backdoor Execution (CVE-2011-2523) triggered by the `:)` smiley face sequence, alongside Anonymous FTP login (code 230)",
+        "MS17-010 EternalBlue remote code execution over SMBv1",
+        "Heartbleed OpenSSL TLS memory disclosure",
+        "Log4Shell JNDI remote lookup injection"
+      ],
+      "answer": "vsftpd 2.3.4 Backdoor Execution (CVE-2011-2523) triggered by the `:)` smiley face sequence, alongside Anonymous FTP login (code 230)",
+      "explanation": "The lab output shows `ftp-anon` (Anonymous FTP login allowed, code 230) and `vsftpd 2.3.4 backdoor` (CVE-2011-2523), which opens a shell when triggered with `:)`."
+    },
+    {
+      "id": "ias-w8-26",
+      "type": "multiple-choice",
+      "topic": "Nmap Lab: HTTP & SMB Scripts",
+      "question": "Which Nmap command from Step 3.2 checks target ports 139 and 445 for critical flaws like MS17-010 (EternalBlue) and MS08-067?",
+      "options": [
+        "sudo nmap -p 139,445 --script=smb-vuln* 192.168.56.20",
+        "sudo nmap -p 80 --script=http-enum,http-title 192.168.56.20",
+        "sudo nmap -p 21 --script=ftp-anon 192.168.56.20",
+        "sudo nmap -sn --script=safe 192.168.56.0/24"
+      ],
+      "answer": "sudo nmap -p 139,445 --script=smb-vuln* 192.168.56.20",
+      "explanation": "Ports 139 and 445 serve NetBIOS/SMB; `--script=smb-vuln*` audits for critical SMB vulnerabilities such as MS17-010 and MS08-067."
+    },
+    {
+      "id": "ias-w8-27",
+      "type": "multiple-choice",
+      "topic": "Nmap Lab: Production Risk",
+      "question": "What is the primary operational risk of executing the entire `--script=vuln` category against a live production business network during working hours?",
+      "options": [
+        "Intrusive vulnerability probes can crash fragile legacy services, cause Denial of Service (DoS), saturate bandwidth, and trigger massive SOC alert storms",
+        "It automatically patches and reboots all domain controllers without permission",
+        "It permanently deletes the `nmap-os-db` file from Kali Linux",
+        "It converts all TCP ports into UDP ports"
+      ],
+      "answer": "Intrusive vulnerability probes can crash fragile legacy services, cause Denial of Service (DoS), saturate bandwidth, and trigger massive SOC alert storms",
+      "explanation": "Running all `vuln` scripts indiscriminately sends malformed or aggressive probes that can destabilize production applications, degrade network performance, and overwhelm monitoring teams."
+    },
+    {
+      "id": "ias-w8-28",
+      "type": "multiple-choice",
+      "topic": "IR vs. Cyber Kill Chain",
+      "question": "How does applying the MITRE ATT&CK framework enhance an incident response team during the Containment and Eradication phase?",
+      "options": [
+        "It maps observed adversary techniques (e.g., T1053 Scheduled Task) to related persistence and lateral movement methods so responders hunt and eradicate all attacker footholds, not just the initial alert",
+        "It replaces the need for backups during the Recovery phase",
+        "It encrypts the Chain of Custody form so auditors cannot read it",
+        "It guarantees zero false positives in unauthenticated Nmap scans"
+      ],
+      "answer": "It maps observed adversary techniques (e.g., T1053 Scheduled Task) to related persistence and lateral movement methods so responders hunt and eradicate all attacker footholds, not just the initial alert",
+      "explanation": "MITRE ATT&CK gives responders a structured catalog of TTPs so when one technique is found, they know which associated persistence, credential-access, and lateral movement techniques to check and eradicate."
+    },
+    {
+      "id": "ias-w8-29",
+      "type": "multiple-choice",
+      "topic": "Disk Forensics Artifacts",
+      "question": "Which NTFS file system structures are commonly analyzed during disk forensics to trace file metadata and file system change journals?",
+      "options": [
+        "Master File Table ($MFT), $LogFile, and $UsnJrnl",
+        "nmap-service-probes and nmap-os-db",
+        "Syslog Facility 4 and PRIVAL headers",
+        "WinPmem and LiME kernel modules"
+      ],
+      "answer": "Master File Table ($MFT), $LogFile, and $UsnJrnl",
+      "explanation": "Disk forensics analyzes the NTFS Master File Table ($MFT), transaction logs ($LogFile), and update sequence number journal ($UsnJrnl) alongside web history and deleted file remnants."
+    },
+    {
+      "id": "ias-w8-30",
+      "type": "multiple-choice",
+      "topic": "Long-Term Containment",
+      "question": "In NIST SP 800-61 Phase 3, what is the purpose of Long-Term Containment compared to Short-Term Containment?",
+      "options": [
+        "Applying temporary fixes (such as emergency patches or clean temporary infrastructure) so business operations can continue safely while forensic evidence is preserved",
+        "Permanently wiping all corporate hard drives before detection begins",
+        "Publishing the incident root cause to external media",
+        "Running an initial ICMP ping sweep on the guest Wi-Fi"
+      ],
+      "answer": "Applying temporary fixes (such as emergency patches or clean temporary infrastructure) so business operations can continue safely while forensic evidence is preserved",
+      "explanation": "Long-term containment keeps business processes running securely using temporary infrastructure or emergency patches until full eradication and clean recovery can be completed."
+    },
+    {
+      "id": "ias-w8-31",
+      "type": "multiple-choice",
+      "topic": "Nmap Lab: HTTP Enumeration",
+      "question": "In Step 3.2 of the Week 8 lab, what is the purpose of running `sudo nmap -p 80 --script=http-enum,http-title 192.168.56.20`?",
+      "options": [
+        "To identify hidden web directories, administrative portals, page titles, and server header metadata",
+        "To test anonymous FTP login and vsftpd backdoor triggers",
+        "To check for MS17-010 EternalBlue on SMB shares",
+        "To dump physical RAM from the Apache web server"
+      ],
+      "answer": "To identify hidden web directories, administrative portals, page titles, and server header metadata",
+      "explanation": "`http-enum` enumerates common web directories and admin panels, while `http-title` retrieves the web page title and server metadata."
+    },
+    {
+      "id": "ias-w8-32",
+      "type": "multiple-choice",
+      "topic": "Lab Topology & Authorization",
+      "question": "In the Week 8 lab topology, what are the roles and sample IP addresses of the two VMs, and why must scans be restricted to the isolated subnet?",
+      "options": [
+        "Attacker VM (Kali Linux, 192.168.56.10) scans Victim VM (Metasploitable2, 192.168.56.20); unauthorized active scanning of public/external targets is illegal and violates acceptable use policies",
+        "Attacker VM (Windows 11, 8.8.8.8) scans Victim VM (Router, 1.1.1.1); scanning public targets is encouraged for practice",
+        "Attacker VM (Metasploitable2, 192.168.56.20) scans Victim VM (Kali Linux, 192.168.56.10); scanning is only illegal on Tuesdays",
+        "Both VMs share IP 127.0.0.1 and bridge directly to the internet"
+      ],
+      "answer": "Attacker VM (Kali Linux, 192.168.56.10) scans Victim VM (Metasploitable2, 192.168.56.20); unauthorized active scanning of public/external targets is illegal and violates acceptable use policies",
+      "explanation": "The lab explicitly warns that active port scanning against unauthorized networks or public internet targets is illegal; all scans must target only the isolated Victim VM (192.168.56.20) from the Attacker VM (192.168.56.10)."
+    }
+  ]
+}
